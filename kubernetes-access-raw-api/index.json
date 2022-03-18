@@ -1,0 +1,33 @@
+{
+    "title": "Access Kubernetes API",
+    "description": "Without using kubectl, access the Kubernetes API and get a response",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a new clusterRole",
+                "text": "step1.md"
+            },
+            {
+                "title": "Get the token from the default service account",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create environment variables for token and server",
+                "text": "step3.md"
+            },
+            {
+                "title": "Use curl passing in the token and server variables to access the API",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-ubuntu20.04"
+    }
+}
