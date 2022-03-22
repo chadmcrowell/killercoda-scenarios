@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario we'll learn an alternate way to access the Kubernetes API instead of using kubectl.
+In this scenario, we'll learn how to access the Kubernetes API using curl instead of kubectl.
 
-**HAVE FUN**
+**ENJOY!**
