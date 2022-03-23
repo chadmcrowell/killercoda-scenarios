@@ -5,7 +5,7 @@ We can extract the authentiction data from this kubeconfig and use it to access 
 
 First, we'll extract the private key and save it to a file named _key_ with this command
 
-`kubectl config view --raw -o jsonpath='{.users[*].user.client-key-data}' | base64 -d > key`
+`k config view --raw -o jsonpath='{.users[*].user.client-key-data}' | base64 -d > key`
 
 Listing the contents of your current directory will now look like this:
 ```bash
