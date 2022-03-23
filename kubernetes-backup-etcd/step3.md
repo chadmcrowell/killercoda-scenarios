@@ -3,7 +3,7 @@ In order to restore the Kubernetes cluster to the previous state (when we took t
 
 Let's restore from the 'snapshot' file in our current directory. It's a local file, so we don't need any authentication.
 
-> 🔥TIP: The kubelet runs the etcd pod directly (without kube-scheduler) and picks up the manifest in `/etc/kubernetes/manifests/etcd.yaml`
+> 🔥TIP🔥: The kubelet runs the etcd pod directly (without kube-scheduler) and picks up the manifest in `/etc/kubernetes/manifests/etcd.yaml`
 
 We can use the `etcdctl snapshot restore` command to restore from our snapshot, and use the `--data-dir` flag to place it in the same directory as the current etcd member.
 
@@ -13,7 +13,7 @@ Finally, we'll need to update the manifest for etcd and tell it to get it's data
 
 `sed -i "76 s/lib\/etcd/lib\/etcd-restore/" /etc/kubernetes/manifests/etcd.yaml`
 
-> 🛑 STOP 🛑 You will have to wait until the pod is restarted. This may take up to 2 minutes.
+> 🛑STOP🛑: The Kubernetes API will be unavailable until the etcd pod is restarted. This may take up to 3 minutes.
 
 Let's see if the _kube-proxy_ daemonset has been restored with the command
 
