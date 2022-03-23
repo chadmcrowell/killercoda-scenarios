@@ -11,7 +11,9 @@ We can use the `etcdctl snapshot restore` command to restore from our snapshot, 
 
 Finally, we'll need to update the manifest for etcd and tell it to get it's data from that restore operation we just did. I'll use sed to search for `/lib/etcd` and replace with `lib/etcd-restore` on line 76 in the etcd.yaml file.
 
-`sed "76 s/lib\/etcd/lib\/etcd-restore/" /etc/kubernetes/manifests/etcd.yaml`
+`sed -i "76 s/lib\/etcd/lib\/etcd-restore/" /etc/kubernetes/manifests/etcd.yaml`
+
+> 🛑 STOP 🛑 You will have to wait until the pod is restarted. This may take up to 2 minutes.
 
 Let's see if the _kube-proxy_ daemonset has been restored with the command
 
