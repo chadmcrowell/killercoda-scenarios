@@ -1,0 +1,37 @@
+{
+    "title": "Create new Kubernetes User and Role",
+    "description": "Create a role for a user named 'carlton' allowing them to get and list pods in the 'web' namespace, then create the user",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a new role for user in RBAC",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a pod in the web namespace",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a certificate signing request",
+                "text": "step3.md"
+            },
+            {
+                "title": "Submit CSR to Kubernetes API",
+                "text": "step4.md"
+            },
+            {
+                "title": "Test role with the new user",
+                "text": "step5.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-ubuntu20.04"
+    }
+}
