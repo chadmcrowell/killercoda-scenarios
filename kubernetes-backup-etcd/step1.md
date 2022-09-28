@@ -16,7 +16,7 @@ Backup the etcd datastore with the `etcdctl snapshot save` command and pass in t
 Listing the contents of your current directory will now look like this:
 ```bash
 $ ls
-snap snapshot
+filesystem snapshot
 ```
 
 Check the status of your snapshot and write the output to a table using this command
