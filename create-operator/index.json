@@ -1,0 +1,37 @@
+{
+    "title": "Create your own Operator in Kubernetes",
+    "description": "Build an operator with kubebuilder",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "initializing a Kubebuilder application",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create an operator and CRD using Kubebuilder",
+                "text": "step2.md"
+            },
+            {
+                "title": "Apply CRDs to Kubernetes",
+                "text": "step3.md"
+            },
+            {
+                "title": "Use CRD in the Operator",
+                "text": "step4.md"
+            },
+            {
+                "title": "Running Operator",
+                "text": "step5.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-ubuntu20.04"
+    }
+}
