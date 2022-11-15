@@ -41,3 +41,5 @@ INFO  setup starting manager
 INFO  Starting server {"path": "/metrics", "kind": "metrics", "addr": "[::]:8080"}
 INFO  Starting server {"kind": "health probe", "addr": "[::]:8081"}
 ```
+
+Once you see this output, press `ctrl + c` to stop running the controller and move on to the next step.

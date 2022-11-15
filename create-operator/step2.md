@@ -20,7 +20,7 @@ In this case, let's create a custom type called `Website`. Kubebuilder will auto
 ```bash
 kubebuilder create api \
   --kind Website \
-  --group kubecon \
+  --group killercoda \
   --version v1beta1 \
   --resource true \
   --controller true
