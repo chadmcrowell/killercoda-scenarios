@@ -3,7 +3,8 @@
     "description": "Build an operator with kubebuilder",
     "details": {
         "intro": {
-            "text": "intro.md"
+            "text": "intro.md",
+            "code": "foreground.sh"
         },
         "steps": [
             {
