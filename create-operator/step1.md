@@ -7,7 +7,7 @@ Get started by initializing a Kubebuilder application with the `kubebuilder init
 kubebuilder init \
   --plugins=go/v4-alpha \
   --repo my.domain
-```
+```{{exec}}
 
 > NOTE: Kubebuilder is already installed on this machine
 
@@ -23,7 +23,7 @@ Click on `Tab 1` to go back to the command prompt and type the command:
 
 ```bash
 make run
-```
+```{{exec}}
 
 > NOTE: This command may take a few minutes (particularly `go vet` may appear to hang!).
 
