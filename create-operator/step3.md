@@ -9,7 +9,7 @@ Now, lets run the manifests target manually in the `Tab 1` tab to view the Golan
 
 ```bash
 make manifests
-```
+```{{exec}}
 
 Return to the `Editor` tab to see a new file `killercoda.my.domain_websites` populated in the `config/crd/bases` directory. On line `37`, you will see the website properties found in the `WebsiteSpec` schema. The only property is `foo` and it has used the helpful comment as a property description.
 
@@ -31,12 +31,34 @@ You have successfully installed a new Custom Resource Definition onto your Kuber
 
 Now you will request an instance (or Custom Resource) from this definition. 
 
-First, open a new terminal tab by clicking on the `+` sign next to `Tab 1`, and run the command `make run`. Wait for the command output to return a `INFO  Starting server {"kind": "health probe", "addr": "[::]:8081"}` status, then return to the `Tab 1` tab.
-
-Create a `Website` custom resource object in Kubernetes with the command:
+First, open a new terminal tab by clicking on the `+` sign next to `Tab 1`, Click on `Tab 2`, and run the command:
 
 ```bash
-kubectl apply \
-  --filename ~/src/config/samples/kubecon_v1beta1_website.yaml
+cd ./src; make run
+```{{exec}}
+
+Wait for the command to output the following:
+```bash
+1.6685479895755963e+09  INFO    Starting EventSource    {"controller": "website", "controllerGroup": "killercoda.my.domain", "controllerKind": "Website", "source": "kind source: *v1beta1.Website"}
+1.6685479895767684e+09  INFO    Starting Controller     {"controller": "website", "controllerGroup": "killercoda.my.domain", "controllerKind": "Website"}
+1.6685479896797793e+09  INFO    Starting workers        {"controller": "website", "controllerGroup": "killercoda.my.domain", "controllerKind": "Website", "worker count": 1}
 ```
 
+Then, return to the `Tab 1` tab to create a `Website` custom resource object in Kubernetes with the command:
+
+```bash
+k apply -f ~/src/config/samples/killercoda_v1beta1_website.yaml
+```{{exec}}
+
+List the websites in your cluster with this command:
+
+```bash
+k get websites
+```
+
+You should see something similar to the following:
+
+```bash
+NAME             AGE
+website-sample   15s
+```
