@@ -33,11 +33,11 @@ In this file, look at line 64 to see the `NewManager` function, which is what cr
 
 Return to the `Tab 1` tab and view the progress of the run command.
 
-You should see a few commands running. This includes prerequisite Make targets like `test` and `vet`. When it is complete, you should see the following four log lines at the end of the output:
+You should see a few commands running. This includes prerequisite Make targets like `fmt` and `vet`. When it is complete, you should see the following four log lines at the end of the output:
 
 ```bash
 INFO  controller-runtime.metrics  Metrics server is starting to listen  {"addr": ":8080"}
 INFO  setup starting manager
-INFO  Starting server {"kind": "health probe", "addr": "[::]:8081"}
 INFO  Starting server {"path": "/metrics", "kind": "metrics", "addr": "[::]:8080"}
+INFO  Starting server {"kind": "health probe", "addr": "[::]:8081"}
 ```

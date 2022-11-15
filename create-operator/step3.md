@@ -1,8 +1,5 @@
 
-Finally, we'll need the address of the API server. Use this command to save the API server address in an environment variable named _SERVER_
+In the last step you generated a custom Resource named `Website`. This adds a Golang representation of a Custom Resource Definition (CRD) to your operator scaffolding code.
 
-`SERVER=$(k config view -o jsonpath='{.clusters[*].cluster.server}')` 
+The CRD is defined first in Golang so that the operator (also written in Golang) can reference the definition.
 
-Now that we have the Kubernetes API server address, a private key and client certificate, we can curl the API using the command
-
-`curl $SERVER --cacert /etc/kubernetes/pki/ca.crt --cert crt --key key`
