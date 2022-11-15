@@ -27,4 +27,16 @@ kubectl get crds
 
 You will see the `websites.killercoda.my.domain` listed at the bottom of the list of CRDs.
 
-You have successfully installed a new Custom Resource Definition onto your Kubernetes cluster! Soon you will request an instance (or Custom Resource) from this definition.
+You have successfully installed a new Custom Resource Definition onto your Kubernetes cluster! 
+
+Now you will request an instance (or Custom Resource) from this definition. 
+
+First, open a new terminal tab by clicking on the `+` sign next to `Tab 1`, and run the command `make run`. Wait for the command output to return a `INFO  Starting server {"kind": "health probe", "addr": "[::]:8081"}` status, then return to the `Tab 1` tab.
+
+Create a `Website` custom resource object in Kubernetes with the command:
+
+```bash
+kubectl apply \
+  --filename ~/src/config/samples/kubecon_v1beta1_website.yaml
+```
+
