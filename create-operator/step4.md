@@ -6,7 +6,7 @@ This function encapsulates the instructions for how to create a customized deplo
 Add the following code to the end of the file `~/src/controllers/website_controller.go`:
 
 ```bash
-sudo wget -O ${HOME}/src/controllers/website_controller.go "https://raw.githubusercontent.com/chadmcrowell/k8s/main/operators/website_controller.go"
+sudo wget -O ${HOME}/src/controllers/website_controller.go "https://raw.githubusercontent.com/chadmcrowell/k8s/main/operators/website_controller.go" && sudo wget -O ${HOME}/src/api/v1beta1/website_types.go "https://raw.githubusercontent.com/chadmcrowell/k8s/main/operators/website_types.go"
 ```
 
 ```go

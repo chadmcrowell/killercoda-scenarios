@@ -37,7 +37,7 @@ First, open a new terminal tab by clicking on the `+` sign next to `Tab 1`, Clic
 cd ./src; make run
 ```{{exec}}
 
-Wait for the command to output the following:
+Wait for the command to output the following (this may take a while):
 ```bash
 1.6685479895755963e+09  INFO    Starting EventSource    {"controller": "website", "controllerGroup": "killercoda.my.domain", "controllerKind": "Website", "source": "kind source: *v1beta1.Website"}
 1.6685479895767684e+09  INFO    Starting Controller     {"controller": "website", "controllerGroup": "killercoda.my.domain", "controllerKind": "Website"}
@@ -54,7 +54,7 @@ List the websites in your cluster with this command:
 
 ```bash
 k get websites
-```
+```{{exec}}
 
 You should see something similar to the following:
 
