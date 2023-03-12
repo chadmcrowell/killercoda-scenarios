@@ -3,7 +3,7 @@
     "description": "Study for the CKAD and complete these exam exercises",
     "items": [
       {
-        "path": "../ckad/create-configmap",
+        "path": "create-configmap",
         "title": "Creating a pod with configMap",
         "description": "Create a ConfigMap and use it inside of a pod in Kubernetes"
       }
