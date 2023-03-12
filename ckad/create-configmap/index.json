@@ -1,0 +1,25 @@
+{
+    "title": "Create and use a ConfigMap",
+    "description": "Create a ConfigMap and use it inside of a pod in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "create a configMap",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create the YAML for a pod with configMap attached",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
