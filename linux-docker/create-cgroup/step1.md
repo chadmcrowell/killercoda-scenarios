@@ -11,9 +11,7 @@ The following namespaces exist in Linux:
 
 List the namespaces on your system with the command `lsns`
 
-Change directory to the cgroups namespace with the following command:
+List the cgroup directory, where the cgroups namespace resides on a Linux system:
 ```
 ls /sys/fs/cgroup
 ```{{exec}}
-
-The cgroup namespace is just another directory in the Linux filesystem.

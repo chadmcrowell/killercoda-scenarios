@@ -1,5 +1,3 @@
-# Create a new cgroup
-
 We can create a new cgroup by simple making a new directory in `/sys/fs/cgroup/`
 
 To create a new directory, use the command 

@@ -1,5 +1,3 @@
-# Take a before snapshot of memory cgroup
-
 In order to measure what the memory cgroup looks like before and after we startup a container, we can take a snapshot of the memory cgroup.
 
 In order to interact with our cgroups, and take a snapshot, we can install the `cgroup-tools` package
