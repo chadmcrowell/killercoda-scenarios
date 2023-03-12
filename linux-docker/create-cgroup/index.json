@@ -1,0 +1,41 @@
+{
+    "title": "Create a Cgroup in Linux",
+    "description": "Create a cgroup manually in Linux to simulate creating a container",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "change to the cgroup directory",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a new cgroup",
+                "text": "step2.md"
+            },
+            {
+                "title": "Take a before snapshot of memory cgroup",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create container using Docker",
+                "text": "step4.md"
+            },
+            {
+                "title": "Compare before and after memory cgroup",
+                "text": "step5.md"
+            },
+            {
+                "title": "Limit the containers memory cgroup",
+                "text": "step6.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
