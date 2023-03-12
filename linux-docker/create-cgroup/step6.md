@@ -10,8 +10,8 @@ docker exec -it nginx2 bash
 
 Look at the cgroup
 ```
-cat /proc/$$/cgroup&
-```{{exec}}
+cat /proc/$$/cgroup
+```{{copy}}
 
 Look at the memory limit
 ```

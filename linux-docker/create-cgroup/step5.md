@@ -20,18 +20,22 @@ Look at the memory from inside the container
 docker exec -it nginx bash
 ```{{exec}}
 
-Now that you have a shell inside the container to see its own cgroups
+Now that you have a shell inside the container, list the cgroups from within the container
 ```
-cat /proc/$$/cgroup&
-```{{exec}}
+cat /proc/$$/cgroup
+```{{copy}}
 
-note the cgroups from inside and outside of the container
+exit out of the container shell
 ```
 exit
+```{{copy}}
+
+List the cgroups from outside of the container, notice the similarity to the cgroup from within the container
+```
 ls /sys/fs/cgroup/memory/system.slice/docker-5964361709cda46fd952e2f3f6e0b48e28a5b59fa8124c3652d2851c9e14bcbd.scope
 ```{{exec}}
 
-Cat out the memory limit for this container
+Cat out the memory limit for the containers memory cgroup
 ```
 cat /sys/fs/cgroup/memory/system.slice/docker-5964361709cda46fd952e2f3f6e0b48e28a5b59fa8124c3652d2851c9e14bcbd.scope/memory.limit_in_bytes
 ```{{exec}}
