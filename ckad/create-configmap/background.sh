@@ -1,1 +1,1 @@
-k run nginx --image nginx
+kubectl run nginx --image nginx
