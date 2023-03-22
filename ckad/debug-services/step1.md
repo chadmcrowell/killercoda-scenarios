@@ -1,12 +1,12 @@
-- Run the command to list the pods and their labels
+1. Run the command to list the pods and their labels
 
-- Run the command to list the pods by their label
+2. Run the command to list the pods by their label
 
-- Run a command to get the pod IP addresses
+3. Run a command to get the pod IP addresses
 
-- Run the command to view which port the pods are exposed on.
+4. Run the command to view which port the pods are exposed on.
 
-Use this command to run busybox pod and get a shell to it for troubleshooting:
+5. Use this command to run busybox pod and get a shell to it for troubleshooting:
 ```
 kubectl run -it --rm --restart=Never busybox --image=gcr.io/google-containers/busybox sh
 ```{{exec}}
