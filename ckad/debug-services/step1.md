@@ -40,8 +40,7 @@ kubectl get po -o wide
 ```{{exec}}
 
 ```plain
-# from inside the 'busybox' pod, see if the pods are responding on port 9376
-for ep in 10.244.0.5:9376 10.244.0.6:9376 10.244.0.7:9376; do
+for ep in 192.168.0.8:9376 192.168.0.7:9376 192.168.0.9:9376; do
     wget -qO- $ep
 done
 ```{{copy}}
