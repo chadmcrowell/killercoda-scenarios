@@ -13,11 +13,11 @@ kubectl run -it --rm --restart=Never busybox --image=gcr.io/google-containers/bu
 
 - From a shell to a pod, see if the pods are listening on the correct port.
 
-You should get the following output:
+You should get something similar to the following output:
 ```bash
-hostnames-632524106-bbpiw
-hostnames-632524106-ly40y
-hostnames-632524106-tlaok
+hostnames-54b9d67f64-khfsj
+hostnames-54b9d67f64-zq79d
+hostnames-54b9d67f64-trl7r
 ```
 
 <br>
