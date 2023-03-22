@@ -6,6 +6,11 @@
         "path": "create-configmap",
         "title": "Creating a pod with configMap",
         "description": "Create a ConfigMap and use it inside of a pod in Kubernetes"
+      },
+      {
+        "path": "debug-services",
+        "title": "Debug services in Kubernetes",
+        "description": "Check that services are operating correctly in Kubernetes"
       }
     ]
   }
