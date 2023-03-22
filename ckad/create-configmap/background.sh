@@ -1,1 +1,1 @@
-echo "This finished" > /tmp/finished.txt
+k run nginx --image nginx
