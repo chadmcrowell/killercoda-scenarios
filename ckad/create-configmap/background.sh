@@ -1,1 +1,1 @@
-kubectl run nginx --image nginx
+echo "this is a cool background script" > /tmp/finished.txt

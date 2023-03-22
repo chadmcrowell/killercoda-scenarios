@@ -15,6 +15,10 @@
             {
                 "title": "Create the YAML for a pod with configMap attached",
                 "text": "step2.md"
+            },
+            {
+                "title": "Check the pod configuration settings",
+                "text": "step3.md"
             }
         ],
         "finish": {

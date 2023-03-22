@@ -1,15 +1,9 @@
-We can create a new cgroup by simple making a new directory in `/sys/fs/cgroup/`
+Create a pod named `redis-pod` that uses the image `redis:7` and exposes port `6379`. Use the command `redis-server /redis-master/redis.conf` to store redis configuration data and store this in an `emptyDir` volume. 
 
-To create a new directory, use the command 
+Mount the `redis-config` configmap data to the pod for use within the container.
+
+**HINT:** create the pod YAML with a `--dry-run` using the following command:
 ```
-mkdir /sys/fs/cgroup/memory/new-cgroup
+k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-master/redis.conf' --dry-run=client -o yaml > 
+redis-pod.yaml
 ```{{exec}}
-
-By creating a new directory, it has cloned the existing memory cgroup. 
-
-List the contents of the new memory cgroups with the command:
-```
-ls /sys/fs/cgroup/memory/new-cgroup
-```{{exec}}
-
-
