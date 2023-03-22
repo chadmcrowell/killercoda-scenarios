@@ -1,0 +1,1 @@
+k get cm redis-config

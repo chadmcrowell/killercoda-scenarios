@@ -10,7 +10,8 @@
                 "title": "create a configMap",
                 "text": "step1.md",
                 "foreground": "foreground.sh",
-                "background": "background.sh"
+                "background": "background.sh",
+                "verify": "step1/verify.sh"
             },
             {
                 "title": "Create the YAML for a pod with configMap attached",
