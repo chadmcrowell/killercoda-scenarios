@@ -29,6 +29,7 @@ hostnames-632524106-tlaok
 kubectl get po --show-labels
 ```{{exec}}
 
+```plain
 # list the pods by their label
 kubectl get pods -l app=hostnames
 ```{{exec}}
