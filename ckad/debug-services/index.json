@@ -1,0 +1,31 @@
+{
+    "title": "Debug Services",
+    "description": "Check that services are operating correctly in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check if pods are running and have endpoints",
+                "text": "step1.md",
+                "foreground": "foreground.sh",
+                "background": "background.sh"
+            },
+            {
+                "title": "Check services by DNS and IP",
+                "text": "step2.md"
+            },
+            {
+                "title": "Check the service spec and endpoints",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
