@@ -4,4 +4,4 @@ Also, have that same pod prefer to be scheduled to a node with the label `availa
 
 > NOTE: Make sure the container remains in a running state
 
-Ensure that the pod is scheduled to the preferred node.
+Ensure that the pod is scheduled to the `controlplane` node.
