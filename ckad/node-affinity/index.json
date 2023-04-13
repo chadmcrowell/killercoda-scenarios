@@ -9,7 +9,6 @@
             {
                 "title": "Create a pod with node affinity",
                 "text": "step1.md",
-                "foreground": "foreground.sh",
                 "background": "background.sh",
                 "verify": "verify.sh"
             }
