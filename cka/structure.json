@@ -6,6 +6,11 @@
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
+      },
+      {
+        "path": "taints-tolerations",
+        "title": "Taints and Tolerations",
+        "description": "Apply a taint to a node to repel work"
       }
     ]
   }

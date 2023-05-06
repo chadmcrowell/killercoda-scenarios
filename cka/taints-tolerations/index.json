@@ -1,0 +1,26 @@
+{
+    "title": "Taints and Tolerations",
+    "description": "Apply a taint to a node to repel work",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "List the taints for node01",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Apply the tolerations to the pod",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
