@@ -8,10 +8,11 @@
         "steps": [
             {
                 "title": "Check the current version and the target version",
-                "text": "step1.md"
+                "text": "step1.md",
+                "verify": "verify.sh"
             },
             {
-                "title": "Upgrade to 1.27.0",
+                "title": "Upgrade from 1.26.1 to 1.27.0",
                 "text": "step2.md"
             },
             {

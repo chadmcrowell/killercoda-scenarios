@@ -1,0 +1,1 @@
+kubeadm version -o=json | grep 1.27.0
