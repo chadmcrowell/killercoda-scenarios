@@ -1,5 +1,26 @@
-Run the appropriate command to check the 
+Run the appropriate command to check the current version of the API server, controller manager, scheduler, kube-proxy, CoreDNS, and etcd.
 
-Create a configmap named `redis-config`. Within the configMap, use the key `maxmemory` with value `2mb` and key `maxmemory-policy` with value `allkeys-lru`.
+The output should look similar to the following:
+```bash
+COMPONENT                 CURRENT   TARGET
+kube-apiserver            v1.26.1   v1.26.4
+kube-controller-manager   v1.26.1   v1.26.4
+kube-scheduler            v1.26.1   v1.26.4
+kube-proxy                v1.26.1   v1.26.4
+CoreDNS                   v1.9.3    v1.9.3
+etcd                      3.5.6-0   3.5.6-0
+```
 
-**HINT:** try `k create cm -h` for command options and examples
+**HINT:** try `kubeadm -h` for help with command options
+
+<br>
+<details><summary>Solution</summary>
+<br>
+
+```plain
+# check the current and target version of control plane components
+kubeadm upgrade plan
+```{{exec}}
+
+
+</details>

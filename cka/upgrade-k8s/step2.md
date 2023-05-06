@@ -1,8 +1,26 @@
-Create a pod named `redis-pod` that uses the image `redis:7` and exposes port `6379`. Use the command `redis-server /redis-master/redis.conf` to store redis configuration data and store this in an `emptyDir` volume. 
+Run the command `kubeadm upgrade apply v1.27.0`{{copy}} to upgrade the control plane components to 1.27.0. 
 
-Mount the `redis-config` configmap data to the pod for use within the container.
-
-**HINT:** create the pod YAML with a `--dry-run` using the following command:
+Determine why you received the following message: 
 ```
-k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-master/redis.conf' --dry-run=client -o yaml > redis-pod.yaml
+Specified version to upgrade to "v1.27.0" is at least one minor release higher than the kubeadm minor release (27 > 26). Such an upgrade is not supported
+```
+
+Run the appropriate commands to resolve this problem and get your cluster upgraded to 1.27.0.
+
+**HINT:** Check the version of kubeadm. You will realize that you can't upgrade past the current version of kubeadm.
+
+<br>
+<details><summary>Solution</summary>
+<br>
+
+```plain
+# get the version of kubeadm
+kubeadm version -o json | jq
 ```{{exec}}
+
+```plain
+# upgrade kubeadm to version 1.27.0
+sudo apt install -y kubeadm=1.27.0-00
+```{{exec}}
+
+</details>

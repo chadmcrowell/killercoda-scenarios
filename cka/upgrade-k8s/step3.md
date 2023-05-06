@@ -1,11 +1,17 @@
-Get a shell to the `redis-pod` pod and open the redis-cli.
+Run the `kubeadm upgrade plan`{{exec}} command again, and proceed with upgrading the control plan components to 1.27.0
 
-Run the following command to get the `maxmemory` configuration setting:
-```
-CONFIG GET maxmemory
-```{{copy}}
+<br>
+<details><summary>Solution</summary>
+<br>
 
-Run the following command to get the `maxmemory-policy` configuration setting:
-```
-CONFIG GET maxmemory-policy
-```{{copy}}
+```plain
+# run upgrade plan again
+kubeadm upgrade plan
+```{{exec}}
+
+```plain
+# upgrade components to version v1.27.0
+kubeadm upgrade apply v1.27.0
+```{{exec}}
+
+</details>

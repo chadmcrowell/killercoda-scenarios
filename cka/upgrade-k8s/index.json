@@ -8,15 +8,14 @@
         "steps": [
             {
                 "title": "Check the current version and the target version",
-                "text": "step1.md",
-                "verify": "step1/verify.sh"
+                "text": "step1.md"
             },
             {
-                "title": "Upgrade from 1.26.1 to 1.27.0",
+                "title": "Upgrade kubeadm",
                 "text": "step2.md"
             },
             {
-                "title": "Verify everything has been upgraded",
+                "title": "Upgrade Kubernetes",
                 "text": "step3.md"
             }
         ],
