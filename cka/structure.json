@@ -1,0 +1,11 @@
+{
+    "title": "CKA Exercises",
+    "description": "Study for the CKA and complete these exam exercises",
+    "items": [
+      {
+        "path": "upgrade-k8s",
+        "title": "Upgrading Kubernetes",
+        "description": "Upgrade the Kubernetes control plane components with kubeadm"
+      }
+    ]
+  }
