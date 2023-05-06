@@ -9,7 +9,6 @@
             {
                 "title": "Check the current version and the target version",
                 "text": "step1.md",
-                "background": "background.sh",
                 "verify": "step1/verify.sh"
             },
             {
