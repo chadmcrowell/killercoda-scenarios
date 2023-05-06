@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario, we'll learn how to upgrade the Kubernetes control plane components using kubeadm
+In this scenario, we'll learn how to apply a toleration to a pod, in order to match a taint on the node
 
 **ENJOY!**
