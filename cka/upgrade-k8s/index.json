@@ -9,7 +9,7 @@
             {
                 "title": "Check the current version and the target version",
                 "text": "step1.md",
-                "verify": "verify.sh"
+                "verify": "verify2.sh"
             },
             {
                 "title": "Upgrade from 1.26.1 to 1.27.0",
