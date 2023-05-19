@@ -7,8 +7,8 @@ Upgrade the kubelet to version 1.27.0 and verify that the kubelet has been upgra
 <br>
 
 ```plain
-# check the current version
-k version --short && k get no
+# check the current version of kubelet
+k get no
 ```{{exec}}
 
 ```plain
@@ -32,5 +32,9 @@ sudo apt update
 sudo apt install -y kubelet=1.27.0-00
 ```{{exec}}
 
+```plain
+# verify the version of kubelet has been upgraded to 1.27.0
+k get no
+```{{exec}}
 
 </details>
