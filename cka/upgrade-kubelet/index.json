@@ -7,7 +7,7 @@
         },
         "steps": [
             {
-                "title": "Check the current version and the target version",
+                "title": "Upgrade the kubelet to 1.27.0",
                 "text": "step1.md",
                 "background": "background.sh"
             }
