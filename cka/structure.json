@@ -26,6 +26,11 @@
         "path": "node-affinity",
         "title": "Apply node affinity to a pod",
         "description": "Apply node affinity to a pod in Kubernetes"
+      },
+      {
+        "path": "node-name",
+        "title": "Scheduling a pod to a specific node",
+        "description": "Schedule a pod to a node by the node's name"
       }
     ]
   }

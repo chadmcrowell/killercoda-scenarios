@@ -1,0 +1,22 @@
+{
+    "title": "Scheduling a pod to a specific node",
+    "description": "Schedule a pod to a node by the node's name",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a pod that's scheduled to controlplane",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
