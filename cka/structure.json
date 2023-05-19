@@ -21,6 +21,11 @@
         "path": "kubernetes-create-user",
         "title": "Create New User",
         "description": "Create a new user in Kubernetes"
+      },
+      {
+        "path": "node-affinity",
+        "title": "Apply node affinity to a pod",
+        "description": "Apply node affinity to a pod in Kubernetes"
       }
     ]
   }

@@ -1,0 +1,23 @@
+{
+    "title": "Applying Node Affinity",
+    "description": "Apply node affinity for a pod in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a pod with node affinity",
+                "text": "step1.md",
+                "background": "background.sh",
+                "verify": "verify.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
