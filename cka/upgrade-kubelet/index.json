@@ -1,0 +1,22 @@
+{
+    "title": "Upgrade Kubelet",
+    "description": "Use the apt package manager to upgrade kubelet to version 1.27.0",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check the current version and the target version",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    }
+}

@@ -31,6 +31,11 @@
         "path": "node-name",
         "title": "Scheduling a pod to a specific node",
         "description": "Schedule a pod to a node by the node's name"
+      },
+      {
+        "path": "upgrade-kubelet",
+        "title": "Upgrade Kubelet",
+        "description": "Use the apt package manager to upgrade kubelet to version 1.27.0"
       }
     ]
   }
