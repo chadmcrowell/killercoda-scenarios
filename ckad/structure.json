@@ -16,6 +16,11 @@
         "path": "node-affinity",
         "title": "Apply node affinity to a pod",
         "description": "Apply node affinity to a pod in Kubernetes"
+      },
+      {
+        "path": "dockerfile",
+        "title": "Create Dockerfile with Args and Run",
+        "description": "Create and run a container with a simple sleep command and entrypoint"
       }
     ]
   }

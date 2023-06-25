@@ -1,0 +1,22 @@
+{
+    "title": "Create Dockerfile with Args",
+    "description": "Create and run a container with a simple sleep command and entrypoint",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Dockerfile",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
