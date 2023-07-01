@@ -21,6 +21,11 @@
         "path": "dockerfile",
         "title": "Create Dockerfile with Args and Run",
         "description": "Create and run a container with a simple sleep command and entrypoint"
+      },
+      {
+        "path": "jobs",
+        "title": "Create a job and cronJob in Kubernetes",
+        "description": "Create and run a job and cronJob in Kubernetes"
       }
     ]
   }
