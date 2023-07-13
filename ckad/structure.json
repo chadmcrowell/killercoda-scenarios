@@ -3,6 +3,11 @@
     "description": "Study for the CKAD and complete these exam exercises",
     "items": [
       {
+        "path": "playground",
+        "title": "Playground",
+        "description": "2 node playground environment for Kubernetes"
+      },
+      {
         "path": "create-configmap",
         "title": "Creating a pod with configMap",
         "description": "Create a ConfigMap and use it inside of a pod in Kubernetes"
