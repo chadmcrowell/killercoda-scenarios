@@ -1,0 +1,22 @@
+{
+    "title": "Create a Pod with emptyDir volume",
+    "description": "Create a pod with two containers, each mounting the emptyDir volume at different mount paths",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Pod YAML",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}

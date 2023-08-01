@@ -31,6 +31,11 @@
         "path": "jobs",
         "title": "Create a job and cronJob in Kubernetes",
         "description": "Create and run a job and cronJob in Kubernetes"
+      },
+      {
+        "path": "volumes",
+        "title": "Create a Pod with emptyDir volume",
+        "description": "Create a pod with two containers, each mounting the emptyDir volume at different mount paths"
       }
     ]
   }

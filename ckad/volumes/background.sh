@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/pod-emptydir-two-containers-partial.yaml
