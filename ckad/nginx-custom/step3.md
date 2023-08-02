@@ -4,5 +4,7 @@ Build and tag the container image with the command `docker build -t chadmcrowell
 
 List the container images with the command `docker images`{{exec}}
 
-Push the image to Docker Hub with the command `docker push chadmcrowell/nginx-latest`{{copy}}
+Login to Docker Hub with the command `docker login`{{exec}}
+
+Push the image to Docker Hub with the command `docker push chadmcrowell/nginx-custom:v1`{{copy}}
 
