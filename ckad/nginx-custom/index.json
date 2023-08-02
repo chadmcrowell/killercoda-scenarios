@@ -1,0 +1,33 @@
+{
+    "title": "Create a custom nginx container image",
+    "description": "Create a custom nginx container image, push it to Dockerhub and run it with a pod in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Pull images and create index.html",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create Dockerfile",
+                "text": "step2.md"
+            },
+            {
+                "title": "Build and push image to Docker Hub",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create K8s deployment and service",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

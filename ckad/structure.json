@@ -36,6 +36,11 @@
         "path": "volumes",
         "title": "Create a Pod with emptyDir volume",
         "description": "Create a pod with two containers, each mounting the emptyDir volume at different mount paths"
+      },
+      {
+        "path": "nginx-custom",
+        "title": "Create a custom nginx container image",
+        "description": "Create a custom nginx container image, push it to Dockerhub and run it with a pod in Kubernetes"
       }
     ]
   }
