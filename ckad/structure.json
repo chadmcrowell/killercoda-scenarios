@@ -41,6 +41,11 @@
         "path": "nginx-custom",
         "title": "Create a custom nginx container image",
         "description": "Create a custom nginx container image, push it to Dockerhub and run it with a pod in Kubernetes"
-      }
+      },
+      {
+        "path": "nfs-vol",
+        "title": "Create a Pod with nfs volume type",
+        "description": "Create a pod that will mount a volume of NFS type"
+      }      
     ]
   }

@@ -1,0 +1,22 @@
+{
+    "title": "Use Pod with NFS volume in Kubernetes",
+    "description": "Create a pod that will mount a volume of NFS type",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Pod YAML",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
