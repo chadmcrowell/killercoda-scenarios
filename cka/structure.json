@@ -36,6 +36,11 @@
         "path": "upgrade-kubelet",
         "title": "Upgrade Kubelet",
         "description": "Use the apt package manager to upgrade kubelet to version 1.27.0"
+      },
+      {
+        "path": "logging",
+        "title": "Logging in Kubernetes",
+        "description": "Create two different pods, and inspecting each of the container logs"
       }
     ]
   }
