@@ -1,15 +1,5 @@
-#/bin/bash
+wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/nfs-server-install.sh
 
-apt update && apt -y upgrade
+chmod +x ./nfs-server-install.sh
 
-apt install -y nfs-server
-
-mkdir /data
-
-cat << EOF >> /etc/exports
-/data 172.30.2.2(rw,no_subtree_check,no_root_squash)
-EOF
-
-systemctl enable --now nfs-server
-
-exportfs -ar
+./nfs-server-install.sh
