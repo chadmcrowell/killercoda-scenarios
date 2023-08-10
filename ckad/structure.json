@@ -49,7 +49,7 @@
       },
       {
         "path": "logging",
-        "title": "Create a pod that the container within will log to STDOUT",
+        "title": "Logging in Kubernetes",
         "description": "Learn how to work with logs in Kubernetes"
       }      
     ]
