@@ -1,0 +1,26 @@
+{
+    "title": "Logging in Kubernetes",
+    "description": "Learn how to work with logs in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a pod that the container within will log to STDOUT",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a pod with an additional sidecar container",
+                "text": "step2.md"
+            }            
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

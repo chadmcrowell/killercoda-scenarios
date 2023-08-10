@@ -46,6 +46,11 @@
         "path": "nfs-vol",
         "title": "Create a Pod with nfs volume type",
         "description": "Create a pod that will mount a volume of NFS type"
+      },
+      {
+        "path": "logging",
+        "title": "Create a pod that the container within will log to STDOUT",
+        "description": "Learn how to work with logs in Kubernetes"
       }      
     ]
   }
