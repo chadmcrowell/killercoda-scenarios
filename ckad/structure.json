@@ -51,6 +51,11 @@
         "path": "logging",
         "title": "Logging in Kubernetes",
         "description": "Learn how to work with logs in Kubernetes"
+      },
+      {
+        "path": "metrics-server",
+        "title": "Monitoring Kubernetes with Metrics Server",
+        "description": "Learn how to use the metrics server to observe your Kubernetes cluster"
       }      
     ]
   }
