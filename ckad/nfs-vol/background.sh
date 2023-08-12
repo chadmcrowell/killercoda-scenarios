@@ -1,3 +1,5 @@
+wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/nfs-helper.sh
+
 wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/pod-nfs-vol.yaml
 
 wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/nfs-server-install.sh
