@@ -44,7 +44,7 @@
       },
       {
         "path": "nfs-vol",
-        "title": "Create a Pod with nfs volume type",
+        "title": "NFS Volumes in Kubernetes Pods",
         "description": "Create a pod that will mount a volume of NFS type"
       },
       {

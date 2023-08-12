@@ -7,9 +7,21 @@
         },
         "steps": [
             {
-                "title": "Create Pod YAML",
+                "title": "Install NFS Server on `node01`",
                 "text": "step1.md",
                 "background": "background.sh"
+            },
+            {
+                "title": "Create a pod that mounts the NFS share",
+                "text": "step2.md"
+            },
+            {
+                "title": "View the data on written by the container",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create another pod that shares the same NFS volume",
+                "text": "step4.md"
             }
         ],
         "finish": {
