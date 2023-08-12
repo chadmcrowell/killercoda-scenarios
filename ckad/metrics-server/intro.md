@@ -3,6 +3,8 @@
 
 ### Welcome !
 
-In this scenario, we'll learn how to create a pod in two different ways, followed by viewing their logs in Kubernetes!
+In this scenario, we'll learn how monitor the Kubernetes cluster using the metrics server.
+
+> NOTE: You will need to wait 30 seconds for the Metrics Server to be installed
 
 **ENJOY!**
