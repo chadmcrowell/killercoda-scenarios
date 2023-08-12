@@ -9,6 +9,7 @@
             {
                 "title": "Create a pod that the container within will log to STDOUT",
                 "text": "step1.md",
+                "foreground": "foreground.sh",
                 "background": "background.sh"
             },
             {
