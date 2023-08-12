@@ -7,14 +7,18 @@
         },
         "steps": [
             {
-                "title": "Create a pod that the container within will log to STDOUT",
+                "title": "Show metrics for nodes in the cluster",
                 "text": "step1.md",
                 "foreground": "foreground.sh",
                 "background": "background.sh"
             },
             {
-                "title": "Create a pod with an additional sidecar container",
+                "title": "Show metrics for pods in the default namespace",
                 "text": "step2.md"
+            },
+            {
+                "title": "Sort metrics by CPU or Memory",
+                "text": "step3.md"
             }            
         ],
         "finish": {

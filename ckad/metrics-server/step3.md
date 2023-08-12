@@ -1,5 +1,3 @@
-Now that the `pod-logging-sidecar` container is running, we can get a shell to the sidecar container with the command `k exec -it pod-logging-sidecar -- sh`{{exec}}
+If you are running a lot of pods, and want to quickly determine which pods are consuming the most CPU, run the command `k top po --sort-by=cpu`{{exec}}
 
-Once your prompt changes, you know that you're in the container shell
-
-Let's take a look at the logs from the main container with the command `ls /var/log`
+If you'd like to determine which pods are consuming the most memory, run the command `k top po --sort-by=memory`{{exec}}
