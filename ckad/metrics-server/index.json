@@ -1,6 +1,6 @@
 {
-    "title": "Logging in Kubernetes",
-    "description": "Learn how to work with logs in Kubernetes",
+    "title": "Monitoring Kubernetes with the Metrics Server",
+    "description": "Learn how to use `kubectl top` to show metrics in Kubernetes",
     "details": {
         "intro": {
             "text": "intro.md"
@@ -26,6 +26,6 @@
         }
     },
     "backend": {
-        "imageid": "kubernetes-kubeadm-1node-rapid"
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
     }
 }
