@@ -12,7 +12,7 @@ The output should look similar to the following:
 NAME           CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
 controlplane   781m         78%    1238Mi          65% 
 ```
-
+___
 ## CHALLENGE
 
 Use the `kubectl top` command to view the CPU and memory usage for the other node in the cluster.
