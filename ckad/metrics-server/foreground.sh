@@ -1,1 +1,1 @@
-echo "Installing Metrics Server..." && sleep 30
+echo "Installing Metrics Server..." && sleep 15
