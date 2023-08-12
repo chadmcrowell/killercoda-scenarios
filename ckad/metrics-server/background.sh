@@ -7,3 +7,5 @@ kubectl apply -f https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-e
 kubectl apply -f https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/pod-emptydir-two-containers-full.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/pod-hostpath.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_02/pod-php-apache.yaml

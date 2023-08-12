@@ -31,4 +31,10 @@ k get no
 k top no node01
 ```{{exec}}
 
+The output should look similar to the following:
+```bash
+NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+node01   40m          4%     707Mi           37%
+```
+
 </details>
