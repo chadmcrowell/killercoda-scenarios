@@ -12,7 +12,7 @@ emptydir-simple   container2   0m           0Mi
 ___
 ## CHALLENGE
 
-Use the `kubectl top` command to show the metrics for the other pod that's running in the default namespace.
+Use the `kubectl top` command to show the metrics for the pod named `pod-hostpath` that's running in the default namespace.
 
 <br>
 <details><summary>Solution</summary>
