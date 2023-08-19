@@ -28,14 +28,14 @@ svc-java-green   NodePort    10.97.210.25   <none>        8080:30000/TCP   3m41s
 View the web page via the `nodePort` by clicking on the menu in the upper right, and selecting "Traffic / Ports" 
 ![Killercoda Traffic Ports Button](./assets/killercoda-traffic-ports.png)
 
-In the "Custom Ports" field, enter `30000` and click the "Access" button
+In the "Custom Ports" field, enter `30001` and click the "Access" button
 
 The web page will appear and say "Hello Blue"
 
 ___
 ## CHALLENGE
 
-Create a deployment named `java-hello` that uses the image `chadmcrowell/hello-world-java` and apply the label `version=3` to the pods within that deployment. Create a `nodePort` service that will expose the deployment on port 8080 to the target pod on port 8080.
+Create a deployment named `java-hello` that uses the image `chadmcrowell/hello-world-java` and apply the label `version=3` to the pods within that deployment. Create a `nodePort` service that will expose the deployment on port 8080 to the target pod on port 8080. Finally, get the `nodePort` number and view the web page. What does the webpage say?
 
 <br>
 <details><summary>Solution</summary>
@@ -79,5 +79,14 @@ status: {}
 # create a service that exposes the deployment on port 8080
 k expose deploy java-hello --port 8080 --target-port 8080 --type=nodePort
 ```{{exec}}
+
+```plain
+# check the svc and note the `nodePort` number
+k get svc
+```{{exec}}
+
+Copy the port number and paste it into the custom ports field. Click access and see what the web page says.
+
+> BONUS: Tell us the answer in the KubeSkills community: https://community.kubeskills.com
 
 </details>
