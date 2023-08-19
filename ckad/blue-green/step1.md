@@ -24,7 +24,7 @@ svc-java-green   NodePort    10.97.210.25   <none>        8080:30000/TCP   3m41s
 ```
 
 View the web page via the `nodePort` by clicking on the menu in the upper right, and selecting "Traffic / Ports" 
-![Killercoda Traffic Ports Button](killercoda-traffic-ports.png)
+![Killercoda Traffic Ports Button](./assets/killercoda-traffic-ports.png)
 
 In the "Custom Ports" field, enter `30000` and click the "Access" button
 
