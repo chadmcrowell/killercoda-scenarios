@@ -18,6 +18,7 @@ With the file open, change the selector to `app: hello-java-green` and `version:
 <br>
 <details><summary>Click here to see the final result of the YAML file</summary>
 <br>
+
 ```yaml
 apiVersion: v1
 kind: Service
