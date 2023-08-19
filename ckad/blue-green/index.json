@@ -1,0 +1,26 @@
+{
+    "title": "Blue Green Deployments in Kubernetes",
+    "description": "Learn how to perform a blue/green deployment in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "View version 1 and version 2 of our app",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Change the service to point to version 2",
+                "text": "step2.md"
+            }            
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}

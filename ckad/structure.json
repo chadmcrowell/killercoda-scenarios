@@ -56,6 +56,11 @@
         "path": "metrics-server",
         "title": "Monitoring Kubernetes with Metrics Server",
         "description": "Learn how to use the metrics server to observe your Kubernetes cluster"
-      }      
+      },
+      {
+        "path": "blue-green",
+        "title": "Blue Green Deployments in Kubernetes",
+        "description": "Learn how to perform a blue/green deployment in Kubernetes"
+      }     
     ]
   }
