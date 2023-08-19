@@ -6,7 +6,7 @@ wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_
 
 wget https://raw.githubusercontent.com/chadmcrowell/acing-the-ckad-exam/main/ch_03/svc-spring-boot-green.yaml
 
-kubectl create -f deploy-sprint-boot-blue.yaml
+kubectl create -f deploy-spring-boot-blue.yaml
 
 kubectl create -f deploy-spring-boot-green.yaml
 
