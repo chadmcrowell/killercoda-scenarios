@@ -2,6 +2,8 @@ You will see two different versions of our application, running as deployments i
 
 List the deployments with the command `k get deploy`{{exec}}
 
+> ⚠️ The deployment may take up to 1 minute to start and become ready
+
 The output should look similar to the following:
 
 ```bash
