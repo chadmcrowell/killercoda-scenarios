@@ -41,6 +41,8 @@ spec:
 
 </details>
 
+<br>
+
 Save the file and exit out of vim. (`wq!`)
 
 Apply the YAML file and change the existing service with the command `k apply -f svc-spring-boot-blue.yaml`{{exec}}
