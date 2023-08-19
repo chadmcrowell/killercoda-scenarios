@@ -2,7 +2,7 @@ You will see two different versions of our application, running as deployments i
 
 List the deployments with the command `k get deploy`{{exec}}
 
-> ⚠️ The deployment may take up to 1 minute to start and become ready
+> ⚠️ The deployment may take up to 84 seconds for the deployment to startup and become ready. Keep trying the `k get deploy` command until you see 3/3 ready.
 
 The output should look similar to the following:
 
@@ -35,26 +35,49 @@ The web page will appear and say "Hello Blue"
 ___
 ## CHALLENGE
 
-Use the `kubectl top` command to view the CPU and memory usage for the other node in the cluster.
+Create a deployment named `java-hello` that uses the image `chadmcrowell/hello-world-java` and apply the label `version=3` to the pods within that deployment. Create a `nodePort` service that will expose the deployment on port 8080 to the target pod on port 8080.
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
 ```plain
-# get the name of the second node in the cluster
-k get no
+# create a YAML file "deploy.yaml" for a deployment using the image `chadmcrowell/hello-world-java`
+k create deploy java-hello --image chadmcrowell/hello-world-java --dry-run=client -o yaml > deploy.yaml
 ```{{exec}}
+
+The YAML file should look similar to the following:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: java-hello
+  name: java-hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-hello
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: java-hello
+        version: 3
+    spec:
+      containers:
+      - image: chadmcrowell/hello-world-java
+        name: hello-world-java
+        resources: {}
+status: {}
+```
 
 ```plain
-# show the metrics for the node named node01
-k top no node01
+# create a service that exposes the deployment on port 8080
+k expose deploy java-hello --port 8080 --target-port 8080 --type=nodePort
 ```{{exec}}
-
-The output should look similar to the following:
-```bash
-NAME     CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
-node01   40m          4%     707Mi           37%
-```
 
 </details>
