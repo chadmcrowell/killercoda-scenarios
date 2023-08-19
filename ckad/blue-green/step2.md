@@ -42,7 +42,7 @@ spec:
 
 Save the file and exit out of vim. (`wq!`)
 
-Apply the YAML file and change the existing service with the command `k apply -f svc-spring-boot-blue.yaml`
+Apply the YAML file and change the existing service with the command `k apply -f svc-spring-boot-blue.yaml`{{exec}}
 
 Now, when you visit port `30001`, the web page should display "Hello, Green"
 
