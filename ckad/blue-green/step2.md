@@ -3,7 +3,7 @@ Now that we've seen version 1 of the app, let's do the same for version 2. The w
 Again click on the menu in the upper right, and selecting "Traffic / Ports". This time, in the "Custom Ports" field, enter `30000` and click the "Access" button
 
 The web page will appear and say "Hello Green"
-![hello green web app](assets/hello-green-app-in-browser.png)
+![hello green web app](./assets/hello-green-app-in-browser.png)
 
 Now, let's perform a blue/green deployment by changing the service named `svc-java-blue`. 
 
