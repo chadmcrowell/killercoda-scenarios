@@ -7,3 +7,7 @@ sed -i 's|targetPort: 80|nodePort: 30942|g' ./svc.yaml
 sleep 2
 
 kubectl apply -f ./svc.yaml
+
+sed 's/PORT/30942/g' /etc/killercoda/host
+
+HOST=$(cat /etc/killercoda/host)

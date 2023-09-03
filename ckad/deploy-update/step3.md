@@ -17,6 +17,6 @@ Update the deployment image from `chadmcrowell/nginx-for-k8s:v1` to `chadmcrowel
 k -n session283884 set image deploy scaler nginx-for-k8s=chadmcrowell/nginx-for-k8s:v2
 ```{{exec}}
 
-View the new version of the app in a browser here: [chadmcrowell/nginx-for-k8s:v2](https://57fe0b05-e935-438b-8353-25bc6bf240f5-10-244-9-173-30942.saci.r.killercoda.com/)
+View the new version of the app in a browser here: [chadmcrowell/nginx-for-k8s:v2]($HOST)
 
 </details>
