@@ -6,9 +6,9 @@ Scale the `scaler` deployment in the `SESSION-283884` namespace from 1 pod to 3 
 <details><summary>Solution</summary>
 <br>
 
-Scale the `scaler` deployment in the `SESSION-283884` namespace from 1 pod to 3 pods.
+Scale the `scaler` deployment in the `session283884` namespace from 1 pod to 3 pods.
 ```bash
-k -n SESSION-283884 scale deploy scaler --replicas 3
+k -n session283884 scale deploy scaler --replicas 3
 ```{{exec}}
 
 </details>

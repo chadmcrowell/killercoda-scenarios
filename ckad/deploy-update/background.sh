@@ -1,1 +1,1 @@
-kubectl create ns SESSION-283884
+kubectl create ns session283884

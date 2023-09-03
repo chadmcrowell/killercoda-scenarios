@@ -8,9 +8,9 @@ A replicaSet creates the underlying pods, ensuring that the desired number of id
 
 Read more about ReplicaSets in the official Kubernetes documentation: [https://kubernetes.io/docs](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
 
-Use `kubectl` command-line tool to create a deployment in the `SESSION-283884` namespace named "scaler" that uses the image `chadmcrowell/nginx-for-k8s:v1`.
+Use `kubectl` command-line tool to create a deployment in the `session283884` namespace named "scaler" that uses the image `chadmcrowell/nginx-for-k8s:v1`.
 
-Use `kubectl` to list the deployments, replicaSets, and pods in the `SESSION-283884` namespace.
+Use `kubectl` to list the deployments, replicaSets, and pods in the `session283884` namespace.
 
 <br>
 <details><summary>Solution</summary>
@@ -18,17 +18,17 @@ Use `kubectl` to list the deployments, replicaSets, and pods in the `SESSION-283
 
 Create a deployment named "scaler" that uses the image `chadmcrowell/nginx-for-k8s:v1`
 ```bash
-k -n SESSION-283884 create deploy nginx-for-k8s --image chadmcrowell/nginx-for-k8s:v1
+k -n session283884 create deploy nginx-for-k8s --image chadmcrowell/nginx-for-k8s:v1
 ```{{exec}}
 
 List the deployments in the default namespace
 ```bash
-k -n SESSION-283884 get deploy,rs,po
+k -n session283884 get deploy,rs,po
 ```{{exec}}
 
 > **OPTIONAL:** Create a NodePort service that exposes the "scaler" deployment
 ```bash
-k expose deploy nginx-for-k8s --port 80 --type NodePort
+k -n session283884 expose deploy nginx-for-k8s --port 80 --type NodePort
 ```{{exec}}
 
 </details>
