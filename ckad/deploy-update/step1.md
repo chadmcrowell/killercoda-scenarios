@@ -33,4 +33,9 @@ k -n session283884 get deploy,rs,po
 k -n session283884 expose deploy scaler --port 80 --type NodePort
 ```{{exec}}
 
+List the services in the `session283884` namespace and retrieve the `nodePort`
+```bash
+k -n session283884 get svc
+```{{exec}}
+
 </details>
