@@ -8,7 +8,7 @@ sleep 2
 
 kubectl apply -f ./svc.yaml
 
-sed 's/PORT/30942/g' /etc/killercoda/host
+sed -i 's/PORT/30942/g' /etc/killercoda/host
 
 # Read the contents of the file
 data=$(cat /etc/killercoda/host)
