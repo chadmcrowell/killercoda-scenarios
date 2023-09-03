@@ -12,13 +12,15 @@ Use `kubectl` command-line tool to create a deployment in the `session283884` na
 
 Use `kubectl` to list the deployments, replicaSets, and pods in the `session283884` namespace.
 
+> **HINT:** Instead of typing out the name of the namespace use the tab key to autocomplete
+
 <br>
 <details><summary>Solution</summary>
 <br>
 
 Create a deployment named "scaler" that uses the image `chadmcrowell/nginx-for-k8s:v1`
 ```bash
-k -n session283884 create deploy nginx-for-k8s --image chadmcrowell/nginx-for-k8s:v1
+k -n session283884 create deploy scaler --image chadmcrowell/nginx-for-k8s:v1
 ```{{exec}}
 
 List the deployments in the default namespace
@@ -28,7 +30,7 @@ k -n session283884 get deploy,rs,po
 
 > **OPTIONAL:** Create a NodePort service that exposes the "scaler" deployment
 ```bash
-k -n session283884 expose deploy nginx-for-k8s --port 80 --type NodePort
+k -n session283884 expose deploy scaler --port 80 --type NodePort
 ```{{exec}}
 
 </details>
