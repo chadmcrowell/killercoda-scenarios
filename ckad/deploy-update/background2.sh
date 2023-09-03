@@ -9,5 +9,3 @@ sleep 2
 kubectl apply -f ./svc.yaml
 
 sed 's/PORT/30942/g' /etc/killercoda/host
-
-HOST=$(cat /etc/killercoda/host)
