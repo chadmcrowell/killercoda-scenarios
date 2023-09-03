@@ -11,7 +11,7 @@ kubectl apply -f ./svc.yaml
 sed -i 's/PORT/30942/g' /etc/killercoda/host
 
 # Read the contents of the file
-data=$(cat /etc/killercoda/host)
+# DATA=$(cat /etc/killercoda/host)
 
 # Append the HTML link to the file
 # echo -e "\n\n<a href=\"$data\">Link Name</a>\n"
