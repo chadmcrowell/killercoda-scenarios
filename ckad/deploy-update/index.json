@@ -13,7 +13,8 @@
             },
             {
                 "title": "Scale the deployment to 3 replicas",
-                "text": "step2.md"
+                "text": "step2.md",
+                "background": "background2.sh"
             },
             {
                 "title": "Deploy a new version of the app",
