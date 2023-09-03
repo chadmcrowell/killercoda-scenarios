@@ -15,3 +15,12 @@ sed -i 's/PORT/30942/g' /etc/killercoda/host
 
 # Append the HTML link to the file
 # echo -e "\n\n<a href=\"$data\">Link Name</a>\n"
+
+# Path to the file
+file_path="/etc/killercoda/host"
+
+# Read the first line of the file
+first_line=$(head -n 1 $file_path)
+
+# Format as an HTML link and print
+# echo "<a href=\"$first_line\">Link</a>"
