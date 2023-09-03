@@ -1,0 +1,30 @@
+{
+    "title": "Create and Update Deployments",
+    "description": "Create a deployment in Kubernetes, scale the deployment and rollout to a new version",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a deployment named 'scaler'",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Scale the deployment to 3 replicas",
+                "text": "step2.md"
+            },
+            {
+                "title": "Deploy a new version of the app",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    }
+}
