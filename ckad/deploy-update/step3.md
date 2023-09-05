@@ -18,7 +18,6 @@ k -n session283884 set image deploy scaler nginx-for-k8s=chadmcrowell/nginx-for-
 ```{{exec}}
 
 View the new version of the app in a browser here: 
-
-<a href="/etc/killercoda/host">Link</a>
+[click here]({{TRAFFIC_HOST1_30942}})
 
 </details>
