@@ -1,0 +1,30 @@
+{
+    "title": "Adding a Bucket Source in Flux CD",
+    "description": "Create an S3 Bucket as a Flux Source with Kustomization for Fun",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Craete IAM user and S3 Bucket with Policies",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create Flux Bucket Source",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create Flux Kustomization",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node"
+    }
+}

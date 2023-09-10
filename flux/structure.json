@@ -1,0 +1,11 @@
+{
+    "title": "Flux CD Scenarios",
+    "description": "Play with Flux CD and learn GitOps",
+    "items": [
+      {
+        "path": "bucket-source",
+        "title": "Adding a Bucket Source in Flux CD",
+        "description": "Create an S3 Bucket as a Flux Source with Kustomization for Fun"
+      }
+    ]
+  }
