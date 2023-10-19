@@ -3,12 +3,12 @@ Run the appropriate command to check the current version of the API server, cont
 The output should look similar to the following:
 ```bash
 COMPONENT                 CURRENT   TARGET
-kube-apiserver            v1.26.1   v1.26.4
-kube-controller-manager   v1.26.1   v1.26.4
-kube-scheduler            v1.26.1   v1.26.4
-kube-proxy                v1.26.1   v1.26.4
-CoreDNS                   v1.9.3    v1.9.3
-etcd                      3.5.6-0   3.5.6-0
+kube-apiserver            v1.28.1   v1.28.3
+kube-controller-manager   v1.28.1   v1.28.3
+kube-scheduler            v1.28.1   v1.28.3
+kube-proxy                v1.28.1   v1.28.3
+CoreDNS                   v1.10.1   v1.10.1
+etcd                      3.5.9-0   3.5.9-0
 ```
 
 **HINT:** try `kubeadm -h` for help with command options

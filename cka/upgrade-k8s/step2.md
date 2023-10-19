@@ -20,7 +20,7 @@ kubeadm version -o json | jq
 
 ```plain
 # upgrade kubeadm to version 1.28.3
-sudo apt install -y kubeadm=1.28.3-00
+sudo apt install -y kubeadm=1.28.3-1.1
 ```{{exec}}
 
 </details>
