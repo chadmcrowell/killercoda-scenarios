@@ -49,8 +49,8 @@
       },
       {
         "path": "configmaps",
-        "title": "ConfigMaps and Secrets in Kubernetes",
-        "description": "Create configmaps and secrets in Kubernetes"
+        "title": "ConfigMaps in Kubernetes",
+        "description": "Create and use configmaps in Kubernetes"
       }
     ]
   }

@@ -1,22 +1,11 @@
-Create a deployment named "mysql" that uses the image "mysql:8". 
+Get a shell to the `redis-pod` pod and open the redis-cli.
 
-View the deployment and pod, and find out why it's not running
+Run the following command to get the `maxmemory` configuration setting:
+```
+CONFIG GET maxmemory
+```{{copy}}
 
-Fix the deployment in order to get the pod in a running state.
-
-<br>
-<details><summary>Solution</summary>
-<br>
-
-```bash
-k create deploy mysql --image mysql:8
-```{{exec}}
-
-```bash
-# in deployment, add
-env:
-  - name: MY_SQL_PASSWORD
-  value: "password"
-```{{exec}}
-
-</details>
+Run the following command to get the `maxmemory-policy` configuration setting:
+```
+CONFIG GET maxmemory-policy
+```{{copy}}

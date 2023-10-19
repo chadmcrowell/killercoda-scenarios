@@ -1,24 +1,25 @@
 {
-    "title": "ConfigMaps and Secrets in Kubernetes",
-    "description": "Learn how to work with configmaps and secrets",
+    "title": "Create and use a ConfigMap",
+    "description": "Create a ConfigMap and use it inside of a pod in Kubernetes",
     "details": {
         "intro": {
             "text": "intro.md"
         },
         "steps": [
             {
-                "title": "Create a configmap",
+                "title": "create a configMap",
                 "text": "step1.md",
+                "foreground": "foreground.sh",
                 "background": "background.sh"
             },
             {
-                "title": "Create a pod that will use the configMap",
+                "title": "Create the YAML for a pod with configMap attached",
                 "text": "step2.md"
             },
             {
-                "title": "Get the configMap data from the pod",
+                "title": "Check the pod configuration settings",
                 "text": "step3.md"
-            }          
+            }
         ],
         "finish": {
             "text": "finish.md"

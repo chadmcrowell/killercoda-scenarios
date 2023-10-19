@@ -1,43 +1,8 @@
-Create a pod that will have two containers, one main container and another sidecar container that will collect the main containers logs
+Create a pod named `redis-pod` that uses the image `redis:7` and exposes port `6379`. Use the command `redis-server /redis-master/redis.conf` to store redis configuration data and store this in an `emptyDir` volume. 
 
-Using kubectl, view the logs from the container named "sidecar"
+Mount the `redis-config` configmap data to the pod for use within the container.
 
-<br>
-<details><summary>Solution</summary>
-<br>
-
-```bash
-cat << EOF > pod-logging-sidecar.yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: pod-logging-sidecar
-spec:
-  containers:
-  - image: busybox
-    name: main
-    args: [ 'sh', '-c', 'while true; do echo "$(date)\n" >> /var/log/main-container.log; sleep 5; done' ]
-    volumeMounts:
-      - name: varlog
-        mountPath: /var/log
-  - name: sidecar
-    image: busybox
-    args: [ /bin/sh, -c, 'tail -f /var/log/main-container.log' ]
-    volumeMounts:
-      - name: varlog
-        mountPath: /var/log
-  volumes:
-    - name: varlog
-      emptyDir: {}
-EOF
+**HINT:** create the pod YAML with a `--dry-run` using the following command:
+```
+k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-master/redis.conf' --dry-run=client -o yaml > redis-pod.yaml
 ```{{exec}}
-
-```bash
-k logs pod-logging-sidecar -c sidecar
-
-k logs pod-logging-sidecar -all-containers
-
-k logs pod-logging-sidecar -all-containers -f
-```{{exec}}
-
-</details>
