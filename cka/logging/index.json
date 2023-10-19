@@ -14,7 +14,11 @@
             {
                 "title": "Create a pod with an additional sidecar container",
                 "text": "step2.md"
-            }            
+            },
+            {
+                "title": "Create a deployment of mysql",
+                "text": "step3.md"
+            }          
         ],
         "finish": {
             "text": "finish.md"
