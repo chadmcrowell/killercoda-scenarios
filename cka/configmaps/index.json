@@ -1,0 +1,30 @@
+{
+    "title": "ConfigMaps and Secrets in Kubernetes",
+    "description": "Learn how to work with configmaps and secrets",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a configmap",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a pod that will use the configMap",
+                "text": "step2.md"
+            },
+            {
+                "title": "Get the configMap data from the pod",
+                "text": "step3.md"
+            }          
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
