@@ -24,6 +24,8 @@ EOF
 
 ```bash
 k logs pod-logging
+
+k logs pod-logging -f
 ```{{exec}}
 
 </details>
