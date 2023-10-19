@@ -1,5 +1,13 @@
 Create a pod with one container that will log to STDOUT
 
+
+
+Use kubectl to view the logs from this container within the pod named "pod-logging"
+
+<br>
+<details><summary>Solution</summary>
+<br>
+
 ```bash
 cat << EOF > pod-logging.yaml
 apiVersion: v1
@@ -14,14 +22,8 @@ spec:
 EOF
 ```{{exec}}
 
-Use kubectl to view the logs from this container within the pod named "pod-logging"
-
-<br>
-<details><summary>Solution</summary>
-<br>
-
 ```bash
 k logs pod-logging
-```
+```{{exec}}
 
 </details>
