@@ -19,8 +19,10 @@ kubeadm version -o json | jq
 ```{{exec}}
 
 ```plain
-# upgrade kubeadm to version 1.27.0
-sudo apt install -y kubeadm=1.27.0-00
+# upgrade kubeadm to version 1.28.3
+sudo apt install -y kubeadm=1.28.3-00
 ```{{exec}}
 
 </details>
+
+[Reference](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl)
