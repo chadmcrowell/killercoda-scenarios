@@ -1,5 +1,6 @@
 Create a pod with one container that will log to STDOUT
 
+```bash
 cat << EOF > pod-logging.yaml
 apiVersion: v1
 kind: Pod
@@ -11,6 +12,7 @@ spec:
     image: busybox
     args: [/bin/sh, -c, 'while true; do echo $(date); sleep 1; done']
 EOF
+```{{exec}}
 
 Use kubectl to view the logs from this container within the pod named "pod-logging"
 
