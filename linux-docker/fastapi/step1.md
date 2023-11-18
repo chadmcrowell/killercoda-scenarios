@@ -34,8 +34,8 @@ EOL
 ```{{exec}}
 
 Install all packages via the newly created requirements file with the following command:
-```
+```bash
 python -m pip install -r src/requirements.txt
-```{exec}
+```{{exec}}
 
 Now, let's start writing our FastAPI code!
