@@ -8,7 +8,8 @@
         "steps": [
             {
                 "title": "Setup python environment",
-                "text": "step1.md"
+                "text": "step1.md",
+                "background": "background.sh"
             },
             {
                 "title": "Create python app locally",
