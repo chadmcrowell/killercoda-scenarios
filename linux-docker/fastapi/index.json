@@ -1,0 +1,41 @@
+{
+    "title": "Create fastAPI Docker Image",
+    "description": "Create a python app from fastAPI and build a container image to push to a registry",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Setup python environment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create python app locally",
+                "text": "step2.md"
+            },
+            {
+                "title": "test app locally",
+                "text": "step3.md"
+            },
+            {
+                "title": "create Dockerfile",
+                "text": "step4.md"
+            },
+            {
+                "title": "Build and run container",
+                "text": "step5.md"
+            },
+            {
+                "title": "push to Docker registry",
+                "text": "step6.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "ubuntu:2004"
+    }
+}
