@@ -10,6 +10,10 @@
                 "title": "Create a job",
                 "text": "step1.md",
                 "background": "background.sh"
+            },
+            {
+                "title": "Create a cronJob",
+                "text": "step12.md"
             }
         ],
         "finish": {
