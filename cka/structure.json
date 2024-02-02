@@ -38,6 +38,11 @@
         "description": "Using kubectl, list the pods in the kube-system namespace with their IP addresses"
       },
       {
+        "path": "view-certificate",
+        "title": "View the Kubelet Client Certificate",
+        "description": "View the client certificate that kubelet uses to authenticate to the Kubernetes API"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"

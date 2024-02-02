@@ -1,0 +1,21 @@
+{
+    "title": "View the Kubelet Client Certificate",
+    "description": "View the client certificate that kubelet uses to authenticate to the Kubernetes API",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "View the client certificate",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
