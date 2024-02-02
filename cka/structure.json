@@ -8,6 +8,11 @@
         "description": "2 node playground environment for Kubernetes"
       },
       {
+        "path": "api-resources",
+        "title": "List API Resources",
+        "description": "List all the K8s API resources in your cluster"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
