@@ -6,7 +6,7 @@ Perform the command to list all API resources in your Kubernetes cluster. Save t
 <br>
 
 ```bash
-kubectl api-resources
-```
+kubectl api-resources > resources.csv
+```{{exec}}
 
 </details>
