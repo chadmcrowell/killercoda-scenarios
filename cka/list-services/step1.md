@@ -1,12 +1,12 @@
-Use the declarative syntax to create a pod from a YAML file in Kubernetes. Save the YAML file as chap1-pod.yaml. Use the `kubectl run` command to create the pod.
+Using the kubectl CLI tool, list all the services created in your Kubernetes cluster, across all namespaces. Save the output of the command to a file named “all-k8s-services.txt”.
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
 ```bash
-# use kubectl to create a dry run of a pod, output to YAML, and save it to the file 'chap1-pod.yaml' 
-kubectl run pod --image nginx --dry-run=client -o yaml > chap1-pod.yaml
+# list the services with the '-A' for all namespaces and save to the file 'all-k8s-services.txt'
+kubectl get svc -A > all-k8s-services.txt
 ```{{exec}}
 
 </details>
