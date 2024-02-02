@@ -1,0 +1,21 @@
+{
+    "title": "List the Pods and Their IP Addresses",
+    "description": "Using kubectl, list the pods in the kube-system namespace with their IP addresses",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "List the Pods and IP Addresses",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

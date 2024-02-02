@@ -33,6 +33,11 @@
         "description": "Use the kubectl command-line to list all Kubernetes services"
       },
       {
+        "path": "pod-ip",
+        "title": "List the Pods and Their IP Addresses",
+        "description": "Using kubectl, list the pods in the kube-system namespace with their IP addresses"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
