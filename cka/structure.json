@@ -13,6 +13,11 @@
         "description": "List all the K8s API resources in your cluster"
       },
       {
+        "path": "linux-services",
+        "title": "Linux System Services",
+        "description": "List all the Linux system services associated with Kubernetes"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
