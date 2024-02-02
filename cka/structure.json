@@ -23,6 +23,11 @@
         "description": "Get the status of the kubelet service running on the Kubernetes node"
       },
       {
+        "path": "declarative-pod",
+        "title": "Create a Pod Declaratively",
+        "description": "Use the kubectl command-line to create the YAML for a pod declaratively"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"

@@ -1,0 +1,21 @@
+{
+    "title": "Create a Pod Declaratively",
+    "description": "Use the kubectl command-line to create the YAML for a pod declaratively",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Get Kubelet Status",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
