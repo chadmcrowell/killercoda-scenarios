@@ -1,0 +1,21 @@
+{
+    "title": "Kubelet Status",
+    "description": "Get the status of the kubelet service running on the Kubernetes node",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Get Kubelet Status",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

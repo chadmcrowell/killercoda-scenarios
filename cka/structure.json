@@ -18,6 +18,11 @@
         "description": "List all the Linux system services associated with Kubernetes"
       },
       {
+        "path": "kubelet-status",
+        "title": "Kubelet Status",
+        "description": "Get the status of the kubelet service running on the Kubernetes node"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
