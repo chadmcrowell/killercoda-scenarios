@@ -28,6 +28,11 @@
         "description": "Use the kubectl command-line to create the YAML for a pod declaratively"
       },
       {
+        "path": "list-services",
+        "title": "List All Kubernetes Services",
+        "description": "Use the kubectl command-line to list all Kubernetes services"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"

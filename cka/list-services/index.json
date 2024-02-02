@@ -1,13 +1,13 @@
 {
-    "title": "Create a Pod Declaratively",
-    "description": "Use the kubectl command-line to create the YAML for a pod declaratively",
+    "title": "List All Kubernetes Services",
+    "description": "Use the kubectl command-line to list all Kubernetes services",
     "details": {
         "intro": {
             "text": "intro.md"
         },
         "steps": [
             {
-                "title": "Create the Pod YAML",
+                "title": "List the Kubernetes Services",
                 "text": "step1.md"
             }
         ],
