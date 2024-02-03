@@ -20,6 +20,8 @@ spec:
     name: secure-pod
 EOF
 
+# watch the 'secure-pod' pod waiting until the pod is running before proceeding
+kubectl get po -w
 ```{{exec}}
 
 Verify that the service account token is NOT mounted to the pod
