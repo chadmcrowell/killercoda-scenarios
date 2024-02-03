@@ -13,6 +13,10 @@
             {
                 "title": "Create Role Binding",
                 "text": "step2.md"
+            },
+            {
+                "title": "Create Service Account Role Binding",
+                "text": "step3.md"
             }
         ],
         "finish": {
