@@ -43,6 +43,11 @@
         "description": "View the client certificate that kubelet uses to authenticate to the Kubernetes API"
       },
       {
+        "path": "create-role",
+        "title": "Create a Role",
+        "description": "Create a new role in Kubernetes named sa-creator"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"

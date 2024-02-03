@@ -1,0 +1,21 @@
+{
+    "title": "Create a Role",
+    "description": "Create a new role in Kubernetes named sa-creator",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Role",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
