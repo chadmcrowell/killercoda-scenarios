@@ -44,8 +44,8 @@
       },
       {
         "path": "create-role",
-        "title": "Create a Role",
-        "description": "Create a new role in Kubernetes named sa-creator"
+        "title": "Create a Role and Role Binding",
+        "description": "Create a new role in Kubernetes named sa-creator and bind that role to a user"
       },
       {
         "path": "upgrade-k8s",

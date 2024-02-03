@@ -1,6 +1,6 @@
 {
-    "title": "Create a Role",
-    "description": "Create a new role in Kubernetes named sa-creator",
+    "title": "Create a Role and Role Binding",
+    "description": "Create a new role in Kubernetes named sa-creator and bind that role to a user",
     "details": {
         "intro": {
             "text": "intro.md"
@@ -9,6 +9,10 @@
             {
                 "title": "Create Role",
                 "text": "step1.md"
+            },
+            {
+                "title": "Create Role Binding",
+                "text": "step2.md"
             }
         ],
         "finish": {
