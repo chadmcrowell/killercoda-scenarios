@@ -14,6 +14,9 @@ echo "automountServiceAccountToken: false" >> sa.yaml
 # create the service account from the file 'sa.yaml'
 kubectl create -f sa.yaml
 
+# list the newly created service account
+kubectl -n default get sa
+
 ```{{exec}}
 
 
