@@ -20,6 +20,9 @@ kubectl auth can-i get po --namespace default --as=system:serviceaccount:default
 
 # verify the 'dev' service account can view services in the default namespace
 kubectl auth can-i get svc --namespace default --as=system:serviceaccount:default:dev
+
+# verify that the 'dev' service account CANNOT view the pods in the 'kube-system' namespace
+kubectl auth can-i get po --namespace kube-system --as=system:serviceaccount:default:dev
 ```{{exec}}
 
 

@@ -48,6 +48,11 @@
         "description": "Create a new role in Kubernetes named sa-creator and bind that role to a user"
       },
       {
+        "path": "create-cluster-role",
+        "title": "Create a Cluster Role and Role Binding",
+        "description": "Create a new cluster role and bind that cluster role to a service account"
+      },
+      {
         "path": "upgrade-k8s",
         "title": "Upgrading Kubernetes",
         "description": "Upgrade the Kubernetes control plane components with kubeadm"

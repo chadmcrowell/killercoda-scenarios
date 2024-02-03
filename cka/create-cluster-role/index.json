@@ -1,0 +1,26 @@
+{
+    "title": "Create a Cluster Role and Role Binding",
+    "description": "Create a new cluster role and bind that cluster role to a service account",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Cluster Role",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create Cluster Role Binding",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
