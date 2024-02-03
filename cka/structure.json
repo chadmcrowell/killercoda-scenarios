@@ -53,6 +53,11 @@
         "description": "Upgrade the Kubernetes control plane components with kubeadm"
       },
       {
+        "path": "create-sa-for-pod",
+        "title": "Create Service Account For a Pod",
+        "description": "Create a service account for use with a pod, ensure the token is not exposed!"
+      },
+      {
         "path": "taints-tolerations",
         "title": "Taints and Tolerations",
         "description": "Apply a taint to a node to repel work"

@@ -1,0 +1,25 @@
+{
+    "title": "Create Service Account For a Pod",
+    "description": "Create a service account for use with a pod, ensure the token is not exposed!",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create service account",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create Pod using Service Account",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
