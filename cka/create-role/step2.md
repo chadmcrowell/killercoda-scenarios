@@ -8,6 +8,9 @@ Create a new role binding named `sa-creator-binding` that will bind to the `sa-c
 # create a role binding named 'sa-creator-binding', add 'sa-creator' role and 'Sandra' user
 kubectl create rolebinding sa-creator-binding --role=admin --user=Sandra
 
+# list the newly created role and role binding
+kubectl get role,rolebinding
+
 ```{{exec}}
 
 
