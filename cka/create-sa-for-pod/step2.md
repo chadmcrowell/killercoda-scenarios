@@ -20,13 +20,11 @@ spec:
     name: secure-pod
 EOF
 
-# wait for the pod to create
-sleep 5
-
-# verify that the service account token is NOT mounted
-kubectl exec secure-pod -- cat /var/run/secrets/kubernetes.io/serviceaccount/token
-
 ```{{exec}}
 
+Verify that the service account token is NOT mounted to the pod
+```bash
+kubectl exec secure-pod -- cat /var/run/secrets/kubernetes.io/serviceaccount/token
+```{{exec}}
 
 </details>
