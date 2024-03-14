@@ -101,6 +101,11 @@
         "path": "configmaps",
         "title": "ConfigMaps in Kubernetes",
         "description": "Create and use configmaps in Kubernetes"
-      }
+      },
+      {
+        "path": "create-deployment",
+        "title": "Create and Scale a Deployment",
+        "description": "Create an Apache deployment, scale the deployment to five replicas, and change the image used"
+      } 
     ]
   }
