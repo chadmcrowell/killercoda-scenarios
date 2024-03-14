@@ -1,6 +1,6 @@
 {
-    "title": "Create and Scale a Deployment",
-    "description": "Create an Apache deployment, scale the deployment to five replicas, and change the image used",
+    "title": "Create and Scale Apache Deployment",
+    "description": "Create an Apache deployment, using the httpd:latest image, then scale the deployment to five replicas",
     "details": {
         "intro": {
             "text": "intro.md"
@@ -13,10 +13,6 @@
             {
                 "title": "Scale Deployment",
                 "text": "step2.md"
-            },
-            {
-                "title": "Change the Pod Image",
-                "text": "step3.md"
             }
         ],
         "finish": {

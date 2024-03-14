@@ -1,0 +1,29 @@
+{
+    "title": "Change Deployment Image",
+    "description": "Create an Apache deployment, scale the deployment to five replicas, and change the image used",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Deployment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Scale Deployment",
+                "text": "step2.md"
+            },
+            {
+                "title": "Change the Pod Image",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

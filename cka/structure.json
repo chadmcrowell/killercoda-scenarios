@@ -103,9 +103,14 @@
         "description": "Create and use configmaps in Kubernetes"
       },
       {
-        "path": "create-deployment",
-        "title": "Create and Scale a Deployment",
+        "path": "change-deployment-image",
+        "title": "Change Deployment Image",
         "description": "Create an Apache deployment, scale the deployment to five replicas, and change the image used"
+      },
+      {
+        "path": "create-apache-deployment",
+        "title": "Create and Scale Apache Deployment",
+        "description": "Create an Apache deployment, using the httpd:latest image, then scale the deployment to five replicas"
       } 
     ]
   }
