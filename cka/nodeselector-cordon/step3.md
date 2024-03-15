@@ -38,6 +38,9 @@ spec:
 ...
 ```
 ```bash
+# schedule pod
+k apply -f pod.yaml
+
 # see which node the pod is scheduled to 
 k get po -o wide
 ```
