@@ -116,6 +116,11 @@
         "path": "rollback-deployment",
         "title": "Rollback a Deployment",
         "description": "Create a deployment, change the image, then rollback to a previous rollout version"
+      },
+      {
+        "path": "change-rollout-strategy",
+        "title": "Change Rollout Strategy",
+        "description": "Create a deployment, change the rollout strategy to 'Recreate', then change the image used for the deployment"
       } 
     ]
   }

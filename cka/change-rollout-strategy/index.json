@@ -1,0 +1,29 @@
+{
+    "title": "Change Rollout Strategy",
+    "description": "Create a deployment, change the rollout strategy to 'Recreate', then change the image used for the deployment",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Deployment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Change Rollout Strategy",
+                "text": "step2.md"
+            },
+            {
+                "title": "Change Deployment Image",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
