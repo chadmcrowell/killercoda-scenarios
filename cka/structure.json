@@ -121,6 +121,11 @@
         "path": "change-rollout-strategy",
         "title": "Change Rollout Strategy",
         "description": "Create a deployment, change the rollout strategy to 'Recreate', then change the image used for the deployment"
+      },
+      {
+        "path": "cordon-drain-node",
+        "title": "Cordon and Drain the Node",
+        "description": "The node has a memory leak and must be taken down for maintenenance. Disable scheduling and evict pods."
       } 
     ]
   }

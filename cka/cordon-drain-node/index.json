@@ -1,0 +1,26 @@
+{
+    "title": "Cordon and Drain the Node",
+    "description": "The node has a memory leak and must be taken down for maintenenance. Disable scheduling and evict pods.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Mark the Node Unschedulable",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Evict Pods on Node01",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
