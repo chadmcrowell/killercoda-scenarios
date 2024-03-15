@@ -1,0 +1,30 @@
+{
+    "title": "Cordon and Select Node",
+    "description": "Use a nodeSelector to schedule a pod to a cordoned node.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Cordon the Node",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a Pod",
+                "text": "step2.md"
+            },
+            {
+                "title": "Change Node Name",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}

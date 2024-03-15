@@ -126,6 +126,11 @@
         "path": "cordon-drain-node",
         "title": "Cordon and Drain the Node",
         "description": "The node has a memory leak and must be taken down for maintenenance. Disable scheduling and evict pods."
+      },
+      {
+        "path": "nodeselector-cordon",
+        "title": "Cordon and Select Node",
+        "description": "Use a nodeSelector to schedule a pod to a cordoned node"
       } 
     ]
   }
