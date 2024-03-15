@@ -111,6 +111,11 @@
         "path": "create-apache-deployment",
         "title": "Create and Scale Apache Deployment",
         "description": "Create an Apache deployment, using the httpd:latest image, then scale the deployment to five replicas"
+      },
+      {
+        "path": "rollback-deployment",
+        "title": "Rollback a Deployment",
+        "description": "Create a deployment, change the image, then rollback to a previous rollout version"
       } 
     ]
   }

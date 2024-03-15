@@ -1,0 +1,29 @@
+{
+    "title": "Rollback a Deployment",
+    "description": "Create a deployment, change the image, then rollback to a previous rollout version",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Deployment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Change Deployment Image",
+                "text": "step2.md"
+            },
+            {
+                "title": "Rollback Deployment",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
