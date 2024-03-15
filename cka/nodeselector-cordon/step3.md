@@ -1,5 +1,3 @@
-Uncordon `node01`
-
 Delete the pod, and edit the pod YAML, adding the nodeName selector to ensure that it's scheduled to `node01`
 
 See which node the pod was scheduled to.
@@ -9,9 +7,6 @@ See which node the pod was scheduled to.
 <br>
 
 ```bash
-# mark the node01 schedulable (uncordon)
-kubectl uncordon node01
-
 # delete the existing pod
 kubectl delete po nginx
 
