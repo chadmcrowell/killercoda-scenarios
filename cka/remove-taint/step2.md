@@ -13,9 +13,11 @@ kubectl describe po nginx
 # describe the controlplane node to view the taint applied
 kubectl describe no controlplane | grep Taint
 
+```{{exec}}
+
+```bash
 # get the pod to run on the control plane by removing the taint
 kubectl taint no controlplane node-role.kubernetes.io/control-plane:NoSchedule-
-
 
 ```{{exec}}
 
