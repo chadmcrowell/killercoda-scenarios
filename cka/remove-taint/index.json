@@ -1,0 +1,25 @@
+{
+    "title": "Remove the Taint from Node",
+    "description": "Determine how to remove the taint from a pod in order to make it available for scheduling",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Add the Toleration",
+                "text": "step1.md"
+            },
+            {
+                "title": "Schedule the Pod to the Control Plane",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
