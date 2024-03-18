@@ -131,6 +131,11 @@
         "path": "nodeselector-cordon",
         "title": "Cordon and Select Node",
         "description": "Use a nodeSelector to schedule a pod to a cordoned node"
+      },
+      {
+        "path": "add-toleration",
+        "title": "Add a Toleration to a Pod YAML",
+        "description": "You've been given the YAML for a pod, in which you must add a toleration in order for it to be scheduled to the controlplane node"
       } 
     ]
   }

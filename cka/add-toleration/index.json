@@ -1,0 +1,26 @@
+{
+    "title": "Add a Toleration to a Pod YAML",
+    "description": "You've been given the YAML for a pod, in which you must add a toleration in order for it to be scheduled to the controlplane node",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Add the Toleration",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Schedule the Pod to the Control Plane",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
