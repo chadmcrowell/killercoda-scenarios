@@ -4,15 +4,26 @@ In the currect directory, you will see a file named `pod-tolerate.yaml`. Open th
 <details><summary>Solution</summary>
 <br>
 
-```bash
-# mark the node01 unschedulable (cordon the node)
-kubectl cordon node01
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+  nodeSelector:
+    kubernetes.io/hostname: controlplane
+  tolerations:
+  - key: "node-role.kubernetes.io/control-plane"
+    operator: "Exists"
+    effect: "NoSchedule"
 
-# list the nodes to verify that node01 has been cordoned
-kubectl get no
-
-
-```{{exec}}
+```{{copy}}
 
 
 </details>
