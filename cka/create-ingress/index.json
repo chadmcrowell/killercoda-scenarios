@@ -1,0 +1,22 @@
+{
+    "title": "Create Ingress",
+    "description": "Create an ingress resource in Kubernetes that routes to a service",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Ingress",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

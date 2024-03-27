@@ -151,6 +151,11 @@
         "path": "communicate-with-svc",
         "title": "Resolve Service IP from Pod",
         "description": "Ensure that you can reach the service using its DNS name in Kubernetes"
+      },
+      {
+        "path": "create-ingress",
+        "title": "Create Ingress Resource",
+        "description": "Create an ingress resource in Kubernetes that routes to a service"
       } 
     ]
   }
