@@ -6,7 +6,7 @@ Create a service named `apache-svc` from the `apache` deployment created in the 
 
 ```bash
 # create a service from the apache deployment
-kubectl expose deploy apache --name apache-svc
+kubectl expose deploy apache --name apache-svc --port 80
 ```{{exec}}
 
 </details>

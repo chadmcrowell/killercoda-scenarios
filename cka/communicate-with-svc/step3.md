@@ -8,10 +8,12 @@ Exec into the pod and verify that you can reach the service by it's name `apache
 
 ```bash
 # create a temporary pod named netshoot and get a shell to the container all in the same kubectl command
-kubectl run netshoot --image=nicolaka/netshoot --rm --it -- sh
+kubectl run netshoot --image=nicolaka/netshoot --rm -it -- sh
+```{{exec}}
 
+```
 # verify that you can reach the service
-wget -0- apache-svc
+wget -O- apache-svc
 ```{{exec}}
 
 
