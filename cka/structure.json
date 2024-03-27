@@ -141,6 +141,11 @@
         "path": "remove-taint",
         "title": "Remove the Taint from Node",
         "description": "Determine how to remove the taint from a pod in order to make it available for scheduling"
+      },
+      {
+        "path": "remove-taint",
+        "title": "Remove the Taint from Node",
+        "description": "Determine how to remove the taint from a pod in order to make it available for scheduling"
       } 
     ]
   }

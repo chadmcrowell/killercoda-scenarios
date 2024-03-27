@@ -1,0 +1,33 @@
+{
+    "title": "Modify Cluster DNS",
+    "description": "Change the IP addresses that are used for services and pods in a Kubernetes cluster",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Change Service CIDR Block",
+                "text": "step1.md"
+            },
+            {
+                "title": "Change Cluster DNS Service",
+                "text": "step2.md"
+            },
+            {
+                "title": "Modify Kubelet Configuration",
+                "text": "step3.md"
+            },
+            {
+                "title": "Verify Pod DNS",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
