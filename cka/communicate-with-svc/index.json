@@ -1,0 +1,29 @@
+{
+    "title": "Resolve Service IP from Pod",
+    "description": "Ensure that you can reach the service using its DNS name in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Deployment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Expose the Deployment",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a pod and use DNS",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -146,6 +146,11 @@
         "path": "modify-cluster-dns",
         "title": "Modify Cluster DNS",
         "description": "Change the IP addresses that are used for services and pods in a Kubernetes cluster"
-      }
+      },
+      {
+        "path": "communicate-with-svc",
+        "title": "Resolve Service IP from Pod",
+        "description": "Ensure that you can reach the service using its DNS name in Kubernetes"
+      } 
     ]
   }
