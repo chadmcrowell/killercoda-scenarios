@@ -10,7 +10,7 @@ use the `nslookup` tool to look up the DNS info for example.com
 
 ```bash
 # start a pod named 'netshoot' using the image 'nicolaka/netshoot' ensuring that the pod stays in a running state.
-kubectl run netshoot --image=nicolaka/netshoot --command sleep --command "3600
+kubectl run netshoot --image=nicolaka/netshoot --command sleep --command "3600"
 ```{{exec}}
 
 ```bash
