@@ -37,5 +37,12 @@ k -n kube-system get svc
 
 ```{{exec}}
 
+The output should look similar to the following:
+```bash
+controlplane $ k -n kube-system get svc
+NAME       TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)                  AGE
+kube-dns   ClusterIP   100.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   6s
+```
+
 
 </details>
