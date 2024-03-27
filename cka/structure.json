@@ -143,9 +143,9 @@
         "description": "Determine how to remove the taint from a pod in order to make it available for scheduling"
       },
       {
-        "path": "remove-taint",
-        "title": "Remove the Taint from Node",
-        "description": "Determine how to remove the taint from a pod in order to make it available for scheduling"
-      } 
+        "path": "modify-cluster-dns",
+        "title": "Modify Cluster DNS",
+        "description": "Change the IP addresses that are used for services and pods in a Kubernetes cluster"
+      }
     ]
   }
