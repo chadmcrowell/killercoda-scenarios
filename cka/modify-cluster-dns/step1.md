@@ -1,4 +1,4 @@
-Change the service cluster IP range that's given to each service that’s created in the cluster.
+Change the service cluster IP range that's given to each service to 100.96.0.0/12.
 
 > HINT: Modify the kubernetes API server pod YAML
 
