@@ -5,7 +5,7 @@ Get started by initializing a Kubebuilder application with the `kubebuilder init
 
 ```bash
 kubebuilder init \
-  --plugins=go/v4-alpha \
+  --plugins=go/v4 \
   --repo my.domain
 ```{{exec}}
 
