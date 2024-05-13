@@ -156,6 +156,11 @@
         "path": "create-ingress",
         "title": "Create Ingress Resource",
         "description": "Create an ingress resource in Kubernetes that routes to a service"
+      },
+      {
+        "path": "restart-policy",
+        "title": "Pod Restart Policy",
+        "description": "Create a pod and change its restart policy"
       } 
     ]
   }

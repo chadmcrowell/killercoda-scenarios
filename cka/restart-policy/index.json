@@ -1,0 +1,30 @@
+{
+    "title": "Pod Restart Policy",
+    "description": "Create a pod and change its restart policy",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Dockerfile",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Push Image to Local Registry",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a Pod Using Image",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}
