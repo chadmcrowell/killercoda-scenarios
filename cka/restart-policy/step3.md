@@ -15,7 +15,18 @@ kubectl run busybox-sleeper --image localhost:5000/busybox-sleep
 
 ```yaml
 # pod.yaml
-
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: busybox-sleeper
+  name: busybox-sleeper
+spec:
+  containers:
+  - image: localhost:5000/busybox-sleep
+    name: busybox-sleeper
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
 ```
 
 
