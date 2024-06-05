@@ -1,4 +1,4 @@
-Run the command `kubeadm upgrade apply v1.30.1`{{copy}} to upgrade the control plane components to 1.27.0. 
+Run the command `kubeadm upgrade apply v1.30.1`{{exec}} to upgrade the control plane components to 1.30.1. 
 
 Determine why you received the following message: 
 ```
