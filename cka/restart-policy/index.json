@@ -7,17 +7,12 @@
         },
         "steps": [
             {
-                "title": "Create a Dockerfile",
-                "text": "step1.md",
-                "background": "background.sh"
+                "title": "Create a Pod",
+                "text": "step1.md"
             },
             {
-                "title": "Push Image to Local Registry",
+                "title": "Fix the CrashLoopBackOff",
                 "text": "step2.md"
-            },
-            {
-                "title": "Create a Pod Using Image",
-                "text": "step3.md"
             }
         ],
         "finish": {

@@ -1,16 +1,35 @@
-Start a container registry locally with the following command:
+Determine why the pod is not running
 ```bash
-# start a registry exposed on port 5000
-docker run --name local-registry -d -p 5000:5000 registry
+k get po
 ```{{exec}}
 
-Re-Tag the image built in the previoius step, addressing the local registry
+Change the `restartPolicy` to prevent the pod from automatically restarting.
+
+> NOTE: you can read more about `restartPolicy` here: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-restarts
+
+<br>
+<details><summary>Solution</summary>
+<br>
+
 ```bash
-# re-tag the image busybox-sleep to localhost:5000/busybox-sleep
-docker tag busybox-sleep localhost:5000/busybox-sleep
+# create a pod named 'busybox-sleeper' using the image from the local registry
+kubectl edit po busybox
 ```{{exec}}
 
-Push the container that you built in the previous step to the local registry
-```bash
-docker push localhost:5000/busybox-sleep
-```{{exec}}
+```yaml
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: busybox
+  name: busybox
+spec:
+  containers:
+  - image: busybox
+    name: busybox
+  restartPolicy: Never # change this from Always to Never
+```
+
+
+</details>

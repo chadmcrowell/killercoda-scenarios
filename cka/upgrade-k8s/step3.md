@@ -1,4 +1,4 @@
-Run the `kubeadm upgrade plan`{{exec}} command again, and proceed with upgrading the control plan components to 1.28.3
+Run the `kubeadm upgrade plan`{{exec}} command again, and proceed with upgrading the control plane components to 1.30.1
 
 <br>
 <details><summary>Solution</summary>
@@ -11,7 +11,7 @@ kubeadm upgrade plan
 
 ```plain
 # upgrade components to version v1.27.0
-kubeadm upgrade apply v1.28.3
+kubeadm upgrade apply v1.30.1
 ```{{exec}}
 
 </details>
