@@ -1,0 +1,33 @@
+{
+    "title": "Kubernetes StatefulSets",
+    "description": "Work with StatefulSets in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a statefulSet",
+                "text": "step1.md"
+            },
+            {
+                "title": "Write State to Pods",
+                "text": "step2.md"
+            },
+            {
+                "title": "Scaling the StatefulSet",
+                "text": "step3.md"
+            },
+            {
+                "title": "Delete StatefulSet",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
