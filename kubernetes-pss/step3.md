@@ -23,5 +23,13 @@ spec:
 EOF
 ```{{exec}}
 
+```bash
+k create -f pod.yaml
+```{{exec}}
+
+The output should be similar to this:
+```bash
+Error from server (Forbidden): error when creating "pod.yaml": pods "restricted-pod" is forbidden: violates PodSecurity "restricted:v1.30": privileged (container "busybox" must not set securityContext.privileged=true), allowPrivilegeEscalation != false (container "busybox" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "busybox" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "busybox" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "busybox" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
+```
 
 </details>
