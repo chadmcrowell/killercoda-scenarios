@@ -1,0 +1,29 @@
+{
+    "title": "Network Policies",
+    "description": "Apply Network Policies for Pods in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Deployment and Service",
+                "text": "step1.md"
+            },
+            {
+                "title": "Limit Access to Service",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create an allowed Pod",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
