@@ -1,0 +1,29 @@
+{
+    "title": "Pod Security Policies",
+    "description": "Apply security policies to pods in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create namespace",
+                "text": "step1.md"
+            },
+            {
+                "title": "Apply Restrictions",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a Pod in Violation",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
