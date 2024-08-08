@@ -12,5 +12,10 @@ kubectl create deployment nginx --image=nginx
 kubectl expose deployment nginx --port=80
 ```{{exec}}
 
+```bash
+# list the deployment, service and pod
+k get deploy,svc,po
+```{{exec}}
+
 
 </details>
