@@ -1,6 +1,6 @@
 {
-    "title": "Pod Security Policies",
-    "description": "Apply security policies to pods in Kubernetes",
+    "title": "Pod Security Standards",
+    "description": "Apply security standards to pods in Kubernetes",
     "details": {
         "intro": {
             "text": "intro.md"
