@@ -33,16 +33,13 @@ spec:
       resources:
         requests:
           storage: 1Gi
-```
+```{{copy}}
 
 <br>
 <details><summary>Solution</summary>
 <br>
-
-List the statefulSet named "web".
-
-
 ```
+
 k create -f sts.yaml
 ```{{exec}}
 
