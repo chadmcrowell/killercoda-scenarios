@@ -6,7 +6,7 @@ helm install prometheus prometheus-community/prometheus
 
 # sleep 30
 
-# kubectl patch svc prometheus-server -p '{"spec": {"type": "NodePort", "ports": [{"port": 80, "nodePort": 30000}]}}'
+kubectl patch svc prometheus-server -p '{"spec": {"type": "NodePort", "ports": [{"port": 80, "nodePort": 30000}]}}'
 
 
 # cat <<EOF | kubectl apply -f -
