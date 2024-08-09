@@ -1,0 +1,33 @@
+{
+    "title": "Persistent Volumes",
+    "description": "Create persistentvolumes and persistentvolumeclaims in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Persistent Volume",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a Persistent Volume Claim",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a Pod",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create a second Pod",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

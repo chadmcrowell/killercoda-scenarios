@@ -161,6 +161,11 @@
         "path": "restart-policy",
         "title": "Pod Restart Policy",
         "description": "Create a pod and change its restart policy"
+      },
+      {
+        "path": "persistent-volumes",
+        "title": "Persistent Volumes",
+        "description": "Create persistentvolumes and persistentvolumeclaims in Kubernetes"
       } 
     ]
   }
