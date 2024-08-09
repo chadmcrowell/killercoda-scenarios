@@ -4,7 +4,8 @@ helm repo update
 
 helm install prometheus prometheus-community/prometheus
 
-helm install node-exporter prometheus-community/prometheus-node-exporter
+# helm install node-exporter prometheus-community/prometheus-node-exporter
+helm install node-exporter prometheus-community/prometheus-node-exporter --set service.targetPort=9101 --set service.port=9101
 
 # sleep 30
 
