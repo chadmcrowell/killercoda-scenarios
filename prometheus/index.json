@@ -1,0 +1,30 @@
+{
+    "title": "Monitoring Kubernetes with Prometheus",
+    "description": "Setup monitoring rules for Kubernetes in Prometheus",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Access Prometheus Dashboard",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Apply Restrictions",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a Pod in Violation",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
