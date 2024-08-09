@@ -1,12 +1,9 @@
-Create a namespace named `my-namespace`
+[Click here to open the Prometheus Dashboard in a new tab]({{TRAFFIC_HOST1_9090}})
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
-```
-k create ns my-namespace
-```{{exec}}
 
 
 </details>

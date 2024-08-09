@@ -12,11 +12,11 @@
                 "background": "background.sh"
             },
             {
-                "title": "Apply Restrictions",
+                "title": "Create Prometheus Rules",
                 "text": "step2.md"
             },
             {
-                "title": "Create a Pod in Violation",
+                "title": "Alerts in Alertmanager",
                 "text": "step3.md"
             }
         ],
@@ -25,6 +25,6 @@
         }
     },
     "backend": {
-        "imageid": "kubernetes-kubeadm-1node-rapid"
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
     }
 }
