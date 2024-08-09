@@ -9,6 +9,7 @@
             {
                 "title": "Access Prometheus Dashboard",
                 "text": "step1.md",
+                "foreground": "foreground.sh",
                 "background": "background.sh"
             },
             {
