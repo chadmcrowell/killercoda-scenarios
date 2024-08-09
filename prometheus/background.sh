@@ -4,6 +4,8 @@ helm repo update
 
 helm install prometheus prometheus-community/prometheus
 
+helm install node-exporter prometheus-community/prometheus-node-exporter
+
 # sleep 30
 
 kubectl patch svc prometheus-server -p '{"spec": {"type": "NodePort", "ports": [{"port": 80, "nodePort": 30000}]}}'
