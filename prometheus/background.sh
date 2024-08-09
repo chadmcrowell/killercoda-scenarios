@@ -2,14 +2,14 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 
 helm repo update
 
-helm install prometheus prometheus-community/prometheus
+helm install prometheus prometheus-community/prometheus -f https://raw.githubusercontent.com/chadmcrowell/k8s/main/prometheus/values.yaml
 
 # helm install node-exporter prometheus-community/prometheus-node-exporter
-helm install node-exporter prometheus-community/prometheus-node-exporter --set service.targetPort=9101 --set service.port=9101
+# helm install node-exporter prometheus-community/prometheus-node-exporter --set service.targetPort=9101 --set service.port=9101
 
 # sleep 30
 
-kubectl patch svc prometheus-server -p '{"spec": {"type": "NodePort", "ports": [{"port": 80, "nodePort": 30000}]}}'
+# kubectl patch svc prometheus-server -p '{"spec": {"type": "NodePort", "ports": [{"port": 80, "nodePort": 30000}]}}'
 
 
 # cat <<EOF | kubectl apply -f -
