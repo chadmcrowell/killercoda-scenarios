@@ -1,0 +1,34 @@
+{
+    "title": "Use Pod with NFS volume in Kubernetes",
+    "description": "Create a pod that will mount a volume of NFS type",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install NFS Server on `node01`",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Create a pod that mounts the NFS share",
+                "text": "step2.md"
+            },
+            {
+                "title": "View the data on written by the container",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create another pod that shares the same NFS volume",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}

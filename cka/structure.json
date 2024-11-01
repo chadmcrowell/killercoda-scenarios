@@ -166,6 +166,11 @@
         "path": "persistent-volumes",
         "title": "Persistent Volumes",
         "description": "Create persistentvolumes and persistentvolumeclaims in Kubernetes"
+      },
+      {
+        "path": "nfs-vol",
+        "title": "Using NFS volumes for Pods",
+        "description": "Create a pod that uses an NFS volume"
       } 
     ]
   }
