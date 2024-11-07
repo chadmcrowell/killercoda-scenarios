@@ -1,6 +1,4 @@
-Startup a local container registry, and push our image to that registry, so Kubernetes can pull from that local registry. 
-
-Let’s install the local registry with the command `docker run --name local-registry -d -p 5000:5000 registry`{{copy}} 
+Push our image to that registry, so Kubernetes can pull from that local registry. 
 
 Now, let’s give the “busy box-sleep” a new tag with the command `docker tag busybox-sleep localhost:5000/busybox-sleep`{{copy}}. 
 
