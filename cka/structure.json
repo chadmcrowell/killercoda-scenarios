@@ -8,6 +8,16 @@
         "description": "2 node playground environment for Kubernetes"
       },
       {
+        "path": "database-operator",
+        "title": "Install a Database Operator",
+        "description": "Create a PostgreSQL DB Operator in Kubernetes"
+      }, 
+      {
+        "path": "debug-go-app",
+        "title": "Debug a Go App in Kubernetes",
+        "description": "Debug a Go Application live in Kubernetes"
+      },
+      {
         "path": "api-resources",
         "title": "List API Resources",
         "description": "List all the K8s API resources in your cluster"

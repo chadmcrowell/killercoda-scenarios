@@ -1,19 +1,23 @@
 {
-    "title": "Create Dockerfile with Args",
-    "description": "Create and run a container with a simple sleep command and entrypoint",
+    "title": "Debug a Go App in Kubernetes",
+    "description": "Debug a Go App Running in Kubernetes",
     "details": {
         "intro": {
             "text": "intro.md"
         },
         "steps": [
             {
-                "title": "Create a Dockerfile",
+                "title": "Try to Access The Go App",
                 "text": "step1.md",
                 "background": "background.sh"
             },
             {
-                "title": "Startup Local Registry",
+                "title": "Debug The App",
                 "text": "step2.md"
+            },
+            {
+                "title": "Fix the Error",
+                "text": "step3.md"
             }
         ],
         "finish": {
@@ -21,6 +25,6 @@
         }
     },
     "backend": {
-        "imageid": "kubernetes-k3s-1node"
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
     }
 }

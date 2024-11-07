@@ -1,0 +1,22 @@
+{
+    "title": "Install a Database Operator",
+    "description": "Create a PostgreSQL DB Operator in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Ingress",
+                "text": "step1.md",
+                "background": "background.sh"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
