@@ -5,6 +5,11 @@ List the pods in your PostgreSQL cluster namespace.
 k -n postgres-operator get pods
 ```{{copy}}
 
+You can tell which pod is the leader with the following command.
+```bash
+k -n postgres-operator get pods --show-labels | grep role
+```{{exec}}
+
 Choose a pod to delete (e.g., `hippo-instance1-0` for the primary or a replica)
 ```bash
 k -n postgres-operator delete po hippo-instance1-0 
@@ -44,13 +49,16 @@ psql -h localhost
 SELECT pg_is_in_recovery();
 ```{{copy}}
 
-- `true`: Indicates the node is a replica.
-- `false`: Indicates the node is the primary.
+- `t`: Indicates the node is a replica.
+- `f`: Indicates the node is the primary.
 
 Since we deleted a replica, confirm replication is still functioning.
 ```bash
-SELECT client_addr, state
-FROM pg_stat_replication;
+kubectl exec -it -n postgres-operator <replica-pod-name> -- psql -U postgres -d postgres
+```{{copy}}
+
+```bash
+SELECT pg_last_wal_replay_lsn();
 ```{{copy}}
 
 This shows the replication status from the primary’s perspective.

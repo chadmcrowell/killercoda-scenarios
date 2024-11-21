@@ -27,7 +27,7 @@ To check on the status of your installation, you can run the following command.
 k -n postgres-operator get po -w
 
 k get crds | grep postgres
-```{{copy}}
+```
 
 If the PGO Pod is healthy, you should see output similar to this.
 ```bash

@@ -10,16 +10,16 @@ You can track the progress of your cluster using the following commands.
 k -n postgres-operator get postgresclusters
 
 k -n postgres-operator describe postgresclusters hippo
-```{{copy}}
+```
 
 As part of creating a Postgres cluster, the Postgres Operator creates a PostgreSQL user account. The credentials for this account are stored in a Secret that has the name `hippo-pguser-rhino`.
 
 List the secres in the `postgres-operator` namespace with the following command.
 ```bash
 k -n postgres-operator get secrets
-```
+```{{exec}}
 
-Open a new tab by clicking the plus sign at the top of the window, and create a port forward. You can run the following commands to create a port forward.
+Open a **new tab** by clicking the plus sign at the top of the window, and create a port forward. You can run the following commands to create a port forward.
 ```bash
 export PG_CLUSTER_PRIMARY_POD=$(kubectl get pod -n postgres-operator -o name -l postgres-operator.crunchydata.com/cluster=hippo,postgres-operator.crunchydata.com/role=master)
 
