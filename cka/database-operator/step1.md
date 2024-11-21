@@ -1,32 +1,34 @@
-Create an Ingress resource that will allow you to resolve the domain name hello.com to the service named `apache-svc` over port `80`.
+First, go to GitHub and [fork the Postgres Operator examples](https://github.com/CrunchyData/postgres-operator-examples/fork) repository.
 
-> HINT: During the exam, you will be able to access kubernetes.io/docs. Search for the word "ingress" within the docs for YAML that you can copy and paste into your terminal!
+Once you have forked this repo, you can clone your forked repo with the following commands:L
+```bash
+# set your username
+export GITHUB_USERNAME="<your-github-username>"
 
-<br>
-<details><summary>Solution</summary>
-<br>
+# clone the repo
+git clone --depth 1 "https://github.com/${GITHUB_USERNAME}/postgres-operator-examples.git"
 
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: minimal-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  ingressClassName: nginx
-  rules:
-  - host: "hello.com"
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: apache-svc
-            port:
-              number: 80
+# change directory 
+cd postgres-operator-examples
 ```{{copy}}
 
+You can install PGO, the Postgres Operator from Crunchy Data, using the following command.
+```bash
+kubectl apply -k kustomize/install/namespace
+kubectl apply --server-side -k kustomize/install/default
+```{{copy}}
 
-</details>
+This will create a namespace called `postgres-operator` and create all of the objects required to deploy PGO.
+
+To check on the status of your installation, you can run the following command.
+```bash
+k -n postgres-operator get po -w
+
+k get crds | grep postgres
+```{{copy}}
+
+If the PGO Pod is healthy, you should see output similar to this.
+```bash
+NAME                                READY   STATUS    RESTARTS   AGE
+postgres-operator-9dd545d64-t4h8d   1/1     Running   0          3s
+```

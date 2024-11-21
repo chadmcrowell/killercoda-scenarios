@@ -7,9 +7,21 @@
         },
         "steps": [
             {
-                "title": "Create Ingress",
+                "title": "Install Operator",
                 "text": "step1.md",
                 "background": "background.sh"
+            },
+            {
+                "title": "Create Database CRD",
+                "text": "step2.md"
+            },
+            {
+                "title": "Scale the Database",
+                "text": "step3.md"
+            },
+            {
+                "title": "Simulate a DB Failure",
+                "text": "step4.md"
             }
         ],
         "finish": {
@@ -17,6 +29,6 @@
         }
     },
     "backend": {
-        "imageid": "kubernetes-kubeadm-1node-rapid"
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
     }
 }
