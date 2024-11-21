@@ -4,7 +4,9 @@ Once you have forked this repo, you can clone your forked repo with the followin
 ```bash
 # set your username
 export GITHUB_USERNAME="<your-github-username>"
+```
 
+```bash
 # clone the repo
 git clone --depth 1 "https://github.com/${GITHUB_USERNAME}/postgres-operator-examples.git"
 
