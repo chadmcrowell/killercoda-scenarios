@@ -9,7 +9,7 @@ We can use the `etcdctl snapshot restore` command to restore from our snapshot, 
 
 `etcdctl snapshot restore snapshot --data-dir /var/lib/etcd-restore`
 
-Finally, we'll need to update the manifest for etcd and tell it to get it's data from that restore operation we just did. I'll use sed to search for `/lib/etcd` and replace with `lib/etcd-restore` on line 76 in the `/etc/kubernetes/manifests/etcd.yaml` file.
+Finally, we'll need to update the manifest for etcd and tell it to get it's data from that restore operation we just did. I'll use sed to search for `/lib/etcd` and replace with `lib/etcd-restore` on line 72 and line 88 in the `/etc/kubernetes/manifests/etcd.yaml` file.
 
 `sed -i "s/lib\/etcd/lib\/etcd-restore/g" /etc/kubernetes/manifests/etcd.yaml`
 
