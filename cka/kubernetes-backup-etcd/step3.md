@@ -9,9 +9,14 @@ We can use the `etcdctl snapshot restore` command to restore from our snapshot, 
 
 `etcdctl snapshot restore snapshot --data-dir /var/lib/etcd-restore`
 
-Finally, we'll need to update the manifest for etcd and tell it to get it's data from that restore operation we just did. I'll use sed to search for `/lib/etcd` and replace with `lib/etcd-restore` on line 72 and line 88 in the `/etc/kubernetes/manifests/etcd.yaml` file.
+Finally, we'll need to update the manifest for etcd and tell it to get it's data from that restore operation we just did. I'll use sed to search for `/lib/etcd` and replace with `lib/etcd-restore` on line 88 in the `/etc/kubernetes/manifests/etcd.yaml` file.
 
-`sed -i "s/lib\/etcd/lib\/etcd-restore/g" /etc/kubernetes/manifests/etcd.yaml`
+```yaml
+  - hostPath:
+      path: /var/lib/etcd-restore # CHANGE THIS LINE
+      type: DirectoryOrCreate
+    name: etcd-data
+```
 
 > 🛑STOP🛑: The Kubernetes API will be unavailable until the etcd pod is restarted. This may take up to 3 minutes.
 
