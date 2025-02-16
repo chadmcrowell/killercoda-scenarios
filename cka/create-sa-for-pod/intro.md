@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario, you'll be able to practice creating a pod that uses a service account, but not exposing the service account token.
+In this scenario, you'll be able to practice creating a pod that uses a service account, but not exposing the service account token to the pod.
 
 **ENJOY!**
