@@ -24,4 +24,9 @@ metadata:
   name: redis-config
 ```{{copy}}
 
+Create the `configMap` from the file `redis-config.yaml`
+```bash
+k apply -f redis-config.yaml
+```
+
 </details>
