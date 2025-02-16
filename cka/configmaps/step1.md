@@ -14,9 +14,9 @@ k create configmap redis-config --from-literal=key1=config1 --from-literal=key2=
 cat << EOF > redis-configMap.yaml
 apiVersion: v1
 data:
-  redis-config: |
-    maxmemory: 2mb
-    maxmemory-policy: allkeys-lru
+  redis.conf: |
+    maxmemory 2mb
+    maxmemory-policy allkeys-lru
 kind: ConfigMap
 metadata:
   creationTimestamp: null
