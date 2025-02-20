@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: chadmcrowell/goapp-fail
+        image: chadmcrowell/go-app:latest
         ports:
         - containerPort: 8080
 
