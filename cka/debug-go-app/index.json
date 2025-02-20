@@ -7,7 +7,7 @@
         },
         "steps": [
             {
-                "title": "Try to Access The Go App",
+                "title": "See if the Go App is Running",
                 "text": "step1.md",
                 "background": "background.sh"
             },

@@ -1,19 +1,13 @@
-You will see a deployment and a service running inside the default namespace.
-
-```bash
-k get deploy,svc
-```{{exec}}
-
-Using `curl`, try to access the Go application by it's service FQDN.
-
+Check on the status of the deployment `goapp-deployment`. 
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
+The logs show that the PORT environment variable is not set.
 ```bash
-# use curl to access the `goapp-service` service by it's DNS name
-curl http://goapp-service.default.svc.cluster.local:8080
+# get the deployment and pod
+k get deploy,po
 
 ```
 

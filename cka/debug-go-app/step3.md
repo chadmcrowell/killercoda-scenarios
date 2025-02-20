@@ -1,23 +1,37 @@
-After inspecting the Go application, fix the error and test. Test by trying to access the service again using `curl http://goapp-service.default.svc.cluster.local:8080`{{copy}}
+Fix the error by adding the PORT environment variable to the container. Start by looking at the Kubernetes documentation for help (as you are able to do on the CKA exam).
 
+[Kubernetes Documentation](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
+
+Test the app by accessing the service again using `curl http://goapp-service.default.svc.cluster.local:8080`{{copy}}
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
-```go
-func main() {
-    app := &App{
-        name: "MyApp",
-        config: &Config{Port: "8080"}, // Initialize config here
-    }
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-app
+  template:
+    metadata:
+      labels:
+        app: go-app
+    spec:
+      containers:
+      - name: go-app
+        image: your-dockerhub-username/go-app:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
 
-    http.HandleFunc("/", app.handler)
-    fmt.Println("Starting server on port 8080...")
-    if err := http.ListenAndServe(":8080", nil); err != nil {
-        fmt.Fprintln(os.Stderr, "Server error:", err)
-    }
-}
 
 ```
 
