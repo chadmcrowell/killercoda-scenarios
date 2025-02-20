@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: goapp
-        image: chadmcrowell/go-app:v1
+        image: chadmcrowell/go-app:v2
         ports:
         - containerPort: 8080
 
