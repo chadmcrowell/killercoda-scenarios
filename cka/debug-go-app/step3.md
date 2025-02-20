@@ -2,7 +2,7 @@ Fix the error by adding the PORT environment variable to the container. Start by
 
 [Kubernetes Documentation](https://kubernetes.io/docs/tasks/inject-data-application/define-environment-variable-container/)
 
-Test the app by accessing the service again using `curl http://goapp-service.default.svc.cluster.local:8080`{{copy}}
+Test the app by accessing the service again using `curl http://<service-ip>:8080`{{copy}}
 
 <br>
 <details><summary>Solution</summary>
