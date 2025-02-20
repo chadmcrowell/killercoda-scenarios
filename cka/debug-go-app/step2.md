@@ -7,7 +7,6 @@ Debug the go application by looking at the logs.
 ```bash
 # check the application logs
 kubectl logs deployment/goapp-deployment
-
 ```{{exec}}
 
 you will see the following error:
