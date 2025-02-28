@@ -1,14 +1,8 @@
-First, go to GitHub and [fork the Postgres Operator examples](https://github.com/CrunchyData/postgres-operator-examples/fork) repository.
-
-Once you have forked this repo, you can clone your forked repo with the following commands:L
-```bash
-# set your username
-export GITHUB_USERNAME="<your-github-username>"
-```
+First, clone [the Postgres Operator examples](https://github.com/CrunchyData/postgres-operator-examples) repository from GitHub.
 
 ```bash
 # clone the repo
-git clone --depth 1 "https://github.com/${GITHUB_USERNAME}/postgres-operator-examples.git"
+git clone --depth 1 "https://github.com/CrunchyData/postgres-operator-examples.git"
 
 # change directory 
 cd postgres-operator-examples
