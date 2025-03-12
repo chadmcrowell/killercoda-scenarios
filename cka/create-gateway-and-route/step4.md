@@ -32,4 +32,9 @@ spec:
 EOF
 ```{{exec}}
 
+```bash
+# verify the https has been created
+kubectl get httproute
+```
+
 </details>
