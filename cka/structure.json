@@ -8,11 +8,6 @@
         "description": "2 node playground environment for Kubernetes"
       },
       {
-        "path": "install-gateway-api",
-        "title": "Install and Configure Gateway API",
-        "description": "Install the Gateway API CRDs and deploy a basic Gateway to handle ingress traffic"
-      },
-      {
         "path": "database-operator",
         "title": "Install a Database Operator",
         "description": "Create a PostgreSQL DB Operator in Kubernetes"
