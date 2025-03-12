@@ -1,23 +1,27 @@
 {
-    "title": "Install and Configure Gateway API",
-    "description": "Install the Gateway API CRDs and deploy a basic Gateway to handle ingress traffic.",
+    "title": "Create a Gateway and HTTPRoute",
+    "description": "Using the Gateway API CRDs, deploy a basic Gateway and HTTPRoute to handle ingress traffic",
     "details": {
         "intro": {
             "text": "intro.md"
         },
         "steps": [
             {
-                "title": "Install Gatway API CRDs",
+                "title": "Verify Gateway API CRDs",
                 "text": "step1.md",
                 "background": "background.sh"
             },
             {
-                "title": "Verify CRDs are Installed",
+                "title": "Create a Basic Gateway",
                 "text": "step2.md"
             },
             {
-                "title": "Create Basic Gateway",
+                "title": "Create a Deployment and Service",
                 "text": "step3.md"
+            },
+            {
+                "title": "Create Path-Based HTTPRoute",
+                "text": "step4.md"
             }
         ],
         "finish": {
