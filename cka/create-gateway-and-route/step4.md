@@ -16,19 +16,19 @@ cat <<EOF | kubectl apply -f -
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
- name: web-route
- namespace: default
+  name: web-route
+  namespace: default
 spec:
- parentRefs:
- - name: my-gateway
- rules:
- - matches:
-   - path:
-	   type: PathPrefix
-	   value: "/"
-   backendRefs:
-   - name: web
-	 port: 80
+  parentRefs:
+  - name: my-gateway
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: "/"
+    backendRefs:
+    - name: web
+      port: 80
 EOF
 ```{{exec}}
 
