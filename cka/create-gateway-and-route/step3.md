@@ -11,11 +11,6 @@ Use ONLY the `kubectl` command line arguments to get the `web` deployment and se
 <br>
 
 ```bash
-# Deploy a basic Gateway that allows access to port 80 into the cluster
-
-```{{exec}}
-
-```bash
 # create a new deployment based on the `nginx` image and expose the container on port 80
 kubectl create deployment web --image=nginx --port=80
 
