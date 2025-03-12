@@ -29,4 +29,9 @@ spec:
 EOF
 ```{{exec}}
 
+Run the following to verify that the gateway was in fact created:
+```bash
+kubectl get gateway
+```
+
 </details>
