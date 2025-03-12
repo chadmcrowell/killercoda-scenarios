@@ -8,6 +8,11 @@
         "description": "2 node playground environment for Kubernetes"
       },
       {
+        "path": "create-gateway-and-route",
+        "title": "Create a Gateway and HTTPRoute",
+        "description": "Using the Gateway API CRDs, deploy a basic Gateway and HTTPRoute to handle ingress traffic"
+      }, 
+      {
         "path": "database-operator",
         "title": "Install a Database Operator",
         "description": "Create a PostgreSQL DB Operator in Kubernetes"
