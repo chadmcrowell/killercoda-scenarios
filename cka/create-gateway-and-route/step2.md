@@ -27,9 +27,4 @@ spec:
 EOF
 ```{{exec}}
 
-```bash
-# check if the Gateway has been created
-kubectl get gateway
-```{{exec}}
-
 </details>
