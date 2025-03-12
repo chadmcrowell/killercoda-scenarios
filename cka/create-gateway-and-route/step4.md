@@ -33,7 +33,7 @@ EOF
 ```{{exec}}
 
 ```bash
-# verify the https has been created
+# verify the httpRoute has been created
 kubectl get httproute
 ```{{exec}}
 
