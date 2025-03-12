@@ -4,7 +4,7 @@ An **HTTPRoute** in Kubernetes defines **routing rules** for HTTP traffic, speci
 
 Create a new `HTTPRoute` named `web-route` that will direct HTTP traffic to the underlying `web` service created in the previous step. Use path-based routing, and ensure all traffic to the domain handled by `my-gateway` is routed to the web service (setting the path to the root of the domain).
 
-
+> NOTE: Killercoda will not allow ingress resources, so you will not see any hostnames or IP information for the Gateway. This is expected.
 
 <br>
 <details><summary>Solution</summary>
