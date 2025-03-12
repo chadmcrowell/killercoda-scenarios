@@ -18,4 +18,9 @@ kubectl create deployment web --image=nginx --port=80
 kubectl expose deployment web --port=80 --target-port=80
 ```{{exec}}
 
+```bash
+# check that the `web` deployment & service have been created
+kubectl get deploy,svc
+```{{exec}}
+
 </details>
