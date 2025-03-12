@@ -1,0 +1,8 @@
+cat <<EOF | kubectl apply -f -
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: nginx
+spec:
+  controllerName: example.com/nginx-gateway-controller
+EOF

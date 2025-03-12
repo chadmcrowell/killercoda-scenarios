@@ -8,7 +8,8 @@
         "steps": [
             {
                 "title": "Install Gatway API CRDs",
-                "text": "step1.md"
+                "text": "step1.md",
+                "background": "background.sh"
             },
             {
                 "title": "Verify CRDs are Installed",
