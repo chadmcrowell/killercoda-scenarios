@@ -1,8 +1,2 @@
-cat <<EOF | kubectl apply -f -
-apiVersion: gateway.networking.k8s.io/v1
-kind: GatewayClass
-metadata:
-  name: nginx
-spec:
-  controllerName: example.com/nginx-gateway-controller
-EOF
+kubectl apply -f https://raw.githubusercontent.com/chadmcrowell/acing-the-cka-exam/refs/heads/main/ch_06/gatewayClass-simple.yaml
+
