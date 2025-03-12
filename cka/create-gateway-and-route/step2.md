@@ -1,3 +1,5 @@
+[Quick References](https://gateway-api.sigs.k8s.io/api-types/gateway/)
+
 A **Gateway** in Kubernetes is a networking resource that controls external traffic into a cluster, supporting **HTTP, HTTPS, TCP, and UDP** protocols. It acts as a **central entry point**, replacing Ingress, and works with **GatewayClasses** and **Routes (HTTPRoute, TCPRoute, UDPRoute)** for flexible traffic management.
 
 A **GatewayClass** defines the **implementation** of a `Gateway`, specifying which controller (e.g., NGINX, Istio, Cilium) will manage it. It acts as a **template** for Gateways, similar to how `storageClass` works for PersistentVolumes.

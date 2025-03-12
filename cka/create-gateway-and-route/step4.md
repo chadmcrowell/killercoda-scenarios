@@ -1,3 +1,5 @@
+[Quick References](https://gateway-api.sigs.k8s.io/api-types/httproute/)
+
 An **HTTPRoute** in Kubernetes defines **routing rules** for HTTP traffic, specifying how requests are forwarded from a **Gateway** to backend services. It supports **host-based, path-based, and header-based routing**, along with traffic splitting, retries, and filters.
 
 Create a new `HTTPRoute` named `web-route` that will direct HTTP traffic to the underlying `web` service created in the previous step. Use path-based routing, and ensure all traffic to the domain handled by `my-gateway` is routed to the web service (setting the path to the root of the domain).
