@@ -9,6 +9,10 @@
             {
                 "title": "Install Containerd",
                 "text": "step1.md"
+            },
+            {
+                "title": "Set System Parameters",
+                "text": "step2.md"
             }
         ],
         "finish": {
@@ -16,6 +20,6 @@
         }
     },
     "backend": {
-        "imageid": "kubernetes-kubeadm-1node-rapid"
+        "imageid": "ubuntu"
     }
 }
