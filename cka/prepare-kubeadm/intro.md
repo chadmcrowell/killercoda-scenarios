@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario, you'll be able to play freely with a two node Kubernetes cluster
+In this scenario, you'll be preparing the control plane node for installing a kubeadm Kubernetes cluster
 
 **ENJOY!**
