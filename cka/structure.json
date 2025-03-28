@@ -11,7 +11,12 @@
         "path": "create-gateway-and-route",
         "title": "Create a Gateway and HTTPRoute",
         "description": "Using the Gateway API CRDs, deploy a basic Gateway and HTTPRoute to handle ingress traffic"
-      }, 
+      },
+      {
+        "path": "prepare-kubeadm",
+        "title": "Prepare for Kubeadm Install",
+        "description": "Prepare a cluster for installing Kubeadm by installing containerd and setting ip forwarding"
+      },
       {
         "path": "database-operator",
         "title": "Install a Database Operator",

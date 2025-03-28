@@ -1,0 +1,21 @@
+{
+    "title": "Prepare for Kubeadm Install",
+    "description": "Prepare a cluster for installing Kubeadm by installing containerd and setting ip forwarding",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install Containerd",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
