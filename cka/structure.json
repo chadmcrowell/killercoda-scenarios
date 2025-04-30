@@ -3,9 +3,14 @@
     "description": "Study for the CKA and complete these exam exercises",
     "items": [
       {
-        "path": "playground",
-        "title": "CKA Playground",
-        "description": "2 node playground environment for Kubernetes"
+        "path": "single-node",
+        "title": "Single Node Cluster",
+        "description": "Single node playground environment for Kubernetes"
+      },
+      {
+        "path": "two-node",
+        "title": "Two Node Cluster",
+        "description": "2 node cluster environment playground for Kubernetes"
       },
       {
         "path": "create-gateway-and-route",
