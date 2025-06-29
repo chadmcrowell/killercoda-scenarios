@@ -1,0 +1,21 @@
+{
+    "title": "Kubectl logs sidecar",
+    "description": "CKAD scenario: kubectl logs sidecar",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Step 1",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

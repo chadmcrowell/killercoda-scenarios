@@ -166,6 +166,106 @@
         "path": "cpu-mem-limits",
         "title": "Set CPU and memory limits",
         "description": "Create a pod with defined CPU and memory limits"
+      },
+      {
+        "path": "readinessprobe-http",
+        "title": "HTTP Readiness Probe",
+        "description": "Create a pod with an HTTP readiness probe on port 80."
+      },
+      {
+        "path": "livenessprobe-restart",
+        "title": "Liveness Probe Restart",
+        "description": "Create a pod with a liveness probe that causes restarts."
+      },
+      {
+        "path": "tcp-probe",
+        "title": "TCP Liveness Probe",
+        "description": "Use a TCP socket liveness probe to monitor a pod."
+      },
+      {
+        "path": "startup-probe",
+        "title": "Startup Probe",
+        "description": "Create a pod with a startup probe for long initialization."
+      },
+      {
+        "path": "port-forward-pod",
+        "title": "Port Forward to Pod",
+        "description": "Forward a local port to a pod's container port."
+      },
+      {
+        "path": "logs-crashloop",
+        "title": "Logs from CrashLoop Pod",
+        "description": "Create a crashing pod and access previous logs."
+      },
+      {
+        "path": "describe-events",
+        "title": "Describe Pod Events",
+        "description": "Use kubectl describe to view pod event logs."
+      },
+      {
+        "path": "kubectl-debug",
+        "title": "Ephemeral Debug Container",
+        "description": "Use kubectl debug to launch a sidecar debug container."
+      },
+      {
+        "path": "kubectl-logs-sidecar",
+        "title": "Logs from Sidecar",
+        "description": "Access logs from a multi-container pod."
+      },
+      {
+        "path": "configmap-update",
+        "title": "Update ConfigMap",
+        "description": "Create and update a ConfigMap mounted into a pod."
+      },
+      {
+        "path": "rotate-secret",
+        "title": "Rotate Secret",
+        "description": "Update a Kubernetes Secret and observe changes."
+      },
+      {
+        "path": "default-cpu-memory",
+        "title": "Default CPU/Memory Limits",
+        "description": "Use a LimitRange to apply default resource requests."
+      },
+      {
+        "path": "limitrange-namespace",
+        "title": "LimitRange for Namespace",
+        "description": "Restrict pod resource usage in a namespace."
+      },
+      {
+        "path": "resourcequota-namespace",
+        "title": "ResourceQuota for Namespace",
+        "description": "Enforce total memory and pod quotas."
+      },
+      {
+        "path": "create-serviceaccount",
+        "title": "Create ServiceAccount",
+        "description": "Create and use a ServiceAccount in a pod."
+      },
+      {
+        "path": "role-rolebinding",
+        "title": "Role and RoleBinding",
+        "description": "Grant access to list and get pods using RBAC."
+      },
+      {
+        "path": "restrict-rbac",
+        "title": "Restrict Pod Deletes with RBAC",
+        "description": "Deny delete access using Role and RoleBinding."
+      },
+      {
+        "path": "drop-capabilities",
+        "title": "Drop Linux Capabilities",
+        "description": "Drop all capabilities in a pod's securityContext."
+      },
+      {
+        "path": "readonly-rootfs",
+        "title": "Read-Only Root Filesystem",
+        "description": "Set a pod container's root filesystem to read-only."
+      },
+      {
+        "path": "podsecurity-restricted",
+        "title": "PodSecurity Restricted Namespace",
+        "description": "Enforce restricted policies and test privileged pod."
       }
     ]
   }
