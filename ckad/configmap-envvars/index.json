@@ -1,0 +1,21 @@
+{
+    "title": "Set env vars from ConfigMap",
+    "description": "Set env vars from ConfigMap",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Set env vars from ConfigMap",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

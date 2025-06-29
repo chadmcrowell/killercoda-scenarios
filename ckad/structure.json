@@ -66,6 +66,106 @@
         "path": "deploy-update",
         "title": "Create and Update Deployments",
         "description": "Create a deployment in Kubernetes, scale the deployment and rollout to a new version"
-      } 
+      },
+      {
+        "path": "nginx-pod",
+        "title": "Create a simple nginx pod",
+        "description": "Create a pod named nginx using image nginx:1.17"
+      },
+      {
+        "path": "nginx-deployment",
+        "title": "Create a deployment for nginx",
+        "description": "Deploy nginx using a Kubernetes Deployment"
+      },
+      {
+        "path": "scale-deployment",
+        "title": "Scale a deployment",
+        "description": "Scale a Deployment to increase replica count"
+      },
+      {
+        "path": "update-image",
+        "title": "Update deployment image",
+        "description": "Perform a rolling update on a Deployment"
+      },
+      {
+        "path": "clusterip-service",
+        "title": "Create a ClusterIP service",
+        "description": "Expose a Deployment using a ClusterIP service"
+      },
+      {
+        "path": "namespace-pod",
+        "title": "Deploy a pod to a new namespace",
+        "description": "Create a namespace and run a pod in it"
+      },
+      {
+        "path": "delete-pods-namespace",
+        "title": "Delete all pods in a namespace",
+        "description": "Clean up pods in a specific namespace"
+      },
+      {
+        "path": "list-pods-restart-count",
+        "title": "Sort pods by restart count",
+        "description": "Use kubectl to list and sort pods by restarts"
+      },
+      {
+        "path": "busybox-sleep",
+        "title": "Run busybox with sleep",
+        "description": "Launch a pod with busybox and sleep command"
+      },
+      {
+        "path": "prestop-hook",
+        "title": "Add a preStop hook",
+        "description": "Define a pod lifecycle hook to delay termination"
+      },
+      {
+        "path": "label-pod",
+        "title": "Label a pod",
+        "description": "Add custom labels to a running pod"
+      },
+      {
+        "path": "explain-spec-containers",
+        "title": "Explore pod spec with explain",
+        "description": "Use kubectl explain to inspect pod structure"
+      },
+      {
+        "path": "patch-deployment-port",
+        "title": "Patch container port",
+        "description": "Patch a Deployment to modify its container port"
+      },
+      {
+        "path": "list-pods-by-node",
+        "title": "Group pods by node",
+        "description": "View where pods are scheduled across nodes"
+      },
+      {
+        "path": "create-job",
+        "title": "Create a one-time Job",
+        "description": "Create a Job that runs a single container task"
+      },
+      {
+        "path": "configmap-file-volume",
+        "title": "Mount ConfigMap as volume",
+        "description": "Create a ConfigMap and mount it into a pod"
+      },
+      {
+        "path": "configmap-envvars",
+        "title": "Use ConfigMap as env vars",
+        "description": "Create a ConfigMap and use it as environment variables"
+      },
+      {
+        "path": "secret-volume",
+        "title": "Mount Secret into pod",
+        "description": "Create a Secret and mount it into a pod volume"
+      },
+      {
+        "path": "secret-envvars",
+        "title": "Use Secret as env vars",
+        "description": "Use Secret key-values as environment variables in a pod"
+      },
+      {
+        "path": "cpu-mem-limits",
+        "title": "Set CPU and memory limits",
+        "description": "Create a pod with defined CPU and memory limits"
+      }
     ]
   }

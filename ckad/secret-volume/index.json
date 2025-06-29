@@ -1,0 +1,21 @@
+{
+    "title": "Mount Secret into a pod",
+    "description": "Mount Secret into a pod",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Mount Secret into a pod",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

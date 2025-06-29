@@ -1,0 +1,21 @@
+{
+    "title": "Mount a ConfigMap as volume",
+    "description": "Mount a ConfigMap as volume",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Mount a ConfigMap as volume",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

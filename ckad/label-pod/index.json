@@ -1,0 +1,21 @@
+{
+    "title": "Label a pod with app and tier",
+    "description": "Label a pod with app and tier",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Label a pod with app and tier",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

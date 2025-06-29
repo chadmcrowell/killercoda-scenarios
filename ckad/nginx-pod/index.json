@@ -1,0 +1,21 @@
+{
+    "title": "Create a simple nginx pod",
+    "description": "Create a simple nginx pod",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a simple nginx pod",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

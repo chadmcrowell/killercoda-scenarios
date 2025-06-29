@@ -1,0 +1,21 @@
+{
+    "title": "Expose deployment with ClusterIP",
+    "description": "Expose deployment with ClusterIP",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Expose deployment with ClusterIP",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

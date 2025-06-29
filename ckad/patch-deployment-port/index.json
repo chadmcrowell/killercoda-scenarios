@@ -1,0 +1,21 @@
+{
+    "title": "Patch deployment to change port",
+    "description": "Patch deployment to change port",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Patch deployment to change port",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

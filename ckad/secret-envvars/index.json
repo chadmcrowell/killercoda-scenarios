@@ -1,0 +1,21 @@
+{
+    "title": "Use Secret for env vars",
+    "description": "Use Secret for env vars",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Use Secret for env vars",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}

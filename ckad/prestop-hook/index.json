@@ -1,0 +1,21 @@
+{
+    "title": "Add a preStop hook to a pod",
+    "description": "Add a preStop hook to a pod",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Add a preStop hook to a pod",
+                "text": "step1.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-k3s-1node"
+    }
+}
