@@ -1,0 +1,21 @@
+{
+  "title": "Allow Only Port",
+  "description": "Allow Only Port scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Allow Only Port",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

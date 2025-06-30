@@ -1,0 +1,21 @@
+{
+  "title": "Allow Namespace Traffic",
+  "description": "Allow Namespace Traffic scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Allow Namespace Traffic",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

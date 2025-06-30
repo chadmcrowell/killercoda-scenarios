@@ -1,0 +1,21 @@
+{
+  "title": "Kustomize Patch Image",
+  "description": "Kustomize Patch Image scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Kustomize Patch Image",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

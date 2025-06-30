@@ -1,0 +1,21 @@
+{
+  "title": "Canary Ingress",
+  "description": "Canary Ingress scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Canary Ingress",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

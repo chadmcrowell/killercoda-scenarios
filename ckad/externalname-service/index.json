@@ -1,0 +1,21 @@
+{
+  "title": "Externalname Service",
+  "description": "Externalname Service scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Externalname Service",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

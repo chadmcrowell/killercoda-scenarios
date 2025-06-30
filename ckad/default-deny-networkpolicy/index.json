@@ -1,0 +1,21 @@
+{
+  "title": "Default Deny Networkpolicy",
+  "description": "Default Deny Networkpolicy scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Default Deny Networkpolicy",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

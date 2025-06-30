@@ -1,0 +1,21 @@
+{
+  "title": "Ingress Path Rewrite",
+  "description": "Ingress Path Rewrite scenario for CKAD practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Ingress Path Rewrite",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}
