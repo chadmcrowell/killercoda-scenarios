@@ -266,6 +266,106 @@
         "path": "podsecurity-restricted",
         "title": "PodSecurity Restricted Namespace",
         "description": "Enforce restricted policies and test privileged pod."
+      },
+      {
+        "path": "default-deny-networkpolicy",
+        "title": "Deny All Ingress",
+        "description": "Create a NetworkPolicy that denies all ingress traffic."
+      },
+      {
+        "path": "allow-namespace-traffic",
+        "title": "Allow Namespace Traffic",
+        "description": "Allow ingress from any pod in the same namespace."
+      },
+      {
+        "path": "allow-label-traffic",
+        "title": "Allow Label-Based Traffic",
+        "description": "Allow ingress based on matching pod labels."
+      },
+      {
+        "path": "allow-only-port",
+        "title": "Allow Ingress Only on Port 80",
+        "description": "Restrict ingress to only port 80."
+      },
+      {
+        "path": "block-egress",
+        "title": "Block All Egress",
+        "description": "Deny all egress traffic from pods."
+      },
+      {
+        "path": "headless-service",
+        "title": "Create a Headless Service",
+        "description": "Set up a headless service for direct pod discovery."
+      },
+      {
+        "path": "dns-resolution",
+        "title": "Test DNS Resolution",
+        "description": "Use nslookup to test DNS between Kubernetes pods."
+      },
+      {
+        "path": "externalname-service",
+        "title": "ExternalName Service",
+        "description": "Create a service that maps to an external domain."
+      },
+      {
+        "path": "nodeport-service",
+        "title": "NodePort Service",
+        "description": "Expose a deployment externally using NodePort."
+      },
+      {
+        "path": "test-service-connectivity",
+        "title": "Test Service Connectivity",
+        "description": "Verify connectivity between a pod and a service."
+      },
+      {
+        "path": "ingress-controller",
+        "title": "Install Ingress Controller",
+        "description": "Deploy the NGINX ingress controller."
+      },
+      {
+        "path": "ingress-host-routing",
+        "title": "Ingress Host-Based Routing",
+        "description": "Create Ingress for routing based on hostname."
+      },
+      {
+        "path": "ingress-tls",
+        "title": "Ingress with TLS",
+        "description": "Configure an Ingress with TLS encryption."
+      },
+      {
+        "path": "canary-ingress",
+        "title": "Canary Ingress Deployment",
+        "description": "Split traffic between two services using annotations."
+      },
+      {
+        "path": "kustomize-patch-image",
+        "title": "Patch Deployment Image with Kustomize",
+        "description": "Change image tag in a deployment using Kustomize."
+      },
+      {
+        "path": "kustomize-env-overlay",
+        "title": "Kustomize Overlays for Environments",
+        "description": "Create `dev` and `prod` overlays for a base config."
+      },
+      {
+        "path": "kustomize-configmap-secret",
+        "title": "Generate ConfigMap and Secret with Kustomize",
+        "description": "Generate and apply config and secret with Kustomize."
+      },
+      {
+        "path": "kustomize-common-labels",
+        "title": "Apply Common Labels",
+        "description": "Add labels to all resources in a Kustomization."
+      },
+      {
+        "path": "kustomize-apply",
+        "title": "Apply Resources with Kustomize",
+        "description": "Deploy an entire configuration using `kubectl apply -k`."
+      },
+      {
+        "path": "ingress-path-rewrite",
+        "title": "Ingress Path Rewriting",
+        "description": "Rewrite a path using NGINX Ingress annotations."
       }
     ]
   }
