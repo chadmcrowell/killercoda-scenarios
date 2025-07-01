@@ -36,4 +36,10 @@ spec:
 EOF
 ```{{exec}}
 
+Ensure all three pod replicas are up and running before proceeding
+```bash
+# view pod status
+kubectl get po
+```{{exec}}
+
 </details>
