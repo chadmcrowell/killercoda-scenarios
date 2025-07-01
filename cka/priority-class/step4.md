@@ -36,7 +36,7 @@ spec:
 kubectl create -f high-prio.yaml
 ```{{exec}}
 
-> WARNING: Wait until all the pods are running before proceeding.
+> ⚠️ WARNING: Wait until all the pods are running before proceeding to the next step.
 
 ```
 controlplane:~$ k get po
