@@ -2,9 +2,9 @@ Preemption is the process of evicting pods with lower priority when the node(s) 
 
 We can test preemption by simulating that stress and witness the lower priority pods get evicted.
 
-Using `kubectl`, scale the `low-prio` deployment to `6` replicas.
+Change the requests for the high priority pod from `200Mi` to `600Mi` and restart the pod.
 
-Watch the high priority pod stay running, which the lower priority pods are evicted from the node.
+Watch the low priority pod be evicted, and the high-priority pod get scheduled once again (this may take some time).
 
 
 <br>
