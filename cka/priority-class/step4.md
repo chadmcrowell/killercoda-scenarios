@@ -27,7 +27,7 @@ spec:
     args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "512M", "--timeout", "300s"]
     resources:
       requests:
-        memory: "600Mi"
+        memory: "200Mi"
         cpu: "200m"
 ```{{copy}}
 

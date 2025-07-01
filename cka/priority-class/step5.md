@@ -13,7 +13,7 @@ Watch the high priority pod stay running, which the lower priority pods are evic
 
 ```bash
 # request additional memory
-sed -i 's/600Mi/700Mi/' high-prio.yaml
+sed -i 's/200Mi/600Mi/' high-prio.yaml
 
 # restart the pod
 kubectl replace -f high-prio.yaml --force
