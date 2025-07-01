@@ -12,8 +12,11 @@ Watch the high priority pod stay running, which the lower priority pods are evic
 <br>
 
 ```bash
-# scale the deployment to create more low priority pods
-kubectl scale deploy low-prio --replicas 6
+# request additional memory
+sed -i 's/600Mi/700Mi/' high-prio.yaml
+
+# restart the pod
+kubectl replace -f high-prio.yaml --force
 ```{{exec}}
 
 ```bash
