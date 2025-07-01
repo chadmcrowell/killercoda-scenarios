@@ -1,4 +1,4 @@
-If you want to ensure that your apps running in Kubernetes stay running, even when the cluster is under heavy load, you can create a custom PriorityClass.
+If you want to ensure that your apps running in Kubernetes stay running, even when the cluster is under heavy load, you can create a custom PriorityClass for them to use.
 
 Assigning them a higher priority ensures they get scheduled first, and lower-prority pods get evicted before them if the node is full.
 
@@ -13,8 +13,8 @@ Use `kubectl` to create a new `PriorityClass` named `high-priority` with a value
 <br>
 
 ```bash
-# create the priority class from the YAML file
+# create the priority class
 kubectl create priorityclass high-priority --value=1000000
-```
+```{{exec}}
 
 </details>

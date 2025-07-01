@@ -13,7 +13,7 @@ Create a pod that uses the `high-priority` priority class created in a previous 
 <br>
 
 ```yaml
-# high-load.yaml
+# high-prio.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -24,7 +24,11 @@ spec:
   - name: stress
     image: polinux/stress
     args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "512M", "--timeout", "300s"]
-
 ```{{copy}}
+
+```bash
+# create the pod
+kubectl create -f high-prio.yaml
+```{{exec}}
 
 </details>

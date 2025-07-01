@@ -27,6 +27,7 @@ spec:
       containers:
       - name: stress
         image: polinux/stress
+        command: ["stress"]
         args: ["--vm", "1", "--vm-bytes", "400Mi", "--timeout", "600s"]
         resources:
           requests:
@@ -37,6 +38,6 @@ spec:
 ```bash
 # create the pod
 kubectl create -f low-prio.yaml
-```
+```{{exec}}
 
 </details>
