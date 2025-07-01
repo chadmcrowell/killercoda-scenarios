@@ -9,7 +9,7 @@ Create a deployment named `low-prio` that has `3` pod replicas. Use the `polinux
 <br>
 
 ```yaml
-# low-prio.yaml
+cat <<EOF | kubectl apply -f -
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -33,11 +33,7 @@ spec:
           requests:
             memory: "500Mi"
             cpu: "100m"
-```{{copy}}
-
-```bash
-# create the pod
-kubectl create -f low-prio.yaml
+EOF
 ```{{exec}}
 
 </details>
