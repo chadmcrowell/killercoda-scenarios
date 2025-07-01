@@ -3,6 +3,6 @@
 
 ### Welcome !
 
-In this scenario, you'll be able to play freely with a two node Kubernetes cluster
+In this scenario, you'll be able to practice with Pod Priority and Preemption in Kubernetes.
 
 **ENJOY!**
