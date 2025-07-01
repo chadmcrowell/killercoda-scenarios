@@ -1,0 +1,37 @@
+{
+    "title": "Priority Class",
+    "description": "Practice Kubernetes PriorityClass scheduling",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "View Default Priority Class",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a High Priority Class",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create Low Priority Pods",
+                "text": "step3.md"
+            },
+            {
+                "title": "Create High Priority Pods",
+                "text": "step4.md"
+            },
+            {
+                "title": "Test Preemption",
+                "text": "step5.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
