@@ -13,7 +13,7 @@ Create a pod that uses the `high-priority` priority class created in a previous 
 <br>
 
 ```yaml
-# high-prio.yaml
+cat <<EOF > high-prio.yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -29,7 +29,8 @@ spec:
       requests:
         memory: "200Mi"
         cpu: "200m"
-```{{copy}}
+EOF
+```{{exec}}
 
 ```bash
 # create the pod
