@@ -23,6 +23,7 @@ spec:
   containers:
   - name: stress
     image: polinux/stress
+    command: ["stress"]
     args: ["--cpu", "1", "--vm", "1", "--vm-bytes", "512M", "--timeout", "300s"]
 ```{{copy}}
 
