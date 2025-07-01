@@ -36,4 +36,15 @@ spec:
 kubectl create -f high-prio.yaml
 ```{{exec}}
 
+> WARNING: Wait until all the pods are running before proceeding.
+
+```
+controlplane:~$ k get po
+NAME                        READY   STATUS    RESTARTS   AGE
+high-prio                   1/1     Running   0          37s
+low-prio-55c4ff8b4f-hz2wb   1/1     Running   0          80s
+low-prio-55c4ff8b4f-ppdz2   1/1     Running   0          80s
+low-prio-55c4ff8b4f-s5k7r   1/1     Running   0          80s
+```
+
 </details>
