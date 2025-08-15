@@ -1,0 +1,25 @@
+{
+    "title": "Kubernetes PKI Essentials",
+    "description": "Understand the /etc/kubernetes/pki directory and its role in a kubeadm control plane.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Explore the /etc/kubernetes/pki directory",
+                "text": "step1.md"
+            },
+            {
+                "title": "Break and Restore the API Server TLS Key",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

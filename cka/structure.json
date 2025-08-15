@@ -13,6 +13,11 @@
         "description": "2 node cluster environment playground for Kubernetes"
       },
       {
+        "path": "pki-essentials",
+        "title": "KubernetesPKI Essentials",
+        "description": "Understand the /etc/kubernetes/pki directory and its role in a kubeadm control plane."
+      }, 
+      {
         "path": "create-gateway-and-route",
         "title": "Create a Gateway and HTTPRoute",
         "description": "Using the Gateway API CRDs, deploy a basic Gateway and HTTPRoute to handle ingress traffic"
