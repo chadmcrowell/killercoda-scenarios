@@ -3,7 +3,7 @@ Now for the safe “oh-no!” moment.
 We’ll *temporarily* hide the API server’s TLS private key with this command:
 ```bash
 sudo mv /etc/kubernetes/pki/apiserver.key /etc/kubernetes/pki/apiserver.key.bak
-```
+```{{exec}}
 
 ---
 
