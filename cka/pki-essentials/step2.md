@@ -45,6 +45,7 @@ sudo mv /etc/kubernetes/pki/apiserver.key.bak /etc/kubernetes/pki/apiserver.key
 ```{{exec}}
 
 Verify recovery
+> ⚠️ This may take a minute or two
 ```bash
 kubectl get --raw='/readyz?verbose' | head
 ```{{exec}}
