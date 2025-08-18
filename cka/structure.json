@@ -13,6 +13,11 @@
         "description": "2 node cluster environment playground for Kubernetes"
       },
       {
+        "path": "ssh-practice",
+        "title": "Quick SSH: Check and Restart kubelet",
+        "description": "Practice SSH into a worker node to fix a failing kubelet service."
+      }, 
+      {
         "path": "pki-essentials",
         "title": "Kubernetes PKI Essentials",
         "description": "Understand the /etc/kubernetes/pki directory and its role in a kubeadm control plane."

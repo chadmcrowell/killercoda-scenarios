@@ -1,0 +1,26 @@
+{
+    "title": "Quick SSH: Check and Restart kubelet",
+    "description": "Practice SSH into a worker node to fix a failing kubelet service.",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "SSH to node01",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Restart kubelet",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
