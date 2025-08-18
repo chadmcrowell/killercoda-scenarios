@@ -14,7 +14,7 @@
       },
       {
         "path": "pki-essentials",
-        "title": "KubernetesPKI Essentials",
+        "title": "Kubernetes PKI Essentials",
         "description": "Understand the /etc/kubernetes/pki directory and its role in a kubeadm control plane."
       }, 
       {
