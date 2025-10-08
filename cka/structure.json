@@ -13,6 +13,11 @@
         "description": "2 node cluster environment playground for Kubernetes"
       },
       {
+        "path": "helm-install-nginx",
+        "title": "Installing NGINX Ingress with Helm",
+        "description": "Practice installing and customizing NGINX Ingress with Helm"
+      },
+      {
         "path": "ssh-practice",
         "title": "Quick SSH: Check and Restart kubelet",
         "description": "Practice SSH into a worker node to fix a failing kubelet service."

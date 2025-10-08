@@ -1,0 +1,34 @@
+{
+    "title": "Installing NGINX Ingress with Helm",
+    "description": "Practice installing and customizing NGINX Ingress with Helm",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install NGINX Helm Repo",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Verify NGINX Ingress",
+                "text": "step2.md"
+            },
+            {
+                "title": "Customize NGINX Ingress",
+                "text": "step3.md"
+            },
+            {
+                "title": "Rollback and Troubleshoot",
+                "text": "step4.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
