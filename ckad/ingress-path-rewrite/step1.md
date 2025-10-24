@@ -3,7 +3,8 @@ Create an Ingress that rewrites `/app` to `/` for a service named `web`.
 1. Create a namespace named `ingress-path-rewrite`
 2. Create a deployment named `web` using the image `nginx:1.25` exposing the container on port `80`.
 3. Expose the deployment, creating a ClusterIP type service named `web` also exposed on port `80`.
-4. Create an ingress resource named `web-ingress` that rewrites `/app` to `/` and directs to the service `web` 
+4. Create an ingress resource named `web-ingress` that rewrites `/app` to `/` and directs to the service `web`
+5. Curl the ingress and get a `200` response. 
 
 <details><summary>Solution</summary>
 <br>
