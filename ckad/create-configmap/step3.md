@@ -1,11 +1,16 @@
-Get a shell to the `redis-pod` pod and open the redis-cli.
+Connect to the `redis-pod` container using the Redis CLI and inspect the configuration values.
 
-Run the following command to get the `maxmemory` configuration setting:
-```
+Open the Redis shell:
+```bash
+kubectl exec -it redis-pod -- redis-cli
+```{{exec}}
+
+From the Redis prompt, retrieve the `maxmemory` setting:
+```bash
 CONFIG GET maxmemory
 ```{{copy}}
 
-Run the following command to get the `maxmemory-policy` configuration setting:
-```
+In the same session, check the `maxmemory-policy` setting:
+```bash
 CONFIG GET maxmemory-policy
 ```{{copy}}
