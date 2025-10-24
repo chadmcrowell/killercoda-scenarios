@@ -1,4 +1,4 @@
-Create a pod named `startup-probe-pod` using image `nginx` and define a startup probe on path `/` that runs only during startup.
+Create a pod in the `session283884` namespace named `startup-probe-pod` using image `nginx` and define a startup probe on path `/` that runs only during startup.
 
 <details><summary>Solution</summary>
 <br>
