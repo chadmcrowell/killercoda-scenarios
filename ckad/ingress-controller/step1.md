@@ -27,4 +27,23 @@ kubectl -n ingress-nginx get pods -l app.kubernetes.io/component=controller
 kubectl -n ingress-nginx get svc ingress-nginx-controller
 ```{{exec}}
 
+> Note: In the Killercoda environment the `EXTERNAL-IP` column displays `<pending>` permanently, because there is no external load balancer available. Use the NodePort listed in the service instead when you need to access the controller.
+
+```bash
+# change the service type to NodePort so it is reachable
+kubectl -n ingress-nginx patch svc ingress-nginx-controller -p '{"spec":{"type":"NodePort"}}'
+```{{exec}}
+
+```bash
+# confirm the NodePort that was allocated
+kubectl -n ingress-nginx get svc ingress-nginx-controller -o wide
+```{{exec}}
+
+```bash
+# retrieve the worker node IP and resulting URL
+kubectl get nodes -o wide
+```{{exec}}
+
+> After the patch, you can reach the ingress controller at `http://<node-ip>:<nodeport>`.
+
 </details>
