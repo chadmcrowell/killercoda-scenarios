@@ -23,7 +23,7 @@ To see available targets, click on the `Makefile` and it will open in the right-
 
 For example, the `.PHONY: run` target will run a controller from your host (locally). Let's try doing that!
 
-Click on `Tab 1` to go back to the command prompt and type the command:
+go to the command prompt (in the same window) and type the command:
 
 ```bash
 go env -w GOPROXY=https://proxy.golang.org,direct
