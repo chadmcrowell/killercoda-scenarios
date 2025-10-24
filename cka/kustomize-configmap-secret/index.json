@@ -1,0 +1,21 @@
+{
+  "title": "Kustomize Configmap Secret",
+  "description": "Kustomize Configmap Secret scenario for CKA practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Kustomize Configmap Secret",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

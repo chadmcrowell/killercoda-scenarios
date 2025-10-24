@@ -158,6 +158,31 @@
         "description": "Create an Apache deployment, using the httpd:latest image, then scale the deployment to five replicas"
       },
       {
+        "path": "kustomize-apply",
+        "title": "Kustomize Apply",
+        "description": "Kustomize Apply scenario for CKA practice."
+      },
+      {
+        "path": "kustomize-common-labels",
+        "title": "Kustomize Common Labels",
+        "description": "Kustomize Common Labels scenario for CKA practice."
+      },
+      {
+        "path": "kustomize-configmap-secret",
+        "title": "Kustomize Configmap Secret",
+        "description": "Kustomize Configmap Secret scenario for CKA practice."
+      },
+      {
+        "path": "kustomize-env-overlay",
+        "title": "Kustomize Env Overlay",
+        "description": "Kustomize Env Overlay scenario for CKA practice."
+      },
+      {
+        "path": "kustomize-patch-image",
+        "title": "Kustomize Patch Image",
+        "description": "Kustomize Patch Image scenario for CKA practice."
+      },
+      {
         "path": "rollback-deployment",
         "title": "Rollback a Deployment",
         "description": "Create a deployment, change the image, then rollback to a previous rollout version"

@@ -1,0 +1,21 @@
+{
+  "title": "Kustomize Apply",
+  "description": "Kustomize Apply scenario for CKA practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Kustomize Apply",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}

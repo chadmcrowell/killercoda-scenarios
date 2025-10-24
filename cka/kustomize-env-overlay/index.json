@@ -1,0 +1,21 @@
+{
+  "title": "Kustomize Env Overlay",
+  "description": "Kustomize Env Overlay scenario for CKA practice.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Kustomize Env Overlay",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-k3s-1node"
+  }
+}
