@@ -1,4 +1,4 @@
-Create a Secret named `db-secret` with a username and password and use it as env vars in a pod.
+Create a Secret in the `session283884` namespace named `db-secret` with a username and password and use it as env vars in a pod.
 
 <details><summary>Solution</summary>
 <br>
