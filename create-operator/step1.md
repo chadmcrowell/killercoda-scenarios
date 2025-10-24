@@ -28,7 +28,13 @@ Click on `Tab 1` to go back to the command prompt and type the command:
 ```bash
 go env -w GOPROXY=https://proxy.golang.org,direct
 go env -w GOSUMDB=sum.golang.org
+go clean -modcache
 go mod tidy
+
+# tell Go to serve modules straight out of its own download cache
+# go vet, go mod tidy, and make run stop talking to the network entirely—as long as every dependency is already in the cache
+go env -w GOPROXY=file://$HOME/go/pkg/mod/cache/download,direct
+go env -w GOSUMDB=off
 
 cd ~/src && make run
 ```{{exec}}
