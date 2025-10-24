@@ -1,4 +1,4 @@
-Create a pod with a `preStop` lifecycle hook that sleeps for 10 seconds before termination. Use image `nginx`.
+Create a pod in the `session283884` namespace with a `preStop` lifecycle hook that sleeps for 10 seconds before termination. Use image `nginx`.
 
 <details><summary>Solution</summary>
 <br>
