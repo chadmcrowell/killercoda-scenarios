@@ -2,7 +2,14 @@ Create a pod named `redis-pod` that uses the image `redis:7` and exposes port `6
 
 Mount the `redis-config` configmap data to the pod for use within the container.
 
-**HINT:** create the pod YAML with a `--dry-run` using the following command:
+> **⚠️ HINT:** create the pod YAML with a `--dry-run`
+
+
+<details><summary>Solution</summary>
+<br>
+
 ```
 k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-master/redis.conf' --dry-run=client -o yaml > redis-pod.yaml
 ```{{exec}}
+
+</details>
