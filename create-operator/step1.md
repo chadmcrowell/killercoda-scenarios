@@ -26,7 +26,11 @@ For example, the `.PHONY: run` target will run a controller from your host (loca
 Click on `Tab 1` to go back to the command prompt and type the command:
 
 ```bash
-make run
+go env -w GOPROXY=https://proxy.golang.org,direct
+go env -w GOSUMDB=sum.golang.org
+
+
+cd ~/src && make run
 ```{{exec}}
 
 > NOTE: This command may take a few minutes (particularly `go vet` may appear to hang!).
