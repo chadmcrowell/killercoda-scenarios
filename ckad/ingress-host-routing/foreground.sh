@@ -19,3 +19,6 @@ kubectl -n ingress-nginx rollout status deploy/ingress-nginx-controller --timeou
 
 # Show the pods so learners know the gatekeeper is on duty.
 kubectl -n ingress-nginx get pods -l app.kubernetes.io/component=controller
+
+# change the service type to NodePort so it is reachable
+kubectl -n ingress-nginx patch svc ingress-nginx-controller -p '{"spec":{"type":"NodePort","ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80,"nodePort":30000},{"name":"https","port":443,"protocol":"TCP","targetPort":443,"nodePort":30443}]}}'
