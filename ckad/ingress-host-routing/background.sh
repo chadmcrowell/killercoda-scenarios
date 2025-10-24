@@ -1,6 +1,8 @@
 #!/bin/sh
 set -euo pipefail
 
+kubectl create ns ingress-nginx
+
 MANIFEST="https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml"
 
 kubectl get namespace ingress-nginx >/dev/null 2>&1 || \
