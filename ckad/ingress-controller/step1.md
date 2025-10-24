@@ -3,6 +3,7 @@ Install the NGINX Ingress Controller using the official manifest and verify that
 1. Install the community ingress-nginx controller.
 2. Confirm the controller pod is running in `ingress-nginx`.
 3. Inspect the created Service to see how traffic will reach the controller.
+4. Deploy a sample application and Ingress so the controller returns a 200 response.
 
 <details><summary>Solution</summary>
 <br>
@@ -49,6 +50,43 @@ kubectl get nodes -o wide
 curl -I http://<node-ip>:30000
 ```{{exec}}
 
-> After the patch, you can reach the ingress controller at `http://<node-ip>:30000` or `https://<node-ip>:30443`.
+```bash
+# sample backend to exercise the controller
+kubectl create deploy demo --image=nginx:1.25 --port=80
+```{{exec}}
+
+```bash
+kubectl expose deploy demo --port=80 --target-port=80
+```{{exec}}
+
+```bash
+cat <<'EOF' | kubectl apply -f -
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: demo
+  namespace: default
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: demo.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: demo
+            port:
+              number: 80
+EOF
+```{{exec}}
+
+```bash
+# hit the ingress with the Host header
+curl -I -H 'Host: demo.local' http://<node-ip>:30000/
+```{{exec}}
+
+> After the patch, reach the ingress controller at `http://<node-ip>:30000` (HTTP) or `https://<node-ip>:30443` (HTTPS). Remember to include the correct `Host` header so the controller matches your Ingress rule.
 
 </details>
