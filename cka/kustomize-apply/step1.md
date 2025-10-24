@@ -64,8 +64,9 @@ cat <<'EOF_OVERLAY_K' > kustomize-demo/overlays/prod/kustomization.yaml
 resources:
   - ../../base
 nameSuffix: -prod
-commonLabels:
-  env: prod
+labels:
+  - pairs:
+      env: prod
 patches:
   - target:
       kind: Deployment
