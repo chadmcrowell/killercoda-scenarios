@@ -1,8 +1,9 @@
-Create a pod that has `readOnlyRootFilesystem` set to true.
+Create a pod in the `session283884` that has `readOnlyRootFilesystem` set to true.
 
 <details><summary>Solution</summary>
 <br>
 
+```bash
 cat <<EOF | kubectl -n session283884 apply -f -
 apiVersion: v1
 kind: Pod
