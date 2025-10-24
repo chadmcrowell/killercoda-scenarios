@@ -6,7 +6,8 @@ Get started by initializing a Kubebuilder application with the `kubebuilder init
 ```bash
 kubebuilder init \
   --plugins=go/v4 \
-  --repo my.domain
+  --domain example.com \
+  --repo example.com/operator-demo
 ```{{exec}}
 
 > NOTE: Kubebuilder is already installed on this machine
