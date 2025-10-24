@@ -42,7 +42,7 @@ spec:
             name: web
             port:
               number: 80
-EOF
+EOF2
 ```{{exec}}
 
 ```bash
