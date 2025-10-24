@@ -31,7 +31,7 @@ kubectl -n ingress-nginx get svc ingress-nginx-controller
 
 ```bash
 # change the service type to NodePort so it is reachable
-kubectl -n ingress-nginx patch svc ingress-nginx-controller -p '{"spec":{"type":"NodePort"}}'
+kubectl -n ingress-nginx patch svc ingress-nginx-controller -p '{"spec":{"type":"NodePort","ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80,"nodePort":30000,"appProtocol":"http"},{"name":"https","port":443,"protocol":"TCP","targetPort":443,"nodePort":30443,"appProtocol":"https"}]}}'
 ```{{exec}}
 
 ```bash
@@ -44,6 +44,6 @@ kubectl -n ingress-nginx get svc ingress-nginx-controller -o wide
 kubectl get nodes -o wide
 ```{{exec}}
 
-> After the patch, you can reach the ingress controller at `http://<node-ip>:<nodeport>`.
+> After the patch, you can reach the ingress controller at [ACCESS NGINX]({{TRAFFIC_HOST1_30000}})
 
 </details>
