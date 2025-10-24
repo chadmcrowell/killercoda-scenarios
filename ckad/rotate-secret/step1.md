@@ -1,4 +1,4 @@
-Create a Secret named `db-pass` with key `password=oldpass`, mount it in a pod, then update the Secret.
+Create a Secret in the `session283884` namespace named `db-pass` with key `password=oldpass`, mount it in a pod, then update the Secret.
 
 <details><summary>Solution</summary>
 <br>
