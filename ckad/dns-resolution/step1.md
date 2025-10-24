@@ -70,7 +70,8 @@ kubectl -n dns-lab exec dns-client -- nslookup web.web.svc.cluster.local
 
 ```bash
 # convert to headless service and resolve pod endpoints
-kubectl -n web patch service web -p '{"spec":{"clusterIP":"None"}}'
+kubectl -n web delete service web
+kubectl -n web expose deployment web --name=web --port=80 --cluster-ip=None
 ```{{exec}}
 
 ```bash

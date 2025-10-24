@@ -1,3 +1,3 @@
 # Dns Resolution
 
-This scenario will guide you through the task: dns resolution.
+This scenario will guide you through how core DNS features work inside the Kubernetes cluster.
