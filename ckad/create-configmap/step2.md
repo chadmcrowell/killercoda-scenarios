@@ -12,4 +12,8 @@ Mount the `redis-config` configmap data to the pod for use within the container.
 k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-master/redis.conf' --dry-run=client -o yaml > redis-pod.yaml
 ```{{exec}}
 
+```bash
+k apply -f redis-pod.yaml
+```
+
 </details>
