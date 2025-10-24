@@ -1,4 +1,4 @@
-Create a pod named `tcp-check` using image `nginx` with a TCP liveness probe on port 80.
+Create a pod in the `session283884` namespace named `tcp-check` using image `nginx` with a TCP liveness probe on port 80.
 
 <details><summary>Solution</summary>
 <br>
