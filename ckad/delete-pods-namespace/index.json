@@ -10,6 +10,10 @@
                 "title": "Delete all pods in a namespace",
                 "text": "step1.md",
                 "background": "background.sh"
+            },
+            {
+                "title": "Why weren't the pods deleted?",
+                "text": "step2.md"
             }
         ],
         "finish": {
