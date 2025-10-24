@@ -9,8 +9,7 @@
       {
         "title": "Ingress Host Routing",
         "text": "step1.md",
-        "foreground": "foreground.sh",
-        "background": "background.sh"
+        "foreground": "foreground.sh"
       }
     ],
     "finish": {
