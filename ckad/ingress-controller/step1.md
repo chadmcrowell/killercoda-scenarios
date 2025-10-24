@@ -14,7 +14,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main
 
 ```bash
 # wait for the controller pod to be ready
-kubectl -n ingress-nginx wait --for=condition=Available deploy/ingress-nginx-controller --timeout=180s
+kubectl -n ingress-nginx rollout status deploy/ingress-nginx-controller --timeout=180s
 ```{{exec}}
 
 ```bash
@@ -31,7 +31,7 @@ kubectl -n ingress-nginx get svc ingress-nginx-controller
 
 ```bash
 # change the service type to NodePort so it is reachable
-kubectl -n ingress-nginx patch svc ingress-nginx-controller -p '{"spec":{"type":"NodePort","ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80,"nodePort":30000,"appProtocol":"http"},{"name":"https","port":443,"protocol":"TCP","targetPort":443,"nodePort":30443,"appProtocol":"https"}]}}'
+kubectl -n ingress-nginx patch svc ingress-nginx-controller -p {spec:type:NodePort}
 ```{{exec}}
 
 ```bash
@@ -44,6 +44,10 @@ kubectl -n ingress-nginx get svc ingress-nginx-controller -o wide
 kubectl get nodes -o wide
 ```{{exec}}
 
-> After the patch, you can reach the ingress controller at [ACCESS NGINX]({{TRAFFIC_HOST1_30000}})
+```bash
+# curl the controller (replace <node-ip> with the worker IP)
+curl -I http://<node-ip>:30000
+```{{exec}}
+
 
 </details>
