@@ -1,6 +1,6 @@
 After deleting the pods in the `session283884` namespace, observe that new pods immediately appear. Why?
 
-> Kubectl Tip: The `kubectl get pods -w` command streams pod status so you can watch what happens after you delete them.
+> 🔥 Kubectl Tip: The `kubectl get pods -w` command streams pod status so you can watch what happens after you delete them.
 
 ## Challenge
 Delete whatever is causing the pods to regenerate so the namespace stays empty without deleting the namespace itself.
