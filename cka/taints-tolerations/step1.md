@@ -8,7 +8,7 @@ Run the command to list the taints applied to node01.
 
 ```plain
 # list the Taints applied to node01
-k desribe no node01 | grep Taints
+k describe no node01 | grep Taints
 ```{{exec}}
 
 The output should look similar to the following:
