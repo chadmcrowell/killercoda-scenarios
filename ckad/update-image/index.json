@@ -8,7 +8,8 @@
         "steps": [
             {
                 "title": "Update deployment image",
-                "text": "step1.md"
+                "text": "step1.md",
+                "background": "background.sh"
             }
         ],
         "finish": {
