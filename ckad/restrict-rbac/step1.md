@@ -1,4 +1,4 @@
-Create a Role that restricts deleting pods and test access with `kubectl auth can-i`.
+Create a Role in the `session283884` namespace that restricts deleting pods and test access with `kubectl auth can-i`.
 
 <details><summary>Solution</summary>
 <br>
