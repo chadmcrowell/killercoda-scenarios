@@ -35,6 +35,8 @@ go mod tidy
 # go vet, go mod tidy, and make run stop talking to the network entirely—as long as every dependency is already in the cache
 go env -w GOPROXY=file://$HOME/go/pkg/mod/cache/download,direct
 go env -w GOSUMDB=off
+go env -w GOTOOLCHAIN=local
+
 
 cd ~/src && make run
 ```{{exec}}
