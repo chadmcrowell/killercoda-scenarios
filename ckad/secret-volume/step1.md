@@ -1,4 +1,4 @@
-Create a Secret named `app-secret` with key `password=pass123`, and mount it as a volume in a pod.
+Create a Secret in the `session283884` namespace named `app-secret` with key `password=pass123`, and mount it as a volume in a pod.
 
 <details><summary>Solution</summary>
 <br>
