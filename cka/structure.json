@@ -113,11 +113,6 @@
         "description": "Apply a taint to a node to repel work"
       },
       {
-        "path": "kubernetes-backup-etcd",
-        "title": "Backup etcd",
-        "description": "Backup and restore etcd in a Kubernetes cluster"
-      },
-      {
         "path": "kubernetes-create-user",
         "title": "Create New User",
         "description": "Create a new user in Kubernetes"
