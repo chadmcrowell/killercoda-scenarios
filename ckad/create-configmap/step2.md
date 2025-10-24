@@ -19,6 +19,24 @@ kind: Pod
 metadata:
   name: redis-pod
 spec:
+  initContainers:
+  - name: init-redis-config
+    image: busybox:1.36
+    command:
+    - sh
+    - -c
+    - |
+      set -e
+      cat <<EOF >/redis-master/redis.conf
+      maxmemory $(cat /configmap/maxmemory)
+      maxmemory-policy $(cat /configmap/maxmemory-policy)
+      EOF
+    volumeMounts:
+    - name: redis-config
+      mountPath: /redis-master
+    - name: redis-config-map
+      mountPath: /configmap
+      readOnly: true
   containers:
   - name: redis
     image: redis:7
@@ -28,15 +46,17 @@ spec:
     ports:
     - containerPort: 6379
     volumeMounts:
-    - name: config
+    - name: redis-config
       mountPath: /redis-master
-    - name: data
+    - name: redis-data
       mountPath: /redis-data
   volumes:
-  - name: config
+  - name: redis-config-map
     configMap:
       name: redis-config
-  - name: data
+  - name: redis-config
+    emptyDir: {}
+  - name: redis-data
     emptyDir: {}
 EOF
 ```{{exec}}
@@ -47,6 +67,10 @@ k apply -f redis-pod.yaml
 
 ```bash
 k get pod redis-pod -o wide
+```{{exec}}
+
+```bash
+k logs redis-pod
 ```{{exec}}
 
 </details>
