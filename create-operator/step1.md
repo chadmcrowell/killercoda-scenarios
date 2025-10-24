@@ -3,13 +3,14 @@ While an operator and CRD can be generated from scratch, there is a tool called 
 
 Get started by initializing a Kubebuilder application with the `kubebuilder init` command like this:
 
-> **Note:** The environment ships with Go 1.21, which is incompatible with the `go/v4` plugin that requires Go 1.23+. Use the `go/v3` plugin instead (or upgrade Go if you need `go/v4` features).
+> **Note:** The environment ships with Go 1.21, while the default `go.kubebuilder.io/v4` plugin expects Go 1.23 or newer. We can bypass the guard by adding `--skip-go-version-check`.
 
 ```bash
 kubebuilder init \
-  --plugins=go/v3 \
+  --plugins=go.kubebuilder.io/v4 \
   --domain example.com \
-  --repo example.com/operator-demo
+  --repo example.com/operator-demo \
+  --skip-go-version-check
 ```{{exec}}
 
 > NOTE: Kubebuilder is already installed on this machine
