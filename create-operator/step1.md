@@ -28,7 +28,7 @@ Click on `Tab 1` to go back to the command prompt and type the command:
 ```bash
 go env -w GOPROXY=https://proxy.golang.org,direct
 go env -w GOSUMDB=sum.golang.org
-
+go mod tidy
 
 cd ~/src && make run
 ```{{exec}}
