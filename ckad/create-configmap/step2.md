@@ -13,7 +13,40 @@ k run redis-pod --image=redis:7 --port 6379 --command 'redis-server' '/redis-mas
 ```{{exec}}
 
 ```bash
+cat <<'EOF' > redis-pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-pod
+spec:
+  containers:
+  - name: redis
+    image: redis:7
+    command:
+    - redis-server
+    - /redis-master/redis.conf
+    ports:
+    - containerPort: 6379
+    volumeMounts:
+    - name: config
+      mountPath: /redis-master
+    - name: data
+      mountPath: /redis-data
+  volumes:
+  - name: config
+    configMap:
+      name: redis-config
+  - name: data
+    emptyDir: {}
+EOF
+```{{exec}}
+
+```bash
 k apply -f redis-pod.yaml
-```
+```{{exec}}
+
+```bash
+k get pod redis-pod -o wide
+```{{exec}}
 
 </details>
