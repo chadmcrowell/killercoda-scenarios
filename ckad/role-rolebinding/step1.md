@@ -1,4 +1,4 @@
-Create a Role to read pods and a RoleBinding to attach it to ServiceAccount `build-bot`.
+Create a Role in the `session283884` namespace to read pods and a RoleBinding to attach it to ServiceAccount `build-bot`.
 
 <details><summary>Solution</summary>
 <br>
