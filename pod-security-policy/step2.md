@@ -39,7 +39,7 @@ PSA should reject the request with a `restricted` violation message because the 
 3. **Review the admission warnings (optional).**
 
 ```bash
-kubectl get events -n psa-restricted --field-selector involvedObject.name=bad-nginx
+kubectl get events -n psa-restricted --field-selector involvedObject.name=non-compliant
 ```{{exec}}
 
 The event log records that the pod was denied, which confirms the enforcement policy is active.
