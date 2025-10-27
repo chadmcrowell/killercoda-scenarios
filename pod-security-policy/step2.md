@@ -17,11 +17,11 @@ cat <<'EOF' > non-compliant-pod.yaml
 apiVersion: v1
 kind: Pod
 metadata:
-    name: non-compliant
-    namespace: psa-restricted
+  name: non-compliant
+  namespace: psa-restricted
 spec:
   containers:
-    - name: web
+  - name: web
     image: nginx:1.25
     securityContext:
       privileged: true
