@@ -12,4 +12,6 @@ You configure Pod Security Standards through Pod Security Admission Controller, 
 2. `Audit` Mode: Allows Pods but logs any violations for monitoring.
 3. `Warn` Mode: Allows Pods but provides warnings to users about policy violations.
 
+[Kubernetes Documentation}(https://kubernetes.io/docs/concepts/security/pod-security-standards/)]
+
 **ENJOY!**
