@@ -1,7 +1,7 @@
 
 ### Goal
 
-Deploy a pod named `compliant-pod` in the `psa-restricted` namespace that complies with the `restricted` profile so it passed admission control.
+Deploy a pod named `compliant-pod` using the image `cgr.dev/chainguard/nginx:latest` in the `psa-restricted` namespace that complies with the `restricted` profile so it passed admission control.
 
 Work through the deployment on your own, then expand below for the full solution.
 
@@ -26,7 +26,7 @@ spec:
       type: RuntimeDefault
   containers:
   - name: web
-    image: nginx:1.25
+    image: cgr.dev/chainguard/nginx:latest
     ports:
       - containerPort: 80
     securityContext:
