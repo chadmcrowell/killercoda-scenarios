@@ -20,11 +20,11 @@ metadata:
     name: non-compliant
     namespace: psa-restricted
 spec:
-    containers:
+  containers:
     - name: web
     image: nginx:1.25
     securityContext:
-        privileged: true
+      privileged: true
 EOF
 ```{{exec}}
 
