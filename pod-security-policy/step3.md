@@ -17,23 +17,23 @@ cat <<'EOF' > compliant-pod.yaml
 apiVersion: v1
 kind: Pod
 metadata:
-    name: good-nginx
-    namspace: psa-restricted
+  name: compliant-pod
+  namspace: psa-restricted
 spec:
-    securityContext:
-    runAsNonRoot: true
-    seccompProfile:
-        type: RuntimeDefault
-    containers:
-    - name: web
-    image: nginx:1.25
-    ports:
-    - containerPort: 80
-    securityContext:
-        allowPrivilegeEscalation: false
-        capabilities:
-        drop:
-            - ALL
+  securityContext:
+  runAsNonRoot: true
+  seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: web
+  image: nginx:1.25
+  ports:
+  - containerPort: 80
+  securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+      drop:
+          - ALL
 EOF
 ```{{exec}}
 
