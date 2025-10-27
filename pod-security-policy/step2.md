@@ -26,13 +26,13 @@ spec:
     securityContext:
         privileged: true
 EOF
-```
+```{{exec}}
 
 2. **Attempt to deploy the pod into the restricted namespace.**
 
 ```bash
 kubectl apply -f non-compliant-pod.yaml
-```
+```{{exec}}
 
 PSA should reject the request with a `restricted` violation message because the container asks for `privileged: true`.
 
@@ -40,7 +40,7 @@ PSA should reject the request with a `restricted` violation message because the 
 
 ```bash
 kubectl get events -n psa-restricted --field-selector involvedObject.name=bad-nginx
-```
+```{{exec}}
 
 The event log records that the pod was denied, which confirms the enforcement policy is active.
 

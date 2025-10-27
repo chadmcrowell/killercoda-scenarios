@@ -35,19 +35,19 @@ spec:
         drop:
             - ALL
 EOF
-```
+```{{exec}}
 
 2. **Apply the manifest to the namespace enforced by PSA.**
 
 ```bash
 kubectl apply -f compliant-pod.yaml
-```
+```{{exec}}
 
 3. **Verify that the pod runs and passes admission.**
 
 ```bash
 kubectl get pods -n psa-restricted
-```
+```{{exec}}
 
 The pod should move to the `Running` phase, demonstrating that it satisfies the `restricted` policy.
 
