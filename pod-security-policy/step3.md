@@ -18,7 +18,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: compliant-pod
-  namspace: psa-restricted
+  namespace: psa-restricted
 spec:
   securityContext:
     runAsNonRoot: true
