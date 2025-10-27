@@ -32,8 +32,8 @@ spec:
       securityContext:
         allowPrivilegeEscalation: false
         capabilities:
-        drop:
-          - ALL
+          drop:
+            - ALL
 EOF
 ```{{exec}}
 
