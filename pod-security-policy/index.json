@@ -1,0 +1,29 @@
+{
+    "title": "PSA & PSS in Kubernetes",
+    "description": "Enforcing pods to comply with security standards in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create Namespace",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy a Non-compliant Pod",
+                "text": "step2.md"
+            },
+            {
+                "title": "Deploy a compliant Pod",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-ubuntu20.04"
+    }
+}
