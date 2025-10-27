@@ -25,15 +25,15 @@ spec:
     seccompProfile:
       type: RuntimeDefault
   containers:
-    - name: web
-      image: nginx:1.25
-      ports:
-        - containerPort: 80
-      securityContext:
-        allowPrivilegeEscalation: false
-        capabilities:
-          drop:
-            - ALL
+  - name: web
+    image: nginx:1.25
+    ports:
+      - containerPort: 80
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
 EOF
 ```{{exec}}
 
