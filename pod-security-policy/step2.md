@@ -36,12 +36,10 @@ kubectl apply -f non-compliant-pod.yaml
 
 PSA should reject the request with a `restricted` violation message because the container asks for `privileged: true`.
 
-3. **Review the admission warnings (optional).**
-
+The output will look simlilar to this:
 ```bash
-kubectl get events -n psa-restricted --field-selector involvedObject.name=non-compliant
-```{{exec}}
-
-The event log records that the pod was denied, which confirms the enforcement policy is active.
+controlplane:~$ kubectl apply -f non-compliant-pod.yaml
+Error from server (Forbidden): error when creating "non-compliant-pod.yaml": pods "non-compliant" is forbidden: violates PodSecurity "restricted:latest": privileged (container "web" must not set securityContext.privileged=true), allowPrivilegeEscalation != false (container "web" must set securityContext.allowPrivilegeEscalation=false), unrestricted capabilities (container "web" must set securityContext.capabilities.drop=["ALL"]), runAsNonRoot != true (pod or container "web" must set securityContext.runAsNonRoot=true), seccompProfile (pod or container "web" must set securityContext.seccompProfile.type to "RuntimeDefault" or "Localhost")
+```
 
 </details>
