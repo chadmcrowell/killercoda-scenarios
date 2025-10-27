@@ -21,8 +21,8 @@ metadata:
   namspace: psa-restricted
 spec:
   securityContext:
-  runAsNonRoot: true
-  seccompProfile:
+    runAsNonRoot: true
+    seccompProfile:
       type: RuntimeDefault
   containers:
   - name: web
