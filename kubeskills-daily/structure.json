@@ -4,37 +4,37 @@
     "items": [
       {
         "path": "day-001",
-        "title": "Pod Restart Policies",
+        "title": "Day 1 - Pod Restart Policies",
         "description": "Test how Kubernetes handles failures and restarts"
       },
       {
         "path": "day-002",
-        "title": "StatefulSet Pod Ordering",
+        "title": "Day 2 - StatefulSet Pod Ordering",
         "description": "Break ordered updates and compare OrderedReady vs Parallel management"
       },
       {
         "path": "day-003",
-        "title": "OOMKilled vs Resource Limits",
+        "title": "Day 3 - OOMKilled vs Resource Limits",
         "description": "Trigger OOM events and compare Kubernetes QoS classes"
       },
       {
         "path": "day-004",
-        "title": "Network Policy Lockouts",
+        "title": "Day 4 - Network Policy Lockouts",
         "description": "Enforce default deny, poke DNS/web holes, and recover access"
       },
       {
         "path": "day-005",
-        "title": "Taints and Tolerations",
+        "title": "Day 5 - Taints and Tolerations",
         "description": "Evict pods with NoExecute, compare tolerations, and explore NoSchedule"
       },
       {
         "path": "day-006",
-        "title": "Liveness Probe Death Loops",
+        "title": "Day 6 - Liveness Probe Death Loops",
         "description": "Trigger, inspect, and fix misconfigured probes plus readiness/startup"
       },
       {
         "path": "day-007",
-        "title": "Init Container Failures",
+        "title": "Day 7 - Init Container Failures",
         "description": "Debug stuck init containers, add retries, and run sidecars"
       }
     ]
