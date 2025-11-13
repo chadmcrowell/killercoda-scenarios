@@ -1,0 +1,45 @@
+{
+    "title": "Network Policy Lockouts",
+    "description": "Enforce default deny, poke DNS/web holes, and recover access",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Prep CNI and deploy pods",
+                "text": "step1.md"
+            },
+            {
+                "title": "Apply default deny",
+                "text": "step2.md"
+            },
+            {
+                "title": "Break DNS",
+                "text": "step3.md"
+            },
+            {
+                "title": "Allow DNS egress",
+                "text": "step4.md"
+            },
+            {
+                "title": "Allow web ingress",
+                "text": "step5.md"
+            },
+            {
+                "title": "Allow client egress",
+                "text": "step6.md"
+            },
+            {
+                "title": "Review active policies",
+                "text": "step7.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

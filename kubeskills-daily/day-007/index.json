@@ -1,0 +1,45 @@
+{
+    "title": "Init Container Failures",
+    "description": "Debug stuck init containers, add retries, and run sidecars",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy blocked pod",
+                "text": "step1.md"
+            },
+            {
+                "title": "Inspect init logs",
+                "text": "step2.md"
+            },
+            {
+                "title": "Describe stuck pod",
+                "text": "step3.md"
+            },
+            {
+                "title": "Add retry timeout",
+                "text": "step4.md"
+            },
+            {
+                "title": "Change restart policy",
+                "text": "step5.md"
+            },
+            {
+                "title": "Run multiple init containers",
+                "text": "step6.md"
+            },
+            {
+                "title": "Demo sidecar init",
+                "text": "step7.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

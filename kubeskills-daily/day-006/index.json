@@ -1,0 +1,41 @@
+{
+    "title": "Liveness Probe Death Loops",
+    "description": "Trigger, inspect, and fix misconfigured probes plus readiness/startup",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy broken liveness probe",
+                "text": "step1.md"
+            },
+            {
+                "title": "Watch restarts",
+                "text": "step2.md"
+            },
+            {
+                "title": "Inspect events",
+                "text": "step3.md"
+            },
+            {
+                "title": "Fix probe timings",
+                "text": "step4.md"
+            },
+            {
+                "title": "Contrast readiness",
+                "text": "step5.md"
+            },
+            {
+                "title": "Add startup probe",
+                "text": "step6.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

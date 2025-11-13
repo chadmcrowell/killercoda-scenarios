@@ -1,0 +1,49 @@
+{
+    "title": "Taints and Tolerations",
+    "description": "Evict pods with NoExecute, compare tolerations, and explore NoSchedule",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy workload",
+                "text": "step1.md"
+            },
+            {
+                "title": "Add NoExecute taint",
+                "text": "step2.md"
+            },
+            {
+                "title": "Verify taint",
+                "text": "step3.md"
+            },
+            {
+                "title": "Schedule without toleration",
+                "text": "step4.md"
+            },
+            {
+                "title": "Schedule with toleration",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test tolerationSeconds",
+                "text": "step6.md"
+            },
+            {
+                "title": "Switch to NoSchedule",
+                "text": "step7.md"
+            },
+            {
+                "title": "Inspect system taints",
+                "text": "step8.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

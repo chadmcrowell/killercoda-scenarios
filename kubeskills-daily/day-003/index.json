@@ -1,0 +1,45 @@
+{
+    "title": "OOMKilled vs Resource Limits",
+    "description": "Trigger OOM events and compare Kubernetes QoS classes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy memory hog",
+                "text": "step1.md"
+            },
+            {
+                "title": "Watch the OOM kill",
+                "text": "step2.md"
+            },
+            {
+                "title": "Inspect termination reason",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check resource usage",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create Guaranteed pod",
+                "text": "step5.md"
+            },
+            {
+                "title": "Create BestEffort pod",
+                "text": "step6.md"
+            },
+            {
+                "title": "Simulate node pressure",
+                "text": "step7.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

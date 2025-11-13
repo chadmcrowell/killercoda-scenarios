@@ -1,0 +1,41 @@
+{
+    "title": "StatefulSet Pod Ordering",
+    "description": "Break ordered updates and compare OrderedReady vs Parallel management",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create slow-starting StatefulSet",
+                "text": "step1.md"
+            },
+            {
+                "title": "Watch ordered creation",
+                "text": "step2.md"
+            },
+            {
+                "title": "Force-delete web-1",
+                "text": "step3.md"
+            },
+            {
+                "title": "Inspect controller events",
+                "text": "step4.md"
+            },
+            {
+                "title": "Verify pods recover",
+                "text": "step5.md"
+            },
+            {
+                "title": "Try Parallel management",
+                "text": "step6.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
