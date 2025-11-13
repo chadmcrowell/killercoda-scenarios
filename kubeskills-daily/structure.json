@@ -1,0 +1,11 @@
+{
+    "title": "KubeSkills Daily",
+    "description": "Play with KubeSkills Daily and learn Kubernetes",
+    "items": [
+      {
+        "path": "day-001",
+        "title": "Pod Restart Policies",
+        "description": "Test how Kubernetes handles failures and restarts"
+      }
+    ]
+  }

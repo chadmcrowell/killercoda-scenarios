@@ -1,0 +1,33 @@
+{
+    "title": "Pod Restart Policies",
+    "description": "Test how Kubernetes handles failures and restarts",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a pod with Always restart policy",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create a pod with OnFailure restart policy",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create a pod with “Never” restart policy",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check logs from previous container run",
+                "text": "step4.md"
+            } 
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
