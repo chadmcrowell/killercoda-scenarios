@@ -1,6 +1,4 @@
-We'll test three restart policies by creating pods that exit with different codes.
-
-## Step 1: Create a pod with "Always" restart policy
+## Create a pod with "Always" restart policy
 
 ```bash
 cat <<EOF | kubectl apply -f -
