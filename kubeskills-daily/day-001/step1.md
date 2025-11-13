@@ -23,4 +23,5 @@ kubectl get pods restart-always -w
 ```{{exec}}
 
 Notice: Even though the container exits successfully (code 0), K8s restarts it.
-Press Ctrl+C after ~30 seconds.
+
+> ⚠️ Press Ctrl+C after ~30 seconds.

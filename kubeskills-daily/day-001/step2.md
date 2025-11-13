@@ -22,4 +22,5 @@ kubectl get pods restart-onfailure -w
 ```{{exec}}
 
 This one restarts because exit code 1 = failure. Notice the restart count increasing.
-Press `Ctrl+C` after ~30 seconds.
+
+> ⚠️ Press `Ctrl+C` after ~30 seconds.
