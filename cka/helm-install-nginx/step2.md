@@ -12,8 +12,8 @@ helm install my-nginx-ingress nginx-stable/nginx-ingress \
   --namespace nginx-ingress \
   --set controller.replicaCount=2 \
   --set controller.service.type=NodePort \
-  --set controller.service.nodePorts.http=30080 \
-  --set controller.service.nodePorts.https=30443
+  --set controller.service.httpPort.nodePort=30080 \
+  --set controller.service.httpsPort.nodePort=30443
 ```{{exec}}
 
 Check the Helm release status:
