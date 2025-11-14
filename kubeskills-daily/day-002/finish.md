@@ -20,4 +20,4 @@ kubectl delete statefulset web
 
 ---
 
-Next: Day 3 - OOM Killer vs Resource Limits
+Next: [Day 3 - OOM Killer vs Resource Limits](https://github.com/kubeskills/daily)
