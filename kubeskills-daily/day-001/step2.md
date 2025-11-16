@@ -1,4 +1,4 @@
-## Create a pod with “OnFailure” restart policy
+Create a pod with “OnFailure” restart policy
 
 ```bash
 cat <<EOF | kubectl apply -f -

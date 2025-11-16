@@ -19,8 +19,9 @@ EOF
 **Check the status:**
 
 ```bash
-kubectl get pods restart-never
-
+kubectl get pods restart-never -w
 ```{{exec}}
 
 Pod stays in “Error” state. No restart. Perfect for debugging!
+
+> ⚠️ Press `Ctrl+C` after ~30 seconds.
