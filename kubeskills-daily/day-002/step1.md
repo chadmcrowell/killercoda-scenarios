@@ -20,9 +20,15 @@ spec:
       containers:
       - name: nginx
         image: nginx:1.25
-        command: ["sh", "-c", "echo \"Pod starting...\"; sleep 30; nginx -g \"daemon off;\""]
+        command: ['sh', '-c', 'echo "Pod starting..."; sleep 30; exec nginx -g "daemon off;"']
         ports:
         - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 35
+          periodSeconds: 5
 EOF
 ```{{exec}}
 
