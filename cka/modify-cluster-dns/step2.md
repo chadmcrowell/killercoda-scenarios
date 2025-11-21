@@ -83,8 +83,29 @@ kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/
 # capture the new default service IP and the control-plane node IP to add them as Subject Alternative Names on the kube-apiserver cert
 NEW_SERVICE_IP=$(kubectl -n default get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 # substitute the actual advertise address used in /etc/kubernetes/manifests/kube-apiserver.yaml (e.g., 172.30.1.2)
-APISERVER_IP=$(grep -A1 -- '--advertise-address' /etc/kubernetes/manifests/kube-apiserver.yaml | awk -F= '/--advertise-address/ {print $2}')
+APISERVER_IP=$(awk -F= '/--advertise-address/ {gsub(/\"|,/, \"\", $2); print $2}' /etc/kubernetes/manifests/kube-apiserver.yaml)
+```
+
+```bash
+# update the kubeadm configuration with the new serviceCIDR and SAN entry before reissuing the apiserver certificate
+cp /etc/kubernetes/kubeadm-config.yaml /root/kubeadm-config.yaml.bak
+vim /etc/kubernetes/kubeadm-config.yaml
+```{{exec}}
+
+```
+# ensure the following sections reflect the new values
+apiServer:
+  certSANs:
+  - 172.30.1.2
+  - 100.96.0.1
+  - 10.96.0.1    # keep the legacy IP for compatibility
+networking:
+  serviceSubnet: 100.96.0.0/12
+```
+
+```bash
 kubeadm init phase certs apiserver \
+  --config=/etc/kubernetes/kubeadm-config.yaml \
   --apiserver-advertise-address="${APISERVER_IP}" \
   --apiserver-cert-extra-sans="${APISERVER_IP},${NEW_SERVICE_IP}"
 ```{{exec}}
@@ -96,7 +117,7 @@ kubeadm init phase certs apiserver \
 kubectl -n kube-system rollout restart daemonset/canal
 ```{{exec}}
 
-> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`.
+> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`. If the pod reports a TLS error, re-check `/etc/kubernetes/kubeadm-config.yaml` and confirm `/etc/kubernetes/pki/apiserver.crt` contains the `100.96.0.1` SAN via `openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text | grep 100.96.0.1`.
 
 
 </details>
