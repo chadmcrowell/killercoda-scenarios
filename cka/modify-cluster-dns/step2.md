@@ -87,6 +87,12 @@ APISERVER_IP=$(grep -oP '(?<=--advertise-address=)[^\", ]+' /etc/kubernetes/mani
 ```{{exec}}
 
 ```bash
+# backup the existing apiserver certificate/key so kubeadm can write new files
+cp /etc/kubernetes/pki/apiserver.crt /etc/kubernetes/pki/apiserver.crt.bak
+cp /etc/kubernetes/pki/apiserver.key /etc/kubernetes/pki/apiserver.key.bak
+```{{exec}}
+
+```bash
 # reissue the apiserver certificate with the current advertise address, the legacy service IP, and the new service IP
 kubeadm init phase certs apiserver \
   --apiserver-advertise-address="${APISERVER_IP}" \
