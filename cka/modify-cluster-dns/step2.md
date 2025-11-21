@@ -7,7 +7,7 @@ The `kube-dns` (CoreDNS) service is the canonical discovery endpoint for every p
 kubectl get svc -A
 ```{{exec}}
 
-> The `servicecidrs.apiserver.k8s.io` object stores the currently allocated service IP range so that components such as the API server and admission chain have a canonical source of truth. Removing it after you edit the API server manifest forces Kubernetes to recreate the resource with the new CIDR; otherwise, the legacy CIDR would continue to be advertised and the replacement services would fail to receive addresses inside the updated range.
+> The `servicecidrs.networking.k8s.io` object stores the currently allocated service IP range so that components such as the API server and admission chain have a canonical source of truth. Removing it after you edit the API server manifest forces Kubernetes to recreate the resource with the new CIDR; otherwise, the legacy CIDR would continue to be advertised and the replacement services would fail to receive addresses inside the updated range.
 
 ```bash
 kubectl get servicecidrs
