@@ -90,6 +90,7 @@ APISERVER_IP=$(grep -oP '(?<=--advertise-address=)[^\", ]+' /etc/kubernetes/mani
 # backup the existing apiserver certificate/key so kubeadm can write new files
 cp /etc/kubernetes/pki/apiserver.crt /etc/kubernetes/pki/apiserver.crt.bak
 cp /etc/kubernetes/pki/apiserver.key /etc/kubernetes/pki/apiserver.key.bak
+sudo rm /etc/kubernetes/pki/apiserver.crt /etc/kubernetes/pki/apiserver.key
 ```{{exec}}
 
 ```bash
