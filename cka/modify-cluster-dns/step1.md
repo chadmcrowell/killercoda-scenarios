@@ -1,4 +1,4 @@
-Change the service cluster IP range that's given to each service to 100.96.0.0/12.
+Change the service cluster IP range (serviceCIDR) that's given to each service to 100.96.0.0/12 so the API server hands out the new range before we recreate the cluster services.
 
 > HINT: Modify the kubernetes API server pod YAML
 
@@ -7,7 +7,7 @@ Change the service cluster IP range that's given to each service to 100.96.0.0/1
 <br>
 
 ```bash
-# change the api server command that hands out service addresses for the cluster
+# change the api server command that hands out service addresses (serviceCIDR) for the cluster
 vim /etc/kubernetes/manifests/kube-apiserver.yaml 
 ```{{exec}}
 
@@ -42,10 +42,12 @@ spec:
     - --service-account-issuer=https://kubernetes.default.svc.cluster.local
     - --service-account-key-file=/etc/kubernetes/pki/sa.pub
     - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
-    - --service-cluster-ip-range=100.96.0.0/12
+    - --service-cluster-ip-range=100.96.0.0/12   # serviceCIDR used when re-creating default services
     - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
 ...
 ```
 
 
 </details>
+
+> NOTE: Once the manifest is saved, the static `kube-apiserver` pod will be restarted automatically with the updated serviceCIDR. Continue to the next step to recreate the core services so they pick up the new range.

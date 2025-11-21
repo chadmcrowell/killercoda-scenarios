@@ -7,19 +7,19 @@
         },
         "steps": [
             {
-                "title": "Change Service CIDR Block",
+                "title": "Update API Server ServiceCIDR",
                 "text": "step1.md"
             },
             {
-                "title": "Change Cluster DNS Service",
+                "title": "Recreate Core Services in New CIDR",
                 "text": "step2.md"
             },
             {
-                "title": "Modify Kubelet Configuration",
+                "title": "Propagate New DNS IP to Kubelets",
                 "text": "step3.md"
             },
             {
-                "title": "Verify Pod DNS",
+                "title": "Verify Pods Resolve Through New DNS",
                 "text": "step4.md"
             }
         ],

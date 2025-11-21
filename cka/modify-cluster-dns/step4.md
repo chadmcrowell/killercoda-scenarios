@@ -1,8 +1,6 @@
-Start a pod named 'netshoot' which uses the image `nicolaka/netshoot'. Ensure that the pod will stay in a running state. 
+Start a pod named 'netshoot' which uses the image `nicolaka/netshoot'. Ensure that the pod will stay in a running state.
 
-Get a shell to the pod and cat the `/etc/resolv.conf` to check that the DNS server used is 100.96.0.10
-
-use the `nslookup` tool to look up the DNS info for example.com
+Get a shell to the pod and cat the `/etc/resolv.conf` to confirm it is using the new DNS ClusterIP (100.96.0.10) that now falls inside the updated serviceCIDR. Use the `nslookup` tool to verify external name resolution (example.com) through the rebuilt DNS service.
 
 <br>
 <details><summary>Solution</summary>

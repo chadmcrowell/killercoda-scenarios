@@ -1,4 +1,4 @@
-In order to change how new pods pick up their DNS info, change the kubelet config to use a cluster DNS of 100.96.0.10. Perform the change to the `config.yaml` on the node where pods run. 
+With the serviceCIDR rotated and the core services recreated, update every kubelet so new pods use the DNS ClusterIP (`100.96.0.10`) coming from the fresh CIDR. Perform the change to the `config.yaml` on the node where pods run. 
 
 Then, edit the kubelet configMap in the `kube-system` namespace to use DNS 100.96.0.10. Reload the kubelet configuration without restarting the node.
 
@@ -59,6 +59,8 @@ kubeadm upgrade node phase kubelet-config
 systemctl daemon-reload
 systemctl restart kubelet
 ```{{exec}}
+
+> NOTE: Reloading and restarting the kubelet after the `kubeadm upgrade node phase kubelet-config` command guarantees the kubelet consumes the DNS IP that now lives inside the new serviceCIDR.
 
 
 </details>

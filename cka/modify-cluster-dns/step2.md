@@ -1,48 +1,83 @@
-Change the IP address associated with the cluster's DNS Service. 
-
-It's the `kube-dns` service in the `kube-system` namespace. `k -n kube-system edit svc kube-dns`
+With the API server now serving the new serviceCIDR, change the IP address associated with the cluster's DNS Service by deleting and re-creating the system services so they repopulate inside the new CIDR range.
 
 <br>
 <details><summary>Solution</summary>
 <br>
 
 ```bash
-# edit the kube-dns service in the kube-system namespace
-kubectl -n kube-system edit svc kube-dns
+# delete the existing DNS service that still points to the old CIDR
+kubectl -n kube-system delete svc kube-dns
 ```{{exec}}
 
-```yaml
-...
-# in the service YAML, modify the 'strategy'. save and quit to apply the changes!
+```bash
+# remove the default 'kubernetes' service that was handed the old ClusterIP
+kubectl -n default delete svc kubernetes
+```{{exec}}
+
+```bash
+# delete the stored serviceCIDR so the apiserver repopulates it with the new range
+kubectl delete servicecidrs.apiserver.k8s.io kubernetes
+```{{exec}}
+
+```bash
+# create the default kubernetes service so it receives a ClusterIP inside 100.96.0.0/12
+cat <<'EOF' | kubectl create -f -
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubernetes
+  namespace: default
+  labels:
+    component: apiserver
+    provider: kubernetes
 spec:
-  clusterIP: 100.96.0.10
-  clusterIPs:
-  - 100.96.0.10
-  internalTrafficPolicy: Cluster
-...
-```{{copy}}
-
-> NOTE: The change will not be applied, but the YAML will be saved in the `/tmp` directory
-
-```bash
-# to force the change, replace the service with the YAML that was saved in the /tmp directory
-# NOTE: The name of the YAML file will be different for you
-kubectl replace -f /tmp/kubectl-edit-3485293250.yaml --force 
-
+  ports:
+    - name: https
+      port: 443
+      protocol: TCP
+      targetPort: 6443
+  type: ClusterIP
+EOF
 ```{{exec}}
 
 ```bash
-# see the new IP address given to the service
-k -n kube-system get svc
-
+# create the kube-dns service (CoreDNS) so it also lands in the new CIDR and points to the apiserver
+cat <<'EOF' | kubectl create -f -
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    k8s-app: kube-dns
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: CoreDNS
+  name: kube-dns
+  namespace: kube-system
+spec:
+  ports:
+  - name: dns
+    port: 53
+    protocol: UDP
+    targetPort: 53
+  - name: dns-tcp
+    port: 53
+    protocol: TCP
+    targetPort: 53
+  - name: metrics
+    port: 9153
+    protocol: TCP
+    targetPort: 9153
+  selector:
+    k8s-app: kube-dns
+  type: ClusterIP
+EOF
 ```{{exec}}
 
-The output should look similar to the following:
 ```bash
-controlplane $ k -n kube-system get svc
-NAME       TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)                  AGE
-kube-dns   ClusterIP   100.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   6s
-```
+# confirm that both services now have ClusterIP values inside 100.96.0.0/12 (e.g. 100.96.0.1 and 100.96.0.10)
+kubectl get svc -A
+```{{exec}}
+
+You should see the default `kubernetes` service recreated with an IP similar to `100.96.0.1` and the `kube-dns` service with the desired `100.96.0.10` IP.
 
 
 </details>
