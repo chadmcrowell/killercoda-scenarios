@@ -83,8 +83,8 @@ kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/
 # capture the new default service IP and the control-plane node IP to add them as Subject Alternative Names on the kube-apiserver cert
 NEW_SERVICE_IP=$(kubectl -n default get svc kubernetes -o jsonpath='{.spec.clusterIP}')
 # substitute the actual advertise address used in /etc/kubernetes/manifests/kube-apiserver.yaml (e.g., 172.30.1.2)
-APISERVER_IP=$(awk -F= '/--advertise-address/ {gsub(/\"|,/, \"\", $2); print $2}' /etc/kubernetes/manifests/kube-apiserver.yaml)
-```
+APISERVER_IP=$(grep -oP '(?<=--advertise-address=)[^\", ]+' /etc/kubernetes/manifests/kube-apiserver.yaml | head -n1)
+```{{exec}}
 
 ```bash
 # update the kubeadm configuration with the new serviceCIDR and SAN entry before reissuing the apiserver certificate
