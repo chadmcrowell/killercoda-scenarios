@@ -51,3 +51,5 @@ spec:
 </details>
 
 > NOTE: Once the manifest is saved, the static `kube-apiserver` pod will be restarted automatically with the updated serviceCIDR. Continue to the next step to recreate the core services so they pick up the new range.
+
+> ⚠️ The kube-apiserver may take up to 2 minutes to restart. Run `crictl ps` to check.

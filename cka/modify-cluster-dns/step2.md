@@ -5,7 +5,7 @@ The `kube-dns` (CoreDNS) service is the canonical discovery endpoint for every p
 ```bash
 # get the `kube-dns` and `kubernetes` services
 kubectl get svc -A
-```
+```{{exec}}
 
 > The `servicecidrs.apiserver.k8s.io` object stores the currently allocated service IP range so that components such as the API server and admission chain have a canonical source of truth. Removing it after you edit the API server manifest forces Kubernetes to recreate the resource with the new CIDR; otherwise, the legacy CIDR would continue to be advertised and the replacement services would fail to receive addresses inside the updated range.
 
@@ -29,7 +29,7 @@ kubectl -n default delete svc kubernetes
 
 ```bash
 # delete the stored serviceCIDR so the apiserver repopulates it with the new range
-kubectl delete servicecidrs.apiserver.k8s.io kubernetes
+kubectl delete servicecidrs kubernetes
 ```{{exec}}
 
 ```bash
@@ -90,7 +90,13 @@ EOF
 kubectl get svc -A
 ```{{exec}}
 
-You should see the default `kubernetes` service recreated with an IP similar to `100.96.0.1` and the `kube-dns` service with the desired `100.96.0.10` IP.
+You should see the output similar to the following:
+```
+controlplane:~$ kubectl get svc -A
+NAMESPACE     NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
+default       kubernetes   ClusterIP   100.96.0.1       <none>        443/TCP                  9s
+kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/TCP,9153/TCP   2s
+```
 
 
 </details>
