@@ -80,9 +80,10 @@ kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/
 ```
 
 ```bash
-# capture the new default service IP to add it as a Subject Alternative Name on the kube-apiserver cert
+# capture the new default service IP and the control-plane node IP to add them as Subject Alternative Names on the kube-apiserver cert
 NEW_SERVICE_IP=$(kubectl -n default get svc kubernetes -o jsonpath='{.spec.clusterIP}')
-APISERVER_IP=$(hostname -i)
+# substitute the actual advertise address used in /etc/kubernetes/manifests/kube-apiserver.yaml (e.g., 172.30.1.2)
+APISERVER_IP=$(grep -A1 -- '--advertise-address' /etc/kubernetes/manifests/kube-apiserver.yaml | awk -F= '/--advertise-address/ {print $2}')
 kubeadm init phase certs apiserver \
   --apiserver-advertise-address="${APISERVER_IP}" \
   --apiserver-cert-extra-sans="${APISERVER_IP},${NEW_SERVICE_IP}"
