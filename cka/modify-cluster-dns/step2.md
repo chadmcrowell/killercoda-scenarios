@@ -87,37 +87,20 @@ APISERVER_IP=$(grep -oP '(?<=--advertise-address=)[^\", ]+' /etc/kubernetes/mani
 ```{{exec}}
 
 ```bash
-# update the kubeadm configuration with the new serviceCIDR and SAN entry before reissuing the apiserver certificate
-cp /etc/kubernetes/kubeadm-config.yaml /root/kubeadm-config.yaml.bak
-vim /etc/kubernetes/kubeadm-config.yaml
-```{{exec}}
-
-```
-# ensure the following sections reflect the new values
-apiServer:
-  certSANs:
-  - 172.30.1.2
-  - 100.96.0.1
-  - 10.96.0.1    # keep the legacy IP for compatibility
-networking:
-  serviceSubnet: 100.96.0.0/12
-```
-
-```bash
+# reissue the apiserver certificate with the current advertise address, the legacy service IP, and the new service IP
 kubeadm init phase certs apiserver \
-  --config=/etc/kubernetes/kubeadm-config.yaml \
   --apiserver-advertise-address="${APISERVER_IP}" \
-  --apiserver-cert-extra-sans="${APISERVER_IP},${NEW_SERVICE_IP}"
+  --apiserver-cert-extra-sans="${APISERVER_IP},10.96.0.1,${NEW_SERVICE_IP}"
 ```{{exec}}
 
-> Regenerating the `apiserver.crt` file ensures the certificate is valid for the freshly issued ClusterIP (for example 100.96.0.1). Without this step, components that contact the API via `kubernetes.default`—such as your CNI plugin—will fail TLS verification with errors like `certificate is valid for 10.96.0.1 ... not 100.96.0.1`. The static pod automatically restarts when the certificate changes; you can watch `kubectl get pods -n kube-system` until the apiserver comes back to `Running`.
+> Regenerating the `apiserver.crt` file ensures the certificate is valid for the freshly issued ClusterIP (for example 100.96.0.1). Include any other SANs currently configured (such as the node IP or 10.96.0.1 for backward compatibility) so existing components continue to trust the API server. Without this step, components that contact the API via `kubernetes.default`—such as your CNI plugin—will fail TLS verification with errors like `certificate is valid for 10.96.0.1 ... not 100.96.0.1`. The static pod automatically restarts when the certificate changes; you can watch `kubectl get pods -n kube-system` until the apiserver comes back to `Running`.
 
 ```bash
 # restart Canal so the CNI plugin loads the new kubernetes.default service IP
 kubectl -n kube-system rollout restart daemonset/canal
 ```{{exec}}
 
-> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`. If the pod reports a TLS error, re-check `/etc/kubernetes/kubeadm-config.yaml` and confirm `/etc/kubernetes/pki/apiserver.crt` contains the `100.96.0.1` SAN via `openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text | grep 100.96.0.1`.
+> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`. If the pod reports a TLS error, confirm `/etc/kubernetes/pki/apiserver.crt` contains the `100.96.0.1` SAN via `openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text | grep 100.96.0.1`.
 
 
 </details>
