@@ -98,5 +98,12 @@ default       kubernetes   ClusterIP   100.96.0.1       <none>        443/TCP   
 kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/TCP,9153/TCP   2s
 ```
 
+```bash
+# restart Calico so the CNI plugin loads the new kubernetes.default service IP
+kubectl -n kube-system rollout restart daemonset/calico-node
+```{{exec}}
+
+> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Calico daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`.
+
 
 </details>
