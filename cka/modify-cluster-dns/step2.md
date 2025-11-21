@@ -33,27 +33,6 @@ kubectl delete servicecidrs kubernetes
 ```{{exec}}
 
 ```bash
-# create the default kubernetes service so it receives a ClusterIP inside 100.96.0.0/12
-cat <<'EOF' | kubectl create -f -
-apiVersion: v1
-kind: Service
-metadata:
-  name: kubernetes
-  namespace: default
-  labels:
-    component: apiserver
-    provider: kubernetes
-spec:
-  ports:
-    - name: https
-      port: 443
-      protocol: TCP
-      targetPort: 6443
-  type: ClusterIP
-EOF
-```{{exec}}
-
-```bash
 # create the kube-dns service (CoreDNS) so it also lands in the new CIDR and points to the apiserver
 cat <<'EOF' | kubectl create -f -
 apiVersion: v1
@@ -84,6 +63,8 @@ spec:
   type: ClusterIP
 EOF
 ```{{exec}}
+
+> NOTE: The kubernetes service gets re-created automatically, so no need to apply the YAML
 
 ```bash
 # confirm that both services now have ClusterIP values inside 100.96.0.0/12 (e.g. 100.96.0.1 and 100.96.0.10)
