@@ -80,11 +80,22 @@ kube-system   kube-dns     ClusterIP   100.99.203.138   <none>        53/UDP,53/
 ```
 
 ```bash
-# restart Calico so the CNI plugin loads the new kubernetes.default service IP
-kubectl -n kube-system rollout restart daemonset/calico-node
+# capture the new default service IP to add it as a Subject Alternative Name on the kube-apiserver cert
+NEW_SERVICE_IP=$(kubectl -n default get svc kubernetes -o jsonpath='{.spec.clusterIP}')
+APISERVER_IP=$(hostname -i)
+kubeadm init phase certs apiserver \
+  --apiserver-advertise-address="${APISERVER_IP}" \
+  --apiserver-cert-extra-sans="${APISERVER_IP},${NEW_SERVICE_IP}"
 ```{{exec}}
 
-> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Calico daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`.
+> Regenerating the `apiserver.crt` file ensures the certificate is valid for the freshly issued ClusterIP (for example 100.96.0.1). Without this step, components that contact the API via `kubernetes.default`—such as your CNI plugin—will fail TLS verification with errors like `certificate is valid for 10.96.0.1 ... not 100.96.0.1`. The static pod automatically restarts when the certificate changes; you can watch `kubectl get pods -n kube-system` until the apiserver comes back to `Running`.
+
+```bash
+# restart Canal so the CNI plugin loads the new kubernetes.default service IP
+kubectl -n kube-system rollout restart daemonset/canal
+```{{exec}}
+
+> Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`.
 
 
 </details>
