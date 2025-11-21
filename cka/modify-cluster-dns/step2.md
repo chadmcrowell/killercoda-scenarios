@@ -109,5 +109,12 @@ kubectl -n kube-system rollout restart daemonset/canal
 
 > Network plugins read `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` once per pod startup. Restarting the Canal daemonset ensures it reaches the API server via 100.96.0.1 instead of the old 10.96.0.1 IP, preventing sandbox creation errors such as `failed to setup network ... dial tcp 10.96.0.1:443: i/o timeout`. If the pod reports a TLS error, confirm `/etc/kubernetes/pki/apiserver.crt` contains the `100.96.0.1` SAN via `openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text | grep 100.96.0.1`.
 
+```bash
+# restart CoreDNS so it re-establishes watches against the API server using the refreshed ClusterIP
+kubectl -n kube-system rollout restart deployment/coredns
+```{{exec}}
+
+> CoreDNS talks to the Kubernetes API via `kubernetes.default.svc`. After the serviceCIDR change and certificate rotation, restarting the deployment forces CoreDNS to reconnect with the new SAN/IP combo; otherwise, pods may see timeouts when querying `100.96.0.10`.
+
 
 </details>

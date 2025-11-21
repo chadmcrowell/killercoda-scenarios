@@ -27,4 +27,6 @@ cat /etc/resolv.conf
 nslookup example.com
 ```
 
+> If lookups still time out, confirm the CoreDNS pods are running and Ready after the restart from Step 2: `kubectl -n kube-system get pods -l k8s-app=kube-dns`. Review their logs for TLS errors against `https://kubernetes.default.svc` and rerun the `deployment/coredns` restart once the API server certificate has the new service IP in its SAN list.
+
 </details>
