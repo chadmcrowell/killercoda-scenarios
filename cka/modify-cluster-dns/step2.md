@@ -1,4 +1,6 @@
-With the API server now serving the new serviceCIDR, change the IP address associated with the cluster's DNS Service by deleting and re-creating the system services so they repopulate inside the new CIDR range. The `kube-dns` (CoreDNS) service is the canonical discovery endpoint for every pod in the cluster; any mismatch between its ClusterIP and the DNS IPs pushed to pods will break name resolution. Recreating the `kube-dns` and `kubernetes` services guarantees they receive fresh IPs from the new CIDR before workloads pick up the updated DNS value.
+With the API server now serving the new serviceCIDR, change the IP address associated with the cluster's DNS Service by deleting and re-creating the system services so they repopulate inside the new CIDR range. 
+
+The `kube-dns` (CoreDNS) service is the canonical discovery endpoint for every pod in the cluster; any mismatch between its ClusterIP and the DNS IPs pushed to pods will break name resolution. Recreating the `kube-dns` and `kubernetes` services guarantees they receive fresh IPs from the new CIDR before workloads pick up the updated DNS value.
 
 ```bash
 # get the `kube-dns` and `kubernetes` services
