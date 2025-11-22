@@ -36,6 +36,41 @@
         "path": "day-007",
         "title": "Day 7 - Init Container Failures",
         "description": "Debug stuck init containers, add retries, and run sidecars"
+      },
+      {
+        "path": "day-008",
+        "title": "Day 8 - PVC Binding Failures",
+        "description": "Storage that never arrives until you fix StorageClasses and modes"
+      },
+      {
+        "path": "day-009",
+        "title": "Day 9 - ConfigMap Updates - The Sync Gap",
+        "description": "See why env vars freeze, volumes lag, and subPath never refreshes"
+      },
+      {
+        "path": "day-010",
+        "title": "Day 10 - Secret Rotation - Hot Swapping Credentials",
+        "description": "Rotate secrets, see env/volume drift, and force rollouts to reload"
+      },
+      {
+        "path": "day-011",
+        "title": "Day 11 - Service DNS Propagation Delays",
+        "description": "Watch DNS timing gaps, endpoint readiness, and headless vs ClusterIP behavior"
+      },
+      {
+        "path": "day-012",
+        "title": "Day 12 - HPA Thrashing - The Scale Storm",
+        "description": "See aggressive HPAs thrash, tune behaviors, and test multi-metric scenarios"
+      },
+      {
+        "path": "day-013",
+        "title": "Day 13 - PodDisruptionBudgets - Blocking Maintenance",
+        "description": "See how strict PDBs block drains, fix budgets, and explore conflict scenarios"
+      },
+      {
+        "path": "day-014",
+        "title": "Day 14 - ResourceQuota - Deployment Denied",
+        "description": "See how quotas silently block pods, use LimitRanges, and explore scoped/count quotas"
       }
     ]
   }

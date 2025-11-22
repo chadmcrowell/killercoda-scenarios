@@ -1,0 +1,53 @@
+{
+    "title": "HPA Thrashing - The Scale Storm",
+    "description": "See aggressive HPAs thrash, tune behaviors, and test multi-metric scenarios",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy a CPU-intensive app",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create an aggressive HPA",
+                "text": "step2.md"
+            },
+            {
+                "title": "Generate load to scale up",
+                "text": "step3.md"
+            },
+            {
+                "title": "Remove load and watch thrashing",
+                "text": "step4.md"
+            },
+            {
+                "title": "Check HPA events",
+                "text": "step5.md"
+            },
+            {
+                "title": "Configure better stabilization",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test multiple metrics",
+                "text": "step7.md"
+            },
+            {
+                "title": "Custom metrics example",
+                "text": "step8.md"
+            },
+            {
+                "title": "Simulate real traffic patterns",
+                "text": "step9.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

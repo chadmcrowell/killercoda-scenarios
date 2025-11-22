@@ -1,0 +1,53 @@
+{
+    "title": "ConfigMap Updates - The Sync Gap",
+    "description": "See why env vars freeze, volumes lag, and subPath never refreshes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a ConfigMap",
+                "text": "step1.md"
+            },
+            {
+                "title": "Mount ConfigMap as env and volume",
+                "text": "step2.md"
+            },
+            {
+                "title": "Update ConfigMap values",
+                "text": "step3.md"
+            },
+            {
+                "title": "Verify env vars are frozen",
+                "text": "step4.md"
+            },
+            {
+                "title": "Check volume file refresh",
+                "text": "step5.md"
+            },
+            {
+                "title": "Try subPath mount (no updates)",
+                "text": "step6.md"
+            },
+            {
+                "title": "Change ConfigMap again",
+                "text": "step7.md"
+            },
+            {
+                "title": "Force restart via annotation hash",
+                "text": "step8.md"
+            },
+            {
+                "title": "Kustomize auto hash rollout",
+                "text": "step9.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

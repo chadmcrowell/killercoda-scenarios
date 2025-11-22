@@ -1,0 +1,57 @@
+{
+    "title": "Service DNS Propagation Delays",
+    "description": "Watch DNS timing gaps, endpoint readiness, and headless vs ClusterIP behavior",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check CoreDNS configuration",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create backend deployment and service",
+                "text": "step2.md"
+            },
+            {
+                "title": "Race DNS resolution",
+                "text": "step3.md"
+            },
+            {
+                "title": "Watch endpoint propagation",
+                "text": "step4.md"
+            },
+            {
+                "title": "Measure DNS timing",
+                "text": "step5.md"
+            },
+            {
+                "title": "Headless vs ClusterIP",
+                "text": "step6.md"
+            },
+            {
+                "title": "Simulate stale DNS during rollout",
+                "text": "step7.md"
+            },
+            {
+                "title": "Init container DNS dependency",
+                "text": "step8.md"
+            },
+            {
+                "title": "Create service and finish init",
+                "text": "step9.md"
+            },
+            {
+                "title": "DNS policy options",
+                "text": "step10.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

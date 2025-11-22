@@ -1,0 +1,53 @@
+{
+    "title": "Secret Rotation - Hot Swapping Credentials",
+    "description": "See env vars freeze, volumes refresh slowly, and rollouts pick up rotated secrets",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create initial secrets",
+                "text": "step1.md"
+            },
+            {
+                "title": "Mount secret as env and volume",
+                "text": "step2.md"
+            },
+            {
+                "title": "Rotate the password",
+                "text": "step3.md"
+            },
+            {
+                "title": "Verify env vs volume mismatch",
+                "text": "step4.md"
+            },
+            {
+                "title": "Projected volume with items",
+                "text": "step5.md"
+            },
+            {
+                "title": "Immutable secrets",
+                "text": "step6.md"
+            },
+            {
+                "title": "Restart on secret change",
+                "text": "step7.md"
+            },
+            {
+                "title": "Check secret encoding",
+                "text": "step8.md"
+            },
+            {
+                "title": "Vault agent (conceptual)",
+                "text": "step9.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "title": "ResourceQuota - Deployment Denied",
+    "description": "See how quotas silently block pods, use LimitRanges, and explore scoped/count quotas",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a namespace with ResourceQuota",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy without requests (fails silently)",
+                "text": "step2.md"
+            },
+            {
+                "title": "Find the real error",
+                "text": "step3.md"
+            },
+            {
+                "title": "Fix by adding resource requests",
+                "text": "step4.md"
+            },
+            {
+                "title": "Exceed the quota",
+                "text": "step5.md"
+            },
+            {
+                "title": "Add LimitRange defaults",
+                "text": "step6.md"
+            },
+            {
+                "title": "LimitRange violations",
+                "text": "step7.md"
+            },
+            {
+                "title": "Quota scopes (priority-based)",
+                "text": "step8.md"
+            },
+            {
+                "title": "Count-based quotas",
+                "text": "step9.md"
+            },
+            {
+                "title": "Cross-namespace quota view",
+                "text": "step10.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

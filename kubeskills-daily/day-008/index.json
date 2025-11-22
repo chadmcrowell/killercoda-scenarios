@@ -1,0 +1,53 @@
+{
+    "title": "PVC Binding Failures",
+    "description": "Storage that never arrives until you fix StorageClasses and modes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check storage classes",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create PVC with missing class",
+                "text": "step2.md"
+            },
+            {
+                "title": "Attach pod to broken PVC",
+                "text": "step3.md"
+            },
+            {
+                "title": "Describe pending resources",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create StorageClass to satisfy claim",
+                "text": "step5.md"
+            },
+            {
+                "title": "Try WaitForFirstConsumer",
+                "text": "step6.md"
+            },
+            {
+                "title": "Schedule consumer to bind",
+                "text": "step7.md"
+            },
+            {
+                "title": "See Retain reclaim policy",
+                "text": "step8.md"
+            },
+            {
+                "title": "Test unsupported access mode",
+                "text": "step9.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

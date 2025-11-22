@@ -1,0 +1,65 @@
+{
+    "title": "PodDisruptionBudgets - Blocking Maintenance",
+    "description": "See how strict PDBs block drains, fix budgets, and explore conflict scenarios",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy a 2-replica application",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create an overly strict PDB",
+                "text": "step2.md"
+            },
+            {
+                "title": "Try to drain a node",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check why drain is blocked",
+                "text": "step4.md"
+            },
+            {
+                "title": "Allow one disruption",
+                "text": "step5.md"
+            },
+            {
+                "title": "Drain succeeds now",
+                "text": "step6.md"
+            },
+            {
+                "title": "Uncordon the node",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test percentage-based PDB",
+                "text": "step8.md"
+            },
+            {
+                "title": "Single-replica PDB trap",
+                "text": "step9.md"
+            },
+            {
+                "title": "PDB with unhealthy pod handling",
+                "text": "step10.md"
+            },
+            {
+                "title": "Multiple PDBs conflict",
+                "text": "step11.md"
+            },
+            {
+                "title": "Voluntary vs involuntary disruptions",
+                "text": "step12.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
