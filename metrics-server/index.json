@@ -1,0 +1,23 @@
+{
+    "title": "Metrics Server Playground",
+    "description": "Learn how to use metrics server with HPA in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install Metrics Server",
+                "text": "step1.md",
+                "foreground": "foreground.sh",
+                "background": "background.sh"
+            }            
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
