@@ -13,6 +13,11 @@
         "description": "2 node cluster environment playground for Kubernetes"
       },
       {
+        "path": "metrics-server",
+        "title": "Monitoring Kubernetes with Metrics Server",
+        "description": "Learn how to use the metrics server to observe your Kubernetes cluster"
+      },
+      {
         "path": "helm-install-nginx",
         "title": "Installing NGINX Ingress with Helm",
         "description": "Practice installing and customizing NGINX Ingress with Helm"

@@ -1,0 +1,31 @@
+{
+    "title": "Monitoring Kubernetes with the Metrics Server",
+    "description": "Learn how to use `kubectl top` to show metrics in Kubernetes",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Show metrics for nodes in the cluster",
+                "text": "step1.md",
+                "foreground": "foreground.sh",
+                "background": "background.sh"
+            },
+            {
+                "title": "Show metrics for pods in the default namespace",
+                "text": "step2.md"
+            },
+            {
+                "title": "Sort metrics by CPU or Memory",
+                "text": "step3.md"
+            }            
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
