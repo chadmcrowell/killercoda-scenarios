@@ -1,0 +1,65 @@
+{
+    "title": "ServiceAccount Tokens - Projection Problems",
+    "description": "See how automount settings, projected tokens, and token requests change Kubernetes auth",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check default token mounting",
+                "text": "step1.md"
+            },
+            {
+                "title": "Disable automounting at pod level",
+                "text": "step2.md"
+            },
+            {
+                "title": "Disable at ServiceAccount level",
+                "text": "step3.md"
+            },
+            {
+                "title": "Override SA setting at pod level",
+                "text": "step4.md"
+            },
+            {
+                "title": "Compare legacy vs projected tokens",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test token rotation",
+                "text": "step6.md"
+            },
+            {
+                "title": "Multiple audiences",
+                "text": "step7.md"
+            },
+            {
+                "title": "Token request API (programmatic)",
+                "text": "step8.md"
+            },
+            {
+                "title": "Legacy token secret (deprecated)",
+                "text": "step9.md"
+            },
+            {
+                "title": "Bound service account tokens",
+                "text": "step10.md"
+            },
+            {
+                "title": "Test API access with projected token",
+                "text": "step11.md"
+            },
+            {
+                "title": "Verify token expiration behavior",
+                "text": "step12.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

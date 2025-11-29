@@ -1,0 +1,57 @@
+{
+    "title": "Admission Webhooks - The Deployment Blocker",
+    "description": "See how webhook failures stall the API server and how to bypass, scope, and debug them",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a broken ValidatingWebhookConfiguration",
+                "text": "step1.md"
+            },
+            {
+                "title": "Try to create a pod (hangs!)",
+                "text": "step2.md"
+            },
+            {
+                "title": "Check webhook status",
+                "text": "step3.md"
+            },
+            {
+                "title": "Fix with failurePolicy: Ignore",
+                "text": "step4.md"
+            },
+            {
+                "title": "Exempt critical namespaces",
+                "text": "step5.md"
+            },
+            {
+                "title": "Deploy a working webhook (simple example)",
+                "text": "step6.md"
+            },
+            {
+                "title": "Create working webhook configuration",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test object selector",
+                "text": "step8.md"
+            },
+            {
+                "title": "MutatingWebhook example (conceptual)",
+                "text": "step9.md"
+            },
+            {
+                "title": "Debug webhook failures",
+                "text": "step10.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

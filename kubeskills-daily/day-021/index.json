@@ -1,0 +1,81 @@
+{
+    "title": "Finalizers - The Deletion Blocker",
+    "description": "See how finalizers block deletion, how to clear them safely, and how built-ins protect resources",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a simple resource with finalizer",
+                "text": "step1.md"
+            },
+            {
+                "title": "Try to delete it",
+                "text": "step2.md"
+            },
+            {
+                "title": "Remove finalizer to allow deletion",
+                "text": "step3.md"
+            },
+            {
+                "title": "Test namespace with finalizer",
+                "text": "step4.md"
+            },
+            {
+                "title": "List all finalizers on the namespace",
+                "text": "step5.md"
+            },
+            {
+                "title": "Remove finalizer to complete namespace deletion",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test PVC with protection finalizer",
+                "text": "step7.md"
+            },
+            {
+                "title": "Use PVC in a pod",
+                "text": "step8.md"
+            },
+            {
+                "title": "Delete pod to allow PVC deletion",
+                "text": "step9.md"
+            },
+            {
+                "title": "Custom resource with controller finalizer",
+                "text": "step10.md"
+            },
+            {
+                "title": "Inspect deletion timestamp",
+                "text": "step11.md"
+            },
+            {
+                "title": "Force removal (emergency only!)",
+                "text": "step12.md"
+            },
+            {
+                "title": "Test multiple finalizers",
+                "text": "step13.md"
+            },
+            {
+                "title": "Common built-in finalizers",
+                "text": "step14.md"
+            },
+            {
+                "title": "Find all stuck resources in Terminating state",
+                "text": "step15.md"
+            },
+            {
+                "title": "Cleanup stuck namespace (production scenario)",
+                "text": "step16.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

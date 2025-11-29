@@ -1,0 +1,57 @@
+{
+    "title": "Ingress Path Routing - Order Matters",
+    "description": "See how Prefix ordering, Exact, regex, and rewrites change nginx-ingress routing",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Install nginx Ingress controller",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy two backend services",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create Ingress with greedy Prefix paths",
+                "text": "step3.md"
+            },
+            {
+                "title": "Test path routing (unexpected behavior)",
+                "text": "step4.md"
+            },
+            {
+                "title": "Fix with rule ordering",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test Exact pathType",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test ImplementationSpecific (nginx regex)",
+                "text": "step7.md"
+            },
+            {
+                "title": "Path rewriting",
+                "text": "step8.md"
+            },
+            {
+                "title": "Multiple Ingress rules (same host)",
+                "text": "step9.md"
+            },
+            {
+                "title": "Debugging Ingress routing",
+                "text": "step10.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "title": "CronJob Concurrency - The Job Pile-Up",
+    "description": "See how CronJob concurrency policies affect overlapping runs, skips, replacements, and history",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create CronJob with Allow policy (default)",
+                "text": "step1.md"
+            },
+            {
+                "title": "Watch jobs pile up",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create CronJob with Forbid policy",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check skipped runs",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create CronJob with Replace policy",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test job completion and history",
+                "text": "step6.md"
+            },
+            {
+                "title": "Suspend a CronJob",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test startingDeadlineSeconds",
+                "text": "step8.md"
+            },
+            {
+                "title": "Job failure handling",
+                "text": "step9.md"
+            },
+            {
+                "title": "Manual job trigger",
+                "text": "step10.md"
+            },
+            {
+                "title": "Time zone support (K8s 1.25+)",
+                "text": "step11.md"
+            },
+            {
+                "title": "Complex schedule expressions",
+                "text": "step12.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

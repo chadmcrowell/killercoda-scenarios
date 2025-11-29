@@ -71,6 +71,41 @@
         "path": "day-014",
         "title": "Day 14 - ResourceQuota - Deployment Denied",
         "description": "See how quotas silently block pods, use LimitRanges, and explore scoped/count quotas"
+      },
+      {
+        "path": "day-015",
+        "title": "Day 15 - Ingress Path Routing - Order Matters",
+        "description": "See how Prefix ordering, Exact, regex, and rewrites change nginx-ingress routing"
+      },
+      {
+        "path": "day-016",
+        "title": "Day 16 - RBAC Lockout - Permission Denied",
+        "description": "See how Roles, ClusterRoles, bindings, and aggregation grant or deny access"
+      },
+      {
+        "path": "day-017",
+        "title": "Day 17 - Admission Webhooks - The Deployment Blocker",
+        "description": "See how webhook failures stall the API server and how to bypass, scope, and debug them"
+      },
+      {
+        "path": "day-018",
+        "title": "Day 18 - CronJob Concurrency - The Job Pile-Up",
+        "description": "See how CronJob concurrency policies affect overlapping runs, skips, replacements, and history"
+      },
+      {
+        "path": "day-019",
+        "title": "Day 19 - ServiceAccount Tokens - Projection Problems",
+        "description": "See how automount settings, projected tokens, and token requests change Kubernetes auth"
+      },
+      {
+        "path": "day-020",
+        "title": "Day 20 - Node NotReady - The Eviction Cascade",
+        "description": "See how NotReady taints trigger evictions, tolerations delay them, and workloads recover"
+      },
+      {
+        "path": "day-021",
+        "title": "Day 21 - Finalizers - The Deletion Blocker",
+        "description": "See how finalizers block deletion, how to clear them safely, and how built-ins protect resources"
       }
     ]
   }

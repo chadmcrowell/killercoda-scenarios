@@ -1,0 +1,81 @@
+{
+    "title": "RBAC Lockout - Permission Denied",
+    "description": "See how Roles, ClusterRoles, bindings, and aggregation grant or deny access",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a restricted ServiceAccount",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy a pod using this ServiceAccount",
+                "text": "step2.md"
+            },
+            {
+                "title": "Try to list pods (fails!)",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check what permissions the SA has",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create a Role with pod read permissions",
+                "text": "step5.md"
+            },
+            {
+                "title": "Bind the Role to the ServiceAccount",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test again (success!)",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test other operations (still denied)",
+                "text": "step8.md"
+            },
+            {
+                "title": "Create ClusterRole for cluster-wide access",
+                "text": "step9.md"
+            },
+            {
+                "title": "ClusterRoleBinding for cluster-wide access",
+                "text": "step10.md"
+            },
+            {
+                "title": "RoleBinding with ClusterRole (namespace-scoped use)",
+                "text": "step11.md"
+            },
+            {
+                "title": "Test aggregated ClusterRoles",
+                "text": "step12.md"
+            },
+            {
+                "title": "Create custom aggregated ClusterRole",
+                "text": "step13.md"
+            },
+            {
+                "title": "Debug RBAC with auth can-i",
+                "text": "step14.md"
+            },
+            {
+                "title": "Test resource and verb granularity",
+                "text": "step15.md"
+            },
+            {
+                "title": "Test resource names restriction",
+                "text": "step16.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

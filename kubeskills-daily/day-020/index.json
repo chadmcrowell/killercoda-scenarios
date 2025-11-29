@@ -1,0 +1,69 @@
+{
+    "title": "Node NotReady - The Eviction Cascade",
+    "description": "See how NotReady taints trigger evictions, tolerations delay them, and workloads recover",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check initial node status",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy test pods",
+                "text": "step2.md"
+            },
+            {
+                "title": "Check default tolerations",
+                "text": "step3.md"
+            },
+            {
+                "title": "Simulate node failure (taint NotReady)",
+                "text": "step4.md"
+            },
+            {
+                "title": "Check eviction timing",
+                "text": "step5.md"
+            },
+            {
+                "title": "Remove taint and watch recovery",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test custom toleration (longer wait)",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test infinite toleration",
+                "text": "step8.md"
+            },
+            {
+                "title": "Check StatefulSet behavior",
+                "text": "step9.md"
+            },
+            {
+                "title": "DaemonSet default behavior",
+                "text": "step10.md"
+            },
+            {
+                "title": "Test pod disruption during node drain",
+                "text": "step11.md"
+            },
+            {
+                "title": "Check pod deletion timestamp",
+                "text": "step12.md"
+            },
+            {
+                "title": "Uncordon and cleanup",
+                "text": "step13.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
