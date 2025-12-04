@@ -9,6 +9,13 @@ Run the appropriate commands to resolve this problem and get your cluster upgrad
 
 **HINT:** Check the version of kubeadm. You will realize that you can't upgrade past the current version of kubeadm.
 
+**🔥 HOT TIP:** Use apt-cache to find the appropriate packages:
+```bash
+apt-cache madison kubelet
+apt-cache madison kubectl
+apt-cache madison kubeadm
+```{{exec}}
+
 <br>
 <details><summary>Solution</summary>
 <br>
