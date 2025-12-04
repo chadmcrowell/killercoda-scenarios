@@ -9,23 +9,17 @@ metadata:
 spec:
   containers:
   - name: app
-    image: hashicorp/http-echo
-    args:
-    - "-text=Slow response"
-    - "-listen=:8080"
+    image: busybox:1.36.1
+    command: ["/bin/sh", "-c", "sleep 10 && mkdir -p /www && echo 'Slow response' > /www/index.html && httpd -f -p 8080 -h /www"]
     ports:
     - containerPort: 8080
-    lifecycle:
-      postStart:
-        exec:
-          command: ["/bin/sh", "-c", "sleep 10"]
     livenessProbe:
       httpGet:
         path: /
         port: 8080
       initialDelaySeconds: 2
       periodSeconds: 3
-      timeoutSeconds: 1
+      timeoutSeconds: 1   # Too aggressive!
       failureThreshold: 2
 EOF
 ```{{exec}}

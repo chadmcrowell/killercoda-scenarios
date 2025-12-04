@@ -9,14 +9,10 @@ metadata:
 spec:
   containers:
   - name: app
-    image: hashicorp/http-echo
-    args:
-    - "-text=Finally started"
-    - "-listen=:8080"
-    lifecycle:
-      postStart:
-        exec:
-          command: ["/bin/sh", "-c", "sleep 60"]
+    image: busybox:1.36.1
+    command: ["/bin/sh", "-c", "sleep 60 && mkdir -p /www && echo 'Finally started' > /www/index.html && httpd -f -p 8080 -h /www"]
+    ports:
+    - containerPort: 8080
     startupProbe:
       httpGet:
         path: /
