@@ -30,7 +30,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 ```bash
 # update packages from local repo sources
 sudo apt update
-```
+```{{exec}}
 
 ```bash
 # update package index and install kubelet version 1.34.2
