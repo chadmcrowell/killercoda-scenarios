@@ -1,11 +1,11 @@
-Run the command `kubeadm upgrade apply v1.30.1`{{exec}} to upgrade the control plane components to 1.30.1. 
+Run the command `kubeadm upgrade apply v1.34.2`{{exec}} to upgrade the control plane components to 1.34.2. 
 
 Determine why you received the following message: 
 ```
-Specified version to upgrade to "v1.30.1" is higher than the kubeadm version "v1.30.0". Upgrade kubeadm first using the tool you used to install kubeadm
+Specified version to upgrade to "v1.34.2" is higher than the kubeadm version "v1.34.1". Upgrade kubeadm first using the tool you used to install kubeadm
 ```
 
-Run the appropriate commands to resolve this problem and get your cluster upgraded to 1.30.1.
+Run the appropriate commands to resolve this problem and get your cluster upgraded to 1.34.2.
 
 **HINT:** Check the version of kubeadm. You will realize that you can't upgrade past the current version of kubeadm.
 
@@ -19,8 +19,8 @@ kubeadm version -o json | jq
 ```{{exec}}
 
 ```plain
-# upgrade kubeadm to version 1.28.3
-sudo apt install -y kubeadm=1.30.1-1.1
+# upgrade kubeadm to version 1.34.2
+sudo apt install -y kubeadm=1.34.2-1.1
 ```{{exec}}
 
 </details>
