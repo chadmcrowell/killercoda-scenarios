@@ -135,7 +135,7 @@
       {
         "path": "upgrade-kubelet",
         "title": "Upgrade Kubelet",
-        "description": "Use the apt package manager to upgrade kubelet to version 1.27.0"
+        "description": "Use the apt package manager to upgrade kubelet"
       },
       {
         "path": "logging",
