@@ -31,7 +31,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 ```bash
 # update package index and install kubelet version 1.34.2
 # optionally run apt-cache madison kubelet
-sudo apt-cache madison kubelet
+# sudo apt-cache madison kubelet
 sudo apt update
 sudo apt install -y kubelet=1.34.2-1.1
 ```{{exec}}
