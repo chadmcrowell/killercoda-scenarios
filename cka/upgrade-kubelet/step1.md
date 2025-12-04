@@ -8,7 +8,7 @@ Upgrade the kubelet to version 1.34.2 and verify that the kubelet has been upgra
 
 ```bash
 # check the current version of kubelet
-k get no
+kubelet --version
 ```{{exec}}
 
 ```bash
@@ -41,7 +41,7 @@ sudo apt install -y kubelet=1.34.2-1.1
 
 ```bash
 # verify the version of kubelet has been upgraded to 1.34.2
-k get no
+kubelet --version
 ```{{exec}}
 
 </details>
