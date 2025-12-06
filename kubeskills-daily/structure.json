@@ -136,6 +136,11 @@
         "path": "day-027",
         "title": "Day 27 - API Server Rate Limiting - Request Throttling",
         "description": "Inspect APF configs, flood the API, watch throttling, review FlowSchemas/PriorityLevels, and test identities/metrics"
+      },
+      {
+        "path": "day-028",
+        "title": "Day 28 - Pod Security Admission - Policy Enforcement",
+        "description": "Test baseline vs restricted PSA, fix security contexts, observe warn/audit, and validate workloads"
       }
     ]
   }

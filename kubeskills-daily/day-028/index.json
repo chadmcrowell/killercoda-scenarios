@@ -1,0 +1,77 @@
+{
+    "title": "Pod Security Admission - Policy Enforcement",
+    "description": "Test baseline vs restricted PSA, fix security contexts, observe warn/audit, and validate workloads across types",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check PSA availability",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create namespace with baseline enforcement",
+                "text": "step2.md"
+            },
+            {
+                "title": "Test baseline with privileged container (should fail)",
+                "text": "step3.md"
+            },
+            {
+                "title": "Deploy compliant pod in baseline namespace",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create restricted namespace (strict)",
+                "text": "step5.md"
+            },
+            {
+                "title": "Try baseline-compliant pod in restricted namespace",
+                "text": "step6.md"
+            },
+            {
+                "title": "Fix restricted requirements",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test mixed enforcement modes",
+                "text": "step8.md"
+            },
+            {
+                "title": "Test Deployment under restricted",
+                "text": "step9.md"
+            },
+            {
+                "title": "Test hostPath violation",
+                "text": "step10.md"
+            },
+            {
+                "title": "Test hostNetwork violation",
+                "text": "step11.md"
+            },
+            {
+                "title": "Test privileged namespace exemption",
+                "text": "step12.md"
+            },
+            {
+                "title": "Check PSA violations in events",
+                "text": "step13.md"
+            },
+            {
+                "title": "Test with service account token mount",
+                "text": "step14.md"
+            },
+            {
+                "title": "Test StatefulSet compliance",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
