@@ -1,0 +1,77 @@
+{
+    "title": "API Server Rate Limiting - Request Throttling",
+    "description": "Inspect APF configs, flood the API, watch throttling/events, review FlowSchemas/PriorityLevels, and test identities/metrics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check API server rate limiting config",
+                "text": "step1.md"
+            },
+            {
+                "title": "Make baseline API requests",
+                "text": "step2.md"
+            },
+            {
+                "title": "Flood API server with requests",
+                "text": "step3.md"
+            },
+            {
+                "title": "Trigger rate limiting deliberately",
+                "text": "step4.md"
+            },
+            {
+                "title": "Check API server metrics",
+                "text": "step5.md"
+            },
+            {
+                "title": "Examine FlowSchemas",
+                "text": "step6.md"
+            },
+            {
+                "title": "Check PriorityLevelConfigurations",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test with different user identities",
+                "text": "step8.md"
+            },
+            {
+                "title": "Create custom FlowSchema",
+                "text": "step9.md"
+            },
+            {
+                "title": "Test throttling with watch",
+                "text": "step10.md"
+            },
+            {
+                "title": "Exhaust API quota deliberately",
+                "text": "step11.md"
+            },
+            {
+                "title": "Check API server request queue",
+                "text": "step12.md"
+            },
+            {
+                "title": "Test priority override",
+                "text": "step13.md"
+            },
+            {
+                "title": "Monitor inflight requests",
+                "text": "step14.md"
+            },
+            {
+                "title": "Test different request types",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

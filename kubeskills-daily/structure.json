@@ -131,6 +131,11 @@
         "path": "day-026",
         "title": "Day 26 - Kubelet Eviction - Resource Pressure",
         "description": "Inspect node capacity and thresholds, see QoS/priority eviction order, trigger pressure, and verify recovery"
+      },
+      {
+        "path": "day-027",
+        "title": "Day 27 - API Server Rate Limiting - Request Throttling",
+        "description": "Inspect APF configs, flood the API, watch throttling, review FlowSchemas/PriorityLevels, and test identities/metrics"
       }
     ]
   }
