@@ -1,0 +1,77 @@
+{
+    "title": "Image Pull Secrets - Authentication Failures",
+    "description": "See how private registry pulls fail, fix secrets, attach via ServiceAccounts, and debug pull errors",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Deploy private image without credentials",
+                "text": "step1.md"
+            },
+            {
+                "title": "Diagnose the failure",
+                "text": "step2.md"
+            },
+            {
+                "title": "Check pull backoff timing",
+                "text": "step3.md"
+            },
+            {
+                "title": "Try a wrong secret type",
+                "text": "step4.md"
+            },
+            {
+                "title": "Create a proper docker-registry secret",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test a public registry that requires auth",
+                "text": "step6.md"
+            },
+            {
+                "title": "Create a secret from Docker config",
+                "text": "step7.md"
+            },
+            {
+                "title": "Attach secret to a ServiceAccount",
+                "text": "step8.md"
+            },
+            {
+                "title": "Use multiple registry secrets",
+                "text": "step9.md"
+            },
+            {
+                "title": "See cross-namespace secret failure",
+                "text": "step10.md"
+            },
+            {
+                "title": "Debug with manual image pull",
+                "text": "step11.md"
+            },
+            {
+                "title": "Check kubelet image pull logs",
+                "text": "step12.md"
+            },
+            {
+                "title": "Test imagePullPolicy impact",
+                "text": "step13.md"
+            },
+            {
+                "title": "Simulate registry downtime",
+                "text": "step14.md"
+            },
+            {
+                "title": "Pull by digest instead of tag",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
