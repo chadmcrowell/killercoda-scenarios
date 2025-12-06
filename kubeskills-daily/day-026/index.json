@@ -1,0 +1,77 @@
+{
+    "title": "Kubelet Eviction - Resource Pressure",
+    "description": "Inspect node capacity and thresholds, see QoS and priority eviction order, trigger memory/disk pressure, and verify recovery",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check node resource capacity",
+                "text": "step1.md"
+            },
+            {
+                "title": "Check kubelet eviction thresholds",
+                "text": "step2.md"
+            },
+            {
+                "title": "Deploy pods with different QoS classes",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check current node memory usage",
+                "text": "step4.md"
+            },
+            {
+                "title": "Trigger memory pressure (carefully)",
+                "text": "step5.md"
+            },
+            {
+                "title": "Check eviction events",
+                "text": "step6.md"
+            },
+            {
+                "title": "See which pod was evicted first",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test with pod priority",
+                "text": "step8.md"
+            },
+            {
+                "title": "Check pod priority values",
+                "text": "step9.md"
+            },
+            {
+                "title": "Simulate disk pressure",
+                "text": "step10.md"
+            },
+            {
+                "title": "Check node conditions",
+                "text": "step11.md"
+            },
+            {
+                "title": "Check eviction type and grace",
+                "text": "step12.md"
+            },
+            {
+                "title": "Monitor kubelet eviction logs",
+                "text": "step13.md"
+            },
+            {
+                "title": "Test PodDisruptionBudget with eviction",
+                "text": "step14.md"
+            },
+            {
+                "title": "Recovery after eviction",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

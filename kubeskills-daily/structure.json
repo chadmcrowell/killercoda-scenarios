@@ -126,6 +126,11 @@
         "path": "day-025",
         "title": "Day 25 - etcd Performance - The Cluster Heartbeat",
         "description": "Check etcd health, size, keys, load impact, compaction/defrag, backups, alarms, and metrics"
+      },
+      {
+        "path": "day-026",
+        "title": "Day 26 - Kubelet Eviction - Resource Pressure",
+        "description": "Inspect node capacity and thresholds, see QoS/priority eviction order, trigger pressure, and verify recovery"
       }
     ]
   }
