@@ -111,6 +111,11 @@
         "path": "day-022",
         "title": "Day 22 - Image Pull Secrets - Authentication Failures",
         "description": "See how private registry pulls fail, fix secrets, attach via ServiceAccounts, and debug pull errors"
+      },
+      {
+        "path": "day-023",
+        "title": "Day 23 - CNI Plugin Failures - Network Isolation",
+        "description": "Inspect CNI configs, test pod connectivity, DNS, NetworkPolicies, MTU, CIDR exhaustion, and CNI errors"
       }
     ]
   }

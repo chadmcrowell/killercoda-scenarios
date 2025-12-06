@@ -1,0 +1,77 @@
+{
+    "title": "CNI Plugin Failures - Network Isolation",
+    "description": "Inspect CNI configs, test pod connectivity, DNS, NetworkPolicies, MTU, CIDR exhaustion, and CNI error handling",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check current CNI plugin",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy baseline pods with networking",
+                "text": "step2.md"
+            },
+            {
+                "title": "Test pod-to-pod connectivity",
+                "text": "step3.md"
+            },
+            {
+                "title": "Inspect pod network namespace",
+                "text": "step4.md"
+            },
+            {
+                "title": "Simulate CNI configuration issue (hostNetwork bypass)",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test DNS resolution in pods",
+                "text": "step6.md"
+            },
+            {
+                "title": "Inspect CNI plugin logs",
+                "text": "step7.md"
+            },
+            {
+                "title": "Compare dnsPolicy variations",
+                "text": "step8.md"
+            },
+            {
+                "title": "Test MTU issues",
+                "text": "step9.md"
+            },
+            {
+                "title": "Examine pod network from the node",
+                "text": "step10.md"
+            },
+            {
+                "title": "Test NetworkPolicy enforcement",
+                "text": "step11.md"
+            },
+            {
+                "title": "Check CNI plugin capabilities",
+                "text": "step12.md"
+            },
+            {
+                "title": "Simulate IP exhaustion",
+                "text": "step13.md"
+            },
+            {
+                "title": "Test service ClusterIP routing",
+                "text": "step14.md"
+            },
+            {
+                "title": "Diagnose CNI failures from events",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
