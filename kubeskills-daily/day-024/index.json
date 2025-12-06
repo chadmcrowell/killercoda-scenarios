@@ -1,0 +1,77 @@
+{
+    "title": "kube-proxy Modes - Service Routing Breakdown",
+    "description": "Inspect kube-proxy mode, test services (ClusterIP/NodePort), view iptables rules, rule scaling, session affinity, and routing failures",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check current kube-proxy mode",
+                "text": "step1.md"
+            },
+            {
+                "title": "Deploy backend application",
+                "text": "step2.md"
+            },
+            {
+                "title": "Test service from within cluster",
+                "text": "step3.md"
+            },
+            {
+                "title": "Examine iptables rules (iptables mode)",
+                "text": "step4.md"
+            },
+            {
+                "title": "Count iptables rules",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test with multiple services",
+                "text": "step6.md"
+            },
+            {
+                "title": "Check service IP allocation",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test service without endpoints",
+                "text": "step8.md"
+            },
+            {
+                "title": "Test NodePort service",
+                "text": "step9.md"
+            },
+            {
+                "title": "Simulate kube-proxy failure",
+                "text": "step10.md"
+            },
+            {
+                "title": "Check kube-proxy sync errors",
+                "text": "step11.md"
+            },
+            {
+                "title": "Test session affinity",
+                "text": "step12.md"
+            },
+            {
+                "title": "Test externalTrafficPolicy",
+                "text": "step13.md"
+            },
+            {
+                "title": "Check service type differences",
+                "text": "step14.md"
+            },
+            {
+                "title": "Debug service routing",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
