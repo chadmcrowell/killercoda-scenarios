@@ -121,6 +121,11 @@
         "path": "day-024",
         "title": "Day 24 - kube-proxy Modes - Service Routing Breakdown",
         "description": "Inspect kube-proxy mode, test ClusterIP/NodePort routing, iptables rules, scaling, session affinity, and failures"
+      },
+      {
+        "path": "day-025",
+        "title": "Day 25 - etcd Performance - The Cluster Heartbeat",
+        "description": "Check etcd health, size, keys, load impact, compaction/defrag, backups, alarms, and metrics"
       }
     ]
   }

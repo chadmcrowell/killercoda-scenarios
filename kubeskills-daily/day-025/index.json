@@ -1,0 +1,77 @@
+{
+    "title": "etcd Performance - The Cluster Heartbeat",
+    "description": "Check etcd health, size, keys, load impact, compaction/defrag, backups, alarms, and metrics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check etcd pods",
+                "text": "step1.md"
+            },
+            {
+                "title": "Access etcd health endpoint",
+                "text": "step2.md"
+            },
+            {
+                "title": "Check etcd metrics",
+                "text": "step3.md"
+            },
+            {
+                "title": "Check etcd database size",
+                "text": "step4.md"
+            },
+            {
+                "title": "List etcd keys",
+                "text": "step5.md"
+            },
+            {
+                "title": "Count resources by type",
+                "text": "step6.md"
+            },
+            {
+                "title": "Measure API server latency",
+                "text": "step7.md"
+            },
+            {
+                "title": "Simulate etcd load",
+                "text": "step8.md"
+            },
+            {
+                "title": "Test API server responsiveness",
+                "text": "step9.md"
+            },
+            {
+                "title": "Check etcd compaction status",
+                "text": "step10.md"
+            },
+            {
+                "title": "Manually compact etcd",
+                "text": "step11.md"
+            },
+            {
+                "title": "Defragment etcd",
+                "text": "step12.md"
+            },
+            {
+                "title": "Backup etcd",
+                "text": "step13.md"
+            },
+            {
+                "title": "Check etcd alarms",
+                "text": "step14.md"
+            },
+            {
+                "title": "Monitor etcd metrics via API server",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
