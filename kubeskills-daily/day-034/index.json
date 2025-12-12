@@ -1,0 +1,32 @@
+{
+    "title": "Multi-Tenancy - Namespace Isolation Breakdown",
+    "description": "Build tenant namespaces, apply quotas/RBAC, deploy apps, see cross-namespace traffic, lock down with NetworkPolicy, PSA, LimitRange, and test quota/RBAC enforcement",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create tenant namespaces", "text": "step1.md"},
+            {"title": "Set ResourceQuotas per namespace", "text": "step2.md"},
+            {"title": "Create ServiceAccounts and RBAC", "text": "step3.md"},
+            {"title": "Deploy application in Team A", "text": "step4.md"},
+            {"title": "Deploy application in Team B", "text": "step5.md"},
+            {"title": "Test cross-namespace access", "text": "step6.md"},
+            {"title": "Apply NetworkPolicy to isolate Team B", "text": "step7.md"},
+            {"title": "Test cross-namespace access again", "text": "step8.md"},
+            {"title": "Test from within Team B", "text": "step9.md"},
+            {"title": "Test ResourceQuota violation", "text": "step10.md"},
+            {"title": "Test RBAC isolation", "text": "step11.md"},
+            {"title": "Test privileged pod blocked by PSA", "text": "step12.md"},
+            {"title": "Test LimitRange for default limits", "text": "step13.md"},
+            {"title": "Test namespace-scoped secrets", "text": "step14.md"},
+            {"title": "Test hierarchical namespaces (conceptual)", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

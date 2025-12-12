@@ -146,6 +146,31 @@
         "path": "day-029",
         "title": "Day 29 - Custom Resource Definitions - Validation Failures",
         "description": "Iterate from permissive CRDs to strict validation, defaults, status subresources, and multiple versions"
+      },
+      {
+        "path": "day-030",
+        "title": "Day 30 - Operator Reconciliation - Infinite Loops",
+        "description": "See how naive controller logic loops forever and how status subresources, observedGeneration, owner refs, and backoff stop the storm"
+      },
+      {
+        "path": "day-031",
+        "title": "Day 31 - Helm Charts - Template Rendering Failures",
+        "description": "Debug Helm templates: syntax errors, nil pointers, required values, value precedence, functions, lint, dry-run, upgrades, and rollbacks"
+      },
+      {
+        "path": "day-032",
+        "title": "Day 32 - ArgoCD Sync - Out of Sync Nightmares",
+        "description": "Install ArgoCD, sync a repo, watch drift, auto-sync/self-heal, prune, hooks, waves, health checks, replace, selective sync, and rollback"
+      },
+      {
+        "path": "day-033",
+        "title": "Day 33 - Service Mesh - Traffic Split Gone Wrong",
+        "description": "Install Istio, split traffic between versions, debug weights, missing subsets, headers, retries/timeouts, and analyze routing issues"
+      },
+      {
+        "path": "day-034",
+        "title": "Day 34 - Multi-Tenancy - Namespace Isolation Breakdown",
+        "description": "Create tenant namespaces, quotas, RBAC, apps, network isolation, PSA, LimitRanges, and enforce cross-namespace boundaries"
       }
     ]
   }

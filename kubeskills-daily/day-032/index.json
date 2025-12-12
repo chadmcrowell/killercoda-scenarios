@@ -1,0 +1,37 @@
+{
+    "title": "ArgoCD Sync - Out of Sync Nightmares",
+    "description": "Install ArgoCD, sync a local repo, trigger drift, enable self-heal/prune, test hooks, waves, health, replace, selective sync, history, and rollback",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install ArgoCD", "text": "step1.md"},
+            {"title": "Access ArgoCD UI (port-forward)", "text": "step2.md"},
+            {"title": "Create Git repo (simulated with local path)", "text": "step3.md"},
+            {"title": "Create ArgoCD Application", "text": "step4.md"},
+            {"title": "Check Application status", "text": "step5.md"},
+            {"title": "Manual sync", "text": "step6.md"},
+            {"title": "Cause OutOfSync - manual kubectl change", "text": "step7.md"},
+            {"title": "Enable auto-sync and self-heal", "text": "step8.md"},
+            {"title": "Test sync failure with invalid YAML", "text": "step9.md"},
+            {"title": "Fix and retry", "text": "step10.md"},
+            {"title": "Test with resource hooks", "text": "step11.md"},
+            {"title": "Test failed pre-sync hook", "text": "step12.md"},
+            {"title": "Remove failed hook, test sync waves", "text": "step13.md"},
+            {"title": "Test prune behavior", "text": "step14.md"},
+            {"title": "Test health check failure", "text": "step15.md"},
+            {"title": "Test sync with replace strategy", "text": "step16.md"},
+            {"title": "Test selective sync", "text": "step17.md"},
+            {"title": "Check sync history", "text": "step18.md"},
+            {"title": "Rollback via ArgoCD", "text": "step19.md"},
+            {"title": "Test app deletion with cascade", "text": "step20.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

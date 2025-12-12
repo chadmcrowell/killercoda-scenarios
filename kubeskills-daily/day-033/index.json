@@ -1,0 +1,32 @@
+{
+    "title": "Service Mesh - Traffic Split Gone Wrong",
+    "description": "Install Istio, split traffic across app versions, break routing with bad weights/missing subsets, debug with headers, logs, retries, timeouts, and analysis",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Istio", "text": "step1.md"},
+            {"title": "Verify Istio installation", "text": "step2.md"},
+            {"title": "Deploy application v1", "text": "step3.md"},
+            {"title": "Deploy application v2", "text": "step4.md"},
+            {"title": "Test without routing rules", "text": "step5.md"},
+            {"title": "Create DestinationRule (define subsets)", "text": "step6.md"},
+            {"title": "Create VirtualService (90/10 split)", "text": "step7.md"},
+            {"title": "Break routing - weights don't add to 100", "text": "step8.md"},
+            {"title": "Break routing - missing subset", "text": "step9.md"},
+            {"title": "Check Istio proxy logs", "text": "step10.md"},
+            {"title": "Fix and test header-based routing", "text": "step11.md"},
+            {"title": "Test conflicting rules (first match wins)", "text": "step12.md"},
+            {"title": "Test retry configuration", "text": "step13.md"},
+            {"title": "Test timeout configuration", "text": "step14.md"},
+            {"title": "Check VirtualService status", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

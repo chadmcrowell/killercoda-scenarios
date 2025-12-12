@@ -1,0 +1,32 @@
+{
+    "title": "Operator Reconciliation - Infinite Loops",
+    "description": "See how naive controller logic triggers infinite reconciles and how status subresources, observedGeneration, owner references, and backoff avoid storms",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create CRD for operator testing", "text": "step1.md"},
+            {"title": "Create simple reconciliation script", "text": "step2.md"},
+            {"title": "Create operator deployment (simplified)", "text": "step3.md"},
+            {"title": "Simulate operator behavior manually", "text": "step4.md"},
+            {"title": "Manually reconcile (creating ConfigMap)", "text": "step5.md"},
+            {"title": "Watch for reconciliation trigger", "text": "step6.md"},
+            {"title": "Correct way - use status subresource", "text": "step7.md"},
+            {"title": "Test observedGeneration pattern", "text": "step8.md"},
+            {"title": "Simulate infinite loop scenario", "text": "step9.md"},
+            {"title": "Check event storm", "text": "step10.md"},
+            {"title": "Test owner reference garbage collection", "text": "step11.md"},
+            {"title": "Test finalizer blocking deletion", "text": "step12.md"},
+            {"title": "Test reconciliation with conditions", "text": "step13.md"},
+            {"title": "Simulate controller with retry backoff", "text": "step14.md"},
+            {"title": "Monitor reconciliation performance", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Helm Charts - Template Rendering Failures",
+    "description": "Debug Helm template errors: syntax, nil pointers, required values, precedence, functions, conditionals, lint, dry-run, upgrades, rollbacks",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Helm", "text": "step1.md"},
+            {"title": "Create basic Helm chart", "text": "step2.md"},
+            {"title": "Examine default templates", "text": "step3.md"},
+            {"title": "Test template rendering", "text": "step4.md"},
+            {"title": "Introduce template syntax error", "text": "step5.md"},
+            {"title": "Fix template syntax", "text": "step6.md"},
+            {"title": "Test nil pointer dereference", "text": "step7.md"},
+            {"title": "Fix with default value", "text": "step8.md"},
+            {"title": "Test required values", "text": "step9.md"},
+            {"title": "Test value precedence", "text": "step10.md"},
+            {"title": "Test values file override", "text": "step11.md"},
+            {"title": "Test template functions", "text": "step12.md"},
+            {"title": "Fix function types", "text": "step13.md"},
+            {"title": "Test conditional blocks", "text": "step14.md"},
+            {"title": "Test range loops", "text": "step15.md"},
+            {"title": "Test helm lint", "text": "step16.md"},
+            {"title": "Dry-run installation", "text": "step17.md"},
+            {"title": "Actual installation", "text": "step18.md"},
+            {"title": "Test upgrade", "text": "step19.md"},
+            {"title": "Test rollback", "text": "step20.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
