@@ -1,0 +1,77 @@
+{
+    "title": "Custom Resource Definitions - Validation Failures",
+    "description": "Iterate from permissive CRDs to strict validation, defaults, status subresources, and multiple versions",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Check existing CRDs",
+                "text": "step1.md"
+            },
+            {
+                "title": "Create simple CRD without validation",
+                "text": "step2.md"
+            },
+            {
+                "title": "Create invalid custom resource (no validation yet)",
+                "text": "step3.md"
+            },
+            {
+                "title": "Recreate CRD with strict validation",
+                "text": "step4.md"
+            },
+            {
+                "title": "Test required field validation",
+                "text": "step5.md"
+            },
+            {
+                "title": "Test enum validation",
+                "text": "step6.md"
+            },
+            {
+                "title": "Test pattern validation",
+                "text": "step7.md"
+            },
+            {
+                "title": "Test integer range validation",
+                "text": "step8.md"
+            },
+            {
+                "title": "Create valid database",
+                "text": "step9.md"
+            },
+            {
+                "title": "Test default values",
+                "text": "step10.md"
+            },
+            {
+                "title": "Test nested validation",
+                "text": "step11.md"
+            },
+            {
+                "title": "Add status subresource",
+                "text": "step12.md"
+            },
+            {
+                "title": "Update status separately",
+                "text": "step13.md"
+            },
+            {
+                "title": "Test additional properties restriction",
+                "text": "step14.md"
+            },
+            {
+                "title": "Test multiple versions",
+                "text": "step15.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

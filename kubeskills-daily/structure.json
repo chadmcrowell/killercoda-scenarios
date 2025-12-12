@@ -141,6 +141,11 @@
         "path": "day-028",
         "title": "Day 28 - Pod Security Admission - Policy Enforcement",
         "description": "Test baseline vs restricted PSA, fix security contexts, observe warn/audit, and validate workloads"
+      },
+      {
+        "path": "day-029",
+        "title": "Day 29 - Custom Resource Definitions - Validation Failures",
+        "description": "Iterate from permissive CRDs to strict validation, defaults, status subresources, and multiple versions"
       }
     ]
   }
