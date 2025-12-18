@@ -3,7 +3,6 @@
 Install containerd from the package here: [https://github.com/containerd/containerd/releases/latest](https://github.com/containerd/containerd/releases/latest) and extract it under `/usr/local`
 
 ```bash
-sudo mkdir -p /usr/local/containerd
 sudo tar Cxzvf /usr/local https://github.com/containerd/containerd/releases/download/v2.0.4/containerd-2.0.4-linux-amd64.tar.gz
 sudo ln -sf /usr/local/bin/containerd /usr/local/sbin/containerd
 ```{{exec}}
