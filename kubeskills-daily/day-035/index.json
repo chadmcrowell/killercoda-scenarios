@@ -1,0 +1,32 @@
+{
+    "title": "Init Container Dependencies - Circular Deadlocks",
+    "description": "Create circular init dependencies, watch the deadlock, fix the cycle, and practice timeouts, retries, readiness vs init, Jobs, and StatefulSet ordering",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create Service A (depends on Service B)", "text": "step1.md"},
+            {"title": "Create Service B (depends on Service A)", "text": "step2.md"},
+            {"title": "Watch the deadlock", "text": "step3.md"},
+            {"title": "Check init container logs", "text": "step4.md"},
+            {"title": "Describe pods for init details", "text": "step5.md"},
+            {"title": "Break the cycle by removing one init", "text": "step6.md"},
+            {"title": "Test init container with timeout", "text": "step7.md"},
+            {"title": "Test multiple init containers sequentially", "text": "step8.md"},
+            {"title": "Test init container failure", "text": "step9.md"},
+            {"title": "Test init container with retries", "text": "step10.md"},
+            {"title": "Safe dependency pattern (non-blocking)", "text": "step11.md"},
+            {"title": "Readiness probe vs init container", "text": "step12.md"},
+            {"title": "Job with init container", "text": "step13.md"},
+            {"title": "StatefulSet init container ordering", "text": "step14.md"},
+            {"title": "Debug stuck init containers", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

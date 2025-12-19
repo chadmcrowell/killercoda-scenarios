@@ -171,6 +171,11 @@
         "path": "day-034",
         "title": "Day 34 - Multi-Tenancy - Namespace Isolation Breakdown",
         "description": "Create tenant namespaces, quotas, RBAC, apps, network isolation, PSA, LimitRanges, and enforce cross-namespace boundaries"
+      },
+      {
+        "path": "day-035",
+        "title": "Day 35 - Init Container Dependencies - Circular Deadlocks",
+        "description": "Build circular init waits, debug deadlocks, fix by breaking the cycle, add timeouts, retries, readiness vs init, Jobs, and StatefulSets"
       }
     ]
   }
