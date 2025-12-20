@@ -1,0 +1,32 @@
+{
+    "title": "Resource Contention - QoS Eviction Wars",
+    "description": "Launch pods across QoS classes, trigger memory pressure, observe evictions, apply priorities, quotas, LimitRanges, throttling, and finalizers",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check node resources", "text": "step1.md"},
+            {"title": "BestEffort pod", "text": "step2.md"},
+            {"title": "Burstable pod", "text": "step3.md"},
+            {"title": "Guaranteed pod", "text": "step4.md"},
+            {"title": "Monitor QoS classes", "text": "step5.md"},
+            {"title": "Simulate memory pressure", "text": "step6.md"},
+            {"title": "Check node conditions", "text": "step7.md"},
+            {"title": "PodPriority impact", "text": "step8.md"},
+            {"title": "Check priorities", "text": "step9.md"},
+            {"title": "Resource quota exhaustion", "text": "step10.md"},
+            {"title": "LimitRange defaults", "text": "step11.md"},
+            {"title": "CPU throttling", "text": "step12.md"},
+            {"title": "Swap status", "text": "step13.md"},
+            {"title": "Finalizer blocks eviction", "text": "step14.md"},
+            {"title": "Kubelet eviction thresholds", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

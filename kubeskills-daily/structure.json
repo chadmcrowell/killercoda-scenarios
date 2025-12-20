@@ -191,6 +191,16 @@
         "path": "day-038",
         "title": "Day 38 - DNS Resolution - CoreDNS Breakdown",
         "description": "Break and restore CoreDNS, inspect pod DNS config, tune ndots/timeouts, compare dnsPolicy, tweak CoreDNS, test caching, block/allow DNS, and resolve headless services"
+      },
+      {
+        "path": "day-039",
+        "title": "Day 39 - Resource Contention - QoS Eviction Wars",
+        "description": "Launch pods across QoS classes, trigger memory pressure, observe evictions, apply priorities, quotas, LimitRanges, throttling, and finalizers"
+      },
+      {
+        "path": "day-040",
+        "title": "Day 40 - Certificates - Expiration Catastrophe",
+        "description": "Inspect control plane certs, install cert-manager, issue short-lived and CA certs, simulate expirations and failed renewals, and debug TLS secrets"
       }
     ]
   }

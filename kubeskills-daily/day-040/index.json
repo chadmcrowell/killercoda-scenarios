@@ -1,0 +1,32 @@
+{
+    "title": "Certificates - Expiration Catastrophe",
+    "description": "Inspect control plane certs, install cert-manager, issue short-lived and CA certs, simulate expirations and failed renewals, and debug TLS secrets",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check Kubernetes certificate locations", "text": "step1.md"},
+            {"title": "Check API server certificate", "text": "step2.md"},
+            {"title": "Install cert-manager", "text": "step3.md"},
+            {"title": "Create self-signed Issuer", "text": "step4.md"},
+            {"title": "Short-lived certificate", "text": "step5.md"},
+            {"title": "Inspect certificate secret", "text": "step6.md"},
+            {"title": "Webhook with TLS secret", "text": "step7.md"},
+            {"title": "Webhook certificate", "text": "step8.md"},
+            {"title": "Expiring certificate renewals", "text": "step9.md"},
+            {"title": "Renewal failure when issuer is gone", "text": "step10.md"},
+            {"title": "Restore issuer", "text": "step11.md"},
+            {"title": "CA certificate and issued cert", "text": "step12.md"},
+            {"title": "ClusterIssuer across namespaces", "text": "step13.md"},
+            {"title": "Certificate readiness", "text": "step14.md"},
+            {"title": "Debug certificate issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
