@@ -1,0 +1,32 @@
+{
+    "title": "Jobs and CronJobs - Backoff Explosion",
+    "description": "Trigger failing Jobs to see exponential backoff, cap retries, set deadlines, tune completions/parallelism, suspend/resume, and manage CronJob history",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create basic failing Job", "text": "step1.md"},
+            {"title": "Check backoff timing", "text": "step2.md"},
+            {"title": "Check Job status", "text": "step3.md"},
+            {"title": "Backoff limit zero (no retries)", "text": "step4.md"},
+            {"title": "activeDeadlineSeconds caps runtime", "text": "step5.md"},
+            {"title": "Completions with serial pods", "text": "step6.md"},
+            {"title": "Parallelism with multiple workers", "text": "step7.md"},
+            {"title": "OnFailure restart policy", "text": "step8.md"},
+            {"title": "TTL after finished", "text": "step9.md"},
+            {"title": "CronJob basics", "text": "step10.md"},
+            {"title": "CronJob history limits", "text": "step11.md"},
+            {"title": "Suspend and resume a Job", "text": "step12.md"},
+            {"title": "Indexed completion mode", "text": "step13.md"},
+            {"title": "Parallelism resource deadlock", "text": "step14.md"},
+            {"title": "Debug failed Job", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

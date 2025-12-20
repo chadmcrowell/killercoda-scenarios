@@ -176,6 +176,11 @@
         "path": "day-035",
         "title": "Day 35 - Init Container Dependencies - Circular Deadlocks",
         "description": "Build circular init waits, debug deadlocks, fix by breaking the cycle, add timeouts, retries, readiness vs init, Jobs, and StatefulSets"
+      },
+      {
+        "path": "day-036",
+        "title": "Day 36 - Jobs and CronJobs - Backoff Explosion",
+        "description": "Trigger failing Jobs to see backoff, cap retries, set deadlines, tune completions and parallelism, suspend/resume, and manage CronJobs"
       }
     ]
   }
