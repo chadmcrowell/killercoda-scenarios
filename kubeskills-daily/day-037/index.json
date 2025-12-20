@@ -1,0 +1,30 @@
+{
+    "title": "Volume Mounts - Permission Denied Chaos",
+    "description": "See how volume permissions work: emptyDir vs hostPath, fsGroup fixes, read-only mounts, subPath quirks, PVC access, shared volumes, Secrets, projected, init prep, and securityContext overrides",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create pod with emptyDir", "text": "step1.md"},
+            {"title": "Non-root on emptyDir", "text": "step2.md"},
+            {"title": "HostPath permission denied", "text": "step3.md"},
+            {"title": "Fix with fsGroup", "text": "step4.md"},
+            {"title": "ReadOnly ConfigMap mount", "text": "step5.md"},
+            {"title": "subPath permission behavior", "text": "step6.md"},
+            {"title": "PVC permissions", "text": "step7.md"},
+            {"title": "Shared volume across containers", "text": "step8.md"},
+            {"title": "Secret volume permissions", "text": "step9.md"},
+            {"title": "Projected volume", "text": "step10.md"},
+            {"title": "Init container prepares volume", "text": "step11.md"},
+            {"title": "SecurityContext conflicts", "text": "step12.md"},
+            {"title": "Debug volume permissions", "text": "step13.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

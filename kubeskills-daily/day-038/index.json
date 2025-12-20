@@ -1,0 +1,32 @@
+{
+    "title": "DNS Resolution - CoreDNS Breakdown",
+    "description": "Break and restore CoreDNS, inspect pod DNS config, tune ndots/timeouts, compare dnsPolicy modes, tweak CoreDNS, test caching, block/allow DNS with NetworkPolicy, and resolve headless services",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check CoreDNS pods", "text": "step1.md"},
+            {"title": "Test basic DNS resolution", "text": "step2.md"},
+            {"title": "Check pod DNS configuration", "text": "step3.md"},
+            {"title": "Break DNS by scaling CoreDNS to 0", "text": "step4.md"},
+            {"title": "Restore CoreDNS", "text": "step5.md"},
+            {"title": "ndots search expansion", "text": "step6.md"},
+            {"title": "Optimize ndots", "text": "step7.md"},
+            {"title": "DNS timeout and attempts", "text": "step8.md"},
+            {"title": "dnsPolicy variations", "text": "step9.md"},
+            {"title": "Inspect CoreDNS ConfigMap", "text": "step10.md"},
+            {"title": "DNS caching test", "text": "step11.md"},
+            {"title": "NetworkPolicy blocking DNS", "text": "step12.md"},
+            {"title": "Allow DNS via NetworkPolicy", "text": "step13.md"},
+            {"title": "Check CoreDNS resource usage", "text": "step14.md"},
+            {"title": "Headless service DNS", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

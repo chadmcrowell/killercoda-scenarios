@@ -181,6 +181,16 @@
         "path": "day-036",
         "title": "Day 36 - Jobs and CronJobs - Backoff Explosion",
         "description": "Trigger failing Jobs to see backoff, cap retries, set deadlines, tune completions and parallelism, suspend/resume, and manage CronJobs"
+      },
+      {
+        "path": "day-037",
+        "title": "Day 37 - Volume Mounts - Permission Denied Chaos",
+        "description": "Explore volume permissions: emptyDir vs hostPath, fsGroup fixes, read-only mounts, subPath quirks, PVC access, shared volumes, Secrets, projected volumes, and securityContext overrides"
+      },
+      {
+        "path": "day-038",
+        "title": "Day 38 - DNS Resolution - CoreDNS Breakdown",
+        "description": "Break and restore CoreDNS, inspect pod DNS config, tune ndots/timeouts, compare dnsPolicy, tweak CoreDNS, test caching, block/allow DNS, and resolve headless services"
       }
     ]
   }
