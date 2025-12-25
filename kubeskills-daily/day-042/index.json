@@ -1,0 +1,32 @@
+{
+    "title": "Logging Pipelines - Lost in Transit",
+    "description": "Ship logs with Fluent Bit, trigger parser errors, buffer pressure, destination failures, multiline issues, and sidecar patterns to see how logs vanish or get enriched",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check default container logging", "text": "step1.md"},
+            {"title": "Locate logs on node", "text": "step2.md"},
+            {"title": "Install Fluent Bit", "text": "step3.md"},
+            {"title": "Fluent Bit logs", "text": "step4.md"},
+            {"title": "Parser errors drop logs", "text": "step5.md"},
+            {"title": "Add regex parser", "text": "step6.md"},
+            {"title": "Buffer overflow test", "text": "step7.md"},
+            {"title": "Destination failure", "text": "step8.md"},
+            {"title": "Log rotation", "text": "step9.md"},
+            {"title": "Multiline logs", "text": "step10.md"},
+            {"title": "Configure multiline parser", "text": "step11.md"},
+            {"title": "Filter debug logs", "text": "step12.md"},
+            {"title": "Enrich logs with metadata", "text": "step13.md"},
+            {"title": "Sidecar logging pattern", "text": "step14.md"},
+            {"title": "Debug missing logs", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "title": "Distributed Tracing - Missing Spans",
+    "description": "Install Jaeger, send traces with/without propagation, explore sampling, missing instrumentation, collector pressure, baggage, and slow spans to find trace gaps",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Jaeger", "text": "step1.md"},
+            {"title": "Service A sends trace headers", "text": "step2.md"},
+            {"title": "Service B without propagation", "text": "step3.md"},
+            {"title": "Service B with propagation", "text": "step4.md"},
+            {"title": "Sampling drops traces", "text": "step5.md"},
+            {"title": "OpenTelemetry collector", "text": "step6.md"},
+            {"title": "Missing instrumentation", "text": "step7.md"},
+            {"title": "Collector back-pressure", "text": "step8.md"},
+            {"title": "Trace context formats", "text": "step9.md"},
+            {"title": "Baggage propagation", "text": "step10.md"},
+            {"title": "Sampling strategies", "text": "step11.md"},
+            {"title": "Debug missing spans", "text": "step12.md"},
+            {"title": "Span attributes", "text": "step13.md"},
+            {"title": "Trace visualization", "text": "step14.md"},
+            {"title": "Long-running spans", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

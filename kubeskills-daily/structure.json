@@ -201,6 +201,21 @@
         "path": "day-040",
         "title": "Day 40 - Certificates - Expiration Catastrophe",
         "description": "Inspect control plane certs, install cert-manager, issue short-lived and CA certs, simulate expirations and failed renewals, and debug TLS secrets"
+      },
+      {
+        "path": "day-041",
+        "title": "Day 41 - Prometheus Metrics - Missing Targets",
+        "description": "Install Prometheus Operator, create Prometheus selectors, break and fix ServiceMonitors via labels/ports/policies/relabeling, add PodMonitor, and debug missing targets"
+      },
+      {
+        "path": "day-042",
+        "title": "Day 42 - Logging Pipelines - Lost in Transit",
+        "description": "Ship logs with Fluent Bit, trigger parser errors, buffer pressure, destination failures, multiline issues, and sidecar patterns to see how logs vanish or get enriched"
+      },
+      {
+        "path": "day-043",
+        "title": "Day 43 - Distributed Tracing - Missing Spans",
+        "description": "Install Jaeger, send traces with and without propagation, explore sampling, missing instrumentation, collector pressure, baggage, and slow spans to find trace gaps"
       }
     ]
   }

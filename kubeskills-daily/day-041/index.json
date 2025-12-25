@@ -1,0 +1,32 @@
+{
+    "title": "Prometheus Metrics - Missing Targets",
+    "description": "Install Prometheus Operator, create Prometheus with selectors, break and fix ServiceMonitors via labels/ports/policies/relabeling, add PodMonitor, and debug missing targets",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Prometheus Operator", "text": "step1.md"},
+            {"title": "Create Prometheus instance", "text": "step2.md"},
+            {"title": "Expose Prometheus UI", "text": "step3.md"},
+            {"title": "Deploy app with metrics endpoint", "text": "step4.md"},
+            {"title": "Wrong-label ServiceMonitor", "text": "step5.md"},
+            {"title": "Fix ServiceMonitor label", "text": "step6.md"},
+            {"title": "Missing port name", "text": "step7.md"},
+            {"title": "NetworkPolicy blocks scraping", "text": "step8.md"},
+            {"title": "Endpoint relabeling drop", "text": "step9.md"},
+            {"title": "Multiple endpoints", "text": "step10.md"},
+            {"title": "Namespace selector", "text": "step11.md"},
+            {"title": "Inspect Prometheus config", "text": "step12.md"},
+            {"title": "PodMonitor scrape pods", "text": "step13.md"},
+            {"title": "Debug missing targets", "text": "step14.md"},
+            {"title": "PrometheusRule alerting", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
