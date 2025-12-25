@@ -1,0 +1,32 @@
+{
+    "title": "Resource Metrics - Debugging Slow Pods",
+    "description": "Verify metrics-server, stress CPU/memory/I-O, observe throttling and OOM, compare QoS, query raw metrics, drive contention, and autoscale from metrics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Verify metrics-server", "text": "step1.md"},
+            {"title": "Check basic metrics", "text": "step2.md"},
+            {"title": "CPU-bound pod", "text": "step3.md"},
+            {"title": "CPU throttling", "text": "step4.md"},
+            {"title": "Memory-bound pod", "text": "step5.md"},
+            {"title": "Trigger OOMKill", "text": "step6.md"},
+            {"title": "I/O-bound pod", "text": "step7.md"},
+            {"title": "QoS comparison", "text": "step8.md"},
+            {"title": "Raw metrics API", "text": "step9.md"},
+            {"title": "Resource contention", "text": "step10.md"},
+            {"title": "Utilization vs requests/limits", "text": "step11.md"},
+            {"title": "Multi-container metrics", "text": "step12.md"},
+            {"title": "Metrics refresh interval", "text": "step13.md"},
+            {"title": "Autoscaling from metrics", "text": "step14.md"},
+            {"title": "Debug performance with metrics", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

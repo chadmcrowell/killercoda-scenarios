@@ -216,6 +216,11 @@
         "path": "day-043",
         "title": "Day 43 - Distributed Tracing - Missing Spans",
         "description": "Install Jaeger, send traces with and without propagation, explore sampling, missing instrumentation, collector pressure, baggage, and slow spans to find trace gaps"
+      },
+      {
+        "path": "day-044",
+        "title": "Day 44 - Resource Metrics - Debugging Slow Pods",
+        "description": "Verify metrics-server, stress CPU/memory/I-O, observe throttling and OOM, compare QoS, query raw metrics, drive contention, and autoscale from metrics"
       }
     ]
   }
