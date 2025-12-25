@@ -1,0 +1,32 @@
+{
+    "title": "StatefulSets - Orphaned Volume Nightmare",
+    "description": "See how StatefulSets retain PVCs, handle scale down/up, retention policies, PVC expansion, parallel management, rolling updates, and orphan cleanup",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create StatefulSet with PVCs", "text": "step1.md"},
+            {"title": "Write data to PVCs", "text": "step2.md"},
+            {"title": "Scale down (PVCs remain)", "text": "step3.md"},
+            {"title": "Scale up reuses PVCs", "text": "step4.md"},
+            {"title": "Delete pod (PVC persists)", "text": "step5.md"},
+            {"title": "Delete StatefulSet (PVCs remain)", "text": "step6.md"},
+            {"title": "Manual orphan PVC cleanup", "text": "step7.md"},
+            {"title": "Cascade deletion still retains PVCs", "text": "step8.md"},
+            {"title": "PVC retention policy (1.27+)", "text": "step9.md"},
+            {"title": "PVC expansion", "text": "step10.md"},
+            {"title": "Parallel pod management", "text": "step11.md"},
+            {"title": "StatefulSet update strategy", "text": "step12.md"},
+            {"title": "Find orphaned PVCs", "text": "step13.md"},
+            {"title": "Init container seeding", "text": "step14.md"},
+            {"title": "Monitor PVCs and cleanup", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

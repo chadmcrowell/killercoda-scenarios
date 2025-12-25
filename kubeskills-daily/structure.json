@@ -231,6 +231,11 @@
         "path": "day-046",
         "title": "Day 46 - Probe Tuning - The Goldilocks Problem",
         "description": "Tune startup, liveness, and readiness probes; prevent premature restarts, manage readiness routing, and understand probe overhead and rolling update protections"
+      },
+      {
+        "path": "day-047",
+        "title": "Day 47 - StatefulSets - Orphaned Volume Nightmare",
+        "description": "See how StatefulSets retain PVCs, handle scale down/up, use retention policies, expand PVCs, manage updates, and clean up orphaned storage"
       }
     ]
   }
