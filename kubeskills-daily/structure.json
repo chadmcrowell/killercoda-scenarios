@@ -221,6 +221,11 @@
         "path": "day-044",
         "title": "Day 44 - Resource Metrics - Debugging Slow Pods",
         "description": "Verify metrics-server, stress CPU/memory/I-O, observe throttling and OOM, compare QoS, query raw metrics, drive contention, and autoscale from metrics"
+      },
+      {
+        "path": "day-045",
+        "title": "Day 45 - kubectl debug - Ephemeral Container Debugging",
+        "description": "Attach ephemeral debug containers, copy pods, debug nodes, and troubleshoot pods without shells or in CrashLoop using kubectl debug"
       }
     ]
   }

@@ -1,0 +1,32 @@
+{
+    "title": "kubectl debug - Ephemeral Container Debugging",
+    "description": "Attach ephemeral containers, copy pods for debugging, enter node shells, and troubleshoot pods without shells or in CrashLoop",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Deploy minimal container", "text": "step1.md"},
+            {"title": "Normal exec fails", "text": "step2.md"},
+            {"title": "Ephemeral debug container", "text": "step3.md"},
+            {"title": "Debug with netshoot", "text": "step4.md"},
+            {"title": "List ephemeral containers", "text": "step5.md"},
+            {"title": "Copy pod for debug", "text": "step6.md"},
+            {"title": "Override container command", "text": "step7.md"},
+            {"title": "Debug node", "text": "step8.md"},
+            {"title": "Debug CrashLoop", "text": "step9.md"},
+            {"title": "Debug with profile", "text": "step10.md"},
+            {"title": "Custom env in debug", "text": "step11.md"},
+            {"title": "Process tree from debug", "text": "step12.md"},
+            {"title": "Network tools in debug", "text": "step13.md"},
+            {"title": "Filesystem checks", "text": "step14.md"},
+            {"title": "Cleanup", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
