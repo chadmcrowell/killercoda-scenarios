@@ -1,0 +1,32 @@
+{
+    "title": "Probe Tuning - The Goldilocks Problem",
+    "description": "Tune startup, liveness, and readiness probes; prevent premature restarts, manage readiness routing, and see probe overhead and rolling update protections",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Aggressive liveness probe", "text": "step1.md"},
+            {"title": "Slow startup killed by liveness", "text": "step2.md"},
+            {"title": "Fix with startupProbe", "text": "step3.md"},
+            {"title": "Readiness probe and endpoints", "text": "step4.md"},
+            {"title": "Simulate readiness failure", "text": "step5.md"},
+            {"title": "Exec probe", "text": "step6.md"},
+            {"title": "TCP probe", "text": "step7.md"},
+            {"title": "gRPC probe", "text": "step8.md"},
+            {"title": "Tune probe timing", "text": "step9.md"},
+            {"title": "Probe overhead", "text": "step10.md"},
+            {"title": "Custom health endpoint", "text": "step11.md"},
+            {"title": "Rolling update readiness", "text": "step12.md"},
+            {"title": "Probe metrics/events", "text": "step13.md"},
+            {"title": "Graceful shutdown interaction", "text": "step14.md"},
+            {"title": "Best practices summary", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -226,6 +226,11 @@
         "path": "day-045",
         "title": "Day 45 - kubectl debug - Ephemeral Container Debugging",
         "description": "Attach ephemeral debug containers, copy pods, debug nodes, and troubleshoot pods without shells or in CrashLoop using kubectl debug"
+      },
+      {
+        "path": "day-046",
+        "title": "Day 46 - Probe Tuning - The Goldilocks Problem",
+        "description": "Tune startup, liveness, and readiness probes; prevent premature restarts, manage readiness routing, and understand probe overhead and rolling update protections"
       }
     ]
   }
