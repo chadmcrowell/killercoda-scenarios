@@ -1,0 +1,32 @@
+{
+    "title": "Network Partitions - Split-Brain Nightmare",
+    "description": "Model network partitions with NetworkPolicies, observe split-brain symptoms, test quorum apps under partition, and plan detection/mitigation strategies",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Deploy distributed app", "text": "step1.md"},
+            {"title": "Test normal connectivity", "text": "step2.md"},
+            {"title": "Simulate partition with NetworkPolicy", "text": "step3.md"},
+            {"title": "Nodes remain Ready", "text": "step4.md"},
+            {"title": "DNS during partition", "text": "step5.md"},
+            {"title": "Zone partition", "text": "step6.md"},
+            {"title": "Quorum-based app", "text": "step7.md"},
+            {"title": "Partition etcd quorum", "text": "step8.md"},
+            {"title": "StatefulSet behavior after partition", "text": "step9.md"},
+            {"title": "Controller partition (conceptual)", "text": "step10.md"},
+            {"title": "Service endpoints during partition", "text": "step11.md"},
+            {"title": "Distributed consensus (conceptual)", "text": "step12.md"},
+            {"title": "Heal partition", "text": "step13.md"},
+            {"title": "Data inconsistency example", "text": "step14.md"},
+            {"title": "Partition detection guidance", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
