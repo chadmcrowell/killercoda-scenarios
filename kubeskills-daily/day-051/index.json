@@ -1,0 +1,32 @@
+{
+    "title": "API Server Overload - Rate Limit Hell",
+    "description": "Hammer the API server, watch APF queues, create custom FlowSchemas/PriorityLevels, simulate webhook slowness, observe throttling, and plan safe rate/priority configs",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check API server metrics", "text": "step1.md"},
+            {"title": "Check APF configuration", "text": "step2.md"},
+            {"title": "Generate moderate API load", "text": "step3.md"},
+            {"title": "Monitor request rates", "text": "step4.md"},
+            {"title": "Create custom priority level", "text": "step5.md"},
+            {"title": "Create custom flow schema", "text": "step6.md"},
+            {"title": "Simulate requests as another user", "text": "step7.md"},
+            {"title": "Generate heavy load", "text": "step8.md"},
+            {"title": "Check APF queue status", "text": "step9.md"},
+            {"title": "Test watch requests", "text": "step10.md"},
+            {"title": "List vs get performance", "text": "step11.md"},
+            {"title": "Simulate webhook overload", "text": "step12.md"},
+            {"title": "Monitor API server resources", "text": "step13.md"},
+            {"title": "Test request timeout", "text": "step14.md"},
+            {"title": "Check priority levels", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

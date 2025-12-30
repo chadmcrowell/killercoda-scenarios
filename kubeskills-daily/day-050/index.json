@@ -1,0 +1,32 @@
+{
+    "title": "Node Failures - Eviction Storm Chaos",
+    "description": "Cordon, drain, taint, and recover nodes; observe evictions, PDB blocks, StatefulSet stuck pods, DaemonSet tolerance, and custom tolerations to tune failover",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check default node tolerations", "text": "step1.md"},
+            {"title": "Check node status", "text": "step2.md"},
+            {"title": "Deploy app across nodes", "text": "step3.md"},
+            {"title": "Cordon node", "text": "step4.md"},
+            {"title": "Drain node", "text": "step5.md"},
+            {"title": "Uncordon node", "text": "step6.md"},
+            {"title": "Simulate node NotReady", "text": "step7.md"},
+            {"title": "Recover from taint", "text": "step8.md"},
+            {"title": "StatefulSet stuck in Terminating", "text": "step9.md"},
+            {"title": "Force delete stuck pod", "text": "step10.md"},
+            {"title": "DaemonSet tolerance", "text": "step11.md"},
+            {"title": "PDB blocking drain", "text": "step12.md"},
+            {"title": "Custom toleration eviction", "text": "step13.md"},
+            {"title": "Multiple node failures", "text": "step14.md"},
+            {"title": "Node pressure eviction", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

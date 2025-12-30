@@ -246,6 +246,21 @@
         "path": "day-049",
         "title": "Day 49 - Backup & Restore - Velero Disasters",
         "description": "Install Velero with MinIO, back up and delete a namespace, restore it, note emptyDir/PVC gaps without snapshots, handle conflicts, hooks, schedules, exclusions, and storage checks"
+      },
+      {
+        "path": "day-050",
+        "title": "Day 50 - Node Failures - Eviction Storm Chaos",
+        "description": "Cordon, drain, taint, and recover nodes; observe evictions, PDB blocks, StatefulSet stuck pods, DaemonSet tolerance, and custom tolerations to tune failover"
+      },
+      {
+        "path": "day-051",
+        "title": "Day 51 - API Server Overload - Rate Limit Hell",
+        "description": "Hammer the API server, observe APF queues, build custom FlowSchemas/PriorityLevels, simulate webhook slowness, and plan safe rate/priority configs"
+      },
+      {
+        "path": "day-052",
+        "title": "Day 52 - etcd Corruption - Quorum Loss Disaster",
+        "description": "Check etcd health/members/size, snapshot and restore, compact/defrag, monitor alarms/metrics, stress etcd, and document disaster recovery"
       }
     ]
   }

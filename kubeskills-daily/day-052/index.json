@@ -1,0 +1,32 @@
+{
+    "title": "etcd Corruption - Quorum Loss Disaster",
+    "description": "Check etcd health/members/size, take snapshots, stress/load, compact/defrag, monitor alarms/metrics, review quorum loss and snapshot restore, and document DR",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check etcd health", "text": "step1.md"},
+            {"title": "Check etcd members", "text": "step2.md"},
+            {"title": "Check etcd size", "text": "step3.md"},
+            {"title": "Create snapshot", "text": "step4.md"},
+            {"title": "etcd perf check", "text": "step5.md"},
+            {"title": "Simulate etcd load", "text": "step6.md"},
+            {"title": "Compact etcd", "text": "step7.md"},
+            {"title": "Defragment etcd", "text": "step8.md"},
+            {"title": "Check alarms", "text": "step9.md"},
+            {"title": "Get etcd metrics", "text": "step10.md"},
+            {"title": "Quorum loss (conceptual)", "text": "step11.md"},
+            {"title": "Snapshot restore (dry run)", "text": "step12.md"},
+            {"title": "Check etcd consistency", "text": "step13.md"},
+            {"title": "Monitor write performance", "text": "step14.md"},
+            {"title": "Document DR plan", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
