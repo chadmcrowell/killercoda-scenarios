@@ -1,0 +1,32 @@
+{
+    "title": "Backup & Restore - Velero Disasters",
+    "description": "Install Velero with MinIO, back up and delete a namespace, restore it, see emptyDir/PVC gaps without snapshots, handle conflicts, hooks, schedules, exclusions, and storage checks",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Velero CLI", "text": "step1.md"},
+            {"title": "Install Velero in cluster", "text": "step2.md"},
+            {"title": "Deploy MinIO", "text": "step3.md"},
+            {"title": "Create test app", "text": "step4.md"},
+            {"title": "Create backup", "text": "step5.md"},
+            {"title": "Backup with missing snapshots", "text": "step6.md"},
+            {"title": "Delete namespace", "text": "step7.md"},
+            {"title": "Restore from backup", "text": "step8.md"},
+            {"title": "Check incomplete restore", "text": "step9.md"},
+            {"title": "Selective backup via labels", "text": "step10.md"},
+            {"title": "Restore conflict", "text": "step11.md"},
+            {"title": "Backup hooks", "text": "step12.md"},
+            {"title": "Scheduled backups", "text": "step13.md"},
+            {"title": "Backup exclusions", "text": "step14.md"},
+            {"title": "Check backup storage", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "title": "Cluster Upgrades - Version Skew Chaos",
+    "description": "Inspect versions, deprecated APIs, CRD compatibility, skew policies, webhooks, storage versions, and draft a safe upgrade plan",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check cluster version", "text": "step1.md"},
+            {"title": "Supported API versions", "text": "step2.md"},
+            {"title": "Deprecated API versions", "text": "step3.md"},
+            {"title": "Create resource with deprecated API", "text": "step4.md"},
+            {"title": "Version compatibility matrix", "text": "step5.md"},
+            {"title": "Find deprecated APIs", "text": "step6.md"},
+            {"title": "CRD version compatibility", "text": "step7.md"},
+            {"title": "Upgrade pre-check script", "text": "step8.md"},
+            {"title": "kubectl version skew", "text": "step9.md"},
+            {"title": "Removed feature gates", "text": "step10.md"},
+            {"title": "Backward compatibility", "text": "step11.md"},
+            {"title": "Alpha APIs", "text": "step12.md"},
+            {"title": "Storage version migration", "text": "step13.md"},
+            {"title": "Webhook versioning", "text": "step14.md"},
+            {"title": "Document upgrade path", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

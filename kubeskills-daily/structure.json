@@ -236,6 +236,16 @@
         "path": "day-047",
         "title": "Day 47 - StatefulSets - Orphaned Volume Nightmare",
         "description": "See how StatefulSets retain PVCs, handle scale down/up, use retention policies, expand PVCs, manage updates, and clean up orphaned storage"
+      },
+      {
+        "path": "day-048",
+        "title": "Day 48 - Cluster Upgrades - Version Skew Chaos",
+        "description": "Inspect versions, deprecated APIs, CRD compatibility, skew policies, webhook versions, storage versions, and draft a safe upgrade plan"
+      },
+      {
+        "path": "day-049",
+        "title": "Day 49 - Backup & Restore - Velero Disasters",
+        "description": "Install Velero with MinIO, back up and delete a namespace, restore it, note emptyDir/PVC gaps without snapshots, handle conflicts, hooks, schedules, exclusions, and storage checks"
       }
     ]
   }
