@@ -266,6 +266,11 @@
         "path": "day-053",
         "title": "Day 53 - Network Partitions - Split-Brain Nightmare",
         "description": "Model network partitions with NetworkPolicies, observe split-brain symptoms, test quorum-based apps, and plan detection and mitigation"
+      },
+      {
+        "path": "day-054",
+        "title": "Day 54 - Certificate Rotation - Auto-Renewal Gone Wrong",
+        "description": "Check Kubernetes and cert-manager certs, create short-lived certs, break renewals, monitor expirations, verify chains, and document rotation/DR plans"
       }
     ]
   }

@@ -1,0 +1,32 @@
+{
+    "title": "Certificate Rotation - Auto-Renewal Gone Wrong",
+    "description": "Check Kubernetes core and cert-manager certs, create short-lived certs, break renewals, monitor expirations, verify chains, and document rotation DR plans",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check certificate expiration", "text": "step1.md"},
+            {"title": "Check kubelet rotation", "text": "step2.md"},
+            {"title": "Review cert-manager certs", "text": "step3.md"},
+            {"title": "Create short-lived cert", "text": "step4.md"},
+            {"title": "Test cert-manager renewal", "text": "step5.md"},
+            {"title": "Simulate renewal failure", "text": "step6.md"},
+            {"title": "Webhook certificate", "text": "step7.md"},
+            {"title": "Monitor renewal", "text": "step8.md"},
+            {"title": "Service mesh rotation (conceptual)", "text": "step9.md"},
+            {"title": "Check CA certificates", "text": "step10.md"},
+            {"title": "Expired certificate handling", "text": "step11.md"},
+            {"title": "Certificate monitoring", "text": "step12.md"},
+            {"title": "Manual renewal", "text": "step13.md"},
+            {"title": "Check certificate chain", "text": "step14.md"},
+            {"title": "Document rotation procedures", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
