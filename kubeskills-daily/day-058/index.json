@@ -1,0 +1,32 @@
+{
+    "title": "Ingress Failures - Traffic Not Routing",
+    "description": "Install ingress-nginx and debug class, backend, TLS, path, and annotation misconfigurations",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install NGINX Ingress Controller", "text": "step1.md"},
+            {"title": "Deploy test backend services", "text": "step2.md"},
+            {"title": "Create Ingress without IngressClass", "text": "step3.md"},
+            {"title": "Fix with IngressClass", "text": "step4.md"},
+            {"title": "Test wrong service name", "text": "step5.md"},
+            {"title": "Test wrong port number", "text": "step6.md"},
+            {"title": "Test path type differences", "text": "step7.md"},
+            {"title": "Test conflicting Ingress rules", "text": "step8.md"},
+            {"title": "Test TLS with missing secret", "text": "step9.md"},
+            {"title": "Create valid TLS secret", "text": "step10.md"},
+            {"title": "Test cross-namespace secret access", "text": "step11.md"},
+            {"title": "Test rewrite annotations", "text": "step12.md"},
+            {"title": "Check Ingress controller logs", "text": "step13.md"},
+            {"title": "Debug Ingress routing", "text": "step14.md"},
+            {"title": "Test default backend", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

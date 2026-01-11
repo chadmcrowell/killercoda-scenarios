@@ -146,4 +146,4 @@ kubectl delete namespace privileged-ns baseline-ns restricted-ns warn-ns system-
 
 ---
 
-Next: Day 58 - Ingress Failures and Traffic Routing
+Next: Day 58 - Ingress Failures - Traffic Not Routing
