@@ -168,4 +168,4 @@ kubectl delete namespace other-ns
 
 ---
 
-Next: Day 56 - Resource Exhaustion and Cluster Capacity
+Next: Day 56 - Resource Exhaustion - Cluster at Capacity

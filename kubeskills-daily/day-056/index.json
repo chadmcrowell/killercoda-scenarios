@@ -1,0 +1,32 @@
+{
+    "title": "Resource Exhaustion - Cluster at Capacity",
+    "description": "Explore pending pods, fragmentation, preemption, quotas, LimitRanges, and capacity planning under resource pressure",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check cluster capacity", "text": "step1.md"},
+            {"title": "Deploy pods to fill capacity", "text": "step2.md"},
+            {"title": "Check for Pending pods", "text": "step3.md"},
+            {"title": "Test resource fragmentation", "text": "step4.md"},
+            {"title": "Test priority-based preemption", "text": "step5.md"},
+            {"title": "Test scheduler back-off", "text": "step6.md"},
+            {"title": "Test DaemonSet ignores capacity", "text": "step7.md"},
+            {"title": "Test overcommitment", "text": "step8.md"},
+            {"title": "Test resource quotas", "text": "step9.md"},
+            {"title": "Test LimitRange defaults", "text": "step10.md"},
+            {"title": "Check node taints and tolerations", "text": "step11.md"},
+            {"title": "Test affinity constraints", "text": "step12.md"},
+            {"title": "Monitor scheduler metrics", "text": "step13.md"},
+            {"title": "Test cluster autoscaler triggers", "text": "step14.md"},
+            {"title": "Capacity planning report", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

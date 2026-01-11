@@ -276,6 +276,11 @@
         "path": "day-055",
         "title": "Day 55 - RBAC Misconfigurations - Permission Denied Hell",
         "description": "Probe missing verbs, namespace scope, resourceNames, subresources, aggregation, impersonation, and least-privilege RBAC patterns"
+      },
+      {
+        "path": "day-056",
+        "title": "Day 56 - Resource Exhaustion - Cluster at Capacity",
+        "description": "Explore pending pods, fragmentation, preemption, quotas, LimitRanges, and capacity planning under resource pressure"
       }
     ]
   }
