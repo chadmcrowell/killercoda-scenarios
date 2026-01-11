@@ -271,6 +271,11 @@
         "path": "day-054",
         "title": "Day 54 - Certificate Rotation - Auto-Renewal Gone Wrong",
         "description": "Check Kubernetes and cert-manager certs, create short-lived certs, break renewals, monitor expirations, verify chains, and document rotation/DR plans"
+      },
+      {
+        "path": "day-055",
+        "title": "Day 55 - RBAC Misconfigurations - Permission Denied Hell",
+        "description": "Probe missing verbs, namespace scope, resourceNames, subresources, aggregation, impersonation, and least-privilege RBAC patterns"
       }
     ]
   }

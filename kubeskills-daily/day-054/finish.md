@@ -58,4 +58,4 @@ rm -f /tmp/check-certs.sh /tmp/cert-rotation-plan.md /tmp/cert.crt /tmp/ca.crt
 
 ---
 
-Next: Day 55 - TBD
+Next: Day 55 - RBAC Misconfigurations - Permission Denied Hell

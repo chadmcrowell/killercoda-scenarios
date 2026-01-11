@@ -1,0 +1,32 @@
+{
+    "title": "RBAC Misconfigurations - Permission Denied Hell",
+    "description": "Probe missing verbs, namespace scope, resourceNames, subresources, aggregation, impersonation, and least-privilege RBAC patterns",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check default ServiceAccount permissions", "text": "step1.md"},
+            {"title": "Create ServiceAccount with limited permissions", "text": "step2.md"},
+            {"title": "Test missing list permission", "text": "step3.md"},
+            {"title": "Test operator without required permissions", "text": "step4.md"},
+            {"title": "Test ClusterRole vs Role scope", "text": "step5.md"},
+            {"title": "Test resourceNames restriction", "text": "step6.md"},
+            {"title": "Test missing watch permission", "text": "step7.md"},
+            {"title": "Test aggregated ClusterRoles", "text": "step8.md"},
+            {"title": "Test subresource permissions", "text": "step9.md"},
+            {"title": "Test impersonation permissions", "text": "step10.md"},
+            {"title": "Test wildcard permissions", "text": "step11.md"},
+            {"title": "Test custom resource permissions", "text": "step12.md"},
+            {"title": "Debug RBAC issues", "text": "step13.md"},
+            {"title": "Test RBAC for system components", "text": "step14.md"},
+            {"title": "Create least-privilege role", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
