@@ -93,4 +93,4 @@ rm -f /tmp/capacity-report.sh
 
 ---
 
-Next: Day 57 - Pod Security Standards Enforcement Failures
+Next: Day 57 - Pod Security Standards - Enforcement Failures

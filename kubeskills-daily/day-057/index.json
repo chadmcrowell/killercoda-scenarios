@@ -1,0 +1,37 @@
+{
+    "title": "Pod Security Standards - Enforcement Failures",
+    "description": "Explore PSA profiles, modes, common violations, and compliant patterns for baseline and restricted namespaces",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check Pod Security Admission status", "text": "step1.md"},
+            {"title": "Create test namespace with privileged profile", "text": "step2.md"},
+            {"title": "Deploy privileged pod", "text": "step3.md"},
+            {"title": "Create namespace with baseline profile", "text": "step4.md"},
+            {"title": "Test baseline violations", "text": "step5.md"},
+            {"title": "Test host namespace violations", "text": "step6.md"},
+            {"title": "Test hostPath violations", "text": "step7.md"},
+            {"title": "Deploy baseline-compliant pod", "text": "step8.md"},
+            {"title": "Create namespace with restricted profile", "text": "step9.md"},
+            {"title": "Test restricted violations - running as root", "text": "step10.md"},
+            {"title": "Test restricted violations - missing seccomp", "text": "step11.md"},
+            {"title": "Deploy fully restricted-compliant pod", "text": "step12.md"},
+            {"title": "Test warn mode", "text": "step13.md"},
+            {"title": "Test audit mode", "text": "step14.md"},
+            {"title": "Test Deployment with security violations", "text": "step15.md"},
+            {"title": "Check which fields violate restricted", "text": "step16.md"},
+            {"title": "Test common workload patterns", "text": "step17.md"},
+            {"title": "Test StatefulSet with restricted", "text": "step18.md"},
+            {"title": "Test DaemonSet", "text": "step19.md"},
+            {"title": "Check exemptions", "text": "step20.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

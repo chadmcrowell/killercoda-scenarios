@@ -281,6 +281,11 @@
         "path": "day-056",
         "title": "Day 56 - Resource Exhaustion - Cluster at Capacity",
         "description": "Explore pending pods, fragmentation, preemption, quotas, LimitRanges, and capacity planning under resource pressure"
+      },
+      {
+        "path": "day-057",
+        "title": "Day 57 - Pod Security Standards - Enforcement Failures",
+        "description": "Compare PSA profiles and modes, common violations, and compliant workload patterns"
       }
     ]
   }
