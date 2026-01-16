@@ -301,6 +301,11 @@
         "path": "day-060",
         "title": "Day 60 - Custom Controllers - Reconciliation Loop Hell",
         "description": "Explore broken reconciliation loops, conflicts, retries, and recovery patterns"
+      },
+      {
+        "path": "day-061",
+        "title": "Day 61 - Helm Chart Failures - Deployment Gone Wrong",
+        "description": "Debug Helm template errors, hooks, dependencies, upgrades, and rollbacks"
       }
     ]
   }

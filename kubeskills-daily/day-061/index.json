@@ -1,0 +1,32 @@
+{
+    "title": "Helm Chart Failures - Deployment Gone Wrong",
+    "description": "Debug Helm template errors, hooks, dependencies, upgrades, and rollbacks",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Install Helm", "text": "step1.md"},
+            {"title": "Create basic Helm chart", "text": "step2.md"},
+            {"title": "Test template syntax error", "text": "step3.md"},
+            {"title": "Test missing required value", "text": "step4.md"},
+            {"title": "Install with valid values", "text": "step5.md"},
+            {"title": "Test failed upgrade", "text": "step6.md"},
+            {"title": "Rollback failed upgrade", "text": "step7.md"},
+            {"title": "Test hook failures", "text": "step8.md"},
+            {"title": "Test dependency issues", "text": "step9.md"},
+            {"title": "Test conflicting resources", "text": "step10.md"},
+            {"title": "Test template debugging", "text": "step11.md"},
+            {"title": "Test values override", "text": "step12.md"},
+            {"title": "Test chart validation", "text": "step13.md"},
+            {"title": "Test release management", "text": "step14.md"},
+            {"title": "Test cleanup and orphaned resources", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
