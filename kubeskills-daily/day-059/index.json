@@ -1,0 +1,32 @@
+{
+    "title": "Webhook Timeouts - Admission Controller Chaos",
+    "description": "Explore webhook timeouts, failure policies, selectors, and recovery patterns",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check existing webhooks", "text": "step1.md"},
+            {"title": "Create webhook service", "text": "step2.md"},
+            {"title": "Create blocking ValidatingWebhook", "text": "step3.md"},
+            {"title": "Trigger a webhook timeout", "text": "step4.md"},
+            {"title": "Inspect webhook status", "text": "step5.md"},
+            {"title": "Test failurePolicy: Ignore", "text": "step6.md"},
+            {"title": "Deploy a working webhook server", "text": "step7.md"},
+            {"title": "Test a rejecting webhook", "text": "step8.md"},
+            {"title": "Use namespaceSelector scoping", "text": "step9.md"},
+            {"title": "Use objectSelector scoping", "text": "step10.md"},
+            {"title": "Test a MutatingWebhook", "text": "step11.md"},
+            {"title": "Test a bad CA bundle", "text": "step12.md"},
+            {"title": "Plan emergency webhook deletion", "text": "step13.md"},
+            {"title": "Check webhook latency", "text": "step14.md"},
+            {"title": "Test reinvocationPolicy", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

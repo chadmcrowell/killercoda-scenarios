@@ -1,0 +1,32 @@
+{
+    "title": "Custom Controllers - Reconciliation Loop Hell",
+    "description": "Explore broken reconciliation loops, conflicts, retries, and recovery patterns",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create CRD for custom resource", "text": "step1.md"},
+            {"title": "Create test custom resource", "text": "step2.md"},
+            {"title": "Deploy broken controller", "text": "step3.md"},
+            {"title": "Watch infinite reconciliation", "text": "step4.md"},
+            {"title": "Check API server load", "text": "step5.md"},
+            {"title": "Deploy conflicting controller", "text": "step6.md"},
+            {"title": "Watch resource flapping", "text": "step7.md"},
+            {"title": "Deploy retry bomb controller", "text": "step8.md"},
+            {"title": "Deploy leaky controller", "text": "step9.md"},
+            {"title": "Test without leader election", "text": "step10.md"},
+            {"title": "Watch wrong resources", "text": "step11.md"},
+            {"title": "Check controller metrics", "text": "step12.md"},
+            {"title": "Deploy working controller", "text": "step13.md"},
+            {"title": "Compare controller behavior", "text": "step14.md"},
+            {"title": "Test crash loop controller", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

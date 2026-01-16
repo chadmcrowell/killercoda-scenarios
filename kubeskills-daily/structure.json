@@ -291,6 +291,16 @@
         "path": "day-058",
         "title": "Day 58 - Ingress Failures - Traffic Not Routing",
         "description": "Install ingress-nginx and debug class, backend, TLS, path, and annotation misconfigurations"
+      },
+      {
+        "path": "day-059",
+        "title": "Day 59 - Webhook Timeouts - Admission Controller Chaos",
+        "description": "Explore webhook timeouts, failure policies, selectors, and recovery patterns"
+      },
+      {
+        "path": "day-060",
+        "title": "Day 60 - Custom Controllers - Reconciliation Loop Hell",
+        "description": "Explore broken reconciliation loops, conflicts, retries, and recovery patterns"
       }
     ]
   }
