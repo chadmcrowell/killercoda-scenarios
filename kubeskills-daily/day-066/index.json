@@ -1,0 +1,32 @@
+{
+    "title": "Resource Quotas - Hitting the Limits",
+    "description": "Explore quota enforcement, LimitRanges, and quota diagnostics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create namespace with ResourceQuota", "text": "step1.md"},
+            {"title": "Deploy pods within quota", "text": "step2.md"},
+            {"title": "Try to exceed pod quota", "text": "step3.md"},
+            {"title": "Try to exceed CPU quota", "text": "step4.md"},
+            {"title": "Test quota without resource requests", "text": "step5.md"},
+            {"title": "Add LimitRange to provide defaults", "text": "step6.md"},
+            {"title": "Test service quota", "text": "step7.md"},
+            {"title": "Test PVC quota", "text": "step8.md"},
+            {"title": "Test ConfigMap quota", "text": "step9.md"},
+            {"title": "Test object count quota", "text": "step10.md"},
+            {"title": "Test scope-based quota", "text": "step11.md"},
+            {"title": "Test priority class quota", "text": "step12.md"},
+            {"title": "Test quota for multiple namespaces", "text": "step13.md"},
+            {"title": "Monitor quota usage", "text": "step14.md"},
+            {"title": "Diagnose quota issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

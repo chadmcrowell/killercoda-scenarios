@@ -326,6 +326,11 @@
         "path": "day-065",
         "title": "Day 65 - Image Pull Failures - Registry Nightmares",
         "description": "Trigger image pull failures, auth errors, and backoff behavior"
+      },
+      {
+        "path": "day-066",
+        "title": "Day 66 - Resource Quotas - Hitting the Limits",
+        "description": "Explore quota enforcement, LimitRanges, and quota diagnostics"
       }
     ]
   }
