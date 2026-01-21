@@ -331,6 +331,11 @@
         "path": "day-066",
         "title": "Day 66 - Resource Quotas - Hitting the Limits",
         "description": "Explore quota enforcement, LimitRanges, and quota diagnostics"
+      },
+      {
+        "path": "day-067",
+        "title": "Day 67 - Init Containers - Startup Sequence Failures",
+        "description": "Explore init container sequencing, failures, and diagnostics"
       }
     ]
   }

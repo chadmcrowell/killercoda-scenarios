@@ -1,0 +1,32 @@
+{
+    "title": "Init Containers - Startup Sequence Failures",
+    "description": "Explore init container sequencing, failures, and diagnostics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Test working init container", "text": "step1.md"},
+            {"title": "Test failing init container", "text": "step2.md"},
+            {"title": "Check init container logs", "text": "step3.md"},
+            {"title": "Test init container crash loop", "text": "step4.md"},
+            {"title": "Test init container with long timeout", "text": "step5.md"},
+            {"title": "Test init container dependency", "text": "step6.md"},
+            {"title": "Create the dependency", "text": "step7.md"},
+            {"title": "Test init container with volume", "text": "step8.md"},
+            {"title": "Test init container resource limits", "text": "step9.md"},
+            {"title": "Test restartPolicy with init containers", "text": "step10.md"},
+            {"title": "Test sidecar containers (K8s 1.28+)", "text": "step11.md"},
+            {"title": "Test init container with secret", "text": "step12.md"},
+            {"title": "Test multiple init containers in sequence", "text": "step13.md"},
+            {"title": "Test init container probes", "text": "step14.md"},
+            {"title": "Diagnose init container issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
