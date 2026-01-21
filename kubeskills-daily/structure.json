@@ -316,6 +316,11 @@
         "path": "day-063",
         "title": "Day 63 - CoreDNS Failures - When DNS Dies",
         "description": "Break and restore CoreDNS, test DNS resolution, caching, and diagnostics"
+      },
+      {
+        "path": "day-064",
+        "title": "Day 64 - PV Provisioning Failures - Storage Chaos",
+        "description": "Test PVC provisioning failures, binding issues, and storage diagnostics"
       }
     ]
   }

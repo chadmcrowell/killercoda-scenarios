@@ -1,0 +1,32 @@
+{
+    "title": "PV Provisioning Failures - Storage Chaos",
+    "description": "Test PVC provisioning failures, binding issues, and storage diagnostics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check available StorageClasses", "text": "step1.md"},
+            {"title": "Test basic PVC creation", "text": "step2.md"},
+            {"title": "Create StorageClass with invalid provisioner", "text": "step3.md"},
+            {"title": "Request volume with broken StorageClass", "text": "step4.md"},
+            {"title": "Deploy pod with PVC", "text": "step5.md"},
+            {"title": "Test volume with insufficient capacity", "text": "step6.md"},
+            {"title": "Test access mode mismatch", "text": "step7.md"},
+            {"title": "Test storage with wrong volume mode", "text": "step8.md"},
+            {"title": "Test StatefulSet with broken storage", "text": "step9.md"},
+            {"title": "Test volume attachment limits", "text": "step10.md"},
+            {"title": "Test ReclaimPolicy impact", "text": "step11.md"},
+            {"title": "Test WaitForFirstConsumer binding", "text": "step12.md"},
+            {"title": "Test volume expansion (if supported)", "text": "step13.md"},
+            {"title": "Check CSI driver health", "text": "step14.md"},
+            {"title": "Diagnose storage issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
