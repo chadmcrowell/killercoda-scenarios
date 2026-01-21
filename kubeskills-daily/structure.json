@@ -311,6 +311,11 @@
         "path": "day-062",
         "title": "Day 62 - CNI Plugin Failures - Networking Goes Dark",
         "description": "Check CNI configs, pod networking, IP exhaustion, NetworkPolicies, and diagnostics"
+      },
+      {
+        "path": "day-063",
+        "title": "Day 63 - CoreDNS Failures - When DNS Dies",
+        "description": "Break and restore CoreDNS, test DNS resolution, caching, and diagnostics"
       }
     ]
   }

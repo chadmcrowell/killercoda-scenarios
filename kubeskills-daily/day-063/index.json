@@ -1,0 +1,32 @@
+{
+    "title": "CoreDNS Failures - When DNS Dies",
+    "description": "Break and restore CoreDNS, test DNS resolution, caching, and diagnostics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check CoreDNS status", "text": "step1.md"},
+            {"title": "Test normal DNS resolution", "text": "step2.md"},
+            {"title": "Check CoreDNS configuration", "text": "step3.md"},
+            {"title": "Simulate CoreDNS pod failure", "text": "step4.md"},
+            {"title": "Restore CoreDNS", "text": "step5.md"},
+            {"title": "Test CoreDNS under load", "text": "step6.md"},
+            {"title": "Corrupt CoreDNS configuration", "text": "step7.md"},
+            {"title": "Check CoreDNS logs for errors", "text": "step8.md"},
+            {"title": "Restore working configuration", "text": "step9.md"},
+            {"title": "Test DNS loop", "text": "step10.md"},
+            {"title": "Test ndots behavior", "text": "step11.md"},
+            {"title": "Test external DNS forwarding failure", "text": "step12.md"},
+            {"title": "Test DNS caching", "text": "step13.md"},
+            {"title": "Test split-horizon DNS", "text": "step14.md"},
+            {"title": "Diagnose DNS issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
