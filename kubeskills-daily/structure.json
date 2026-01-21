@@ -321,6 +321,11 @@
         "path": "day-064",
         "title": "Day 64 - PV Provisioning Failures - Storage Chaos",
         "description": "Test PVC provisioning failures, binding issues, and storage diagnostics"
+      },
+      {
+        "path": "day-065",
+        "title": "Day 65 - Image Pull Failures - Registry Nightmares",
+        "description": "Trigger image pull failures, auth errors, and backoff behavior"
       }
     ]
   }

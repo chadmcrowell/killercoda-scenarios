@@ -1,0 +1,32 @@
+{
+    "title": "Image Pull Failures - Registry Nightmares",
+    "description": "Trigger image pull failures, auth errors, and backoff behavior",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Test nonexistent image", "text": "step1.md"},
+            {"title": "Check ImagePullBackOff backoff timing", "text": "step2.md"},
+            {"title": "Test wrong registry", "text": "step3.md"},
+            {"title": "Test private registry without credentials", "text": "step4.md"},
+            {"title": "Create imagePullSecret", "text": "step5.md"},
+            {"title": "Use imagePullSecret in pod", "text": "step6.md"},
+            {"title": "Test Docker Hub rate limiting", "text": "step7.md"},
+            {"title": "Test image pull policy", "text": "step8.md"},
+            {"title": "Test missing image tag (defaults to :latest)", "text": "step9.md"},
+            {"title": "Test image digest pinning", "text": "step10.md"},
+            {"title": "Test concurrent image pulls", "text": "step11.md"},
+            {"title": "Test image pull timeout", "text": "step12.md"},
+            {"title": "Test ServiceAccount with imagePullSecrets", "text": "step13.md"},
+            {"title": "Check node image cache", "text": "step14.md"},
+            {"title": "Diagnose image pull issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
