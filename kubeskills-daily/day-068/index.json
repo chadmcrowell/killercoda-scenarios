@@ -1,0 +1,32 @@
+{
+    "title": "Job & CronJob Failures - Batch Processing Gone Wrong",
+    "description": "Explore Job and CronJob failures, retries, and scheduling issues",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create successful Job", "text": "step1.md"},
+            {"title": "Test failing Job", "text": "step2.md"},
+            {"title": "Test Job with completions", "text": "step3.md"},
+            {"title": "Test Job timeout", "text": "step4.md"},
+            {"title": "Test Job with incorrect restartPolicy", "text": "step5.md"},
+            {"title": "Create CronJob", "text": "step6.md"},
+            {"title": "Test CronJob schedule miss", "text": "step7.md"},
+            {"title": "Test CronJob concurrency policies", "text": "step8.md"},
+            {"title": "Test CronJob history limits", "text": "step9.md"},
+            {"title": "Test Job TTL cleanup", "text": "step10.md"},
+            {"title": "Test Job with failing pod", "text": "step11.md"},
+            {"title": "Test suspended CronJob", "text": "step12.md"},
+            {"title": "Test Job with indexed completions", "text": "step13.md"},
+            {"title": "Test Job with pod failure policy", "text": "step14.md"},
+            {"title": "Diagnose Job and CronJob issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

@@ -336,6 +336,11 @@
         "path": "day-067",
         "title": "Day 67 - Init Containers - Startup Sequence Failures",
         "description": "Explore init container sequencing, failures, and diagnostics"
+      },
+      {
+        "path": "day-068",
+        "title": "Day 68 - Job & CronJob Failures - Batch Processing Gone Wrong",
+        "description": "Explore Job and CronJob failures, retries, and scheduling issues"
       }
     ]
   }
