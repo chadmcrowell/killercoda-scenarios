@@ -306,6 +306,11 @@
         "path": "day-061",
         "title": "Day 61 - Helm Chart Failures - Deployment Gone Wrong",
         "description": "Debug Helm template errors, hooks, dependencies, upgrades, and rollbacks"
+      },
+      {
+        "path": "day-062",
+        "title": "Day 62 - CNI Plugin Failures - Networking Goes Dark",
+        "description": "Check CNI configs, pod networking, IP exhaustion, NetworkPolicies, and diagnostics"
       }
     ]
   }

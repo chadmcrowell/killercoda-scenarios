@@ -1,0 +1,32 @@
+{
+    "title": "CNI Plugin Failures - Networking Goes Dark",
+    "description": "Check CNI configs, pod networking, IP exhaustion, NetworkPolicies, and diagnostics",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check current CNI plugin", "text": "step1.md"},
+            {"title": "Check current pod networking", "text": "step2.md"},
+            {"title": "Check CNI binary and config", "text": "step3.md"},
+            {"title": "Simulate CNI config corruption", "text": "step4.md"},
+            {"title": "Test IP address exhaustion", "text": "step5.md"},
+            {"title": "Check for failed pod networking", "text": "step6.md"},
+            {"title": "Test network policy with CNI support", "text": "step7.md"},
+            {"title": "Apply network policy", "text": "step8.md"},
+            {"title": "Check CNI plugin logs", "text": "step9.md"},
+            {"title": "Test pod-to-pod connectivity across nodes", "text": "step10.md"},
+            {"title": "Check routing tables", "text": "step11.md"},
+            {"title": "Test DNS resolution", "text": "step12.md"},
+            {"title": "Check for CNI-related errors in kubelet", "text": "step13.md"},
+            {"title": "Test service networking", "text": "step14.md"},
+            {"title": "Diagnose CNI issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
