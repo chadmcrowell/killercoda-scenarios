@@ -6,7 +6,7 @@
             "text": "intro.md"
         },
         "steps": [
-            {"title": "Check for existing service mesh", "text": "step1.md"},
+            {"title": "Check for existing service mesh", "text": "step1.md", "background": "background.sh"},
             {"title": "Simulate sidecar injection", "text": "step2.md"},
             {"title": "Test pod without sidecar injection", "text": "step3.md"},
             {"title": "Simulate mTLS strict mode", "text": "step4.md"},
