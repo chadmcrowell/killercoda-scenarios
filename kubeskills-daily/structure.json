@@ -341,6 +341,11 @@
         "path": "day-068",
         "title": "Day 68 - Job & CronJob Failures - Batch Processing Gone Wrong",
         "description": "Explore Job and CronJob failures, retries, and scheduling issues"
+      },
+      {
+        "path": "day-069",
+        "title": "Day 69 - Service Mesh Failures - Istio/Linkerd Gone Wrong",
+        "description": "Explore service mesh failures, mTLS, sidecars, and routing issues"
       }
     ]
   }

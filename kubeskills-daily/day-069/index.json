@@ -1,0 +1,32 @@
+{
+    "title": "Service Mesh Failures - Istio/Linkerd Gone Wrong",
+    "description": "Explore service mesh failures, mTLS, sidecars, and routing issues",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check for existing service mesh", "text": "step1.md"},
+            {"title": "Simulate sidecar injection", "text": "step2.md"},
+            {"title": "Test pod without sidecar injection", "text": "step3.md"},
+            {"title": "Simulate mTLS strict mode", "text": "step4.md"},
+            {"title": "Simulate VirtualService routing", "text": "step5.md"},
+            {"title": "Simulate DestinationRule circuit breaker", "text": "step6.md"},
+            {"title": "Simulate sidecar resource issues", "text": "step7.md"},
+            {"title": "Test peer authentication issues", "text": "step8.md"},
+            {"title": "Simulate retry and timeout issues", "text": "step9.md"},
+            {"title": "Test traffic mirroring/shadowing", "text": "step10.md"},
+            {"title": "Simulate egress gateway failure", "text": "step11.md"},
+            {"title": "Test observability without mesh", "text": "step12.md"},
+            {"title": "Simulate sidecar crash", "text": "step13.md"},
+            {"title": "Test service mesh debugging", "text": "step14.md"},
+            {"title": "Test mesh upgrade scenario", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
