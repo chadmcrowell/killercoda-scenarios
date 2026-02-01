@@ -371,6 +371,11 @@
         "path": "day-074",
         "title": "Day 74 - Backup Disasters - When Restores Fail",
         "description": "Explore backup failures, incomplete restores, and disaster recovery pitfalls"
+      },
+      {
+        "path": "day-075",
+        "title": "Day 75 - Observability Failures - When Metrics Disappear",
+        "description": "Explore metrics collection failures, log aggregation issues, and observability blind spots"
       }
     ]
   }

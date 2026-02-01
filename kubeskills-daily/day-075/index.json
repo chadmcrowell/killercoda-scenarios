@@ -1,0 +1,32 @@
+{
+    "title": "Observability Failures - When Metrics Disappear",
+    "description": "Explore metrics collection failures, log aggregation issues, and observability blind spots",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check if metrics-server is running", "text": "step1.md"},
+            {"title": "Deploy application to monitor", "text": "step2.md"},
+            {"title": "Simulate Prometheus scrape failure", "text": "step3.md"},
+            {"title": "Test high cardinality metrics", "text": "step4.md"},
+            {"title": "Test log collection failure", "text": "step5.md"},
+            {"title": "Test metrics storage exhaustion", "text": "step6.md"},
+            {"title": "Simulate missing metric labels", "text": "step7.md"},
+            {"title": "Test trace sampling issues", "text": "step8.md"},
+            {"title": "Test alert fatigue", "text": "step9.md"},
+            {"title": "Test metrics query performance", "text": "step10.md"},
+            {"title": "Test log volume issues", "text": "step11.md"},
+            {"title": "Test metrics scrape interval", "text": "step12.md"},
+            {"title": "Test missing instrumentation", "text": "step13.md"},
+            {"title": "Test observability during incidents", "text": "step14.md"},
+            {"title": "Comprehensive observability checklist", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
