@@ -1,0 +1,32 @@
+{
+    "title": "Cluster Upgrades - Breaking Changes",
+    "description": "Explore deprecated APIs, version skew issues, and safe upgrade procedures",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check current cluster version", "text": "step1.md"},
+            {"title": "Check for deprecated API usage", "text": "step2.md"},
+            {"title": "Test deprecated Ingress API (pre-1.19)", "text": "step3.md"},
+            {"title": "Test PodSecurityPolicy (removed in 1.25)", "text": "step4.md"},
+            {"title": "Test deprecated Deployment API", "text": "step5.md"},
+            {"title": "Check admission webhook API version", "text": "step6.md"},
+            {"title": "Test CronJob API version change", "text": "step7.md"},
+            {"title": "Test feature gate changes", "text": "step8.md"},
+            {"title": "Check for removed flags", "text": "step9.md"},
+            {"title": "Test kubectl version skew", "text": "step10.md"},
+            {"title": "Test CRD version compatibility", "text": "step11.md"},
+            {"title": "Test service type changes", "text": "step12.md"},
+            {"title": "Check storage class changes", "text": "step13.md"},
+            {"title": "Test volume plugin migration", "text": "step14.md"},
+            {"title": "Create upgrade checklist", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

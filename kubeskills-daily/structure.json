@@ -356,6 +356,11 @@
         "path": "day-071",
         "title": "Day 71 - Operator Failures - Custom Controllers Breaking",
         "description": "Explore custom resource failures, operator RBAC issues, and CRD management problems"
+      },
+      {
+        "path": "day-072",
+        "title": "Day 72 - Cluster Upgrades - Breaking Changes",
+        "description": "Explore deprecated APIs, version skew issues, and safe upgrade procedures"
       }
     ]
   }
