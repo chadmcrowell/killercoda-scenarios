@@ -1,0 +1,32 @@
+{
+    "title": "Backup Disasters - When Restores Fail",
+    "description": "Explore backup failures, incomplete restores, and disaster recovery pitfalls",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create test data to backup", "text": "step1.md"},
+            {"title": "Backup namespace resources (NOT PVs)", "text": "step2.md"},
+            {"title": "Test incomplete backup", "text": "step3.md"},
+            {"title": "Simulate data loss", "text": "step4.md"},
+            {"title": "Attempt restore from backup", "text": "step5.md"},
+            {"title": "Test etcd backup", "text": "step6.md"},
+            {"title": "Test backup corruption", "text": "step7.md"},
+            {"title": "Test backup without validation", "text": "step8.md"},
+            {"title": "Test point-in-time recovery", "text": "step9.md"},
+            {"title": "Test backup retention issues", "text": "step10.md"},
+            {"title": "Test backup scheduling failure", "text": "step11.md"},
+            {"title": "Test cross-region backup", "text": "step12.md"},
+            {"title": "Test disaster recovery drill", "text": "step13.md"},
+            {"title": "Test backup monitoring", "text": "step14.md"},
+            {"title": "Comprehensive backup strategy", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
