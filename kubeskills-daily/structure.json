@@ -346,6 +346,16 @@
         "path": "day-069",
         "title": "Day 69 - Service Mesh Failures - Istio/Linkerd Gone Wrong",
         "description": "Explore service mesh failures, mTLS, sidecars, and routing issues"
+      },
+      {
+        "path": "day-070",
+        "title": "Day 70 - Autoscaling Failures - HPA & VPA Gone Wrong",
+        "description": "Explore autoscaling pitfalls with HPA/VPA, metrics, and conflicts"
+      },
+      {
+        "path": "day-071",
+        "title": "Day 71 - Operator Failures - Custom Controllers Breaking",
+        "description": "Explore custom resource failures, operator RBAC issues, and CRD management problems"
       }
     ]
   }

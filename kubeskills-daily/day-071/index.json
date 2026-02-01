@@ -1,0 +1,32 @@
+{
+    "title": "Operator Failures - Custom Controllers Breaking",
+    "description": "Explore custom resource failures, operator RBAC issues, and CRD management problems",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create simple CRD", "text": "step1.md"},
+            {"title": "Create custom resource", "text": "step2.md"},
+            {"title": "Test CRD validation failure", "text": "step3.md"},
+            {"title": "Test missing required field", "text": "step4.md"},
+            {"title": "Deploy broken operator", "text": "step5.md"},
+            {"title": "Check operator logs for RBAC errors", "text": "step6.md"},
+            {"title": "Add finalizer to CR", "text": "step7.md"},
+            {"title": "Force remove finalizer", "text": "step8.md"},
+            {"title": "Test operator crash", "text": "step9.md"},
+            {"title": "Test namespace stuck in Terminating", "text": "step10.md"},
+            {"title": "Test CRD with conversion webhook", "text": "step11.md"},
+            {"title": "Test operator watch errors", "text": "step12.md"},
+            {"title": "Test operator reconciliation failure", "text": "step13.md"},
+            {"title": "Test CRD deletion with existing CRs", "text": "step14.md"},
+            {"title": "Diagnose operator issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

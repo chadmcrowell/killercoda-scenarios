@@ -1,0 +1,32 @@
+{
+    "title": "Autoscaling Failures - HPA & VPA Gone Wrong",
+    "description": "Explore autoscaling pitfalls with HPA/VPA, metrics, and conflicts",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check if metrics-server is installed", "text": "step1.md"},
+            {"title": "Deploy application for testing", "text": "step2.md"},
+            {"title": "Create HPA without metrics-server", "text": "step3.md"},
+            {"title": "Test HPA without resource requests", "text": "step4.md"},
+            {"title": "Test impossible target utilization", "text": "step5.md"},
+            {"title": "Generate load to trigger scaling", "text": "step6.md"},
+            {"title": "Test min/max replica limits", "text": "step7.md"},
+            {"title": "Test scale-down behavior", "text": "step8.md"},
+            {"title": "Test VPA configuration", "text": "step9.md"},
+            {"title": "Test conflicting HPA and VPA", "text": "step10.md"},
+            {"title": "Test custom metrics (without adapter)", "text": "step11.md"},
+            {"title": "Test scaling delay and cooldown", "text": "step12.md"},
+            {"title": "Test HPA with memory metrics", "text": "step13.md"},
+            {"title": "Test multiple metrics", "text": "step14.md"},
+            {"title": "Diagnose autoscaling issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
