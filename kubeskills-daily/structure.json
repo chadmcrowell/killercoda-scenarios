@@ -361,6 +361,11 @@
         "path": "day-072",
         "title": "Day 72 - Cluster Upgrades - Breaking Changes",
         "description": "Explore deprecated APIs, version skew issues, and safe upgrade procedures"
+      },
+      {
+        "path": "day-073",
+        "title": "Day 73 - Multi-Tenancy Failures - Namespace Isolation Breaking",
+        "description": "Explore namespace isolation failures, RBAC misconfigurations, and tenant security issues"
       }
     ]
   }

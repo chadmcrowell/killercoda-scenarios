@@ -1,0 +1,32 @@
+{
+    "title": "Multi-Tenancy Failures - Namespace Isolation Breaking",
+    "description": "Explore namespace isolation failures, RBAC misconfigurations, and tenant security issues",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create tenant namespaces", "text": "step1.md"},
+            {"title": "Set up ResourceQuotas per tenant", "text": "step2.md"},
+            {"title": "Test cross-namespace access without RBAC", "text": "step3.md"},
+            {"title": "Create overly permissive RBAC", "text": "step4.md"},
+            {"title": "Fix with namespace-scoped RBAC", "text": "step5.md"},
+            {"title": "Test NetworkPolicy isolation", "text": "step6.md"},
+            {"title": "Apply NetworkPolicy isolation", "text": "step7.md"},
+            {"title": "Test noisy neighbor problem", "text": "step8.md"},
+            {"title": "Test quota bypass via node resources", "text": "step9.md"},
+            {"title": "Test service name collision", "text": "step10.md"},
+            {"title": "Test PriorityClass abuse", "text": "step11.md"},
+            {"title": "Test cross-namespace Service access", "text": "step12.md"},
+            {"title": "Test namespace deletion cascade", "text": "step13.md"},
+            {"title": "Test node affinity for tenant isolation", "text": "step14.md"},
+            {"title": "Diagnose multi-tenancy issues", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
