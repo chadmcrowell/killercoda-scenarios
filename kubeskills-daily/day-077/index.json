@@ -1,0 +1,32 @@
+{
+    "title": "Secret Management - Credentials Everywhere",
+    "description": "Explore secret leaks via env vars, logs, Git, images, and learn proper secret management patterns",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Create basic secret", "text": "step1.md"},
+            {"title": "Decode secret (trivially easy)", "text": "step2.md"},
+            {"title": "Secret in environment variable", "text": "step3.md"},
+            {"title": "Secret logged to stdout", "text": "step4.md"},
+            {"title": "Secret in Git repository", "text": "step5.md"},
+            {"title": "Secret without RBAC protection", "text": "step6.md"},
+            {"title": "Secret mounted as volume", "text": "step7.md"},
+            {"title": "Secret in ConfigMap (wrong!)", "text": "step8.md"},
+            {"title": "Secret in image", "text": "step9.md"},
+            {"title": "Secret visible in pod spec", "text": "step10.md"},
+            {"title": "Test SealedSecret (proper way)", "text": "step11.md"},
+            {"title": "Secret in error messages", "text": "step12.md"},
+            {"title": "Secret rotation without restart", "text": "step13.md"},
+            {"title": "Secret in backup", "text": "step14.md"},
+            {"title": "Proper secret management", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

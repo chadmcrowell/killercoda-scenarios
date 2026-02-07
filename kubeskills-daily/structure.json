@@ -381,6 +381,11 @@
         "path": "day-076",
         "title": "Day 76 - GitOps Failures - When Deployments Don't Sync",
         "description": "Explore GitOps sync failures, manifest validation issues, drift detection, and troubleshooting deployment pipelines"
+      },
+      {
+        "path": "day-077",
+        "title": "Day 77 - Secret Management - Credentials Everywhere",
+        "description": "Explore secret leaks via env vars, logs, Git, images, and learn proper secret management patterns"
       }
     ]
   }
