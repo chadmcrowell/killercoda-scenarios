@@ -406,6 +406,11 @@
         "path": "day-081",
         "title": "Day 81 - Chaos Engineering - Breaking Things on Purpose",
         "description": "Explore chaos engineering with pod kills, network chaos, resource stress, dependency failures, and steady state validation"
+      },
+      {
+        "path": "day-082",
+        "title": "Day 82 - Configuration Drift - When Clusters Diverge",
+        "description": "Explore configuration drift from manual changes, environment inconsistency, drift detection, and prevention strategies"
       }
     ]
   }

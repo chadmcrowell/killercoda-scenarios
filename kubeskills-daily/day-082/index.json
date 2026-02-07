@@ -1,0 +1,32 @@
+{
+    "title": "Configuration Drift - When Clusters Diverge",
+    "description": "Explore configuration drift from manual changes, environment inconsistency, drift detection, and prevention strategies",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Deploy baseline configuration", "text": "step1.md"},
+            {"title": "Simulate manual hotfix (drift begins)", "text": "step2.md"},
+            {"title": "Test kubectl edit (undocumented change)", "text": "step3.md"},
+            {"title": "Test ConfigMap drift", "text": "step4.md"},
+            {"title": "Test image tag drift", "text": "step5.md"},
+            {"title": "Test label drift", "text": "step6.md"},
+            {"title": "Detect configuration drift", "text": "step7.md"},
+            {"title": "Test secret drift", "text": "step8.md"},
+            {"title": "Test annotation drift", "text": "step9.md"},
+            {"title": "Simulate environment inconsistency", "text": "step10.md"},
+            {"title": "Test resource drift", "text": "step11.md"},
+            {"title": "Test service drift", "text": "step12.md"},
+            {"title": "Measure drift impact", "text": "step13.md"},
+            {"title": "Drift prevention strategies", "text": "step14.md"},
+            {"title": "Drift reconciliation", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
