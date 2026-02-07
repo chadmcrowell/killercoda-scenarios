@@ -1,0 +1,32 @@
+{
+    "title": "Chaos Engineering - Breaking Things on Purpose",
+    "description": "Explore chaos engineering with pod kills, network chaos, resource stress, dependency failures, and steady state validation",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Deploy target application", "text": "step1.md"},
+            {"title": "Chaos experiment - Random pod kill", "text": "step2.md"},
+            {"title": "Simulate network latency", "text": "step3.md"},
+            {"title": "Simulate network packet loss", "text": "step4.md"},
+            {"title": "Simulate CPU stress", "text": "step5.md"},
+            {"title": "Simulate memory exhaustion", "text": "step6.md"},
+            {"title": "Simulate disk fill", "text": "step7.md"},
+            {"title": "Simulate service dependency failure", "text": "step8.md"},
+            {"title": "Simulate DNS failure", "text": "step9.md"},
+            {"title": "Simulate node failure", "text": "step10.md"},
+            {"title": "Simulate cascading failure", "text": "step11.md"},
+            {"title": "Test blast radius", "text": "step12.md"},
+            {"title": "Validate steady state", "text": "step13.md"},
+            {"title": "Chaos experiment framework", "text": "step14.md"},
+            {"title": "Chaos engineering best practices", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

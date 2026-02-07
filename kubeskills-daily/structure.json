@@ -401,6 +401,11 @@
         "path": "day-080",
         "title": "Day 80 - Rate Limiting - API Throttling Gone Wrong",
         "description": "Explore API server rate limiting, Priority and Fairness queuing, client-side throttling, and troubleshooting throttled requests"
+      },
+      {
+        "path": "day-081",
+        "title": "Day 81 - Chaos Engineering - Breaking Things on Purpose",
+        "description": "Explore chaos engineering with pod kills, network chaos, resource stress, dependency failures, and steady state validation"
       }
     ]
   }
