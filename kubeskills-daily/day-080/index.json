@@ -1,0 +1,32 @@
+{
+    "title": "Rate Limiting - API Throttling Gone Wrong",
+    "description": "Explore API server rate limiting, Priority and Fairness queuing, client-side throttling, and troubleshooting throttled requests",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check API server rate limit configuration", "text": "step1.md"},
+            {"title": "Simulate API request spam", "text": "step2.md"},
+            {"title": "Test list operation at scale", "text": "step3.md"},
+            {"title": "Simulate watch connection overload", "text": "step4.md"},
+            {"title": "Test Priority and Fairness queuing", "text": "step5.md"},
+            {"title": "Simulate controller API spam", "text": "step6.md"},
+            {"title": "Test 429 Too Many Requests", "text": "step7.md"},
+            {"title": "Test cloud provider rate limits", "text": "step8.md"},
+            {"title": "Test webhook timeout cascades", "text": "step9.md"},
+            {"title": "Test kubectl client-side throttling", "text": "step10.md"},
+            {"title": "Test informer/cache issues", "text": "step11.md"},
+            {"title": "Test burst capacity exhaustion", "text": "step12.md"},
+            {"title": "Monitor rate limiting", "text": "step13.md"},
+            {"title": "Configure rate limit bypass", "text": "step14.md"},
+            {"title": "Rate limiting troubleshooting guide", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

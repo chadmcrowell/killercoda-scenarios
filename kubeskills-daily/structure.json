@@ -396,6 +396,11 @@
         "path": "day-079",
         "title": "Day 79 - Supply Chain Attacks - Poisoned Dependencies",
         "description": "Explore supply chain attack vectors including typosquatting, dependency confusion, image tampering, and detection strategies"
+      },
+      {
+        "path": "day-080",
+        "title": "Day 80 - Rate Limiting - API Throttling Gone Wrong",
+        "description": "Explore API server rate limiting, Priority and Fairness queuing, client-side throttling, and troubleshooting throttled requests"
       }
     ]
   }
