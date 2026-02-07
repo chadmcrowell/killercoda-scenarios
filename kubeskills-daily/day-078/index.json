@@ -1,0 +1,32 @@
+{
+    "title": "Container Escape - Breaking Out of the Sandbox",
+    "description": "Explore container escape vectors including privileged containers, hostPath mounts, capabilities, and host namespaces",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Test basic non-privileged container", "text": "step1.md"},
+            {"title": "Test privileged container", "text": "step2.md"},
+            {"title": "Test hostPath volume mount", "text": "step3.md"},
+            {"title": "Test Docker socket mount", "text": "step4.md"},
+            {"title": "Test dangerous capabilities", "text": "step5.md"},
+            {"title": "Test hostPID namespace", "text": "step6.md"},
+            {"title": "Test hostNetwork namespace", "text": "step7.md"},
+            {"title": "Test runAsUser: 0 (root)", "text": "step8.md"},
+            {"title": "Test /proc filesystem access", "text": "step9.md"},
+            {"title": "Test kernel exploitation path", "text": "step10.md"},
+            {"title": "Test cgroup escape", "text": "step11.md"},
+            {"title": "Test seccomp bypass", "text": "step12.md"},
+            {"title": "Test AppArmor/SELinux bypass", "text": "step13.md"},
+            {"title": "Defense mechanisms", "text": "step14.md"},
+            {"title": "Security scanning", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

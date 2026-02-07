@@ -386,6 +386,11 @@
         "path": "day-077",
         "title": "Day 77 - Secret Management - Credentials Everywhere",
         "description": "Explore secret leaks via env vars, logs, Git, images, and learn proper secret management patterns"
+      },
+      {
+        "path": "day-078",
+        "title": "Day 78 - Container Escape - Breaking Out of the Sandbox",
+        "description": "Explore container escape vectors including privileged containers, hostPath mounts, capabilities, and host namespaces"
       }
     ]
   }
