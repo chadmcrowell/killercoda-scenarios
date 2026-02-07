@@ -1,0 +1,32 @@
+{
+    "title": "GitOps Failures - When Deployments Don't Sync",
+    "description": "Explore GitOps sync failures, manifest validation issues, drift detection, and troubleshooting deployment pipelines",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Simulate GitOps repository structure", "text": "step1.md"},
+            {"title": "Test manifest validation failure", "text": "step2.md"},
+            {"title": "Test Kustomize rendering failure", "text": "step3.md"},
+            {"title": "Test resource pruning danger", "text": "step4.md"},
+            {"title": "Test sync with wrong namespace", "text": "step5.md"},
+            {"title": "Test circular dependency", "text": "step6.md"},
+            {"title": "Test image tag mismatch", "text": "step7.md"},
+            {"title": "Test health check failures", "text": "step8.md"},
+            {"title": "Test secret in Git (anti-pattern)", "text": "step9.md"},
+            {"title": "Test auto-sync with bad manifest", "text": "step10.md"},
+            {"title": "Test webhook authentication failure", "text": "step11.md"},
+            {"title": "Test sync wave ordering", "text": "step12.md"},
+            {"title": "Test diff detection failure", "text": "step13.md"},
+            {"title": "Test large manifest timeout", "text": "step14.md"},
+            {"title": "GitOps troubleshooting guide", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

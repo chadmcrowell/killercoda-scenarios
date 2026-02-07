@@ -376,6 +376,11 @@
         "path": "day-075",
         "title": "Day 75 - Observability Failures - When Metrics Disappear",
         "description": "Explore metrics collection failures, log aggregation issues, and observability blind spots"
+      },
+      {
+        "path": "day-076",
+        "title": "Day 76 - GitOps Failures - When Deployments Don't Sync",
+        "description": "Explore GitOps sync failures, manifest validation issues, drift detection, and troubleshooting deployment pipelines"
       }
     ]
   }
