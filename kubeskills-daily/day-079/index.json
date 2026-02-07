@@ -1,0 +1,32 @@
+{
+    "title": "Supply Chain Attacks - Poisoned Dependencies",
+    "description": "Explore supply chain attack vectors including typosquatting, dependency confusion, image tampering, and detection strategies",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Demonstrate image tag mutability", "text": "step1.md"},
+            {"title": "Test unverified image pull", "text": "step2.md"},
+            {"title": "Simulate typosquatting attack", "text": "step3.md"},
+            {"title": "Test malicious base image", "text": "step4.md"},
+            {"title": "Test dependency confusion", "text": "step5.md"},
+            {"title": "Test image without vulnerability scanning", "text": "step6.md"},
+            {"title": "Simulate crypto miner in image", "text": "step7.md"},
+            {"title": "Test unsigned image", "text": "step8.md"},
+            {"title": "Test private registry compromise", "text": "step9.md"},
+            {"title": "Test digest pinning", "text": "step10.md"},
+            {"title": "Test build-time injection", "text": "step11.md"},
+            {"title": "Test malicious npm package", "text": "step12.md"},
+            {"title": "Supply chain security tools", "text": "step13.md"},
+            {"title": "Test admission controller", "text": "step14.md"},
+            {"title": "Supply chain attack detection", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

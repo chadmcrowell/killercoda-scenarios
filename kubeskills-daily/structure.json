@@ -391,6 +391,11 @@
         "path": "day-078",
         "title": "Day 78 - Container Escape - Breaking Out of the Sandbox",
         "description": "Explore container escape vectors including privileged containers, hostPath mounts, capabilities, and host namespaces"
+      },
+      {
+        "path": "day-079",
+        "title": "Day 79 - Supply Chain Attacks - Poisoned Dependencies",
+        "description": "Explore supply chain attack vectors including typosquatting, dependency confusion, image tampering, and detection strategies"
       }
     ]
   }
