@@ -7,13 +7,13 @@ As long as the CN in the key is "carlton", we will be able to use this to access
 
 To create a private key, we can use the **openssl** command-line tool. We'll use 2048 bit encryption and we'll name it carlton.key
 
-`openssl genrsa -out carlton.key 2048`
+`openssl genrsa -out carlton.key 2048`{{exec}}
 
 Kubernetes itself is a certificate authority, therefore, it can approve and generate certificates. How convenient! 
 
 Let's create a Certificate Signing Request (CSR) for the Kubernetes API using our private key and insert the common name and output that to a file named carlton.csr with the following command
 
-`openssl req -new -key carlton.key -subj "/CN=carlton" -out carlton.csr`
+`openssl req -new -key carlton.key -subj "/CN=carlton" -out carlton.csr`{{exec}}
 
 > 🛑IMPORTANT🛑: Make sure to insert the Common Name (CN) into your CSR, or else the certificate will become invalid
 

@@ -1,7 +1,7 @@
 
 Let's create a pod in the web namespace, so our new user has something to look at!
 
-`k -n web run pod1 --image=nginx`
+`k -n web run pod1 --image=nginx`{{exec}}
 
 The output 'get pods' in the web namespace will look like this
 ```bash

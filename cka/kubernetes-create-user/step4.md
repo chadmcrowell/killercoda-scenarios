@@ -3,7 +3,7 @@ Now that we have a CSR, we can submit it to the Kubernetes API for approval.
 
 First, let's store the value of the CSR in an environment variable named "REQUEST"
 
-`export REQUEST=$(cat carlton.csr | base64 -w 0)`
+`export REQUEST=$(cat carlton.csr | base64 -w 0)`{{exec}}
 
 Then, we can create a YAML manifest and sumbit it to the Kubernetes API. Insert the $REQUEST variable next to "request: " like so
 
@@ -21,7 +21,7 @@ spec:
   usages:
   - client auth
 EOF
-```
+```{{exec}}
 
 The output of the command `k get csr` should result in the following:
 ```bash

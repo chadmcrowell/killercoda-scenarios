@@ -9,15 +9,17 @@ Role-based access in Kubernetes is used to permit actions being performed by use
 
 In order to create a **Role** and **RoleBinding** in a namespace, we have to create the namespace "web" using the command
 
-`k create ns web`
+`k create ns web`{{exec}}
 
 Now, let's creat the role that will allow our new user to "get" and "list" pods in the web namespace
 
-`k -n web create role pod-reader --verb=get,list --resource=pods`
+`k -n web create role pod-reader --verb=get,list --resource=pods`{{exec}}
 
 Now that we've created a role, let's assign this role to our new user named 'carlton'
 
-`k -n web create rolebinding pod-reader-binding --role=pod-reader --user=carlton`
+`k -n web create rolebinding pod-reader-binding --role=pod-reader --user=carlton`{{exec}}
+
+`k -n web get role,rolebinding`{{exec}}
 
 The output of role and rolebinding in your terminal should look like this
 ```bash
