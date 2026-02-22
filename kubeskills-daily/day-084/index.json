@@ -1,0 +1,32 @@
+{
+    "title": "Ingress Controller Failures - Traffic Can't Route",
+    "description": "Explore Ingress failure modes including missing controllers, wrong IngressClass, TLS misconfigurations, path type confusion, and backend endpoint issues",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Check for Ingress controller", "text": "step1.md"},
+            {"title": "Deploy backend service", "text": "step2.md"},
+            {"title": "Create Ingress without controller", "text": "step3.md"},
+            {"title": "Test wrong IngressClass", "text": "step4.md"},
+            {"title": "Test missing backend service", "text": "step5.md"},
+            {"title": "Test path type confusion", "text": "step6.md"},
+            {"title": "Test TLS certificate issues", "text": "step7.md"},
+            {"title": "Test TLS secret in wrong namespace", "text": "step8.md"},
+            {"title": "Test annotation incompatibility", "text": "step9.md"},
+            {"title": "Test path rewrite issues", "text": "step10.md"},
+            {"title": "Test backend without endpoints", "text": "step11.md"},
+            {"title": "Test conflicting Ingress rules", "text": "step12.md"},
+            {"title": "Test rate limiting", "text": "step13.md"},
+            {"title": "Test default backend", "text": "step14.md"},
+            {"title": "Ingress troubleshooting guide", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}

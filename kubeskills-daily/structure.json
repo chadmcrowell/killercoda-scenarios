@@ -411,6 +411,16 @@
         "path": "day-082",
         "title": "Day 82 - Configuration Drift - When Clusters Diverge",
         "description": "Explore configuration drift from manual changes, environment inconsistency, drift detection, and prevention strategies"
+      },
+      {
+        "path": "day-083",
+        "title": "Day 83 - Stateful Application Failures - When State Goes Wrong",
+        "description": "Explore StatefulSet failure modes including volume provisioning errors, DNS breakage, pod ordering, update strategies, and split-brain scenarios"
+      },
+      {
+        "path": "day-084",
+        "title": "Day 84 - Ingress Controller Failures - Traffic Can't Route",
+        "description": "Explore Ingress failure modes including missing controllers, wrong IngressClass, TLS misconfigurations, path type confusion, and backend endpoint issues"
       }
     ]
   }

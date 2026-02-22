@@ -1,0 +1,32 @@
+{
+    "title": "Stateful Application Failures - When State Goes Wrong",
+    "description": "Explore StatefulSet failure modes including volume provisioning errors, DNS breakage, pod ordering, update strategies, and split-brain scenarios",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {"title": "Deploy basic StatefulSet", "text": "step1.md"},
+            {"title": "Test pod ordering", "text": "step2.md"},
+            {"title": "Test stable network identity", "text": "step3.md"},
+            {"title": "Test volume attachment failure", "text": "step4.md"},
+            {"title": "Test pod deletion without graceful shutdown", "text": "step5.md"},
+            {"title": "Test headless service requirement", "text": "step6.md"},
+            {"title": "Test StatefulSet scaling", "text": "step7.md"},
+            {"title": "Test volume claim deletion", "text": "step8.md"},
+            {"title": "Test split-brain scenario", "text": "step9.md"},
+            {"title": "Test parallel pod management", "text": "step10.md"},
+            {"title": "Test OnDelete update strategy", "text": "step11.md"},
+            {"title": "Test RollingUpdate with partition", "text": "step12.md"},
+            {"title": "Test PVC expansion", "text": "step13.md"},
+            {"title": "Test graceful termination", "text": "step14.md"},
+            {"title": "StatefulSet troubleshooting guide", "text": "step15.md"}
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
