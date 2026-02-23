@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:killercoda.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:itnext.io)"
     ]
   }
 }
