@@ -25,9 +25,6 @@ sleep 10
 
 ```bash
 kubectl get ingress broken-ingress
-
-echo ""
-echo "Ingress has no ADDRESS (no controller to provision it)"
 kubectl describe ingress broken-ingress | grep -A 5 "Events:"
 ```{{exec}}
 

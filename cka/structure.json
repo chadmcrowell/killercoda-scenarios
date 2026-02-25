@@ -128,6 +128,11 @@
         "description": "Apply node affinity to a pod in Kubernetes"
       },
       {
+        "path": "node-affinity-required-preferred",
+        "title": "Node Affinity: Required and Preferred",
+        "description": "Schedule a pod using required and preferred node affinity rules based on node labels"
+      },
+      {
         "path": "node-name",
         "title": "Scheduling a pod to a specific node",
         "description": "Schedule a pod to a node by the node's name"

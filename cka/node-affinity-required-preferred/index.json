@@ -1,0 +1,26 @@
+{
+    "title": "Node Affinity: Required and Preferred",
+    "description": "A pod must be scheduled only on nodes with a specific label, and should prefer nodes in a particular zone",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Add Node Affinity to the Pod YAML",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Apply the Pod and Verify",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
