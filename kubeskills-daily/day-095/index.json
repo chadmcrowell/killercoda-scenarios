@@ -1,0 +1,31 @@
+{
+  "title": "ConfigMap Hot Reload and Stale Configuration Debugging",
+  "description": "In this lab you will investigate the different behaviors of ConfigMap consumption methods and debug a situation where an application is reading stale configuration despite the ConfigMap having been updated. You will observe the difference between environment variable injection and volume mounting, understand the update propagation delay, and implement a reliable strategy for ensuring pods always use current configuration values. This scenario reflects real-world confusion that affects teams at every experience level.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
