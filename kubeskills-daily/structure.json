@@ -1,426 +1,461 @@
 {
-    "title": "KubeSkills Daily",
-    "description": "Play with KubeSkills Daily and learn Kubernetes",
-    "items": [
-      {
-        "path": "day-001",
-        "title": "Day 1 - Pod Restart Policies",
-        "description": "Test how Kubernetes handles failures and restarts"
-      },
-      {
-        "path": "day-002",
-        "title": "Day 2 - StatefulSet Pod Ordering",
-        "description": "Break ordered updates and compare OrderedReady vs Parallel management"
-      },
-      {
-        "path": "day-003",
-        "title": "Day 3 - OOMKilled vs Resource Limits",
-        "description": "Trigger OOM events and compare Kubernetes QoS classes"
-      },
-      {
-        "path": "day-004",
-        "title": "Day 4 - Network Policy Lockouts",
-        "description": "Enforce default deny, poke DNS/web holes, and recover access"
-      },
-      {
-        "path": "day-005",
-        "title": "Day 5 - Taints and Tolerations",
-        "description": "Evict pods with NoExecute, compare tolerations, and explore NoSchedule"
-      },
-      {
-        "path": "day-006",
-        "title": "Day 6 - Liveness Probe Death Loops",
-        "description": "Trigger, inspect, and fix misconfigured probes plus readiness/startup"
-      },
-      {
-        "path": "day-007",
-        "title": "Day 7 - Init Container Failures",
-        "description": "Debug stuck init containers, add retries, and run sidecars"
-      },
-      {
-        "path": "day-008",
-        "title": "Day 8 - PVC Binding Failures",
-        "description": "Storage that never arrives until you fix StorageClasses and modes"
-      },
-      {
-        "path": "day-009",
-        "title": "Day 9 - ConfigMap Updates - The Sync Gap",
-        "description": "See why env vars freeze, volumes lag, and subPath never refreshes"
-      },
-      {
-        "path": "day-010",
-        "title": "Day 10 - Secret Rotation - Hot Swapping Credentials",
-        "description": "Rotate secrets, see env/volume drift, and force rollouts to reload"
-      },
-      {
-        "path": "day-011",
-        "title": "Day 11 - Service DNS Propagation Delays",
-        "description": "Watch DNS timing gaps, endpoint readiness, and headless vs ClusterIP behavior"
-      },
-      {
-        "path": "day-012",
-        "title": "Day 12 - HPA Thrashing - The Scale Storm",
-        "description": "See aggressive HPAs thrash, tune behaviors, and test multi-metric scenarios"
-      },
-      {
-        "path": "day-013",
-        "title": "Day 13 - PodDisruptionBudgets - Blocking Maintenance",
-        "description": "See how strict PDBs block drains, fix budgets, and explore conflict scenarios"
-      },
-      {
-        "path": "day-014",
-        "title": "Day 14 - ResourceQuota - Deployment Denied",
-        "description": "See how quotas silently block pods, use LimitRanges, and explore scoped/count quotas"
-      },
-      {
-        "path": "day-015",
-        "title": "Day 15 - Ingress Path Routing - Order Matters",
-        "description": "See how Prefix ordering, Exact, regex, and rewrites change nginx-ingress routing"
-      },
-      {
-        "path": "day-016",
-        "title": "Day 16 - RBAC Lockout - Permission Denied",
-        "description": "See how Roles, ClusterRoles, bindings, and aggregation grant or deny access"
-      },
-      {
-        "path": "day-017",
-        "title": "Day 17 - Admission Webhooks - The Deployment Blocker",
-        "description": "See how webhook failures stall the API server and how to bypass, scope, and debug them"
-      },
-      {
-        "path": "day-018",
-        "title": "Day 18 - CronJob Concurrency - The Job Pile-Up",
-        "description": "See how CronJob concurrency policies affect overlapping runs, skips, replacements, and history"
-      },
-      {
-        "path": "day-019",
-        "title": "Day 19 - ServiceAccount Tokens - Projection Problems",
-        "description": "See how automount settings, projected tokens, and token requests change Kubernetes auth"
-      },
-      {
-        "path": "day-020",
-        "title": "Day 20 - Node NotReady - The Eviction Cascade",
-        "description": "See how NotReady taints trigger evictions, tolerations delay them, and workloads recover"
-      },
-      {
-        "path": "day-021",
-        "title": "Day 21 - Finalizers - The Deletion Blocker",
-        "description": "See how finalizers block deletion, how to clear them safely, and how built-ins protect resources"
-      },
-      {
-        "path": "day-022",
-        "title": "Day 22 - Image Pull Secrets - Authentication Failures",
-        "description": "See how private registry pulls fail, fix secrets, attach via ServiceAccounts, and debug pull errors"
-      },
-      {
-        "path": "day-023",
-        "title": "Day 23 - CNI Plugin Failures - Network Isolation",
-        "description": "Inspect CNI configs, test pod connectivity, DNS, NetworkPolicies, MTU, CIDR exhaustion, and CNI errors"
-      },
-      {
-        "path": "day-024",
-        "title": "Day 24 - kube-proxy Modes - Service Routing Breakdown",
-        "description": "Inspect kube-proxy mode, test ClusterIP/NodePort routing, iptables rules, scaling, session affinity, and failures"
-      },
-      {
-        "path": "day-025",
-        "title": "Day 25 - etcd Performance - The Cluster Heartbeat",
-        "description": "Check etcd health, size, keys, load impact, compaction/defrag, backups, alarms, and metrics"
-      },
-      {
-        "path": "day-026",
-        "title": "Day 26 - Kubelet Eviction - Resource Pressure",
-        "description": "Inspect node capacity and thresholds, see QoS/priority eviction order, trigger pressure, and verify recovery"
-      },
-      {
-        "path": "day-027",
-        "title": "Day 27 - API Server Rate Limiting - Request Throttling",
-        "description": "Inspect APF configs, flood the API, watch throttling, review FlowSchemas/PriorityLevels, and test identities/metrics"
-      },
-      {
-        "path": "day-028",
-        "title": "Day 28 - Pod Security Admission - Policy Enforcement",
-        "description": "Test baseline vs restricted PSA, fix security contexts, observe warn/audit, and validate workloads"
-      },
-      {
-        "path": "day-029",
-        "title": "Day 29 - Custom Resource Definitions - Validation Failures",
-        "description": "Iterate from permissive CRDs to strict validation, defaults, status subresources, and multiple versions"
-      },
-      {
-        "path": "day-030",
-        "title": "Day 30 - Operator Reconciliation - Infinite Loops",
-        "description": "See how naive controller logic loops forever and how status subresources, observedGeneration, owner refs, and backoff stop the storm"
-      },
-      {
-        "path": "day-031",
-        "title": "Day 31 - Helm Charts - Template Rendering Failures",
-        "description": "Debug Helm templates: syntax errors, nil pointers, required values, value precedence, functions, lint, dry-run, upgrades, and rollbacks"
-      },
-      {
-        "path": "day-032",
-        "title": "Day 32 - ArgoCD Sync - Out of Sync Nightmares",
-        "description": "Install ArgoCD, sync a repo, watch drift, auto-sync/self-heal, prune, hooks, waves, health checks, replace, selective sync, and rollback"
-      },
-      {
-        "path": "day-033",
-        "title": "Day 33 - Service Mesh - Traffic Split Gone Wrong",
-        "description": "Install Istio, split traffic between versions, debug weights, missing subsets, headers, retries/timeouts, and analyze routing issues"
-      },
-      {
-        "path": "day-034",
-        "title": "Day 34 - Multi-Tenancy - Namespace Isolation Breakdown",
-        "description": "Create tenant namespaces, quotas, RBAC, apps, network isolation, PSA, LimitRanges, and enforce cross-namespace boundaries"
-      },
-      {
-        "path": "day-035",
-        "title": "Day 35 - Init Container Dependencies - Circular Deadlocks",
-        "description": "Build circular init waits, debug deadlocks, fix by breaking the cycle, add timeouts, retries, readiness vs init, Jobs, and StatefulSets"
-      },
-      {
-        "path": "day-036",
-        "title": "Day 36 - Jobs and CronJobs - Backoff Explosion",
-        "description": "Trigger failing Jobs to see backoff, cap retries, set deadlines, tune completions and parallelism, suspend/resume, and manage CronJobs"
-      },
-      {
-        "path": "day-037",
-        "title": "Day 37 - Volume Mounts - Permission Denied Chaos",
-        "description": "Explore volume permissions: emptyDir vs hostPath, fsGroup fixes, read-only mounts, subPath quirks, PVC access, shared volumes, Secrets, projected volumes, and securityContext overrides"
-      },
-      {
-        "path": "day-038",
-        "title": "Day 38 - DNS Resolution - CoreDNS Breakdown",
-        "description": "Break and restore CoreDNS, inspect pod DNS config, tune ndots/timeouts, compare dnsPolicy, tweak CoreDNS, test caching, block/allow DNS, and resolve headless services"
-      },
-      {
-        "path": "day-039",
-        "title": "Day 39 - Resource Contention - QoS Eviction Wars",
-        "description": "Launch pods across QoS classes, trigger memory pressure, observe evictions, apply priorities, quotas, LimitRanges, throttling, and finalizers"
-      },
-      {
-        "path": "day-040",
-        "title": "Day 40 - Certificates - Expiration Catastrophe",
-        "description": "Inspect control plane certs, install cert-manager, issue short-lived and CA certs, simulate expirations and failed renewals, and debug TLS secrets"
-      },
-      {
-        "path": "day-041",
-        "title": "Day 41 - Prometheus Metrics - Missing Targets",
-        "description": "Install Prometheus Operator, create Prometheus selectors, break and fix ServiceMonitors via labels/ports/policies/relabeling, add PodMonitor, and debug missing targets"
-      },
-      {
-        "path": "day-042",
-        "title": "Day 42 - Logging Pipelines - Lost in Transit",
-        "description": "Ship logs with Fluent Bit, trigger parser errors, buffer pressure, destination failures, multiline issues, and sidecar patterns to see how logs vanish or get enriched"
-      },
-      {
-        "path": "day-043",
-        "title": "Day 43 - Distributed Tracing - Missing Spans",
-        "description": "Install Jaeger, send traces with and without propagation, explore sampling, missing instrumentation, collector pressure, baggage, and slow spans to find trace gaps"
-      },
-      {
-        "path": "day-044",
-        "title": "Day 44 - Resource Metrics - Debugging Slow Pods",
-        "description": "Verify metrics-server, stress CPU/memory/I-O, observe throttling and OOM, compare QoS, query raw metrics, drive contention, and autoscale from metrics"
-      },
-      {
-        "path": "day-045",
-        "title": "Day 45 - kubectl debug - Ephemeral Container Debugging",
-        "description": "Attach ephemeral debug containers, copy pods, debug nodes, and troubleshoot pods without shells or in CrashLoop using kubectl debug"
-      },
-      {
-        "path": "day-046",
-        "title": "Day 46 - Probe Tuning - The Goldilocks Problem",
-        "description": "Tune startup, liveness, and readiness probes; prevent premature restarts, manage readiness routing, and understand probe overhead and rolling update protections"
-      },
-      {
-        "path": "day-047",
-        "title": "Day 47 - StatefulSets - Orphaned Volume Nightmare",
-        "description": "See how StatefulSets retain PVCs, handle scale down/up, use retention policies, expand PVCs, manage updates, and clean up orphaned storage"
-      },
-      {
-        "path": "day-048",
-        "title": "Day 48 - Cluster Upgrades - Version Skew Chaos",
-        "description": "Inspect versions, deprecated APIs, CRD compatibility, skew policies, webhook versions, storage versions, and draft a safe upgrade plan"
-      },
-      {
-        "path": "day-049",
-        "title": "Day 49 - Backup & Restore - Velero Disasters",
-        "description": "Install Velero with MinIO, back up and delete a namespace, restore it, note emptyDir/PVC gaps without snapshots, handle conflicts, hooks, schedules, exclusions, and storage checks"
-      },
-      {
-        "path": "day-050",
-        "title": "Day 50 - Node Failures - Eviction Storm Chaos",
-        "description": "Cordon, drain, taint, and recover nodes; observe evictions, PDB blocks, StatefulSet stuck pods, DaemonSet tolerance, and custom tolerations to tune failover"
-      },
-      {
-        "path": "day-051",
-        "title": "Day 51 - API Server Overload - Rate Limit Hell",
-        "description": "Hammer the API server, observe APF queues, build custom FlowSchemas/PriorityLevels, simulate webhook slowness, and plan safe rate/priority configs"
-      },
-      {
-        "path": "day-052",
-        "title": "Day 52 - etcd Corruption - Quorum Loss Disaster",
-        "description": "Check etcd health/members/size, snapshot and restore, compact/defrag, monitor alarms/metrics, stress etcd, and document disaster recovery"
-      },
-      {
-        "path": "day-053",
-        "title": "Day 53 - Network Partitions - Split-Brain Nightmare",
-        "description": "Model network partitions with NetworkPolicies, observe split-brain symptoms, test quorum-based apps, and plan detection and mitigation"
-      },
-      {
-        "path": "day-054",
-        "title": "Day 54 - Certificate Rotation - Auto-Renewal Gone Wrong",
-        "description": "Check Kubernetes and cert-manager certs, create short-lived certs, break renewals, monitor expirations, verify chains, and document rotation/DR plans"
-      },
-      {
-        "path": "day-055",
-        "title": "Day 55 - RBAC Misconfigurations - Permission Denied Hell",
-        "description": "Probe missing verbs, namespace scope, resourceNames, subresources, aggregation, impersonation, and least-privilege RBAC patterns"
-      },
-      {
-        "path": "day-056",
-        "title": "Day 56 - Resource Exhaustion - Cluster at Capacity",
-        "description": "Explore pending pods, fragmentation, preemption, quotas, LimitRanges, and capacity planning under resource pressure"
-      },
-      {
-        "path": "day-057",
-        "title": "Day 57 - Pod Security Standards - Enforcement Failures",
-        "description": "Compare PSA profiles and modes, common violations, and compliant workload patterns"
-      },
-      {
-        "path": "day-058",
-        "title": "Day 58 - Ingress Failures - Traffic Not Routing",
-        "description": "Install ingress-nginx and debug class, backend, TLS, path, and annotation misconfigurations"
-      },
-      {
-        "path": "day-059",
-        "title": "Day 59 - Webhook Timeouts - Admission Controller Chaos",
-        "description": "Explore webhook timeouts, failure policies, selectors, and recovery patterns"
-      },
-      {
-        "path": "day-060",
-        "title": "Day 60 - Custom Controllers - Reconciliation Loop Hell",
-        "description": "Explore broken reconciliation loops, conflicts, retries, and recovery patterns"
-      },
-      {
-        "path": "day-061",
-        "title": "Day 61 - Helm Chart Failures - Deployment Gone Wrong",
-        "description": "Debug Helm template errors, hooks, dependencies, upgrades, and rollbacks"
-      },
-      {
-        "path": "day-062",
-        "title": "Day 62 - CNI Plugin Failures - Networking Goes Dark",
-        "description": "Check CNI configs, pod networking, IP exhaustion, NetworkPolicies, and diagnostics"
-      },
-      {
-        "path": "day-063",
-        "title": "Day 63 - CoreDNS Failures - When DNS Dies",
-        "description": "Break and restore CoreDNS, test DNS resolution, caching, and diagnostics"
-      },
-      {
-        "path": "day-064",
-        "title": "Day 64 - PV Provisioning Failures - Storage Chaos",
-        "description": "Test PVC provisioning failures, binding issues, and storage diagnostics"
-      },
-      {
-        "path": "day-065",
-        "title": "Day 65 - Image Pull Failures - Registry Nightmares",
-        "description": "Trigger image pull failures, auth errors, and backoff behavior"
-      },
-      {
-        "path": "day-066",
-        "title": "Day 66 - Resource Quotas - Hitting the Limits",
-        "description": "Explore quota enforcement, LimitRanges, and quota diagnostics"
-      },
-      {
-        "path": "day-067",
-        "title": "Day 67 - Init Containers - Startup Sequence Failures",
-        "description": "Explore init container sequencing, failures, and diagnostics"
-      },
-      {
-        "path": "day-068",
-        "title": "Day 68 - Job & CronJob Failures - Batch Processing Gone Wrong",
-        "description": "Explore Job and CronJob failures, retries, and scheduling issues"
-      },
-      {
-        "path": "day-069",
-        "title": "Day 69 - Service Mesh Failures - Istio/Linkerd Gone Wrong",
-        "description": "Explore service mesh failures, mTLS, sidecars, and routing issues"
-      },
-      {
-        "path": "day-070",
-        "title": "Day 70 - Autoscaling Failures - HPA & VPA Gone Wrong",
-        "description": "Explore autoscaling pitfalls with HPA/VPA, metrics, and conflicts"
-      },
-      {
-        "path": "day-071",
-        "title": "Day 71 - Operator Failures - Custom Controllers Breaking",
-        "description": "Explore custom resource failures, operator RBAC issues, and CRD management problems"
-      },
-      {
-        "path": "day-072",
-        "title": "Day 72 - Cluster Upgrades - Breaking Changes",
-        "description": "Explore deprecated APIs, version skew issues, and safe upgrade procedures"
-      },
-      {
-        "path": "day-073",
-        "title": "Day 73 - Multi-Tenancy Failures - Namespace Isolation Breaking",
-        "description": "Explore namespace isolation failures, RBAC misconfigurations, and tenant security issues"
-      },
-      {
-        "path": "day-074",
-        "title": "Day 74 - Backup Disasters - When Restores Fail",
-        "description": "Explore backup failures, incomplete restores, and disaster recovery pitfalls"
-      },
-      {
-        "path": "day-075",
-        "title": "Day 75 - Observability Failures - When Metrics Disappear",
-        "description": "Explore metrics collection failures, log aggregation issues, and observability blind spots"
-      },
-      {
-        "path": "day-076",
-        "title": "Day 76 - GitOps Failures - When Deployments Don't Sync",
-        "description": "Explore GitOps sync failures, manifest validation issues, drift detection, and troubleshooting deployment pipelines"
-      },
-      {
-        "path": "day-077",
-        "title": "Day 77 - Secret Management - Credentials Everywhere",
-        "description": "Explore secret leaks via env vars, logs, Git, images, and learn proper secret management patterns"
-      },
-      {
-        "path": "day-078",
-        "title": "Day 78 - Container Escape - Breaking Out of the Sandbox",
-        "description": "Explore container escape vectors including privileged containers, hostPath mounts, capabilities, and host namespaces"
-      },
-      {
-        "path": "day-079",
-        "title": "Day 79 - Supply Chain Attacks - Poisoned Dependencies",
-        "description": "Explore supply chain attack vectors including typosquatting, dependency confusion, image tampering, and detection strategies"
-      },
-      {
-        "path": "day-080",
-        "title": "Day 80 - Rate Limiting - API Throttling Gone Wrong",
-        "description": "Explore API server rate limiting, Priority and Fairness queuing, client-side throttling, and troubleshooting throttled requests"
-      },
-      {
-        "path": "day-081",
-        "title": "Day 81 - Chaos Engineering - Breaking Things on Purpose",
-        "description": "Explore chaos engineering with pod kills, network chaos, resource stress, dependency failures, and steady state validation"
-      },
-      {
-        "path": "day-082",
-        "title": "Day 82 - Configuration Drift - When Clusters Diverge",
-        "description": "Explore configuration drift from manual changes, environment inconsistency, drift detection, and prevention strategies"
-      },
-      {
-        "path": "day-083",
-        "title": "Day 83 - Stateful Application Failures - When State Goes Wrong",
-        "description": "Explore StatefulSet failure modes including volume provisioning errors, DNS breakage, pod ordering, update strategies, and split-brain scenarios"
-      },
-      {
-        "path": "day-084",
-        "title": "Day 84 - Ingress Controller Failures - Traffic Can't Route",
-        "description": "Explore Ingress failure modes including missing controllers, wrong IngressClass, TLS misconfigurations, path type confusion, and backend endpoint issues"
-      }
-    ]
-  }
+  "title": "KubeSkills Daily",
+  "description": "Play with KubeSkills Daily and learn Kubernetes",
+  "items": [
+    {
+      "path": "day-001",
+      "title": "Day 1 - Pod Restart Policies",
+      "description": "Test how Kubernetes handles failures and restarts"
+    },
+    {
+      "path": "day-002",
+      "title": "Day 2 - StatefulSet Pod Ordering",
+      "description": "Break ordered updates and compare OrderedReady vs Parallel management"
+    },
+    {
+      "path": "day-003",
+      "title": "Day 3 - OOMKilled vs Resource Limits",
+      "description": "Trigger OOM events and compare Kubernetes QoS classes"
+    },
+    {
+      "path": "day-004",
+      "title": "Day 4 - Network Policy Lockouts",
+      "description": "Enforce default deny, poke DNS/web holes, and recover access"
+    },
+    {
+      "path": "day-005",
+      "title": "Day 5 - Taints and Tolerations",
+      "description": "Evict pods with NoExecute, compare tolerations, and explore NoSchedule"
+    },
+    {
+      "path": "day-006",
+      "title": "Day 6 - Liveness Probe Death Loops",
+      "description": "Trigger, inspect, and fix misconfigured probes plus readiness/startup"
+    },
+    {
+      "path": "day-007",
+      "title": "Day 7 - Init Container Failures",
+      "description": "Debug stuck init containers, add retries, and run sidecars"
+    },
+    {
+      "path": "day-008",
+      "title": "Day 8 - PVC Binding Failures",
+      "description": "Storage that never arrives until you fix StorageClasses and modes"
+    },
+    {
+      "path": "day-009",
+      "title": "Day 9 - ConfigMap Updates - The Sync Gap",
+      "description": "See why env vars freeze, volumes lag, and subPath never refreshes"
+    },
+    {
+      "path": "day-010",
+      "title": "Day 10 - Secret Rotation - Hot Swapping Credentials",
+      "description": "Rotate secrets, see env/volume drift, and force rollouts to reload"
+    },
+    {
+      "path": "day-011",
+      "title": "Day 11 - Service DNS Propagation Delays",
+      "description": "Watch DNS timing gaps, endpoint readiness, and headless vs ClusterIP behavior"
+    },
+    {
+      "path": "day-012",
+      "title": "Day 12 - HPA Thrashing - The Scale Storm",
+      "description": "See aggressive HPAs thrash, tune behaviors, and test multi-metric scenarios"
+    },
+    {
+      "path": "day-013",
+      "title": "Day 13 - PodDisruptionBudgets - Blocking Maintenance",
+      "description": "See how strict PDBs block drains, fix budgets, and explore conflict scenarios"
+    },
+    {
+      "path": "day-014",
+      "title": "Day 14 - ResourceQuota - Deployment Denied",
+      "description": "See how quotas silently block pods, use LimitRanges, and explore scoped/count quotas"
+    },
+    {
+      "path": "day-015",
+      "title": "Day 15 - Ingress Path Routing - Order Matters",
+      "description": "See how Prefix ordering, Exact, regex, and rewrites change nginx-ingress routing"
+    },
+    {
+      "path": "day-016",
+      "title": "Day 16 - RBAC Lockout - Permission Denied",
+      "description": "See how Roles, ClusterRoles, bindings, and aggregation grant or deny access"
+    },
+    {
+      "path": "day-017",
+      "title": "Day 17 - Admission Webhooks - The Deployment Blocker",
+      "description": "See how webhook failures stall the API server and how to bypass, scope, and debug them"
+    },
+    {
+      "path": "day-018",
+      "title": "Day 18 - CronJob Concurrency - The Job Pile-Up",
+      "description": "See how CronJob concurrency policies affect overlapping runs, skips, replacements, and history"
+    },
+    {
+      "path": "day-019",
+      "title": "Day 19 - ServiceAccount Tokens - Projection Problems",
+      "description": "See how automount settings, projected tokens, and token requests change Kubernetes auth"
+    },
+    {
+      "path": "day-020",
+      "title": "Day 20 - Node NotReady - The Eviction Cascade",
+      "description": "See how NotReady taints trigger evictions, tolerations delay them, and workloads recover"
+    },
+    {
+      "path": "day-021",
+      "title": "Day 21 - Finalizers - The Deletion Blocker",
+      "description": "See how finalizers block deletion, how to clear them safely, and how built-ins protect resources"
+    },
+    {
+      "path": "day-022",
+      "title": "Day 22 - Image Pull Secrets - Authentication Failures",
+      "description": "See how private registry pulls fail, fix secrets, attach via ServiceAccounts, and debug pull errors"
+    },
+    {
+      "path": "day-023",
+      "title": "Day 23 - CNI Plugin Failures - Network Isolation",
+      "description": "Inspect CNI configs, test pod connectivity, DNS, NetworkPolicies, MTU, CIDR exhaustion, and CNI errors"
+    },
+    {
+      "path": "day-024",
+      "title": "Day 24 - kube-proxy Modes - Service Routing Breakdown",
+      "description": "Inspect kube-proxy mode, test ClusterIP/NodePort routing, iptables rules, scaling, session affinity, and failures"
+    },
+    {
+      "path": "day-025",
+      "title": "Day 25 - etcd Performance - The Cluster Heartbeat",
+      "description": "Check etcd health, size, keys, load impact, compaction/defrag, backups, alarms, and metrics"
+    },
+    {
+      "path": "day-026",
+      "title": "Day 26 - Kubelet Eviction - Resource Pressure",
+      "description": "Inspect node capacity and thresholds, see QoS/priority eviction order, trigger pressure, and verify recovery"
+    },
+    {
+      "path": "day-027",
+      "title": "Day 27 - API Server Rate Limiting - Request Throttling",
+      "description": "Inspect APF configs, flood the API, watch throttling, review FlowSchemas/PriorityLevels, and test identities/metrics"
+    },
+    {
+      "path": "day-028",
+      "title": "Day 28 - Pod Security Admission - Policy Enforcement",
+      "description": "Test baseline vs restricted PSA, fix security contexts, observe warn/audit, and validate workloads"
+    },
+    {
+      "path": "day-029",
+      "title": "Day 29 - Custom Resource Definitions - Validation Failures",
+      "description": "Iterate from permissive CRDs to strict validation, defaults, status subresources, and multiple versions"
+    },
+    {
+      "path": "day-030",
+      "title": "Day 30 - Operator Reconciliation - Infinite Loops",
+      "description": "See how naive controller logic loops forever and how status subresources, observedGeneration, owner refs, and backoff stop the storm"
+    },
+    {
+      "path": "day-031",
+      "title": "Day 31 - Helm Charts - Template Rendering Failures",
+      "description": "Debug Helm templates: syntax errors, nil pointers, required values, value precedence, functions, lint, dry-run, upgrades, and rollbacks"
+    },
+    {
+      "path": "day-032",
+      "title": "Day 32 - ArgoCD Sync - Out of Sync Nightmares",
+      "description": "Install ArgoCD, sync a repo, watch drift, auto-sync/self-heal, prune, hooks, waves, health checks, replace, selective sync, and rollback"
+    },
+    {
+      "path": "day-033",
+      "title": "Day 33 - Service Mesh - Traffic Split Gone Wrong",
+      "description": "Install Istio, split traffic between versions, debug weights, missing subsets, headers, retries/timeouts, and analyze routing issues"
+    },
+    {
+      "path": "day-034",
+      "title": "Day 34 - Multi-Tenancy - Namespace Isolation Breakdown",
+      "description": "Create tenant namespaces, quotas, RBAC, apps, network isolation, PSA, LimitRanges, and enforce cross-namespace boundaries"
+    },
+    {
+      "path": "day-035",
+      "title": "Day 35 - Init Container Dependencies - Circular Deadlocks",
+      "description": "Build circular init waits, debug deadlocks, fix by breaking the cycle, add timeouts, retries, readiness vs init, Jobs, and StatefulSets"
+    },
+    {
+      "path": "day-036",
+      "title": "Day 36 - Jobs and CronJobs - Backoff Explosion",
+      "description": "Trigger failing Jobs to see backoff, cap retries, set deadlines, tune completions and parallelism, suspend/resume, and manage CronJobs"
+    },
+    {
+      "path": "day-037",
+      "title": "Day 37 - Volume Mounts - Permission Denied Chaos",
+      "description": "Explore volume permissions: emptyDir vs hostPath, fsGroup fixes, read-only mounts, subPath quirks, PVC access, shared volumes, Secrets, projected volumes, and securityContext overrides"
+    },
+    {
+      "path": "day-038",
+      "title": "Day 38 - DNS Resolution - CoreDNS Breakdown",
+      "description": "Break and restore CoreDNS, inspect pod DNS config, tune ndots/timeouts, compare dnsPolicy, tweak CoreDNS, test caching, block/allow DNS, and resolve headless services"
+    },
+    {
+      "path": "day-039",
+      "title": "Day 39 - Resource Contention - QoS Eviction Wars",
+      "description": "Launch pods across QoS classes, trigger memory pressure, observe evictions, apply priorities, quotas, LimitRanges, throttling, and finalizers"
+    },
+    {
+      "path": "day-040",
+      "title": "Day 40 - Certificates - Expiration Catastrophe",
+      "description": "Inspect control plane certs, install cert-manager, issue short-lived and CA certs, simulate expirations and failed renewals, and debug TLS secrets"
+    },
+    {
+      "path": "day-041",
+      "title": "Day 41 - Prometheus Metrics - Missing Targets",
+      "description": "Install Prometheus Operator, create Prometheus selectors, break and fix ServiceMonitors via labels/ports/policies/relabeling, add PodMonitor, and debug missing targets"
+    },
+    {
+      "path": "day-042",
+      "title": "Day 42 - Logging Pipelines - Lost in Transit",
+      "description": "Ship logs with Fluent Bit, trigger parser errors, buffer pressure, destination failures, multiline issues, and sidecar patterns to see how logs vanish or get enriched"
+    },
+    {
+      "path": "day-043",
+      "title": "Day 43 - Distributed Tracing - Missing Spans",
+      "description": "Install Jaeger, send traces with and without propagation, explore sampling, missing instrumentation, collector pressure, baggage, and slow spans to find trace gaps"
+    },
+    {
+      "path": "day-044",
+      "title": "Day 44 - Resource Metrics - Debugging Slow Pods",
+      "description": "Verify metrics-server, stress CPU/memory/I-O, observe throttling and OOM, compare QoS, query raw metrics, drive contention, and autoscale from metrics"
+    },
+    {
+      "path": "day-045",
+      "title": "Day 45 - kubectl debug - Ephemeral Container Debugging",
+      "description": "Attach ephemeral debug containers, copy pods, debug nodes, and troubleshoot pods without shells or in CrashLoop using kubectl debug"
+    },
+    {
+      "path": "day-046",
+      "title": "Day 46 - Probe Tuning - The Goldilocks Problem",
+      "description": "Tune startup, liveness, and readiness probes; prevent premature restarts, manage readiness routing, and understand probe overhead and rolling update protections"
+    },
+    {
+      "path": "day-047",
+      "title": "Day 47 - StatefulSets - Orphaned Volume Nightmare",
+      "description": "See how StatefulSets retain PVCs, handle scale down/up, use retention policies, expand PVCs, manage updates, and clean up orphaned storage"
+    },
+    {
+      "path": "day-048",
+      "title": "Day 48 - Cluster Upgrades - Version Skew Chaos",
+      "description": "Inspect versions, deprecated APIs, CRD compatibility, skew policies, webhook versions, storage versions, and draft a safe upgrade plan"
+    },
+    {
+      "path": "day-049",
+      "title": "Day 49 - Backup & Restore - Velero Disasters",
+      "description": "Install Velero with MinIO, back up and delete a namespace, restore it, note emptyDir/PVC gaps without snapshots, handle conflicts, hooks, schedules, exclusions, and storage checks"
+    },
+    {
+      "path": "day-050",
+      "title": "Day 50 - Node Failures - Eviction Storm Chaos",
+      "description": "Cordon, drain, taint, and recover nodes; observe evictions, PDB blocks, StatefulSet stuck pods, DaemonSet tolerance, and custom tolerations to tune failover"
+    },
+    {
+      "path": "day-051",
+      "title": "Day 51 - API Server Overload - Rate Limit Hell",
+      "description": "Hammer the API server, observe APF queues, build custom FlowSchemas/PriorityLevels, simulate webhook slowness, and plan safe rate/priority configs"
+    },
+    {
+      "path": "day-052",
+      "title": "Day 52 - etcd Corruption - Quorum Loss Disaster",
+      "description": "Check etcd health/members/size, snapshot and restore, compact/defrag, monitor alarms/metrics, stress etcd, and document disaster recovery"
+    },
+    {
+      "path": "day-053",
+      "title": "Day 53 - Network Partitions - Split-Brain Nightmare",
+      "description": "Model network partitions with NetworkPolicies, observe split-brain symptoms, test quorum-based apps, and plan detection and mitigation"
+    },
+    {
+      "path": "day-054",
+      "title": "Day 54 - Certificate Rotation - Auto-Renewal Gone Wrong",
+      "description": "Check Kubernetes and cert-manager certs, create short-lived certs, break renewals, monitor expirations, verify chains, and document rotation/DR plans"
+    },
+    {
+      "path": "day-055",
+      "title": "Day 55 - RBAC Misconfigurations - Permission Denied Hell",
+      "description": "Probe missing verbs, namespace scope, resourceNames, subresources, aggregation, impersonation, and least-privilege RBAC patterns"
+    },
+    {
+      "path": "day-056",
+      "title": "Day 56 - Resource Exhaustion - Cluster at Capacity",
+      "description": "Explore pending pods, fragmentation, preemption, quotas, LimitRanges, and capacity planning under resource pressure"
+    },
+    {
+      "path": "day-057",
+      "title": "Day 57 - Pod Security Standards - Enforcement Failures",
+      "description": "Compare PSA profiles and modes, common violations, and compliant workload patterns"
+    },
+    {
+      "path": "day-058",
+      "title": "Day 58 - Ingress Failures - Traffic Not Routing",
+      "description": "Install ingress-nginx and debug class, backend, TLS, path, and annotation misconfigurations"
+    },
+    {
+      "path": "day-059",
+      "title": "Day 59 - Webhook Timeouts - Admission Controller Chaos",
+      "description": "Explore webhook timeouts, failure policies, selectors, and recovery patterns"
+    },
+    {
+      "path": "day-060",
+      "title": "Day 60 - Custom Controllers - Reconciliation Loop Hell",
+      "description": "Explore broken reconciliation loops, conflicts, retries, and recovery patterns"
+    },
+    {
+      "path": "day-061",
+      "title": "Day 61 - Helm Chart Failures - Deployment Gone Wrong",
+      "description": "Debug Helm template errors, hooks, dependencies, upgrades, and rollbacks"
+    },
+    {
+      "path": "day-062",
+      "title": "Day 62 - CNI Plugin Failures - Networking Goes Dark",
+      "description": "Check CNI configs, pod networking, IP exhaustion, NetworkPolicies, and diagnostics"
+    },
+    {
+      "path": "day-063",
+      "title": "Day 63 - CoreDNS Failures - When DNS Dies",
+      "description": "Break and restore CoreDNS, test DNS resolution, caching, and diagnostics"
+    },
+    {
+      "path": "day-064",
+      "title": "Day 64 - PV Provisioning Failures - Storage Chaos",
+      "description": "Test PVC provisioning failures, binding issues, and storage diagnostics"
+    },
+    {
+      "path": "day-065",
+      "title": "Day 65 - Image Pull Failures - Registry Nightmares",
+      "description": "Trigger image pull failures, auth errors, and backoff behavior"
+    },
+    {
+      "path": "day-066",
+      "title": "Day 66 - Resource Quotas - Hitting the Limits",
+      "description": "Explore quota enforcement, LimitRanges, and quota diagnostics"
+    },
+    {
+      "path": "day-067",
+      "title": "Day 67 - Init Containers - Startup Sequence Failures",
+      "description": "Explore init container sequencing, failures, and diagnostics"
+    },
+    {
+      "path": "day-068",
+      "title": "Day 68 - Job & CronJob Failures - Batch Processing Gone Wrong",
+      "description": "Explore Job and CronJob failures, retries, and scheduling issues"
+    },
+    {
+      "path": "day-069",
+      "title": "Day 69 - Service Mesh Failures - Istio/Linkerd Gone Wrong",
+      "description": "Explore service mesh failures, mTLS, sidecars, and routing issues"
+    },
+    {
+      "path": "day-070",
+      "title": "Day 70 - Autoscaling Failures - HPA & VPA Gone Wrong",
+      "description": "Explore autoscaling pitfalls with HPA/VPA, metrics, and conflicts"
+    },
+    {
+      "path": "day-071",
+      "title": "Day 71 - Operator Failures - Custom Controllers Breaking",
+      "description": "Explore custom resource failures, operator RBAC issues, and CRD management problems"
+    },
+    {
+      "path": "day-072",
+      "title": "Day 72 - Cluster Upgrades - Breaking Changes",
+      "description": "Explore deprecated APIs, version skew issues, and safe upgrade procedures"
+    },
+    {
+      "path": "day-073",
+      "title": "Day 73 - Multi-Tenancy Failures - Namespace Isolation Breaking",
+      "description": "Explore namespace isolation failures, RBAC misconfigurations, and tenant security issues"
+    },
+    {
+      "path": "day-074",
+      "title": "Day 74 - Backup Disasters - When Restores Fail",
+      "description": "Explore backup failures, incomplete restores, and disaster recovery pitfalls"
+    },
+    {
+      "path": "day-075",
+      "title": "Day 75 - Observability Failures - When Metrics Disappear",
+      "description": "Explore metrics collection failures, log aggregation issues, and observability blind spots"
+    },
+    {
+      "path": "day-076",
+      "title": "Day 76 - GitOps Failures - When Deployments Don't Sync",
+      "description": "Explore GitOps sync failures, manifest validation issues, drift detection, and troubleshooting deployment pipelines"
+    },
+    {
+      "path": "day-077",
+      "title": "Day 77 - Secret Management - Credentials Everywhere",
+      "description": "Explore secret leaks via env vars, logs, Git, images, and learn proper secret management patterns"
+    },
+    {
+      "path": "day-078",
+      "title": "Day 78 - Container Escape - Breaking Out of the Sandbox",
+      "description": "Explore container escape vectors including privileged containers, hostPath mounts, capabilities, and host namespaces"
+    },
+    {
+      "path": "day-079",
+      "title": "Day 79 - Supply Chain Attacks - Poisoned Dependencies",
+      "description": "Explore supply chain attack vectors including typosquatting, dependency confusion, image tampering, and detection strategies"
+    },
+    {
+      "path": "day-080",
+      "title": "Day 80 - Rate Limiting - API Throttling Gone Wrong",
+      "description": "Explore API server rate limiting, Priority and Fairness queuing, client-side throttling, and troubleshooting throttled requests"
+    },
+    {
+      "path": "day-081",
+      "title": "Day 81 - Chaos Engineering - Breaking Things on Purpose",
+      "description": "Explore chaos engineering with pod kills, network chaos, resource stress, dependency failures, and steady state validation"
+    },
+    {
+      "path": "day-082",
+      "title": "Day 82 - Configuration Drift - When Clusters Diverge",
+      "description": "Explore configuration drift from manual changes, environment inconsistency, drift detection, and prevention strategies"
+    },
+    {
+      "path": "day-083",
+      "title": "Day 83 - Stateful Application Failures - When State Goes Wrong",
+      "description": "Explore StatefulSet failure modes including volume provisioning errors, DNS breakage, pod ordering, update strategies, and split-brain scenarios"
+    },
+    {
+      "path": "day-084",
+      "title": "Day 84 - Ingress Controller Failures - Traffic Can't Route",
+      "description": "Explore Ingress failure modes including missing controllers, wrong IngressClass, TLS misconfigurations, path type confusion, and backend endpoint issues"
+    },
+    {
+      "path": "day-090",
+      "title": "Day 90 - Multi-Container Pod Sidecar Failure Debugging",
+      "description": "In this lab you will investigate a multi-container pod where a sidecar container is causing repeated restarts and resource contention. You will diagnose the root cause, fix the sidecar configuration, and verify that both containers run stably together. This scenario mirrors real-world service mesh and log forwarding failures."
+    },
+    {
+      "path": "day-091",
+      "title": "Day 91 - Pod Pending Due to Node Selector Mismatch",
+      "description": "In this lab you will diagnose a deployment where all pods are stuck in Pending state due to a node selector that does not match any available node labels. You will use scheduling events and node inspection to identify the mismatch, then choose between fixing the pod spec or labeling the appropriate node to resolve the issue. This scenario is extremely common during cluster upgrades and infrastructure migrations."
+    },
+    {
+      "path": "day-092",
+      "title": "Day 92 - Service Selector Mismatch Traffic Debugging",
+      "description": "In this lab you will investigate a service that is not routing traffic to its intended pods due to a label selector mismatch. You will inspect the service endpoints, compare selectors against pod labels, identify the discrepancy, and fix the configuration to restore traffic flow. This is one of the most common sources of silent production outages in Kubernetes."
+    },
+    {
+      "path": "day-093",
+      "title": "Day 93 - Namespace Resource Quota Exhaustion Debugging",
+      "description": "In this lab you will debug a namespace where a resource quota has been exhausted, preventing new pods from being scheduled even though the cluster nodes have available capacity. You will examine quota status, trace the failure through the deployment and replicaset event chain, and resolve the issue by either adjusting the quota or reducing resource requests. This is a critical skill for platform engineers managing shared Kubernetes clusters."
+    },
+    {
+      "path": "day-094",
+      "title": "Day 94 - PVC Pending Due to StorageClass Misconfiguration",
+      "description": "In this lab you will diagnose a PersistentVolumeClaim that is stuck in Pending state because of a StorageClass misconfiguration. You will trace the failure through PVC events, examine available StorageClass resources, identify the mismatch or missing provisioner, and fix the configuration to allow the volume to be provisioned and bound. This is a critical skill for anyone managing stateful workloads on Kubernetes."
+    },
+    {
+      "path": "day-095",
+      "title": "Day 95 - ConfigMap Hot Reload and Stale Configuration Debugging",
+      "description": "In this lab you will investigate the different behaviors of ConfigMap consumption methods and debug a situation where an application is reading stale configuration despite the ConfigMap having been updated. You will observe the difference between environment variable injection and volume mounting, understand the update propagation delay, and implement a reliable strategy for ensuring pods always use current configuration values. This scenario reflects real-world confusion that affects teams at every experience level."
+    },
+    {
+      "path": "day-096",
+      "title": "Day 96 - Node Certificate Expiration Recovery Lab",
+      "description": "In this lab you will diagnose a worker node that is showing as NotReady due to an expired kubelet client certificate. You will examine the symptoms at the node and pod level, understand how certificate expiration cascades through the cluster, identify the expired certificate, and work through the renewal process to restore node-to-API-server communication. This is a critical recovery skill for Kubernetes administrators responsible for long-running clusters."
+    }
+  ]
+}
