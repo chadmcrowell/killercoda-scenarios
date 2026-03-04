@@ -29,7 +29,7 @@ spec:
           echo "ERROR: Database connection refused on port 5432"
           exit 1
 EOF
-```
+```{{exec}}
 
 Now deploy the broken `CronJob`:
 
@@ -59,7 +59,7 @@ spec:
               sleep 3
               echo "Report complete."
 EOF
-```
+```{{exec}}
 
 ## Observe the Cluster State
 
@@ -69,13 +69,13 @@ Wait a few seconds for the Job to attempt execution, then examine all batch reso
 kubectl get jobs
 kubectl get cronjobs
 kubectl get pods
-```
+```{{exec}}
 
 Check cluster-wide events sorted by time to catch failure signals:
 
 ```bash
 kubectl get events --sort-by=.lastTimestamp
-```
+```{{exec}}
 
 You should see `data-processor` has a pod in `Error` state and that the `report-generator` CronJob shows `SUSPEND: True` with zero active runs.
 
@@ -83,6 +83,6 @@ You should see `data-processor` has a pod in `Error` state and that the `report-
 
 ```bash
 kubectl get jobs,cronjobs,pods -o wide
-```
+```{{exec}}
 
 Note the `COMPLETIONS` column on the job (it will show `0/1`) and the `ACTIVE` and `LAST SCHEDULE` columns on the CronJob (it will show `<none>` because it is suspended).

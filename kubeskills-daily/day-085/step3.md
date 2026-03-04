@@ -8,7 +8,7 @@ The original job cannot be patched in place (Job specs are mostly immutable). De
 
 ```bash
 kubectl delete job data-processor
-```
+```{{exec}}
 
 ```bash
 cat <<EOF | kubectl apply -f -
@@ -34,25 +34,25 @@ spec:
           echo "Processing complete. Records written: 4821"
           exit 0
 EOF
-```
+```{{exec}}
 
 Watch the Job run to completion:
 
 ```bash
 kubectl get pods -l job-name=data-processor -w
-```
+```{{exec}}
 
 Press `Ctrl+C` once the pod reaches `Completed`. Then confirm the Job succeeded:
 
 ```bash
 kubectl get job data-processor
-```
+```{{exec}}
 
 The `COMPLETIONS` column should now show `1/1`. Read the logs to verify:
 
 ```bash
 kubectl logs -l job-name=data-processor
-```
+```{{exec}}
 
 Expected output:
 
@@ -67,19 +67,19 @@ Patch the `report-generator` CronJob to re-enable scheduling:
 
 ```bash
 kubectl patch cronjob report-generator -p '{"spec":{"suspend":false}}'
-```
+```{{exec}}
 
 Verify the suspension flag is cleared:
 
 ```bash
 kubectl get cronjob report-generator
-```
+```{{exec}}
 
 The `SUSPEND` column should now read `False`. Check the full spec to confirm:
 
 ```bash
 kubectl get cronjob report-generator -o jsonpath='{.spec.suspend}{"\n"}'
-```
+```{{exec}}
 
 Output: `false`
 
@@ -89,19 +89,19 @@ The scheduled time (2 AM) won't arrive during this lab. Manually spawn a job fro
 
 ```bash
 kubectl create job --from=cronjob/report-generator manual-report
-```
+```{{exec}}
 
 Watch the manually-triggered job:
 
 ```bash
 kubectl get pods -l job-name=manual-report -w
-```
+```{{exec}}
 
 Press `Ctrl+C` once the pod is `Completed`. Read the output:
 
 ```bash
 kubectl logs -l job-name=manual-report
-```
+```{{exec}}
 
 Expected output:
 
@@ -116,7 +116,7 @@ Confirm both batch resources are now healthy:
 
 ```bash
 kubectl get jobs,cronjobs
-```
+```{{exec}}
 
 Expected state:
 
