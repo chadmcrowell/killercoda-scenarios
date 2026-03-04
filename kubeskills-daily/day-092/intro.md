@@ -1,5 +1,14 @@
-# Service Selector Mismatch Traffic Debugging
+# Day 92 — Service Selector Mismatch Traffic Debugging
 
-Welcome to this service routing failure lab. An application deployment is running with all pods in Ready state, but users are reporting that the service is unreachable. Your monitoring shows the service exists and the pods are healthy, yet no traffic is getting through. Your job is to find the disconnect between the service selector and the pod labels, understand how this happened, and fix it. This is a deceptively simple failure that causes real production outages.
+Three services are down. All pods are `Running` and `Ready`. No error events. No resource issues. But users can't reach any of the three applications — and the dashboards show everything is green.
 
-> **Day 92 of KubeSkills Daily** — Fail Fast, Learn Faster
+This is one of the most dangerous failure modes in Kubernetes: the kind where every component *looks* healthy while traffic is being silently dropped.
+
+In this scenario you will:
+
+- Learn how Kubernetes Services route traffic through the Endpoints object
+- Deploy three services each broken in a different way and prove traffic is not flowing
+- Diagnose an empty-endpoints label mismatch, a populated-endpoints port mismatch, and a multi-label partial match failure
+- Fix all three and verify real traffic reaches the pods after each fix
+
+Click **Start** to begin.
