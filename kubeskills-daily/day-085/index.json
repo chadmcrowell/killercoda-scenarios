@@ -1,6 +1,6 @@
 {
   "title": "KubeSkills Daily - Day 85 - Job and CronJob Disasters - Batch Processing Failures",
-  "description": "",
+  "description": "Debug and fix batch processing failures in Kubernetes. Diagnose a Job stuck in permanent failure due to backoffLimit misconfiguration and a CronJob silently doing nothing because it was deployed in a suspended state.",
   "difficulty": "intermediate",
   "time": "10-15 minutes",
   "details": {
