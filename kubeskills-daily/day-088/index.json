@@ -1,6 +1,6 @@
 {
   "title": "KubeSkills Daily - Day 88 - HPA Edge Cases - When Autoscaling Makes Things Worse",
-  "description": "",
+  "description": "Debug HPA edge cases where autoscaling makes things worse instead of better. Learn to diagnose missing metrics, mismatched resource requests, and scale-down thrashing that cause HPAs to behave unexpectedly under load.",
   "difficulty": "intermediate",
   "time": "10-15 minutes",
   "details": {
