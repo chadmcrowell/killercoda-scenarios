@@ -1,18 +1,20 @@
-## Lab Complete 🎉
+# Congratulations
 
-**Verification:** Verify that all pods in the deployment transition from Pending to Running state, that the scheduling events no longer show FailedScheduling errors, and that the correct node is hosting the workload as intended.
+You've completed Day 91: **Pod Pending Due to Node Selector Mismatch**.
 
-### What You Learned
+## What You Learned
 
-The scheduler will leave a pod in Pending state indefinitely if no node satisfies its node selector requirements
-Describing a pending pod reveals FailedScheduling events that explain exactly which constraint could not be satisfied
-Node selectors are exact string matches and are case sensitive, so even a single character difference will cause failure
-Node affinity rules offer more expressive scheduling constraints than simple node selectors
-Adding missing labels to nodes is one valid fix, but changing the pod spec to match existing labels is often safer in production
+- The scheduler leaves pods in `Pending` **indefinitely** when no node satisfies their `nodeSelector` — there is no timeout, no error event on the Deployment, only on the pod
+- `kubectl describe pod` → Events section reports `FailedScheduling` with the exact constraint that failed; reading it carefully tells you whether the issue is a missing label, a wrong value, a taint, or a resource shortage
+- `kubectl get nodes -L <key>` shows the value of a specific label across all nodes in a column — faster than `--show-labels` when you know what key you're looking for
+- Node selectors are **exact string matches** and case-sensitive — `disktype=SSD` and `disktype=ssd` are completely different
+- A pod can be blocked by **multiple independent constraints** simultaneously — fixing the label alone may still leave it Pending if a taint also blocks it; read the full FailedScheduling message
+- Removing a taint uses the trailing `-` syntax: `kubectl taint node <name> <key>=<value>:<effect>-`
+- Before relabeling a node, check whether other Deployments depend on its current labels with `kubectl get deployments -o jsonpath` — a label change can unblock one workload while breaking another
+- The right fix is to trace intent: did the **node** fail to get its label, or did the **pod** get the wrong constraint written into it?
 
-### Why It Matters
+Keep building. See you tomorrow!
 
-In production environments, node selectors are commonly used to direct workloads to specific hardware such as GPU nodes or high-memory nodes, and a misconfiguration can silently block deployments for hours or days without anyone noticing if alerting is not configured. Missing this failure mode during a cluster migration or hardware refresh can cause entire application tiers to go dark while the pods quietly sit in Pending state.
+— Chad
 
----
-Continue your Kubernetes journey at [KubeSkills Daily](https://killercoda.com/chadmcrowell/course/kubeskills-daily)
+KubeSkills Daily — Fail Fast, Learn Faster
