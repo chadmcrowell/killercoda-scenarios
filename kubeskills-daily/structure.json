@@ -456,6 +456,31 @@
       "path": "day-096",
       "title": "Day 96 - Node Certificate Expiration Recovery Lab",
       "description": "In this lab you will diagnose a worker node that is showing as NotReady due to an expired kubelet client certificate. You will examine the symptoms at the node and pod level, understand how certificate expiration cascades through the cluster, identify the expired certificate, and work through the renewal process to restore node-to-API-server communication. This is a critical recovery skill for Kubernetes administrators responsible for long-running clusters."
+    },
+    {
+      "path": "day-088",
+      "title": "Day 88 - KubeSkills Daily - Day 88 - HPA Edge Cases - When Autoscaling Makes Things Worse",
+      "description": ""
+    },
+    {
+      "path": "day-086",
+      "title": "Day 86 - KubeSkills Daily - Day 86 - CRD Validation Failures - When Custom Resources Won't Apply",
+      "description": ""
+    },
+    {
+      "path": "day-087",
+      "title": "Day 87 - KubeSkills Daily - Day 87 - DaemonSet Failures - When Node-Level Pods Won't Deploy",
+      "description": ""
+    },
+    {
+      "path": "day-089",
+      "title": "Day 89 - KubeSkills Daily - Day 89 - Node Affinity - Scheduling Where You Want",
+      "description": ""
+    },
+    {
+      "path": "day-085",
+      "title": "Day 85 - KubeSkills Daily - Day 85 - Job and CronJob Disasters - Batch Processing Failures",
+      "description": ""
     }
   ]
 }
