@@ -1,6 +1,6 @@
 {
   "title": "KubeSkills Daily - Day 86 - CRD Validation Failures - When Custom Resources Won't Apply",
-  "description": "",
+  "description": "Debug and fix CRD validation failures when custom resources won't apply. Learn to interpret validation errors, inspect CRD schemas, and correct resource specs to pass OpenAPI validation.",
   "difficulty": "intermediate",
   "time": "10-15 minutes",
   "details": {
