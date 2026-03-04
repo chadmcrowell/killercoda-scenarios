@@ -1,6 +1,6 @@
 {
   "title": "KubeSkills Daily - Day 87 - DaemonSet Failures - When Node-Level Pods Won't Deploy",
-  "description": "",
+  "description": "Debug and fix DaemonSet failures when node-level pods won't deploy. Learn to diagnose scheduling issues, node taints, toleration mismatches, and resource constraints that prevent DaemonSet pods from running on every node.",
   "difficulty": "intermediate",
   "time": "10-15 minutes",
   "details": {
