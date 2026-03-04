@@ -1,6 +1,6 @@
 {
   "title": "KubeSkills Daily - Day 89 - Node Affinity - Scheduling Where You Want",
-  "description": "",
+  "description": "Master node affinity to control where pods schedule in Kubernetes. Learn the difference between required and preferred affinity rules, debug pods stuck in Pending due to unsatisfiable affinity constraints, and use node labels to pin workloads to specific nodes.",
   "difficulty": "intermediate",
   "time": "10-15 minutes",
   "details": {
