@@ -1,0 +1,31 @@
+{
+  "title": "Namespace Resource Quota Exhaustion Debugging",
+  "description": "In this lab you will debug a namespace where a resource quota has been exhausted, preventing new pods from being scheduled even though the cluster nodes have available capacity. You will examine quota status, trace the failure through the deployment and replicaset event chain, and resolve the issue by either adjusting the quota or reducing resource requests. This is a critical skill for platform engineers managing shared Kubernetes clusters.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
