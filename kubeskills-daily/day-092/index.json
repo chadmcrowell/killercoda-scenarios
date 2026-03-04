@@ -1,0 +1,31 @@
+{
+  "title": "Service Selector Mismatch Traffic Debugging",
+  "description": "In this lab you will investigate a service that is not routing traffic to its intended pods due to a label selector mismatch. You will inspect the service endpoints, compare selectors against pod labels, identify the discrepancy, and fix the configuration to restore traffic flow. This is one of the most common sources of silent production outages in Kubernetes.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
