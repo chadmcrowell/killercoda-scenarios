@@ -9,7 +9,7 @@ Lock down the `payments` namespace so that pods accept no inbound or outbound tr
   - Applies to all pods (`podSelector: {}`);
   - Sets both `Ingress` and `Egress` policy types;
   - Provides empty ingress and egress rule lists to deny all traffic by default.
-- Show that the `tester` pod fails to `wget http://api` and that `kubectl exec deploy/api -c nginx -- wget -qO- http://example.com` is blocked.
+- Show that the `tester` pod fails to `wget http://api` and that `kubectl -n payments exec deploy/api -c nginx -- wget -qO- http://example.com` is blocked.
 
 <details><summary>Solution</summary>
 <br>
