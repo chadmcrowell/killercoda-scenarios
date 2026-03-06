@@ -1,5 +1,16 @@
-# Namespace Resource Quota Exhaustion Debugging
+# Day 93 — Namespace Resource Quota Exhaustion Debugging
 
-Welcome to this resource quota debugging lab. An application team has filed an urgent ticket saying their deployment is not scaling up despite the cluster having plenty of node capacity. The deployment shows a desired replica count but the actual count is lower. Your job is to trace the failure chain from the deployment down to the resource quota, understand exactly which limit is being hit, and restore the ability to create new pods. This scenario is extremely common on multi-tenant clusters.
+The application team filed an urgent ticket: their `api-server` Deployment is stuck at 2 replicas instead of 4, and a scale-out event is starting in 20 minutes. The cluster nodes have plenty of available capacity. No pods are evicted. No OOM kills.
 
-> **Day 93 of KubeSkills Daily** — Fail Fast, Learn Faster
+But the pods won't come up.
+
+The namespace has a `ResourceQuota` in place. Another team member deployed a `cache` service earlier today that "doesn't use any resources." The quota math doesn't add up to anyone on the team — and that's exactly the problem.
+
+In this scenario you will:
+
+- Build a namespace with a ResourceQuota and LimitRange and observe how they interact
+- Deploy pre-existing workloads that consume quota, including one that silently consumes it through LimitRange injection
+- Trace the quota failure chain from Deployment → ReplicaSet events → API server rejection
+- Calculate exact quota headroom and choose the right fix under time pressure
+
+Click **Start** to begin.
