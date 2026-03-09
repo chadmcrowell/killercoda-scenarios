@@ -1,0 +1,31 @@
+{
+  "title": "CNI Plugin Failure and Pod Network Breakdown",
+  "description": "Pods across the cluster are in Running state but services are not responding to requests. Investigation reveals that pods on the same node can communicate but pods on different nodes cannot reach each other. The CNI plugin has a misconfiguration affecting cross-node routing. You will diagnose the networking failure, inspect CNI plugin state, and restore full pod-to-pod connectivity.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
