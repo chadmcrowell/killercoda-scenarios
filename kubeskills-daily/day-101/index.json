@@ -1,0 +1,31 @@
+{
+  "title": "Kubernetes Audit Log Investigation",
+  "description": "A namespace containing production workloads has been deleted and the team needs to determine who performed the deletion and what other actions preceded it. The cluster has audit logging enabled and the logs have been preserved. You will learn to read and filter audit log records, identify the responsible identity, and understand the sequence of events that led to the incident.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
