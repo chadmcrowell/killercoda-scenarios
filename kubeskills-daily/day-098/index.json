@@ -1,0 +1,31 @@
+{
+  "title": "Pod Disruption Budget Rolling Update Stall",
+  "description": "A deployment is performing a rolling update but has been stuck for an extended period with some pods on the old version and some on the new version. A Pod Disruption Budget is preventing any further progress. You will inspect the rollout, analyze the PDB configuration, and fix the constraints so the update can complete while still maintaining meaningful availability guarantees.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
