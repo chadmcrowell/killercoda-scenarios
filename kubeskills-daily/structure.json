@@ -481,6 +481,41 @@
       "path": "day-085",
       "title": "Day 85 - KubeSkills Daily - Day 85 - Job and CronJob Disasters - Batch Processing Failures",
       "description": ""
+    },
+    {
+      "path": "day-097",
+      "title": "Day 97 - Node Affinity Scheduling Failures",
+      "description": "A deployment has been created with node affinity requirements that no node in the cluster satisfies. All pods from this deployment are stuck in Pending state. Your job is to inspect the scheduler events, compare the affinity rules against actual node labels, and fix the configuration so pods can be scheduled correctly."
+    },
+    {
+      "path": "day-098",
+      "title": "Day 98 - Pod Disruption Budget Rolling Update Stall",
+      "description": "A deployment is performing a rolling update but has been stuck for an extended period with some pods on the old version and some on the new version. A Pod Disruption Budget is preventing any further progress. You will inspect the rollout, analyze the PDB configuration, and fix the constraints so the update can complete while still maintaining meaningful availability guarantees."
+    },
+    {
+      "path": "day-099",
+      "title": "Day 99 - CNI Plugin Failure and Pod Network Breakdown",
+      "description": "Pods across the cluster are in Running state but services are not responding to requests. Investigation reveals that pods on the same node can communicate but pods on different nodes cannot reach each other. The CNI plugin has a misconfiguration affecting cross-node routing. You will diagnose the networking failure, inspect CNI plugin state, and restore full pod-to-pod connectivity."
+    },
+    {
+      "path": "day-100",
+      "title": "Day 100 - etcd Performance Degradation and Control Plane Slowdown",
+      "description": "The cluster API server is responding slowly and controllers are reporting reconciliation errors. Metrics show that etcd request latency has spiked significantly. The etcd database has not been compacted or defragmented in a long time and has accumulated a large number of stale revisions. You will diagnose the etcd performance problem, perform maintenance operations, and restore normal cluster responsiveness."
+    },
+    {
+      "path": "day-101",
+      "title": "Day 101 - Kubernetes Audit Log Investigation",
+      "description": "A namespace containing production workloads has been deleted and the team needs to determine who performed the deletion and what other actions preceded it. The cluster has audit logging enabled and the logs have been preserved. You will learn to read and filter audit log records, identify the responsible identity, and understand the sequence of events that led to the incident."
+    },
+    {
+      "path": "day-102",
+      "title": "Day 102 - Graceful Pod Shutdown and Connection Draining",
+      "description": "A web service deployment causes connection errors on every rolling update as old pods terminate before load balancers stop routing traffic to them. The application does not implement graceful shutdown handling. You will configure preStop hooks and termination grace periods to eliminate connection drops during future deployments and verify the fix by running a rolling update while actively testing connectivity."
+    },
+    {
+      "path": "day-103",
+      "title": "Day 103 - Kubernetes Version Skew Detection and Resolution",
+      "description": "A cluster control plane has been upgraded but several worker nodes are still running an older version of the kubelet. Certain features that depend on newer API capabilities are failing on pods scheduled to the older nodes. You will audit all component versions, identify the nodes with problematic version skew, and upgrade those nodes to restore full cluster compatibility."
     }
   ]
 }
