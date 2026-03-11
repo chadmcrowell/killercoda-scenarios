@@ -1,0 +1,29 @@
+{
+    "title": "Dynamic Storage with StorageClass and PVC",
+    "description": "Create a custom StorageClass with a Retain policy, promote it as the default, and deploy a workload that uses dynamic provisioning",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Create a Custom StorageClass",
+                "text": "step1.md"
+            },
+            {
+                "title": "Change the Default StorageClass",
+                "text": "step2.md"
+            },
+            {
+                "title": "Deploy a Workload Using the New Default",
+                "text": "step3.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-1node-rapid"
+    }
+}
