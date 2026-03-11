@@ -251,6 +251,11 @@
         "path": "storage-dynamic",
         "title": "Dynamic Storage with StorageClass and PVC",
         "description": "Create a custom StorageClass with a Retain policy, promote it as the default, and deploy a workload using dynamic provisioning"
+      },
+      {
+        "path": "pvc-stuck",
+        "title": "Troubleshoot a Stuck PVC",
+        "description": "Diagnose and fix a PersistentVolumeClaim that is stuck in Pending state, preventing a Pod from running"
       }
     ]
   }
