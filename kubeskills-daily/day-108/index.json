@@ -1,0 +1,31 @@
+{
+  "title": "ServiceAccount Token Mounting and Credential Exposure",
+  "description": "Every pod in the target namespace has the default service account token mounted, including workloads that have no need to communicate with the Kubernetes API. You will audit the service accounts, identify which workloads should not have token access, and disable automatic token mounting on the appropriate resources.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
