@@ -1,0 +1,31 @@
+{
+  "title": "Cluster Autoscaler Scale-Up Failures",
+  "description": "Pods are stuck Pending and the cluster autoscaler is deployed but is not provisioning new nodes. You will inspect the autoscaler logs, identify why scale-up is not being triggered, fix the pod resource requests and autoscaler configuration, and confirm that new nodes are provisioned and pods move to Running state.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
