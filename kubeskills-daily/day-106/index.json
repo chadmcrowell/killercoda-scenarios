@@ -1,0 +1,31 @@
+{
+  "title": "Pod Disruption Budget Blocking Node Drain",
+  "description": "A node drain is indefinitely blocked because a pod disruption budget on a running deployment will not allow any pods to be evicted. You will identify which PDB is blocking the drain, understand why it cannot be satisfied, and apply a fix that allows the drain to complete while keeping the application available.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
