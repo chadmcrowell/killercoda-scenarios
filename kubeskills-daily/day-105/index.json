@@ -1,0 +1,31 @@
+{
+  "title": "Taints and Tolerations Scheduling Failures",
+  "description": "A worker node has been tainted but no running workloads carry the matching toleration, causing that node to sit completely idle while other nodes are overloaded. You will identify the taint, add the correct toleration to the target deployment, and verify that pods begin scheduling on the previously empty node.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
