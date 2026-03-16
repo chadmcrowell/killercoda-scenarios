@@ -516,6 +516,41 @@
       "path": "day-103",
       "title": "Day 103 - Kubernetes Version Skew Detection and Resolution",
       "description": "A cluster control plane has been upgraded but several worker nodes are still running an older version of the kubelet. Certain features that depend on newer API capabilities are failing on pods scheduled to the older nodes. You will audit all component versions, identify the nodes with problematic version skew, and upgrade those nodes to restore full cluster compatibility."
+    },
+    {
+      "path": "day-104",
+      "title": "Day 104 - Node Affinity Scheduling Failures",
+      "description": "A deployment is stuck with zero running pods because its required node affinity rule references a node label that does not exist in the cluster. You will use scheduler events and node inspection to identify the mismatch and apply the correct fix to get pods running."
+    },
+    {
+      "path": "day-105",
+      "title": "Day 105 - Taints and Tolerations Scheduling Failures",
+      "description": "A worker node has been tainted but no running workloads carry the matching toleration, causing that node to sit completely idle while other nodes are overloaded. You will identify the taint, add the correct toleration to the target deployment, and verify that pods begin scheduling on the previously empty node."
+    },
+    {
+      "path": "day-106",
+      "title": "Day 106 - Pod Disruption Budget Blocking Node Drain",
+      "description": "A node drain is indefinitely blocked because a pod disruption budget on a running deployment will not allow any pods to be evicted. You will identify which PDB is blocking the drain, understand why it cannot be satisfied, and apply a fix that allows the drain to complete while keeping the application available."
+    },
+    {
+      "path": "day-107",
+      "title": "Day 107 - Priority Class Preemption Stealing Production Resources",
+      "description": "A batch job has been given a higher priority class than the production deployment it shares a node with, and under CPU pressure the scheduler is preempting production pods to make room for batch work. You will identify the priority class misconfiguration, reassign priority classes appropriately, and verify that production pods are no longer vulnerable to preemption by lower-importance workloads."
+    },
+    {
+      "path": "day-108",
+      "title": "Day 108 - ServiceAccount Token Mounting and Credential Exposure",
+      "description": "Every pod in the target namespace has the default service account token mounted, including workloads that have no need to communicate with the Kubernetes API. You will audit the service accounts, identify which workloads should not have token access, and disable automatic token mounting on the appropriate resources."
+    },
+    {
+      "path": "day-109",
+      "title": "Day 109 - Image Pull Secret Authentication Failures",
+      "description": "A deployment is stuck in ImagePullBackOff because its image pull secret is either missing from the namespace or contains invalid credentials for the private registry. You will trace the authentication failure through pod events, inspect the secret, and apply a corrected secret that allows the image to be pulled successfully."
+    },
+    {
+      "path": "day-110",
+      "title": "Day 110 - Cluster Autoscaler Scale-Up Failures",
+      "description": "Pods are stuck Pending and the cluster autoscaler is deployed but is not provisioning new nodes. You will inspect the autoscaler logs, identify why scale-up is not being triggered, fix the pod resource requests and autoscaler configuration, and confirm that new nodes are provisioned and pods move to Running state."
     }
   ]
 }
