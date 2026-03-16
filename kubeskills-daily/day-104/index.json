@@ -1,0 +1,31 @@
+{
+  "title": "Node Affinity Scheduling Failures",
+  "description": "A deployment is stuck with zero running pods because its required node affinity rule references a node label that does not exist in the cluster. You will use scheduler events and node inspection to identify the mismatch and apply the correct fix to get pods running.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
