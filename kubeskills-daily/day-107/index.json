@@ -1,0 +1,31 @@
+{
+  "title": "Priority Class Preemption Stealing Production Resources",
+  "description": "A batch job has been given a higher priority class than the production deployment it shares a node with, and under CPU pressure the scheduler is preempting production pods to make room for batch work. You will identify the priority class misconfiguration, reassign priority classes appropriately, and verify that production pods are no longer vulnerable to preemption by lower-importance workloads.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
