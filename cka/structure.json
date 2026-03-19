@@ -256,6 +256,11 @@
         "path": "pvc-stuck",
         "title": "Troubleshoot a Stuck PVC",
         "description": "Diagnose and fix a PersistentVolumeClaim that is stuck in Pending state, preventing a Pod from running"
+      },
+      {
+        "path": "node-notready",
+        "title": "Troubleshoot a NotReady Node",
+        "description": "Diagnose why pods are stuck in Pending when a worker node goes NotReady, then restore the cluster to a healthy state"
       }
     ]
   }

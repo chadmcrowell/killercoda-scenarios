@@ -1,0 +1,26 @@
+{
+    "title": "Troubleshoot a NotReady Node",
+    "description": "Diagnose why pods are stuck in Pending when a worker node goes NotReady, then restore the cluster to a healthy state",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Diagnose the NotReady Node",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Fix and Verify",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2node"
+    }
+}
