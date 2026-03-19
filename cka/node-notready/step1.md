@@ -26,4 +26,6 @@ kubectl get events -n trouble-node-01 --sort-by='.lastTimestamp'
 
 You will see messages like `0/2 nodes are available: 1 node(s) had untolerated taint... 1 node(s) were not ready`.
 
+> **Note:** The metrics server was installed as part of this lab's setup. It may take up to 60 seconds to become available. If `kubectl top nodes` returns an error, wait a moment and try again.
+
 > **Key insight:** `kubectl top nodes` shows the *last known* resource usage — it does not reflect schedulability. A node must be `Ready` for the scheduler to place pods on it. Always check `kubectl get nodes` and `kubectl describe node` to understand the scheduler's view of the cluster.
