@@ -18,7 +18,7 @@ Kubebuilder provides a command that can create both the `Controller` process and
 In this case, let's create a custom type called `Website`. Kubebuilder will automatically configure the operator to know about the type. Create these by running the following command from the `Tab 1` tab:
 
 ```bash
-kubebuilder create api \
+cd ~/src && kubebuilder create api \
   --kind Website \
   --group killercoda \
   --version v1beta1 \

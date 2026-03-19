@@ -8,7 +8,7 @@ To install this CRD type into the Kubernetes cluster, it needs to be in YAML for
 Now, lets run the manifests target manually in the `Tab 1` tab to view the Golang translated into yaml:
 
 ```bash
-make manifests
+cd ~/src && make manifests
 ```{{exec}}
 
 Return to the `Editor` tab to see a new file `killercoda.my.domain_websites` populated in the `config/crd/bases` directory. On line `37`, you will see the website properties found in the `WebsiteSpec` schema. The only property is `foo` and it has used the helpful comment as a property description.
@@ -16,7 +16,7 @@ Return to the `Editor` tab to see a new file `killercoda.my.domain_websites` pop
 Now it is time to actually put this CRD into your Kubernetes cluster. From the `Tab 1` tab, run the `make install` command to install your new `Website` CRD:
 
 ```bash
-make install
+cd ~/src && make install
 ```{{exec}}
 
 When that finishes, view the newly created CRD in your Kubernetes cluster with the following command:
@@ -34,7 +34,7 @@ Now you will request an instance (or Custom Resource) from this definition.
 First, open a new terminal tab by clicking on the `+` sign next to `Tab 1`, Click on `Tab 2`, and run the command:
 
 ```bash
-cd ./src; make run
+cd ~/src && make run
 ```{{exec}}
 
 Wait for the command to output the following (this may take a while):

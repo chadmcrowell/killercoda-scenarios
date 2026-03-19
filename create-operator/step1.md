@@ -3,14 +3,11 @@ While an operator and CRD can be generated from scratch, there is a tool called 
 
 Get started by initializing a Kubebuilder application with the `kubebuilder init` command like this:
 
-> **Note:** The environment ships with Go 1.21, while the default `go.kubebuilder.io/v4` plugin expects Go 1.23 or newer. We can bypass the guard by adding `--skip-go-version-check`.
-
 ```bash
-kubebuilder init \
+cd ~/src && kubebuilder init \
   --plugins=go.kubebuilder.io/v4 \
   --domain example.com \
-  --repo example.com/operator-demo \
-  --skip-go-version-check
+  --repo example.com/operator-demo
 ```{{exec}}
 
 > NOTE: Kubebuilder is already installed on this machine
@@ -26,19 +23,11 @@ For example, the `.PHONY: run` target will run a controller from your host (loca
 go to the command prompt (in the same window) and type the command:
 
 ```bash
+cd ~/src
 go env -w GOPROXY=https://proxy.golang.org,direct
 go env -w GOSUMDB=sum.golang.org
-go clean -modcache
 go mod tidy
-
-# tell Go to serve modules straight out of its own download cache
-# go vet, go mod tidy, and make run stop talking to the network entirely—as long as every dependency is already in the cache
-go env -w GOPROXY=file://$HOME/go/pkg/mod/cache/download,direct
-go env -w GOSUMDB=off
-go env -w GOTOOLCHAIN=local
-
-
-cd ~/src && make run
+make run
 ```{{exec}}
 
 > NOTE: This command may take a few minutes (particularly `go vet` may appear to hang!).
