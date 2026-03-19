@@ -1,6 +1,6 @@
 #!/bin/bash
 # Wait for both nodes to be ready
-kubectl wait --for=condition=Ready nodes --all --timeout=120s
+# kubectl wait --for=condition=Ready nodes --all --timeout=120s
 
 # Create the namespace and deployment
 kubectl create namespace trouble-node-01
