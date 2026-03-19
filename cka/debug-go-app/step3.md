@@ -33,6 +33,6 @@ spec:
           value: "8080"
 
 
-```
+```{{copy}}
 
 </details>

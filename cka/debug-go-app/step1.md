@@ -8,8 +8,7 @@ The logs show that the PORT environment variable is not set.
 ```bash
 # get the deployment and pod
 k get deploy,po
-
-```
+```{{exec}}
 
 
 </details>
