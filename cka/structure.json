@@ -261,6 +261,11 @@
         "path": "node-notready",
         "title": "Troubleshoot a NotReady Node",
         "description": "Diagnose why pods are stuck in Pending when a worker node goes NotReady, then restore the cluster to a healthy state"
+      },
+      {
+        "path": "broken-path",
+        "title": "Troubleshoot a Broken Network Path",
+        "description": "Pods are Running and the Service exists, but clients can't reach the app — diagnose and fix the port misconfiguration breaking the network path"
       }
     ]
   }

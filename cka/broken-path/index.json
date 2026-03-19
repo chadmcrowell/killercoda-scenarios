@@ -1,0 +1,26 @@
+{
+    "title": "Troubleshoot a Broken Network Path",
+    "description": "Pods are Running and the Service exists, but clients can't reach the app — diagnose and fix the port misconfiguration breaking the network path",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Diagnose the Broken Path",
+                "text": "step1.md",
+                "background": "background.sh"
+            },
+            {
+                "title": "Fix and Verify",
+                "text": "step2.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "backend": {
+        "imageid": "kubernetes-kubeadm-2nodes-rapid"
+    }
+}
