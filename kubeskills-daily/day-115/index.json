@@ -1,0 +1,31 @@
+{
+  "title": "ServiceAccount RBAC - Fixing API Permission Errors",
+  "description": "In this lab you will investigate why an application pod is receiving 403 Forbidden errors when it tries to call the Kubernetes API. You will examine the pod's service account, check for existing role bindings, create the appropriate Role and RoleBinding resources, and verify that the application can successfully make API calls. You will also learn how to test API permissions directly from inside a pod.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
