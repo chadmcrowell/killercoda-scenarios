@@ -1,0 +1,31 @@
+{
+  "title": "Taints and Tolerations Scheduling Failures",
+  "description": "In this lab you will diagnose why pods are not scheduling or are being evicted from nodes that have taints applied. You will examine node taints, understand the difference between taint effects, and add the correct tolerations to workload configurations so pods can run on the intended nodes. You will also observe what happens when a NoExecute taint is applied to a node that has running pods without a matching toleration.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
