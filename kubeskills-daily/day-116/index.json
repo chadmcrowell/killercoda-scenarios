@@ -1,0 +1,31 @@
+{
+  "title": "Network Policy Debugging - Restoring Blocked Traffic",
+  "description": "In this lab you will debug a three-tier application where network connectivity has broken after deny-all network policies were applied. You will examine the existing policies, trace which connections are being blocked, and add the correct allow rules to restore traffic flow between the web, API, and database layers. You will also ensure that DNS and health check traffic is not disrupted by the policies.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
