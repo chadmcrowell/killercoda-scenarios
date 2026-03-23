@@ -1,0 +1,31 @@
+{
+  "title": "Cluster Autoscaler Node Addition With Pending Pods",
+  "description": "In this lab you will investigate a scenario where the cluster autoscaler is functioning and adding nodes to the cluster but pods remain in the pending state. You will analyze the new nodes to understand their resource profile, examine the pending pods for scheduling constraints that prevent placement on the new nodes, and adjust either the pod specifications or the autoscaler node group configuration to resolve the mismatch. You will learn how to read autoscaler logs and understand scaling decisions.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
