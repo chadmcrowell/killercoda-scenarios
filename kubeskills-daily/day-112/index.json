@@ -1,0 +1,31 @@
+{
+  "title": "Pod Disruption Budget Blocking Operations",
+  "description": "In this lab you will encounter a scenario where a node drain is blocked by misconfigured Pod Disruption Budgets and a rolling deployment update has stalled. You will inspect the PDB configurations, understand why eviction is being rejected, and fix the PDB settings to allow normal cluster operations to resume. You will also observe how the rolling update controller responds once the PDB is corrected.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
