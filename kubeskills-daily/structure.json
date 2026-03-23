@@ -551,6 +551,41 @@
       "path": "day-110",
       "title": "Day 110 - Cluster Autoscaler Scale-Up Failures",
       "description": "Pods are stuck Pending and the cluster autoscaler is deployed but is not provisioning new nodes. You will inspect the autoscaler logs, identify why scale-up is not being triggered, fix the pod resource requests and autoscaler configuration, and confirm that new nodes are provisioned and pods move to Running state."
+    },
+    {
+      "path": "day-111",
+      "title": "Day 111 - Node Affinity Scheduling Failures",
+      "description": "In this lab you will investigate why several pods are stuck in the pending state due to misconfigured node affinity rules. You will examine scheduler events, inspect node labels, and correct the affinity configuration to allow pods to schedule successfully. By the end you will understand the difference between required and preferred scheduling rules and how to debug affinity failures quickly."
+    },
+    {
+      "path": "day-112",
+      "title": "Day 112 - Pod Disruption Budget Blocking Operations",
+      "description": "In this lab you will encounter a scenario where a node drain is blocked by misconfigured Pod Disruption Budgets and a rolling deployment update has stalled. You will inspect the PDB configurations, understand why eviction is being rejected, and fix the PDB settings to allow normal cluster operations to resume. You will also observe how the rolling update controller responds once the PDB is corrected."
+    },
+    {
+      "path": "day-113",
+      "title": "Day 113 - QoS Classes and Kubelet Eviction Ordering",
+      "description": "In this lab you will observe how pods with different QoS classifications behave when node memory pressure is simulated. You will inspect the QoS class assigned to running pods, identify which pods are at highest risk of eviction, and update resource configurations to ensure critical workloads receive Guaranteed QoS status. You will also examine kubelet eviction events to understand the decision-making process."
+    },
+    {
+      "path": "day-114",
+      "title": "Day 114 - Taints and Tolerations Scheduling Failures",
+      "description": "In this lab you will diagnose why pods are not scheduling or are being evicted from nodes that have taints applied. You will examine node taints, understand the difference between taint effects, and add the correct tolerations to workload configurations so pods can run on the intended nodes. You will also observe what happens when a NoExecute taint is applied to a node that has running pods without a matching toleration."
+    },
+    {
+      "path": "day-115",
+      "title": "Day 115 - ServiceAccount RBAC - Fixing API Permission Errors",
+      "description": "In this lab you will investigate why an application pod is receiving 403 Forbidden errors when it tries to call the Kubernetes API. You will examine the pod's service account, check for existing role bindings, create the appropriate Role and RoleBinding resources, and verify that the application can successfully make API calls. You will also learn how to test API permissions directly from inside a pod."
+    },
+    {
+      "path": "day-116",
+      "title": "Day 116 - Network Policy Debugging - Restoring Blocked Traffic",
+      "description": "In this lab you will debug a three-tier application where network connectivity has broken after deny-all network policies were applied. You will examine the existing policies, trace which connections are being blocked, and add the correct allow rules to restore traffic flow between the web, API, and database layers. You will also ensure that DNS and health check traffic is not disrupted by the policies."
+    },
+    {
+      "path": "day-117",
+      "title": "Day 117 - Cluster Autoscaler Node Addition With Pending Pods",
+      "description": "In this lab you will investigate a scenario where the cluster autoscaler is functioning and adding nodes to the cluster but pods remain in the pending state. You will analyze the new nodes to understand their resource profile, examine the pending pods for scheduling constraints that prevent placement on the new nodes, and adjust either the pod specifications or the autoscaler node group configuration to resolve the mismatch. You will learn how to read autoscaler logs and understand scaling decisions."
     }
   ]
 }
