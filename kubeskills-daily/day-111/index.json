@@ -1,0 +1,31 @@
+{
+  "title": "Node Affinity Scheduling Failures",
+  "description": "In this lab you will investigate why several pods are stuck in the pending state due to misconfigured node affinity rules. You will examine scheduler events, inspect node labels, and correct the affinity configuration to allow pods to schedule successfully. By the end you will understand the difference between required and preferred scheduling rules and how to debug affinity failures quickly.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
