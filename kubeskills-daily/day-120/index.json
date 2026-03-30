@@ -1,0 +1,31 @@
+{
+  "title": "CPU Throttling - The Silent Performance Killer",
+  "description": "In this lab you will investigate an application that is responding slowly despite appearing healthy in Kubernetes. You will use available metrics and resource inspection tools to discover that the container is being CPU throttled by its limit configuration, then adjust the resource limits and verify that performance improves.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
