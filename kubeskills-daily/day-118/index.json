@@ -1,0 +1,31 @@
+{
+  "title": "Node Affinity Scheduling Surprises",
+  "description": "In this lab you will debug a cluster where several deployments are failing to schedule or landing on incorrect nodes due to misconfigured node affinity rules. You will inspect node labels, review affinity expressions, identify the root causes, and correct each configuration so pods schedule as intended.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
