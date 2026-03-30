@@ -1,0 +1,31 @@
+{
+  "title": "Control Plane Certificate Expiration - Cascading Failures",
+  "description": "In this lab you will work through a cluster experiencing certificate expiration failures that are causing control plane communication errors. You will inspect the certificates used by each control plane component, identify which are expired or about to expire, and execute the renewal process to restore full cluster functionality.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
