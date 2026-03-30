@@ -1,0 +1,31 @@
+{
+  "title": "Ephemeral Storage - The Silent Eviction",
+  "description": "In this lab you will investigate a workload that keeps getting evicted from its node without any container crash or restart loop. You will trace the eviction back to ephemeral storage exhaustion by examining node and pod events, then reconfigure the workload to either increase the ephemeral storage limit or redirect disk usage to a proper volume.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
