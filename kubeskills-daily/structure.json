@@ -586,6 +586,41 @@
       "path": "day-117",
       "title": "Day 117 - Cluster Autoscaler Node Addition With Pending Pods",
       "description": "In this lab you will investigate a scenario where the cluster autoscaler is functioning and adding nodes to the cluster but pods remain in the pending state. You will analyze the new nodes to understand their resource profile, examine the pending pods for scheduling constraints that prevent placement on the new nodes, and adjust either the pod specifications or the autoscaler node group configuration to resolve the mismatch. You will learn how to read autoscaler logs and understand scaling decisions."
+    },
+    {
+      "path": "day-118",
+      "title": "Day 118 - Node Affinity Scheduling Surprises",
+      "description": "In this lab you will debug a cluster where several deployments are failing to schedule or landing on incorrect nodes due to misconfigured node affinity rules. You will inspect node labels, review affinity expressions, identify the root causes, and correct each configuration so pods schedule as intended."
+    },
+    {
+      "path": "day-119",
+      "title": "Day 119 - Pod Anti-Affinity Scaling Deadlock",
+      "description": "In this lab you will debug a deployment that cannot scale to its desired replica count because of a required pod anti-affinity rule that exceeds the number of available nodes. You will analyze the scheduling constraints, understand the blocking condition, and reconfigure the anti-affinity policy to allow the deployment to scale correctly."
+    },
+    {
+      "path": "day-120",
+      "title": "Day 120 - CPU Throttling - The Silent Performance Killer",
+      "description": "In this lab you will investigate an application that is responding slowly despite appearing healthy in Kubernetes. You will use available metrics and resource inspection tools to discover that the container is being CPU throttled by its limit configuration, then adjust the resource limits and verify that performance improves."
+    },
+    {
+      "path": "day-121",
+      "title": "Day 121 - OOMKilled - Memory Limit Disasters",
+      "description": "In this lab you will investigate a deployment where containers are repeatedly being killed and restarted due to memory limit violations. You will examine the pod termination history, identify the memory usage pattern that triggers the OOMKill, and configure appropriate memory limits and requests to stabilize the workload."
+    },
+    {
+      "path": "day-122",
+      "title": "Day 122 - Ephemeral Storage - The Silent Eviction",
+      "description": "In this lab you will investigate a workload that keeps getting evicted from its node without any container crash or restart loop. You will trace the eviction back to ephemeral storage exhaustion by examining node and pod events, then reconfigure the workload to either increase the ephemeral storage limit or redirect disk usage to a proper volume."
+    },
+    {
+      "path": "day-123",
+      "title": "Day 123 - PVC Binding - StatefulSet Startup Failures",
+      "description": "In this lab you will diagnose a StatefulSet that cannot start because its persistent volume claims are stuck in Pending state. You will trace the binding failure to a StorageClass misconfiguration, understand how PVC binding relates to pod scheduling in a StatefulSet, and correct the storage configuration to allow all replicas to start successfully."
+    },
+    {
+      "path": "day-124",
+      "title": "Day 124 - Control Plane Certificate Expiration - Cascading Failures",
+      "description": "In this lab you will work through a cluster experiencing certificate expiration failures that are causing control plane communication errors. You will inspect the certificates used by each control plane component, identify which are expired or about to expire, and execute the renewal process to restore full cluster functionality."
     }
   ]
 }
