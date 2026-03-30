@@ -1,0 +1,31 @@
+{
+  "title": "Pod Anti-Affinity Scaling Deadlock",
+  "description": "In this lab you will debug a deployment that cannot scale to its desired replica count because of a required pod anti-affinity rule that exceeds the number of available nodes. You will analyze the scheduling constraints, understand the blocking condition, and reconfigure the anti-affinity policy to allow the deployment to scale correctly.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
