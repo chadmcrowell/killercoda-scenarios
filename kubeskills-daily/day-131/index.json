@@ -1,0 +1,31 @@
+{
+  "title": "Kubernetes Version Upgrades - Safe Control Plane Upgrade Procedure",
+  "description": "Your cluster needs to be upgraded from its current version to the next minor version using kubeadm. Before you can safely upgrade you must identify and remediate deprecated API versions in use by existing workloads. Then you will follow the correct upgrade sequence: upgrading kubeadm first, running the upgrade plan, upgrading the control plane, and finally draining and upgrading the worker node.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
