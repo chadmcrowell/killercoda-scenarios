@@ -1,0 +1,31 @@
+{
+  "title": "Stuck Terminating Pods - Finalizers and Safe Force Delete",
+  "description": "Three pods in your cluster are stuck in Terminating state and blocking downstream operations. Each pod is stuck for a different reason involving finalizers, a failed node, or a hanging preStop hook. You must diagnose each scenario, understand why the pod is not completing termination, and apply the appropriate remediation without causing data corruption or service disruption.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
