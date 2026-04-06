@@ -1,0 +1,31 @@
+{
+  "title": "Sidecar and Init Container Failures - Multi-Container Pod Debugging",
+  "description": "Three multi-container pods are experiencing different failure modes related to their init and sidecar container configurations. You must diagnose each pod individually by examining container-level status and logs, identify whether the failure is in an init container, a sidecar, or a resource contention issue, and apply the correct fix to get each pod running healthy.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
