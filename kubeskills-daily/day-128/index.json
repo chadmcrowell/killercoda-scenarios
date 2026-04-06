@@ -1,0 +1,31 @@
+{
+  "title": "etcd Backup and Restore - Full Cluster Recovery Practice",
+  "description": "Your task is to perform a complete etcd backup and restore cycle to demonstrate cluster disaster recovery readiness. First you will create a snapshot of the running etcd cluster, then simulate data loss by deleting several critical workloads, and finally restore the cluster state from your snapshot. This is the exact procedure tested in the CKA certification exam.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
