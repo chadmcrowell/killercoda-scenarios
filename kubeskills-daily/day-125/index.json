@@ -1,0 +1,31 @@
+{
+  "title": "RBAC Misconfiguration - Fixing Permission Escalation",
+  "description": "A development team has reported that their app-runner service account seems to have more access than expected. Your job is to investigate the RBAC configuration, identify the misconfigured binding that grants excessive privileges, and remediate it by replacing it with a properly scoped role and binding. This scenario tests your ability to audit and fix real-world RBAC permission escalation.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
