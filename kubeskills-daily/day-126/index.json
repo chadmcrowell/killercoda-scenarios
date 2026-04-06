@@ -1,0 +1,31 @@
+{
+  "title": "Node Disk Pressure - Diagnosing and Resolving Eviction Events",
+  "description": "A node in your cluster has entered a DiskPressure condition after a logging workload consumed all available ephemeral storage. Several pods have been evicted and new deployments cannot schedule. You must diagnose the disk pressure condition, identify the runaway workload consuming disk, clean up the space, and configure proper ephemeral storage limits to prevent recurrence.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
