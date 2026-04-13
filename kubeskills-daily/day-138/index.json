@@ -1,0 +1,31 @@
+{
+  "title": "Node Drain and Cordon - Maintenance Without Chaos",
+  "description": "In this lab you will safely perform node maintenance on a production-like cluster. You will practice the full maintenance workflow including checking running workloads, verifying cluster capacity, cordoning the node, reviewing PDB constraints, draining the node, and finally uncordoning it after the maintenance window is complete.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
