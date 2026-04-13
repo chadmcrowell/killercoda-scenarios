@@ -1,0 +1,31 @@
+{
+  "title": "Cluster Autoscaler vs Pod Disruption Budgets - The Scale-Down Deadlock",
+  "description": "In this lab you will diagnose a cluster autoscaler scale-down deadlock caused by conflicting Pod Disruption Budget configurations. You will examine the autoscaler logs to identify which PDB is blocking eviction, understand why the current configuration creates a deadlock, and modify the PDB to allow safe node scale-down while maintaining the required availability guarantees.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
