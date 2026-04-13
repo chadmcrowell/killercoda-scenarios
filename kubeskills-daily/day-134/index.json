@@ -1,0 +1,31 @@
+{
+  "title": "etcd Backup Failure - Disaster Recovery Gone Wrong",
+  "description": "In this lab you will work through a simulated etcd backup and restore scenario. You will identify a broken backup configuration, take a valid snapshot using the correct certificate paths and endpoint, verify the snapshot integrity, and practice the restore procedure that would be used during a real cluster recovery event.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
