@@ -1,0 +1,31 @@
+{
+  "title": "Readiness Probe Misconfiguration - All Pods Removed from Service",
+  "description": "In this lab you will investigate a live service that is returning 503 errors even though all pods show a Running status. You will trace the problem to a readiness probe configured with the wrong HTTP path, understand how failed readiness probes affect the Endpoints object, and fix the probe configuration to restore traffic routing to the healthy pods.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
