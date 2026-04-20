@@ -1,0 +1,31 @@
+{
+  "title": "RBAC Misconfigurations - Privilege Escalation and Audit Risks",
+  "description": "In this lab you will audit an existing cluster for RBAC misconfigurations, identify service accounts with excessive permissions, and create replacement Roles that follow the principle of least privilege. You will verify that the application still functions correctly with the reduced permission set.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
