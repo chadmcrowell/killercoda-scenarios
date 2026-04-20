@@ -1,0 +1,31 @@
+{
+  "title": "Multi-Tenancy Isolation - Namespace Boundaries and Escape Vectors",
+  "description": "In this lab you will test the isolation boundaries between two tenant namespaces by attempting cross-namespace communication, checking resource sharing behavior, and evaluating whether existing controls provide meaningful separation. You will then implement network policies and resource quotas to enforce proper multi-tenant isolation.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
