@@ -1,0 +1,31 @@
+{
+  "title": "Kubernetes Audit Logging - Capturing Security Evidence",
+  "description": "In this lab you will write a Kubernetes audit policy, enable it on the API server, and then perform test operations to verify that the right events are captured in the audit log. You will practice reading and filtering audit log entries to trace specific actions back to specific users.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
