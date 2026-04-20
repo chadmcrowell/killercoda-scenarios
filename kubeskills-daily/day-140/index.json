@@ -1,0 +1,31 @@
+{
+  "title": "Deployment Rollout Stuck - Progressive Delivery Failures",
+  "description": "In this lab you will diagnose a deployment rollout that has stalled because new pods cannot pass their readiness probe. You will analyze the rollout strategy, inspect pod readiness conditions, and decide whether to fix forward or roll back to restore a fully healthy deployment.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
