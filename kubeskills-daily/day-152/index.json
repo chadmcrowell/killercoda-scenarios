@@ -1,0 +1,31 @@
+{
+  "title": "Graceful Pod Shutdown - SIGTERM Handling and Termination Grace Period Tuning",
+  "description": "In this lab you will observe the impact of missing graceful shutdown handling on a set of applications that drop in-flight requests during rolling updates and pod termination. You will configure pre-stop hooks and adjust termination grace periods to give applications time to complete active work, and you will verify that requests are no longer dropped when pods are terminated. The lab teaches the full lifecycle of pod termination and how each phase affects running connections.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
