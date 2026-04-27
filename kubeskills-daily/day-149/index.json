@@ -1,0 +1,31 @@
+{
+  "title": "Network Policy Egress Controls - Locking Down Outbound Pod Traffic",
+  "description": "In this lab you will audit the egress behavior of workloads running in a namespace that has no outbound network restrictions. You will determine what external connections each workload legitimately needs, then write and apply egress network policies that allow only those connections. The lab emphasizes the importance of allowing DNS egress as a baseline and blocking access to sensitive endpoints like the cloud metadata service.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
