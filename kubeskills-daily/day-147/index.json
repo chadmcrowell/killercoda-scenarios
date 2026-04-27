@@ -1,0 +1,31 @@
+{
+  "title": "PodDisruptionBudget Deadlock Diagnosis and Resolution",
+  "description": "In this lab you will diagnose a cluster where node drain operations are hanging because of incorrectly configured PodDisruptionBudgets. You will examine the budgets across multiple namespaces, identify the misconfiguration causing the deadlock, and then correct the budgets so maintenance can proceed while maintaining genuine availability protection. The lab reinforces how PDB math interacts with replica counts and drain behavior.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
