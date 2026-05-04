@@ -1,0 +1,31 @@
+{
+  "title": "Node Pressure Eviction - Protecting the Kubelet",
+  "description": "A node in the cluster is showing MemoryPressure condition and the kubelet has begun evicting pods. Your monitoring pod and a batch processing job keep getting terminated even though both declare memory limits. You will investigate the eviction decision process, understand why QoS class matters more than limits during pressure events, and configure pod resources to survive future eviction cycles.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
