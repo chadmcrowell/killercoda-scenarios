@@ -1,0 +1,31 @@
+{
+  "title": "RBAC Misconfigurations - Accidental Privilege Escalation",
+  "description": "A developer ServiceAccount named app-deployer in the staging namespace has been accidentally granted wildcard permissions via a ClusterRoleBinding. Your job is to identify the misconfiguration, understand the blast radius, and replace it with a properly scoped Role and RoleBinding that grants only deployment management within the staging namespace.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
