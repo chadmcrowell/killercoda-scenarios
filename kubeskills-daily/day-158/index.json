@@ -1,0 +1,31 @@
+{
+  "title": "Container Image Caching - Node Pull Latency at Scale",
+  "description": "A deployment rollout is taking over eight minutes to complete because each node is independently pulling a two-gigabyte base image from an external registry with the Always pull policy set. You will change the pull policy, implement a DaemonSet-based image pre-puller, and configure a local registry mirror to eliminate the external pull dependency for future deployments.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
