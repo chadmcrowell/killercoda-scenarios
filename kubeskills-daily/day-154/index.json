@@ -1,0 +1,31 @@
+{
+  "title": "Endpoint Slices - When Services Have No Backends",
+  "description": "A production application is returning connection refused errors despite the Deployment showing all pods as Running. Investigation reveals the Service selector does not match the pod labels due to a label naming inconsistency introduced during a refactoring effort. You will trace the problem through endpoint slices and fix the label mismatch to restore traffic flow.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
