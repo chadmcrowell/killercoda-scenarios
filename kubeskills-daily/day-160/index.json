@@ -1,0 +1,31 @@
+{
+  "title": "etcd Backup and Recovery - Cluster State at Risk",
+  "description": "In this lab you will practice the full etcd backup and restore workflow on a single-node Kubernetes cluster. You will take a snapshot of the live etcd database, simulate data loss by deleting a namespace and its resources, and then restore the cluster state from the snapshot. This exercise mirrors exactly what CKA candidates must perform under exam conditions.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
