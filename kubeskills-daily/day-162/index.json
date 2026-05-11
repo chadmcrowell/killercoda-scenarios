@@ -1,0 +1,31 @@
+{
+  "title": "Pod Security Standards - Enforcing Baseline and Restricted Profiles",
+  "description": "In this lab you will progressively apply Pod Security Admission labels to namespaces running a mix of compliant and non-compliant workloads. You will start with warn mode to identify violations, fix the problematic workloads, and then switch to enforce mode to lock down the namespaces. The lab demonstrates the safe path to hardening pod security without outages.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
