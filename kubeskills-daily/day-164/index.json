@@ -1,0 +1,31 @@
+{
+  "title": "Persistent Volume Expansion - PVC Resize Pitfalls",
+  "description": "In this lab you will expand a PVC that is attached to a running pod, observe the resize conditions on the PVC object, and verify whether the new capacity is visible inside the container. If the filesystem has not automatically expanded, you will restart the pod and confirm the resize completes. This scenario builds the intuition needed to safely resize volumes in production.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
