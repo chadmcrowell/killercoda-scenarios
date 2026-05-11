@@ -1,0 +1,31 @@
+{
+  "title": "Network Policy and DNS - Blocking Traffic to CoreDNS",
+  "description": "In this lab you will diagnose a broken application in a namespace that has a deny-all egress network policy. You will confirm that DNS is being blocked, write a targeted network policy that allows DNS traffic to CoreDNS while keeping all other egress blocked, and verify the application recovers. This lab teaches the critical pattern of always pairing deny-all egress with an explicit DNS allow rule.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
