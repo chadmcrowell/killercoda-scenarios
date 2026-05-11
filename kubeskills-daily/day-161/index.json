@@ -1,0 +1,31 @@
+{
+  "title": "Container Runtime Failures - Pods Stuck in Unknown State",
+  "description": "In this lab you will diagnose a node where the container runtime has stopped responding and pods are stuck in Unknown state. You will use node-level debugging tools to identify the root cause, restart the runtime service, and verify that pods recover their correct running state. This scenario tests your ability to move beyond kubectl and into node-level troubleshooting.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
