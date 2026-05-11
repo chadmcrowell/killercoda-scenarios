@@ -1,0 +1,31 @@
+{
+  "title": "Kubelet Eviction Thresholds - Node Pressure and Pod Eviction",
+  "description": "In this lab you will observe kubelet eviction behavior on a node under simulated memory pressure. You will identify which pods are being evicted based on their QoS class, then update resource requests and limits on critical workloads to protect them from eviction. Finally you will configure eviction thresholds in the kubelet configuration to understand how operators tune eviction sensitivity. This scenario mirrors real production incidents where nodes run out of memory.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
