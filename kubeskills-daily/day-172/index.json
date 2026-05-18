@@ -1,0 +1,31 @@
+{
+  "title": "kube-proxy and Service Networking - Fixing Broken Routing Rules",
+  "description": "In this lab you will investigate a service routing failure caused by a broken kube-proxy configuration on a node. You will examine iptables rules, check kube-proxy logs and health, and fix the configuration to restore service connectivity for pods running on the affected node.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
