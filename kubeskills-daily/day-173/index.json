@@ -1,0 +1,31 @@
+{
+  "title": "Control Plane Leader Election - Diagnosing Leadership Instability",
+  "description": "In this lab you will examine the leader election mechanism used by Kubernetes control plane components. You will inspect the Lease objects that track current leaders, simulate a scenario where leadership is unstable, and learn how to tune election parameters and diagnose split-brain conditions in a high-availability control plane.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
