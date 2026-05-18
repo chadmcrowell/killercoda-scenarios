@@ -1,0 +1,31 @@
+{
+  "title": "Pod Priority and Preemption - Workload Eviction in Action",
+  "description": "In this lab you will create multiple PriorityClass objects and deploy workloads at different priority levels. You will fill a node to capacity with low-priority pods and then deploy a high-priority workload to observe how the scheduler triggers preemption and which pods get removed to make room.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
