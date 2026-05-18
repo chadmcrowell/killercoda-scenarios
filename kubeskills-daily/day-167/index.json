@@ -1,0 +1,31 @@
+{
+  "title": "etcd Compaction and Defragmentation",
+  "description": "In this lab you will explore a Kubernetes cluster where etcd has grown large due to accumulated revisions. You will learn how to compact old revisions, defragment the database, and check etcd health metrics to understand how to keep etcd performing well over time.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
