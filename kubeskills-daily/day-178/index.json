@@ -1,0 +1,31 @@
+{
+  "title": "Kubernetes Garbage Collection - Cleaning Up Orphaned and Stale Resources",
+  "description": "In this lab you will audit a cluster for accumulated orphaned and stale resources, understand why they were not automatically cleaned up, and implement configuration changes that will prevent the same accumulation from happening in the future. You will also safely remove the existing backlog of stale objects without disrupting running workloads.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
