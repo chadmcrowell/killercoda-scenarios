@@ -1,0 +1,31 @@
+{
+  "title": "Pod Priority and Preemption - Controlling Scheduler Eviction Behavior",
+  "description": "In this lab you will observe and then control the preemption behavior of the Kubernetes scheduler. You will create PriorityClass objects for different workload tiers, deploy pods at each priority level to fill cluster capacity, then introduce a high-priority pod and watch the preemption sequence. Finally you will apply pod disruption budgets and observe how they interact with preemption.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
