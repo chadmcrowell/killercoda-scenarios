@@ -1,0 +1,31 @@
+{
+  "title": "Network Policy Egress - Implementing Default Deny to Close Security Gaps",
+  "description": "In this lab you will implement a default-deny egress Network Policy for an application namespace and then add the minimum necessary egress exceptions to keep the application functional. You will verify the restrictions are working by attempting connections to unauthorized destinations and confirm that legitimate traffic such as DNS and upstream API calls continues to flow correctly.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
