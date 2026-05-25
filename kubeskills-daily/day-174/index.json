@@ -1,0 +1,31 @@
+{
+  "title": "etcd Storage Bloat - Compaction and Defragmentation Recovery",
+  "description": "In this lab you will investigate an etcd instance that is approaching its storage quota. You will compact the revision history, defragment the database, and verify that the cluster returns to a healthy write state after clearing any alarms that fired during the storage pressure event.",
+  "difficulty": "intermediate",
+  "time": "10-15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Investigate the Problem",
+        "text": "step1.md"
+      },
+      {
+        "title": "Identify the Root Cause",
+        "text": "step2.md"
+      },
+      {
+        "title": "Apply the Fix",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
