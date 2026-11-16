@@ -110,7 +110,7 @@ kubectl -n payments exec tester -- wget -qO- http://api
 
 ```bash
 # verify egress from api pods is blocked
-kubectl -n payments exec deploy/api -c nginx -- wget -qO- http://example.com
+kubectl -n payments exec deploy/api -c nginx -- curl -m 1 http://example.com
 ```{{exec}}
 
 </details>
